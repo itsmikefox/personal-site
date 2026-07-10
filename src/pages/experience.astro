@@ -1,0 +1,95 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+// A lightweight résumé. Edit the arrays; the layout takes care of the rest.
+interface Role {
+  role: string;
+  org: string;
+  period: string;
+  points: string[];
+}
+
+const roles: Role[] = [
+  {
+    role: "Your Role",
+    org: "Company",
+    period: "2022 — Present",
+    points: [
+      "What you owned and shipped. Lead with impact, not tasks.",
+      "A second bullet with a concrete result or number if you have one.",
+    ],
+  },
+  {
+    role: "Earlier Role",
+    org: "Previous Company",
+    period: "2019 — 2022",
+    points: ["Replace these placeholders with your real history."],
+  },
+];
+
+const skills = ["TypeScript", "Salesforce", "Next.js", "Design", "SQL"];
+---
+
+<BaseLayout title="Experience" description="Professional background.">
+  <div class="page-head">
+    <h1>Experience</h1>
+    <p>What I've worked on and where. <a href="/about">More about me →</a></p>
+  </div>
+
+  <ol class="timeline">
+    {
+      roles.map((r) => (
+        <li class="role">
+          <div class="role__head">
+            <h2>{r.role}</h2>
+            <span class="role__period">{r.period}</span>
+          </div>
+          <div class="role__org">{r.org}</div>
+          <ul class="role__points">
+            {r.points.map((p) => (
+              <li>{p}</li>
+            ))}
+          </ul>
+        </li>
+      ))
+    }
+  </ol>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <div class="tag-row">
+      {skills.map((s) => <span class="tag">{s}</span>)}
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .timeline { list-style: none; margin: 0; padding: 0; }
+  .role {
+    padding: var(--space-lg) 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .role:first-child { padding-top: 0; }
+  .role__head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--space-sm);
+  }
+  .role__head h2 { font-size: var(--text-xl); margin: 0; }
+  .role__period { color: var(--muted); font-size: var(--text-sm); }
+  .role__org {
+    color: var(--accent-strong);
+    font-weight: 500;
+    margin-top: var(--space-2xs);
+  }
+  .role__points {
+    margin: var(--space-sm) 0 0;
+    padding-left: 1.2em;
+    color: var(--ink-soft);
+  }
+  .role__points li { margin-bottom: var(--space-2xs); }
+  .skills { margin-top: var(--space-xl); }
+  .skills h2 { font-size: var(--text-xl); margin-bottom: var(--space-md); }
+</style>

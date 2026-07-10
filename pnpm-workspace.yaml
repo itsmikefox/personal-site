@@ -1,0 +1,5 @@
+# pnpm 11+ reads build-script approvals here (not from package.json).
+# esbuild + sharp ship native binaries and need their install scripts to run.
+allowBuilds:
+  esbuild: true
+  sharp: true

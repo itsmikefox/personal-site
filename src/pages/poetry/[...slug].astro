@@ -1,0 +1,38 @@
+---
+import { getCollection, render } from "astro:content";
+import EntryLayout from "../../layouts/EntryLayout.astro";
+
+export async function getStaticPaths() {
+  const poems = await getCollection("poetry", ({ data }) => !data.draft);
+  return poems.map((poem) => ({
+    params: { slug: poem.id },
+    props: { poem },
+  }));
+}
+
+const { poem } = Astro.props;
+const { Content } = await render(poem);
+---
+
+<EntryLayout
+  title={poem.data.title}
+  date={poem.data.pubDate}
+  backHref="/poetry"
+  backLabel="Poetry"
+  variant="poetry"
+>
+  <Content />
+  {poem.data.note && <p class="poem-note">{poem.data.note}</p>}
+</EntryLayout>
+
+<style>
+  .poem-note {
+    margin-top: var(--space-lg);
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: var(--text-sm);
+    font-style: italic;
+    white-space: normal;
+  }
+</style>

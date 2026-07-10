@@ -1,0 +1,86 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+// Pull the three most recent, non-draft writing entries for the homepage.
+const posts = (await getCollection("writing", ({ data }) => !data.draft))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
+
+const fmt = (d: Date) =>
+  d.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" });
+---
+
+<BaseLayout>
+  <section class="intro">
+    <h1>Hi, I'm Mike.</h1>
+    <p class="lead">
+      I build software and make things on the side — writing, poetry, and music.
+      This is where I keep them. <a href="/about">More about me →</a>
+    </p>
+    <!-- TODO: rewrite this in your own voice. One honest paragraph beats ten polished ones. -->
+  </section>
+
+  <section class="home-block">
+    <div class="home-block__head">
+      <h2>Recent writing</h2>
+      <a href="/writing" class="see-all">All writing →</a>
+    </div>
+    {
+      posts.length === 0 ? (
+        <p class="muted">No posts yet — your first one is waiting in <code>src/content/writing/</code>.</p>
+      ) : (
+        <ul class="entry-list">
+          {posts.map((post) => (
+            <li class="entry">
+              <a href={`/writing/${post.id}/`}>{post.data.title}</a>
+              <div class="entry__meta">{fmt(post.data.pubDate)}</div>
+              {post.data.description && <p class="entry__excerpt">{post.data.description}</p>}
+            </li>
+          ))}
+        </ul>
+      )
+    }
+  </section>
+
+  <section class="home-block">
+    <h2>Elsewhere on this site</h2>
+    <div class="grid">
+      <a class="card" href="/projects"><h3>Projects →</h3><p>Things I've designed and built.</p></a>
+      <a class="card" href="/poetry"><h3>Poetry →</h3><p>Short verse, kept simple.</p></a>
+      <a class="card" href="/music"><h3>Music →</h3><p>Tracks and recordings.</p></a>
+      <a class="card" href="/experience"><h3>Experience →</h3><p>Where I've worked and what I did.</p></a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .intro {
+    margin-bottom: var(--space-2xl);
+  }
+  .intro h1 {
+    font-size: var(--text-3xl);
+    margin-bottom: var(--space-sm);
+  }
+  .lead {
+    font-size: var(--text-xl);
+    color: var(--ink-soft);
+    max-width: 40rem;
+  }
+  .home-block { margin-bottom: var(--space-xl); }
+  .home-block__head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--space-md);
+    margin-bottom: var(--space-xs);
+  }
+  .home-block h2 { margin-bottom: var(--space-md); }
+  .home-block__head h2 { margin-bottom: 0; }
+  .see-all {
+    font-size: var(--text-sm);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .muted { color: var(--muted); }
+</style>

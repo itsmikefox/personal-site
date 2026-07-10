@@ -1,0 +1,40 @@
+---
+import { SITE_TITLE, SOCIALS } from "../consts";
+const year = new Date().getFullYear();
+const links = SOCIALS.filter((s) => s.href);
+---
+
+<footer class="site-footer">
+  <div class="container container--wide site-footer__inner">
+    <span class="muted">© {year} {SITE_TITLE}</span>
+    <nav class="foot-links" aria-label="Elsewhere">
+      {links.map((s) => <a href={s.href}>{s.label}</a>)}
+    </nav>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    border-top: 1px solid var(--border);
+    padding-block: var(--space-lg);
+    margin-top: var(--space-2xl);
+  }
+  .site-footer__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-sm);
+    font-size: var(--text-sm);
+  }
+  .muted { color: var(--muted); }
+  .foot-links {
+    display: flex;
+    gap: var(--space-md);
+  }
+  .foot-links a {
+    color: var(--ink-soft);
+    text-decoration: none;
+  }
+  .foot-links a:hover { color: var(--accent); }
+</style>

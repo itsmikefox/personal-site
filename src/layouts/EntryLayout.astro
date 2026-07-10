@@ -1,0 +1,89 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+
+// Shared layout for a single piece of writing or a single poem.
+interface Props {
+  title: string;
+  description?: string;
+  date?: Date;
+  backHref: string;
+  backLabel: string;
+  tags?: string[];
+  /** Poems read best a touch narrower and centered; writing uses full measure. */
+  variant?: "writing" | "poetry";
+}
+
+const {
+  title,
+  description,
+  date,
+  backHref,
+  backLabel,
+  tags = [],
+  variant = "writing",
+} = Astro.props;
+
+const dateStr = date
+  ? date.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" })
+  : undefined;
+---
+
+<BaseLayout title={title} description={description}>
+  <article class:list={["entry-page", `entry-page--${variant}`]}>
+    <a href={backHref} class="back">← {backLabel}</a>
+
+    <header class="entry-page__head">
+      <h1>{title}</h1>
+      {
+        (dateStr || tags.length > 0) && (
+          <div class="entry-page__meta">
+            {dateStr && <time>{dateStr}</time>}
+            {tags.length > 0 && (
+              <span class="tag-row">
+                {tags.map((t) => (
+                  <span class="tag">{t}</span>
+                ))}
+              </span>
+            )}
+          </div>
+        )
+      }
+    </header>
+
+    <div class="prose">
+      <slot />
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .back {
+    display: inline-block;
+    margin-bottom: var(--space-md);
+    font-size: var(--text-sm);
+    color: var(--muted);
+    text-decoration: none;
+  }
+  .back:hover { color: var(--accent); }
+
+  .entry-page__head { margin-bottom: var(--space-lg); }
+  .entry-page__meta {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-top: var(--space-xs);
+    color: var(--muted);
+    font-size: var(--text-sm);
+  }
+
+  /* Poetry reads best with tighter leading and clear stanza spacing.
+     Convention: end each line with a backslash for a line break; separate
+     stanzas with a blank line (each stanza becomes its own paragraph). */
+  .entry-page--poetry :global(.prose) {
+    font-size: var(--text-xl);
+    line-height: 1.5;
+  }
+  .entry-page--poetry :global(.prose p) {
+    margin-bottom: var(--space-lg);
+  }
+</style>

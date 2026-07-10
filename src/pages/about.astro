@@ -1,0 +1,30 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { SOCIALS } from "../consts";
+const links = SOCIALS.filter((s) => s.href);
+---
+
+<BaseLayout title="About" description="A little about me and how to get in touch.">
+  <div class="page-head">
+    <h1>About</h1>
+  </div>
+
+  <div class="prose">
+    <p>
+      Hi — I'm Mike. This is the part where you tell people who you are in your
+      own words. What you care about, what you're working on, what you'd love to
+      talk about. Keep it human; two honest paragraphs are plenty.
+    </p>
+    <p>
+      You might mention what you do for work, what you make in your spare time
+      (writing, poetry, music — all linked from the nav above), and anything
+      you're currently curious about.
+    </p>
+
+    <h2>Get in touch</h2>
+    <p>The best ways to reach me:</p>
+    <ul>
+      {links.map((s) => <li><a href={s.href}>{s.label}</a></li>)}
+    </ul>
+  </div>
+</BaseLayout>
