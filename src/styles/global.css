@@ -8,19 +8,28 @@
      4. Layout primitives (.container, .prose)
      5. Small reusable pieces (links, nav, cards, footer)
 
-   The palette is deliberately warm and literary rather than "techy":
-   a paper-white background, near-black warm ink, and a terracotta accent.
-   Dark mode is a warm charcoal, not a cold black.
+   The palette — "Night Edition" (dark) and "Morning Edition" (light):
+   inky Prussian blue and cream trade places between themes, and orange
+   #fba700 is the single signal color. Orange fails WCAG as text on light
+   (1.9:1), so in light mode links use a darkened amber and pure orange is
+   reserved for marks, rules, and fills (--mark). Flag red, emerald, and
+   grape appear only as section-identity fills with white type.
+
+   Display type is Fraunces (optical-size axis on), body prose stays
+   Newsreader, UI text stays Inter.
    ========================================================================== */
 
 @import "@fontsource-variable/inter";
 @import "@fontsource-variable/newsreader";
+@import "@fontsource-variable/fraunces/opsz.css";
+@import "@fontsource-variable/fraunces/opsz-italic.css";
 
 /* 1 + 2. Design tokens ---------------------------------------------------- */
 :root {
   /* Type */
   --font-sans: "Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-serif: "Newsreader Variable", Georgia, "Times New Roman", serif;
+  --font-display: "Fraunces Variable", Georgia, "Times New Roman", serif;
   --font-mono: ui-monospace, "SF Mono", "Menlo", "Consolas", monospace;
 
   --text-sm: 0.875rem;
@@ -46,32 +55,45 @@
   --radius: 0.5rem;
   --radius-sm: 0.3rem;
 
-  /* Light theme (default) */
-  --bg: #faf8f3;
-  --surface: #ffffff;
-  --ink: #1f1b16;
-  --ink-soft: #4a443b;
-  --muted: #8a8275;
-  --border: #e7e1d5;
-  --accent: #b64a1f;         /* terracotta */
-  --accent-strong: #97370f;
-  --accent-wash: #f4e7de;
-  --code-bg: #f3efe6;
-  --selection: #f7d9c6;
+  /* Section-identity fills — theme-constant: type sits on them, so the
+     true hexes work everywhere (white on red/grape/emerald, prussian on
+     orange). Used by the active nav tab. */
+  --fill-projects: #fba700;
+  --fill-writing: #d50020;
+  --fill-poetry-a: #994d85;
+  --fill-poetry-b: #7e4e90;
+  --fill-music: #0d5f4e;
+
+  /* Light theme — "Morning Edition" (default) */
+  --bg: #f7f4ea;
+  --surface: #fdfcf7;
+  --ink: #0b2652;            /* prussian is the ink itself */
+  --ink-soft: #33456b;
+  --muted: #54627f;
+  --border: #ded9c8;
+  --accent: #8a5c00;         /* text-safe amber — orange's daylight voice (5.3:1) */
+  --accent-strong: #7d5300;
+  --accent-wash: #faedcd;
+  --mark: #fba700;           /* pure orange: highlighter marks, rules, fills */
+  --brand: #0b2652;
+  --code-bg: #f1ecdc;
+  --selection: #ffe3a3;
 }
 
 :root[data-theme="dark"] {
-  --bg: #16130f;
-  --surface: #1e1a15;
-  --ink: #ece5d8;
-  --ink-soft: #c3bbab;
-  --muted: #8f8577;
-  --border: #322c23;
-  --accent: #e8814f;         /* warmer/brighter clay for dark bg */
-  --accent-strong: #f2a075;
-  --accent-wash: #2a2018;
-  --code-bg: #221d17;
-  --selection: #4a3325;
+  --bg: #0b2652;             /* prussian becomes the atmosphere */
+  --surface: #102e60;
+  --ink: #e9e6da;
+  --ink-soft: #c6cede;
+  --muted: #8fa0c2;
+  --border: #27437a;
+  --accent: #fba700;         /* orange sings on prussian (7.5:1) */
+  --accent-strong: #ffc14d;
+  --accent-wash: #16376e;
+  --mark: #fba700;
+  --brand: #fba700;
+  --code-bg: #113067;
+  --selection: #3d548c;
 }
 
 /* Respect OS preference on first load only if the visitor hasn't chosen.
@@ -79,17 +101,19 @@
    is the no-JS fallback. */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
-    --bg: #16130f;
-    --surface: #1e1a15;
-    --ink: #ece5d8;
-    --ink-soft: #c3bbab;
-    --muted: #8f8577;
-    --border: #322c23;
-    --accent: #e8814f;
-    --accent-strong: #f2a075;
-    --accent-wash: #2a2018;
-    --code-bg: #221d17;
-    --selection: #4a3325;
+    --bg: #0b2652;
+    --surface: #102e60;
+    --ink: #e9e6da;
+    --ink-soft: #c6cede;
+    --muted: #8fa0c2;
+    --border: #27437a;
+    --accent: #fba700;
+    --accent-strong: #ffc14d;
+    --accent-wash: #16376e;
+    --mark: #fba700;
+    --brand: #fba700;
+    --code-bg: #113067;
+    --selection: #3d548c;
   }
 }
 
@@ -131,10 +155,10 @@ body {
 }
 
 h1, h2, h3, h4 {
-  font-family: var(--font-sans);
-  font-weight: 650;
-  line-height: 1.2;
-  letter-spacing: -0.015em;
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
   color: var(--ink);
   margin: 0 0 var(--space-sm);
 }
@@ -195,7 +219,7 @@ pre code {
 blockquote {
   margin: var(--space-md) 0;
   padding-left: var(--space-md);
-  border-left: 3px solid var(--accent);
+  border-left: 3px solid var(--mark);
   color: var(--ink-soft);
   font-style: italic;
 }
@@ -232,7 +256,7 @@ main {
   color: var(--ink-soft);
 }
 .prose h1, .prose h2, .prose h3, .prose h4 {
-  font-family: var(--font-sans);
+  font-family: var(--font-display);
   color: var(--ink);
   margin-top: var(--space-lg);
 }
@@ -341,7 +365,7 @@ main {
   left: -999px;
   top: 0;
   background: var(--accent);
-  color: #fff;
+  color: var(--bg); /* orange bg needs dark type in dark mode; amber takes cream in light */
   padding: var(--space-xs) var(--space-md);
   z-index: 100;
   border-radius: 0 0 var(--radius) 0;

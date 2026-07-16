@@ -19,6 +19,7 @@ const isActive = (href: string) =>
         NAV.map((item) => (
           <a
             href={item.href}
+            data-section={item.href.replace("/", "")}
             class:list={["nav__link", { "is-active": isActive(item.href) }]}
             aria-current={isActive(item.href) ? "page" : undefined}
           >
@@ -48,36 +49,62 @@ const isActive = (href: string) =>
     padding-block: var(--space-sm);
   }
   .brand {
-    font-weight: 700;
-    font-size: var(--text-lg);
-    letter-spacing: -0.02em;
-    color: var(--ink);
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 600;
+    font-size: var(--text-xl);
+    letter-spacing: -0.01em;
+    color: var(--brand);
     text-decoration: none;
     margin-right: auto;
   }
-  .brand:hover { color: var(--accent); }
+  .brand:hover { color: var(--accent-strong); }
 
+  /* Links stretch to the full header height so the active tab's fill
+     can run from the top of the row down through the header's bottom
+     padding and meet the border — a true tab seated on the line. */
   .nav {
     display: flex;
     flex-wrap: wrap;
     gap: var(--space-xs);
+    align-self: stretch;
+    align-items: stretch;
   }
+  /* The active section is a square filled tab in its identity color;
+     everything else stays quiet — no hover treatment. Color is never
+     the only cue: active links also gain weight and carry aria-current.
+     Sections without a color fall back to orange. */
   .nav__link {
+    display: inline-flex;
+    align-items: center;
     color: var(--ink-soft);
     text-decoration: none;
     font-size: var(--text-sm);
     font-weight: 500;
-    padding: 0.35rem 0.6rem;
-    border-radius: var(--radius-sm);
-    transition: color 0.15s ease, background-color 0.15s ease;
+    padding: 0 0.7rem;
   }
-  .nav__link:hover {
-    color: var(--accent);
-    background: var(--accent-wash);
-  }
+  /* Orange is both the projects fill and the fallback for uncolored
+     sections; it takes prussian type — orange can't carry white.
+     The bottom padding + negative margin extend the fill to the
+     header border while the text stays centered on the row. */
   .nav__link.is-active {
-    color: var(--accent-strong);
-    background: var(--accent-wash);
+    font-weight: 650;
+    color: #0b2652;
+    background: var(--fill-projects);
+    padding-bottom: var(--space-sm);
+    margin-bottom: calc(-1 * var(--space-sm));
+  }
+  .nav__link[data-section="writing"].is-active {
+    color: #ffffff;
+    background: var(--fill-writing);
+  }
+  .nav__link[data-section="poetry"].is-active {
+    color: #ffffff;
+    background: linear-gradient(135deg, var(--fill-poetry-a), var(--fill-poetry-b));
+  }
+  .nav__link[data-section="music"].is-active {
+    color: #ffffff;
+    background: var(--fill-music);
   }
 
   /* On narrow screens the nav wraps under the brand row. */
