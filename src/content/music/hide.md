@@ -22,14 +22,14 @@ credits: |-
 
   album cover by cryptworm  (instagram.com/cryptworm/).
 reviews:
-  - name: "comaunite"
-    url: "https://bandcamp.com/comaunite"
-    text: "Unbelievably epic doom record! So glad I've stumbled upon this album. The tones, the vox, the interludes - everything just fucking top notch. I salute you, Fleshy peoples!"
-    favTrack: "Grim Baptist"
   - name: "Steve Rodger"
     url: "https://bandcamp.com/steverodger"
     text: "Has that 70's Dennis Wheatley film soundtrack quality. Flesh of The Stars throw down a blood splattered black velvet glove to the competition with their debut album..."
     favTrack: "Through The Drain"
+  - name: "comaunite"
+    url: "https://bandcamp.com/comaunite"
+    text: "Unbelievably epic doom record! So glad I've stumbled upon this album. The tones, the vox, the interludes - everything just fucking top notch. I salute you, Fleshy peoples!"
+    favTrack: "Grim Baptist"
 ---
 
 > Horror abounds. What dark doom calls to you from beyond the sepulcher's threshold? Descend the steps and meet your end.
