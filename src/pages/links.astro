@@ -1,0 +1,160 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+// A blogroll / links page — corners of the web worth keeping. Edit the arrays;
+// the layout derives each row's host label from the URL. Entries without an
+// `href` render as quiet plain text (a name worth listing, link still to come).
+interface Link {
+  name: string;
+  href?: string;
+}
+
+// Choice cuts — mostly DIY synth/effects lore, a few personal corners, an RPG.
+const links: Link[] = [
+  { name: "Alan & Jenny's Glass & Fun Music", href: "https://web.archive.org/web/20020611194818/http://www.glass-artist.co.uk/index.html" },
+  { name: "Eddy Bergman's DIY Modular Synth Site", href: "https://www.eddybergman.com/" },
+  { name: "Noahw.org", href: "http://noahw.org" },
+  { name: "Chris Borge's Tool Prints", href: "https://www.printables.com/@ChrisBorge" },
+  { name: "Alan Pollack's Notes on The Beatles", href: "https://www.icce.rug.nl/~soundscapes/DATABASES/AWP/awp-notes_on.shtml" },
+  { name: "King Of Gear", href: "https://thekingofgear.com/" },
+  { name: "RunoffGroove", href: "https://www.runoffgroove.com/" },
+  { name: "Homewrecker", href: "https://www.home-wrecker.com/" },
+  { name: "Tim Escobedo (FolkUrban)", href: "https://web.archive.org/web/20090212155852/http://folkurban.com/Site/Home-1.html" },
+  { name: "Tiago Charters", href: "https://nexp.pt/about.html" },
+  { name: "Effectronics", href: "https://web.archive.org/web/20020610082939/http://www.geocities.com/CollegePark/Library/1355/" },
+  { name: "Everest Pipkin", href: "https://everest-pipkin.com/" },
+  { name: "Julius O. Smith's Guide To Digital Synthesis", href: "https://ccrma.stanford.edu/~jos/swgt/" },
+  { name: "Computer Music Journal", href: "https://www.computermusicjournal.org/index.html" },
+  { name: "SoftSynth's Resource Links", href: "https://www.softsynth.com/links/languages.php" },
+  { name: "Softtouch Relay Bypass — MAS Effects", href: "https://mas-effects.com/relay.pdf" },
+  { name: "Kassutronics — Dual Slope Generator (Maths precursor)", href: "https://kassu2000.blogspot.com/2020/10/slope.html" },
+  { name: "Serge Dual Slope Generator — DIYSynthWiki", href: "https://sdiy.info/wiki/CGS_Serge_dual_universal_slope_generator" },
+  { name: "Wanderhome RPG", href: "https://possumcreekgames.com/products/wanderhome-pdf" },
+  { name: "HAGIWO — DIY Modular", href: "https://note.com/solder_state/n/n54e016f19c94" },
+  { name: "GeoFex — The Technology of the Tube Screamer", href: "http://www.geofex.com/Article_Folders/TStech/tsxfram.htm" },
+  { name: "DIYStompboxes — Schematics", href: "https://www.diystompboxes.com/pedals/schematics.html" },
+  { name: "Look Mum No Computer", href: "https://www.lookmumnocomputer.com/" },
+  { name: "EMI Archive — Internet Archive", href: "https://archive.org/details/emi_archive/0-START-HERE/" },
+];
+
+// Chicago acts & labels worth a listen. Some await a link.
+const chicagoMusic: Link[] = [
+  { name: "Arthhur", href: "https://arthhur.bandcamp.com" },
+  { name: "BigBluestem", href: "https://bigbluestem.bandcamp.com" },
+  { name: "mfox", href: "https://mfox.bandcamp.com" },
+  { name: "Coventry", href: "https://coventry.bandcamp.com" },
+  { name: "Flesh Of The Stars", href: "https://fleshofthestars.bandcamp.com" },
+  { name: "Silos Choice", href: "https://siloschoice.bandcamp.com" },
+  { name: "Upstairs", href: "https://upstairsuk.bandcamp.com" },
+  { name: "Prathloons", href: "https://prathloons.bandcamp.com" },
+  { name: "Jetsetter", href: "https://jetsetter.bandcamp.com" },
+  { name: "International Anthem", href: "https://intlanthem.com" },
+  { name: "Andrew C.S.", href: "https://andrewcs.bandcamp.com" },
+];
+
+// A short, readable host label ("web.archive.org", "eddybergman.com").
+const host = (href?: string) => {
+  if (!href) return undefined;
+  try {
+    return new URL(href).hostname.replace(/^www\./, "");
+  } catch {
+    return undefined;
+  }
+};
+---
+
+<BaseLayout
+  title="Links"
+  description="A blogroll — corners of the web worth keeping. DIY synth and effects lore, personal sites, and Chicago music."
+  wide
+>
+  <div class="page-head">
+    <h1>Links</h1>
+    <p>The internet is bigger and better than social media. Enjoy some choice cuts.</p>
+  </div>
+
+  <ul class="links">
+    {
+      links.map((l) => (
+        <li class="link">
+          {l.href ? (
+            <a href={l.href} target="_blank" rel="noopener" class="link__name">
+              {l.name}
+            </a>
+          ) : (
+            <span class="link__name link__name--static">{l.name}</span>
+          )}
+          {host(l.href) && <span class="link__host">{host(l.href)}</span>}
+        </li>
+      ))
+    }
+  </ul>
+
+  <section class="section">
+    <h2 class="section__title">Chicago music</h2>
+    <ul class="links">
+      {
+        chicagoMusic.map((l) => (
+          <li class="link">
+            {l.href ? (
+              <a href={l.href} target="_blank" rel="noopener" class="link__name">
+                {l.name}
+              </a>
+            ) : (
+              <span class="link__name link__name--static">{l.name}</span>
+            )}
+            {l.note && <span class="link__note">{l.note}</span>}
+            {host(l.href) && <span class="link__host">{host(l.href)}</span>}
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</BaseLayout>
+
+<style>
+  .links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .link {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-sm);
+    padding: var(--space-sm) 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .link:last-child { border-bottom: none; }
+
+  .link__name {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: var(--text-lg);
+    color: var(--ink);
+    text-decoration: none;
+  }
+  a.link__name:hover { color: var(--accent); }
+  /* Entries still waiting on a URL — present, but visibly not clickable. */
+  .link__name--static { color: var(--muted); }
+
+  .link__host {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    color: var(--muted);
+    margin-left: auto;
+    white-space: nowrap;
+    text-align: right;
+  }
+
+  .section { margin-top: var(--space-xl); }
+  .section__title {
+    font-family: var(--font-sans);
+    font-weight: 700;
+    font-size: var(--text-sm);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: var(--space-sm);
+  }
+</style>

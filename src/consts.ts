@@ -44,6 +44,7 @@ export const NAV: { label: string; href: string }[] = [
   { label: "Writing", href: "/writing" },
   { label: "Poetry", href: "/poetry" },
   { label: "Music", href: "/music" },
+  { label: "Links", href: "/links" },
   { label: "Experience", href: "/experience" },
   { label: "About", href: "/about" },
 ];

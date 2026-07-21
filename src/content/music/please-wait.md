@@ -1,5 +1,5 @@
 ---
-title: Please. Wait. -
+title: Please. Wait.
 artist: mfox
 year: "2024"
 genre:
