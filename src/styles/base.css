@@ -464,6 +464,13 @@
   white-space: nowrap;
 }
 
+/* Cards view: projects without a link don't get the hover lift. */
+.card--static:hover {
+  border-color: var(--border);
+  transform: none;
+  cursor: default;
+}
+
 .base__empty {
   color: var(--muted);
   font-style: italic;

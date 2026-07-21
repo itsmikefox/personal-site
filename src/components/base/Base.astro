@@ -10,6 +10,7 @@ import "../../styles/base.css";
 import GalleryView from "./GalleryView.astro";
 import LedgerView from "./LedgerView.astro";
 import TableView from "./TableView.astro";
+import CardsView from "./CardsView.astro";
 import type { BaseConfig } from "../../lib/bases";
 
 type Props = BaseConfig;
@@ -20,13 +21,15 @@ const hasCover = items.some((it) => it.cover);
 const viewLabel = (v: string): string =>
   v === "gallery" ? "Gallery" : v === "ledger" ? "Ledger" : v === "table" ? "Table" : "Cards";
 
-// Small inline icons (set:html) — Gallery = grid, Ledger = lines, Table = grid+rule.
+// Small inline icons (set:html) — Gallery = grid, Ledger = lines, Table =
+// grid+rule, Cards = two stacked panels.
 const viewIcon = (v: string): string => {
   const g =
     '<rect x="1" y="1" width="6" height="6" rx="1"/><rect x="9" y="1" width="6" height="6" rx="1"/><rect x="1" y="9" width="6" height="6" rx="1"/><rect x="9" y="9" width="6" height="6" rx="1"/>';
   const l = '<line x1="2" y1="4" x2="14" y2="4"/><line x1="2" y1="8" x2="14" y2="8"/><line x1="2" y1="12" x2="14" y2="12"/>';
   const t = '<rect x="1" y="2" width="14" height="12" rx="1"/><line x1="1" y1="6" x2="15" y2="6"/><line x1="6" y1="6" x2="6" y2="14"/>';
-  const inner = v === "gallery" ? g : v === "ledger" ? l : t;
+  const c = '<rect x="1" y="2" width="14" height="5" rx="1"/><rect x="1" y="9" width="14" height="5" rx="1"/>';
+  const inner = v === "gallery" ? g : v === "ledger" ? l : v === "cards" ? c : t;
   return `<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">${inner}</svg>`;
 };
 ---
@@ -90,6 +93,7 @@ const viewIcon = (v: string): string => {
         {v === "gallery" && <GalleryView items={items} />}
         {v === "ledger" && <LedgerView items={items} kind={kind} />}
         {v === "table" && <TableView items={items} columns={columns} hasCover={hasCover} />}
+        {v === "cards" && <CardsView items={items} />}
       </div>
     ))
   }

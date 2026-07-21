@@ -1,7 +1,7 @@
 ---
 // Table view — sortable columns derived from frontmatter. Headers carry
 // data-sort-key; the client reorders rows by each item's data-s-<key>.
-import { itemAttrs, type BaseItem, type Column } from "../../lib/bases";
+import { itemAttrs, linkAttrs, type BaseItem, type Column } from "../../lib/bases";
 
 interface Props {
   items: BaseItem[];
@@ -33,12 +33,17 @@ const cell = (it: BaseItem, key: string): unknown => (it as Record<string, unkno
           <tr {...itemAttrs(it)}>
             {columns.map((c) => {
               if (c.type === "title") {
+                const la = linkAttrs(it);
                 return (
                   <td class="bt-titlecell">
                     {hasCover && it.cover && (
                       <img class="bt-thumb" src={it.cover} alt="" loading="lazy" width="36" height="36" />
                     )}
-                    <a class="bt-title" href={it.url}>{it.title}</a>
+                    {la ? (
+                      <a class="bt-title" {...la}>{it.title}{it.external ? " ↗" : ""}</a>
+                    ) : (
+                      <span class="bt-title">{it.title}</span>
+                    )}
                   </td>
                 );
               }

@@ -26,7 +26,9 @@ export interface Facet {
 }
 
 export interface BaseItem {
-  url: string;
+  // Internal page URL, external link (projects), or undefined (nothing to link to).
+  url?: string;
+  external?: boolean;
   title: string;
   // Display fields (a view reads whichever it needs)
   cover?: string;
@@ -77,12 +79,20 @@ export function itemAttrs(it: BaseItem): Record<string, string | boolean> {
   return a;
 }
 
+/** Anchor attributes for an item, or null when it has nothing to link to (so
+ *  the caller renders a plain element instead of an <a>). External links open
+ *  in a new tab. */
+export function linkAttrs(it: BaseItem): Record<string, string> | null {
+  if (!it.url) return null;
+  return it.external ? { href: it.url, target: "_blank", rel: "noopener" } : { href: it.url };
+}
+
 // Build a facet (with per-value counts) from the items' data attributes.
 function buildFacet(
   items: BaseItem[],
   key: string,
   label: string,
-  order: "alpha" | "decade" = "alpha"
+  order: "alpha" | "num" = "alpha"
 ): Facet {
   const counts = new Map<string, number>();
   for (const it of items) {
@@ -91,9 +101,9 @@ function buildFacet(
       counts.set(v, (counts.get(v) ?? 0) + 1);
     }
   }
-  let values = [...counts.entries()].map(([value, count]) => ({ value, count }));
-  if (order === "decade") {
-    // Newest decade first; "Undated" last.
+  const values = [...counts.entries()].map(([value, count]) => ({ value, count }));
+  if (order === "num") {
+    // Highest number first (decades, years); non-numeric ("Undated") last.
     values.sort((a, b) => {
       if (a.value === "Undated") return 1;
       if (b.value === "Undated") return -1;
@@ -162,7 +172,7 @@ export function buildMusic(entries: CollectionEntry<"music">[]): BaseConfig {
     facets: [
       buildFacet(items, "genre", "Genre"),
       buildFacet(items, "artist", "Artist"),
-      buildFacet(items, "decade", "Decade", "decade"),
+      buildFacet(items, "decade", "Decade", "num"),
     ],
     columns: [
       { key: "title", label: "Title", type: "title" },
@@ -231,5 +241,112 @@ export function buildPoetry(entries: CollectionEntry<"poetry">[]): BaseConfig {
     ],
     views: ["ledger", "table"],
     defaultView: "ledger",
+  };
+}
+
+// Frontmatter dates parse as UTC midnight — format in UTC so they don't slip
+// back a day in western timezones.
+const fmtDate = (d: Date): string =>
+  d.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" });
+
+// ── Writing ──────────────────────────────────────────────────────────────────
+// Text-forward like poetry: Ledger index (leading with the description) by
+// default, plus a Table. Filterable by tag. Newest pubDate first.
+export function buildWriting(entries: CollectionEntry<"writing">[]): BaseConfig {
+  const sorted = [...entries].sort(
+    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+  );
+
+  const items: BaseItem[] = sorted.map((e) => {
+    const d = e.data;
+    const year = d.pubDate.getUTCFullYear();
+    const tags = d.tags ?? [];
+    return {
+      url: `/writing/${e.id}/`,
+      title: d.title,
+      desc: d.description,
+      date: fmtDate(d.pubDate),
+      year,
+      tags,
+      attrs: { tags: tags.join("|"), year: String(year), decade: decadeLabel(year) },
+      search: [d.title, d.description ?? "", tags.join(" "), year]
+        .filter(Boolean)
+        .join(" ")
+        .toLowerCase(),
+      sort: {
+        title: d.title.toLowerCase(),
+        date: d.pubDate.valueOf(),
+        year,
+        tags: tags.join(", ").toLowerCase(),
+      },
+    };
+  });
+
+  return {
+    kind: "writing",
+    items,
+    facets: [buildFacet(items, "tags", "Tag")],
+    columns: [
+      { key: "title", label: "Title", type: "title" },
+      { key: "date", label: "Published", type: "text" },
+      { key: "tags", label: "Tags", type: "tags" },
+    ],
+    views: ["ledger", "table"],
+    defaultView: "ledger",
+  };
+}
+
+// ── Projects ─────────────────────────────────────────────────────────────────
+// Metadata records: a sortable Table by default, plus a card grid. Each item
+// links out to its `href` (new tab) or, lacking one, renders as a static card.
+// Filterable by tag and year. Newest first (precise date beats a bare year).
+export function buildProjects(entries: CollectionEntry<"projects">[]): BaseConfig {
+  const when = (e: CollectionEntry<"projects">) =>
+    e.data.date?.valueOf() ??
+    (e.data.year ? Date.UTC(Number(e.data.year.slice(0, 4)), 11, 31) : -Infinity);
+
+  const sorted = [...entries].sort(
+    (a, b) => when(b) - when(a) || a.data.title.localeCompare(b.data.title)
+  );
+
+  const items: BaseItem[] = sorted.map((e) => {
+    const d = e.data;
+    const year = d.year
+      ? Number(d.year.slice(0, 4))
+      : d.date
+        ? d.date.getUTCFullYear()
+        : null;
+    const tags = d.tags ?? [];
+    return {
+      url: d.href,
+      external: !!d.href,
+      title: d.title,
+      desc: d.description,
+      year,
+      tags,
+      attrs: { tags: tags.join("|"), year: year != null ? String(year) : "" },
+      search: [d.title, d.description, tags.join(" "), year ?? ""]
+        .filter(Boolean)
+        .join(" ")
+        .toLowerCase(),
+      sort: {
+        title: d.title.toLowerCase(),
+        year: year ?? NO_YEAR,
+        tags: tags.join(", ").toLowerCase(),
+      },
+    };
+  });
+
+  return {
+    kind: "projects",
+    items,
+    facets: [buildFacet(items, "tags", "Tag"), buildFacet(items, "year", "Year", "num")],
+    columns: [
+      { key: "title", label: "Title", type: "title" },
+      { key: "year", label: "Year", type: "num" },
+      { key: "tags", label: "Tags", type: "tags" },
+    ],
+    views: ["table", "cards"],
+    defaultView: "table",
   };
 }

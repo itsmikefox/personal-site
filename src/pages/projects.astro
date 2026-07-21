@@ -1,16 +1,13 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Base from "../components/base/Base.astro";
 import { getCollection } from "astro:content";
+import { buildProjects } from "../lib/bases";
 
-// Newest first — a precise `date` beats a bare `year` (treated as Dec 31 of
-// that year); undated entries sort last, then alphabetical.
-const all = await getCollection("projects", ({ data }) => !data.draft);
-const when = (p: (typeof all)[number]) =>
-  p.data.date?.valueOf() ??
-  (p.data.year ? Date.UTC(Number(p.data.year.slice(0, 4)), 11, 31) : -Infinity);
-const projects = all.sort(
-  (a, b) => when(b) - when(a) || a.data.title.localeCompare(b.data.title)
-);
+// A sortable Table (default) plus a card grid. Filterable by tag and year;
+// each entry links out to its href.
+const entries = await getCollection("projects", ({ data }) => !data.draft);
+const config = buildProjects(entries);
 ---
 
 <BaseLayout title="Projects" wide>
@@ -19,41 +16,5 @@ const projects = all.sort(
     <p>Things I've designed, built, or helped ship.</p>
   </div>
 
-  <div class="grid">
-    {
-      projects.map(({ data: p }) => {
-        // The year chip: explicit `year` wins, else derived from `date`.
-        const year = p.year ?? (p.date && String(p.date.getUTCFullYear()));
-        const inner = (
-          <>
-            <h3>{p.title}{p.href && " →"}</h3>
-            <p>{p.description}</p>
-            {(p.tags.length > 0 || year) && (
-              <div class="tag-row">
-                {year && <span class="tag">{year}</span>}
-                {p.tags.map((t) => (
-                  <span class="tag">{t}</span>
-                ))}
-              </div>
-            )}
-          </>
-        );
-        return p.href ? (
-          <a class="card" href={p.href} target="_blank" rel="noopener">
-            {inner}
-          </a>
-        ) : (
-          <div class="card card--static">{inner}</div>
-        );
-      })
-    }
-  </div>
+  <Base {...config} />
 </BaseLayout>
-
-<style>
-  .card--static:hover {
-    border-color: var(--border);
-    transform: none;
-    cursor: default;
-  }
-</style>

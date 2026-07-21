@@ -1,0 +1,36 @@
+---
+// Cards view — a grid of metadata cards (projects). Reuses the global
+// .grid/.card styling. Items link out to their href (new tab); those without
+// one render as static cards.
+import { itemAttrs, linkAttrs, type BaseItem } from "../../lib/bases";
+
+interface Props {
+  items: BaseItem[];
+}
+const { items } = Astro.props;
+---
+
+<div class="grid">
+  {
+    items.map((it) => {
+      const la = linkAttrs(it);
+      const inner = (
+        <>
+          <h3>{it.title}{it.external ? " →" : ""}</h3>
+          {it.desc && <p>{it.desc}</p>}
+          {((it.tags && it.tags.length > 0) || it.year != null) && (
+            <div class="tag-row">
+              {it.year != null && <span class="tag">{it.year}</span>}
+              {(it.tags ?? []).map((t) => <span class="tag">{t}</span>)}
+            </div>
+          )}
+        </>
+      );
+      return la ? (
+        <a class="card" {...la} {...itemAttrs(it)}>{inner}</a>
+      ) : (
+        <div class="card card--static" {...itemAttrs(it)}>{inner}</div>
+      );
+    })
+  }
+</div>

@@ -1,14 +1,13 @@
 ---
-import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import Base from "../../components/base/Base.astro";
+import { getCollection } from "astro:content";
+import { buildWriting } from "../../lib/bases";
 
-const posts = (await getCollection("writing", ({ data }) => !data.draft)).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-);
-
-const fmt = (d: Date) =>
-  // timeZone: "UTC" keeps frontmatter dates from slipping back a day locally.
-  d.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" });
+// Text-forward Base: a Ledger index (default) leading with each post's
+// description, plus a sortable Table. Filterable by tag.
+const entries = await getCollection("writing", ({ data }) => !data.draft);
+const config = buildWriting(entries);
 ---
 
 <BaseLayout title="Writing" description="Essays, notes, and technical writing.">
@@ -17,25 +16,5 @@ const fmt = (d: Date) =>
     <p>Essays, notes, and the occasional technical deep-dive.</p>
   </div>
 
-  {
-    posts.length === 0 ? (
-      <p class="muted">
-        No posts yet. Drop a Markdown file in <code>src/content/writing/</code> to begin.
-      </p>
-    ) : (
-      <ul class="entry-list">
-        {posts.map((post) => (
-          <li class="entry">
-            <a href={`/writing/${post.id}/`}>{post.data.title}</a>
-            <div class="entry__meta">{fmt(post.data.pubDate)}</div>
-            {post.data.description && <p class="entry__excerpt">{post.data.description}</p>}
-          </li>
-        ))}
-      </ul>
-    )
-  }
+  <Base {...config} />
 </BaseLayout>
-
-<style>
-  .muted { color: var(--muted); }
-</style>
