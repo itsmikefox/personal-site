@@ -2,39 +2,149 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 // A lightweight résumé. Edit the arrays; the layout takes care of the rest.
-interface Role {
+interface SubRole {
   role: string;
   org: string;
   period: string;
   points: string[];
 }
 
+interface Role {
+  role: string;
+  org: string;
+  period: string;
+  note?: string;
+  points?: string[];
+  subRoles?: SubRole[];
+}
+
+const summary =
+  "Analytics-driven marketing and advertising leader with 10+ years across digital media, paid search/SEM, and revenue operations. I've managed $2M+ in annual PPC/SEM spend and built SQL-based reporting and BI frameworks that turn campaign and revenue data into decisions — email engagement 3–4× industry benchmarks, a 25% lift in lead quality, and a 680% improvement in open rates — pairing hands-on execution with cross-functional leadership across sales, marketing, and finance.";
+
 const roles: Role[] = [
   {
-    role: "Your Role",
-    org: "Company",
-    period: "2022 — Present",
+    role: "Technical Lead — Salesforce & Revenue Operations",
+    org: "PrintNinja",
+    period: "2024 — Present",
     points: [
-      "What you owned and shipped. Lead with impact, not tasks.",
-      "A second bullet with a concrete result or number if you have one.",
+      "Migrated 350,000+ records spanning 10 years of company data and established data governance standards, creating a clean foundation for reporting and analytics.",
+      "Built a customer portal delivering real-time pricing, process tracking, and shipping updates — improving lead capture for high-intent prospects.",
+      "Co-designed a CPQ pricing engine with 700+ pricing variables across 13 product categories; reduced mean quote-generation time from 35 to 10 minutes (71%).",
+      "Led a complete Salesforce org rebuild supporting $6M annual revenue, consolidating 250+ legacy automations into 5 Apex triggers and 35 workflows (85% less technical debt).",
+      "Delivered a tech-stack overhaul saving $45K in year one, with a roadmap to eliminate an additional $150K in redundant dependencies.",
+      "Coordinated cross-functional execution across sales, marketing, operations, CS, and finance; managed 1 direct report and 3 external vendor relationships.",
     ],
   },
   {
-    role: "Earlier Role",
-    org: "Previous Company",
-    period: "2019 — 2022",
-    points: ["Replace these placeholders with your real history."],
+    role: "Business Intelligence Analyst",
+    org: "Canon USA",
+    period: "2022 — 2024",
+    points: [
+      "Managed complex datasets using SQL to extract actionable insights for strategic decision-making.",
+      "Developed financial-analysis frameworks and automated reporting systems to track KPIs and business performance.",
+      "Implemented Salesforce solutions to improve sales tracking and customer relationship management.",
+      "Collaborated with cross-functional teams to align data solutions with business objectives.",
+    ],
+  },
+  {
+    role: "Digital Marketing & Marketing Automation",
+    org: "Chicago, IL",
+    period: "2016 — 2022",
+    note: "Progressive roles, recruited by the same director across three organizations.",
+    subRoles: [
+      {
+        role: "Marketing Automation Specialist",
+        org: "SurePayroll / Paychex",
+        period: "2018 — 2021",
+        points: [
+          "Managed $2M+ in annual PPC/SEM advertising spend; improved lead-quality scores by 25% through refined targeting.",
+          "Built complex Marketo automation workflows, consistently achieving 40–45% email open rates and 3–4% conversion rates.",
+        ],
+      },
+      {
+        role: "Digital Marketing Strategist",
+        org: "TBI Inc.",
+        period: "2021 — 2022",
+        points: [
+          "Rebuilt email strategy and database segmentation, increasing open rates from 5% to 39% (680% improvement).",
+          "Partnered with BI teams to resolve database-structure issues; developed sales-funnel and lead-routing workflows.",
+        ],
+      },
+      {
+        role: "Digital Marketing & Communications Specialist",
+        org: "RevenueWell",
+        period: "2016 — 2018",
+        points: [
+          "Managed Pardot automation for sales development; built an automated partner-onboarding process from scratch.",
+          "Co-created strategic webinar programs and organized a monthly industry-expert series.",
+        ],
+      },
+    ],
   },
 ];
 
-const skills = ["TypeScript", "Salesforce", "Next.js", "Design", "SQL"];
+const competencies = [
+  {
+    label: "Digital Advertising & Media",
+    items: [
+      "PPC/SEM (Google Ads)",
+      "Campaign optimization",
+      "Conversion rate optimization",
+      "A/B testing",
+      "SEO",
+    ],
+  },
+  {
+    label: "Analytics & BI",
+    items: [
+      "SQL",
+      "Data migration & ETL",
+      "Reporting & dashboards",
+      "Business intelligence",
+      "Financial analysis",
+      "KPI tracking",
+    ],
+  },
+  {
+    label: "Marketing Technology",
+    items: [
+      "Salesforce (Sales, Service, CPQ, Revenue Cloud)",
+      "Marketo",
+      "Pardot",
+      "HubSpot",
+    ],
+  },
+  {
+    label: "Development & Integrations",
+    items: [
+      "JavaScript",
+      "PHP",
+      "Apex",
+      "Flows",
+      "API integrations",
+      "HTML/CSS",
+      "WordPress",
+    ],
+  },
+];
+
+const certifications = [
+  "Google Ads",
+  "Google Analytics",
+  "Microsoft (Bing) Ads",
+];
 ---
 
-<BaseLayout title="Experience" description="Professional background.">
+<BaseLayout
+  title="Experience"
+  description="Marketing analytics & digital advertising leader — 10+ years across digital media, paid search, and revenue operations."
+>
   <div class="page-head">
     <h1>Experience</h1>
-    <p>What I've worked on and where. <a href="/about">More about me →</a></p>
+    <p>Marketing analytics & digital advertising leader, Chicago IL. <a href="/about">More about me →</a></p>
   </div>
+
+  <p class="summary">{summary}</p>
 
   <ol class="timeline">
     {
@@ -45,25 +155,89 @@ const skills = ["TypeScript", "Salesforce", "Next.js", "Design", "SQL"];
             <span class="role__period">{r.period}</span>
           </div>
           <div class="role__org">{r.org}</div>
-          <ul class="role__points">
-            {r.points.map((p) => (
-              <li>{p}</li>
-            ))}
-          </ul>
+          {r.note && <p class="role__note">{r.note}</p>}
+          {r.points && (
+            <ul class="role__points">
+              {r.points.map((p) => (
+                <li>{p}</li>
+              ))}
+            </ul>
+          )}
+          {r.subRoles && (
+            <ol class="subroles">
+              {r.subRoles.map((s) => (
+                <li class="subrole">
+                  <div class="role__head">
+                    <h3>{s.role}</h3>
+                    <span class="role__period">{s.period}</span>
+                  </div>
+                  <div class="role__org">{s.org}</div>
+                  <ul class="role__points">
+                    {s.points.map((p) => (
+                      <li>{p}</li>
+                    ))}
+                  </ul>
+                </li>
+              ))}
+            </ol>
+          )}
         </li>
       ))
     }
   </ol>
 
-  <section class="skills">
-    <h2>Skills</h2>
-    <div class="tag-row">
-      {skills.map((s) => <span class="tag">{s}</span>)}
+  <section class="block">
+    <h2>Core competencies</h2>
+    <div class="competencies">
+      {
+        competencies.map((c) => (
+          <div class="competency">
+            <div class="competency__label">{c.label}</div>
+            <div class="tag-row">
+              {c.items.map((i) => (
+                <span class="tag">{i}</span>
+              ))}
+            </div>
+          </div>
+        ))
+      }
     </div>
+  </section>
+
+  <section class="block">
+    <h2>Certifications</h2>
+    <p class="block__body">
+      {certifications.join(" · ")} <span class="muted">(previously certified)</span>
+    </p>
+  </section>
+
+  <section class="block">
+    <h2>Education</h2>
+    <div class="role__head">
+      <h3>B.A., Applied Communications (Digital Media focus)</h3>
+      <span class="role__period">2011 — 2014</span>
+    </div>
+    <div class="role__org">Kent State University</div>
+  </section>
+
+  <section class="block">
+    <h2>Also</h2>
+    <p class="block__body">
+      Founder of <strong>M.FOX Chicago Audio Fabrication</strong> — I design and build
+      custom audio electronics. Featured recording artist and band manager
+      (Stereogum, Chicago Reader, Bandcamp Daily, Mojo).
+    </p>
   </section>
 </BaseLayout>
 
 <style>
+  .summary {
+    color: var(--ink-soft);
+    font-size: var(--text-lg);
+    line-height: 1.6;
+    margin-bottom: var(--space-xl);
+  }
+
   .timeline { list-style: none; margin: 0; padding: 0; }
   .role {
     padding: var(--space-lg) 0;
@@ -78,11 +252,22 @@ const skills = ["TypeScript", "Salesforce", "Next.js", "Design", "SQL"];
     gap: var(--space-sm);
   }
   .role__head h2 { font-size: var(--text-xl); margin: 0; }
-  .role__period { color: var(--muted); font-size: var(--text-sm); }
+  .role__head h3 { font-size: var(--text-lg); margin: 0; }
+  .role__period {
+    color: var(--muted);
+    font-size: var(--text-sm);
+    white-space: nowrap;
+  }
   .role__org {
     color: var(--accent-strong);
     font-weight: 500;
     margin-top: var(--space-2xs);
+  }
+  .role__note {
+    color: var(--muted);
+    font-size: var(--text-sm);
+    font-style: italic;
+    margin: var(--space-sm) 0 0;
   }
   .role__points {
     margin: var(--space-sm) 0 0;
@@ -90,6 +275,30 @@ const skills = ["TypeScript", "Salesforce", "Next.js", "Design", "SQL"];
     color: var(--ink-soft);
   }
   .role__points li { margin-bottom: var(--space-2xs); }
-  .skills { margin-top: var(--space-xl); }
-  .skills h2 { font-size: var(--text-xl); margin-bottom: var(--space-md); }
+
+  .subroles {
+    list-style: none;
+    margin: var(--space-md) 0 0;
+    padding-left: var(--space-md);
+    border-left: 1px solid var(--border);
+  }
+  .subrole { padding: var(--space-md) 0; }
+  .subrole:first-child { padding-top: var(--space-2xs); }
+  .subrole:last-child { padding-bottom: 0; }
+
+  .block { margin-top: var(--space-xl); }
+  .block h2 { font-size: var(--text-xl); margin-bottom: var(--space-md); }
+  .block__body { color: var(--ink-soft); margin: 0; }
+  .muted { color: var(--muted); }
+
+  .competencies {
+    display: grid;
+    gap: var(--space-md);
+  }
+  .competency__label {
+    color: var(--ink);
+    font-weight: 500;
+    font-size: var(--text-sm);
+    margin-bottom: var(--space-2xs);
+  }
 </style>
