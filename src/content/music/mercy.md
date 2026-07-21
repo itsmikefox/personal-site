@@ -21,6 +21,38 @@ press:
   - outlet: "Invisible Oranges"
     label: "Interview"
     href: "https://www.invisibleoranges.com/flesh-of-the-stars-interview-premiere/"
+credits: |-
+  all songs written by flesh of the stars.
+  ‘mercy’ outro by nick turner aka tyresta  (tyresta.bandcamp.com).
+
+  matt ciani: guitar, vocals, pianos & synthesizers, percussion.
+  nico ciani: drums.
+  sam corman penzel: drums, percussion.
+  luke dahlgren: vocals, synthesizer.
+  mike fox: guitar, vocals, synthesizers.
+  travis marmon: bass, vocals.
+  rachel rustemeyer: vocals.
+
+  recorded by flesh of the stars at the office in evanston, illinois, victory audio wreckers in chicago, illinois, and faith united church of christ in cincinnati, ohio.
+  mixed by matt ciani at victory audio wreckers in chicago, illinois.
+  mastered by brad boatright at audiosiege in portland, oregon.
+
+  thanks to jon massey  (siloschoice.bandcamp.com)  for assistance with piano recording.
+
+  artwork by nico  (www.nicociani.com).
+reviews:
+  - name: "goodjobrammy"
+    url: "https://bandcamp.com/sundaycross"
+    text: "The album that made me realize I like doom metal!"
+    favTrack: "Rites"
+  - name: "pinkytheent"
+    url: "https://bandcamp.com/pinkytheent"
+    text: "This record yearns and aches with sorrow and hope, tenderness and broken-heartedness, that tears you up. This music reaches out to you. I loved the blend of acoustic, electric, and synth swells. I loved how many of the musical phrases ended on an accent beyond where you expected them to, a feeling both marching and…"
+    favTrack: "Rites"
+  - name: "Jody B."
+    url: "https://bandcamp.com/jodyb66"
+    text: "Melancholic, pastoral, ethereal, emotional, progressive and atmospheric elements intertwined with crushing slabs of synthesizer laden doom. It shouldn't work but Flesh of the Stars pulls it off beautifully."
+    favTrack: "Mercy"
 ---
 
 Like a lot of flesh releases, this was heavily inspired by a beloved book. Matt and I had gotten real into [Death In Spring](https://www.openletterbooks.org/products/death-in-spring) by Mercè Rodoreda, [wonderfully translated by Martha Tennent](https://www.youtube.com/watch?v=Ck3R_iZZJx4).^1 That book has some of the most incredible, surreal prose. It's simultaneously very moving and upsetting, which drove a lot of what we wanted to do with this.

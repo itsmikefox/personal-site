@@ -31,6 +31,23 @@ const pressList = z.preprocess(
     )
     .default([])
 );
+// Fan reviews pulled from a release's Bandcamp page ("From listeners").
+// Distinct from `press`: these are listeners' own words, credited by name
+// with a link back to their Bandcamp profile.
+const reviewList = z.preprocess(
+  blank,
+  z
+    .array(
+      z.object({
+        name: z.string(),
+        url: optionalString,
+        text: z.string(),
+        // The reviewer's favorite track, if Bandcamp recorded one.
+        favTrack: optionalString,
+      })
+    )
+    .default([])
+);
 const draftFlag = z.preprocess(blank, z.boolean().default(false));
 const sortOrder = z.preprocess(blank, z.number().default(0));
 // Obsidian stores "2025" as a bare number — accept both and normalize.
@@ -123,6 +140,8 @@ const music = defineCollection({
     credits: optionalString,
     // Press coverage — pull-quotes and links, shown in a "Press" section.
     press: pressList,
+    // Fan reviews from Bandcamp, shown in a "From listeners" section.
+    reviews: reviewList,
     // Tiebreak for same-year/undated releases. Lower numbers sort first.
     order: sortOrder,
     draft: draftFlag,

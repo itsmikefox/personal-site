@@ -6,6 +6,30 @@ genre: ["Doom Metal", "Sludge"]
 cover: "/images/albums/hide.jpg"
 bandcampId: "3292896724"
 bandcamp: "https://fleshofthestars.bandcamp.com/album/hide"
+credits: |-
+  all songs by flesh of the stars.
+  all interludes by collin dall.
+
+  matt ciani: guitar, vocals, piano, wurlitzer, critter and guitari pocket piano, bleep labs nebulophone.
+  nico ciani: drums.
+  collin dall: guitar.
+  mike fox: guitar, vocals.
+  travis marmon: bass, vocals.
+  rachel rustemeyer: satanic poet vocals.
+
+  recorded and mixed by matt ciani and mike fox at the septic jukebox.
+  mastered by brat boatright at audiosiege, portland, or.
+
+  album cover by cryptworm  (instagram.com/cryptworm/).
+reviews:
+  - name: "comaunite"
+    url: "https://bandcamp.com/comaunite"
+    text: "Unbelievably epic doom record! So glad I've stumbled upon this album. The tones, the vox, the interludes - everything just fucking top notch. I salute you, Fleshy peoples!"
+    favTrack: "Grim Baptist"
+  - name: "Steve Rodger"
+    url: "https://bandcamp.com/steverodger"
+    text: "Has that 70's Dennis Wheatley film soundtrack quality. Flesh of The Stars throw down a blood splattered black velvet glove to the competition with their debut album..."
+    favTrack: "Through The Drain"
 ---
 
 > Horror abounds. What dark doom calls to you from beyond the sepulcher's threshold? Descend the steps and meet your end.

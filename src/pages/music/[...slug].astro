@@ -45,16 +45,25 @@ const moreByArtist = d.artist
       )
   : [];
 
-// Press with a quote becomes a schema.org Review for rich results.
-const reviews = d.press
-  .filter((p) => p.quote)
-  .map((p) => ({
+// Both press pull-quotes and fan reviews become schema.org Reviews for
+// rich results — press credited to the outlet, fan reviews to the person.
+const schemaReviews = [
+  ...d.press
+    .filter((p) => p.quote)
+    .map((p) => ({
+      "@type": "Review",
+      reviewBody: p.quote,
+      ...(p.author && { author: { "@type": "Person", name: p.author } }),
+      publisher: { "@type": "Organization", name: p.outlet },
+      url: p.href,
+    })),
+  ...d.reviews.map((r) => ({
     "@type": "Review",
-    reviewBody: p.quote,
-    ...(p.author && { author: { "@type": "Person", name: p.author } }),
-    publisher: { "@type": "Organization", name: p.outlet },
-    url: p.href,
-  }));
+    reviewBody: r.text,
+    author: { "@type": "Person", name: r.name },
+    ...(r.url && { url: r.url }),
+  })),
+];
 
 const pageUrl = new URL(Astro.url.pathname, Astro.site).href;
 const schema = {
@@ -66,7 +75,7 @@ const schema = {
   ...(d.genre.length > 0 && { genre: d.genre.join(", ") }),
   ...(d.cover && { image: new URL(d.cover, Astro.site).href }),
   ...(links.length > 0 && { sameAs: links.map((l) => l.href) }),
-  ...(reviews.length > 0 && { review: reviews }),
+  ...(schemaReviews.length > 0 && { review: schemaReviews }),
   mainEntityOfPage: pageUrl,
 };
 
@@ -161,6 +170,36 @@ const description =
                 </li>
               ))}
             </ul>
+          )}
+        </section>
+      )
+    }
+
+    {
+      d.reviews.length > 0 && (
+        <section class="album__fans">
+          <h2>From listeners</h2>
+          <ul class="fan-list">
+            {d.reviews.map((r) => (
+              <li class="fan">
+                <p class="fan__text">{r.text}</p>
+                <div class="fan__cite">
+                  {r.url ? (
+                    <a href={r.url} target="_blank" rel="noopener">
+                      {r.name}
+                    </a>
+                  ) : (
+                    <span>{r.name}</span>
+                  )}
+                  {r.favTrack && <span class="fan__fav"> · favorite track: {r.favTrack}</span>}
+                </div>
+              </li>
+            ))}
+          </ul>
+          {d.bandcamp && (
+            <a class="fan__source" href={d.bandcamp} target="_blank" rel="noopener">
+              More on Bandcamp →
+            </a>
           )}
         </section>
       )
@@ -293,6 +332,60 @@ const description =
   }
   .press__cite a { color: var(--accent-strong); }
   .press__author { color: var(--muted); }
+
+  /* Fan reviews — warmer and more personal than Press: soft cards
+     rather than accent-barred pull-quotes. */
+  .album__fans {
+    margin-top: var(--space-xl);
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--border);
+  }
+  .album__fans h2 {
+    font-size: var(--text-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+  }
+  .fan-list {
+    list-style: none;
+    padding: 0;
+    margin: var(--space-md) 0 0;
+    display: grid;
+    gap: var(--space-md);
+  }
+  .fan {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: var(--space-md);
+  }
+  .fan__text {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: var(--text-lg);
+    line-height: 1.5;
+    color: var(--ink);
+  }
+  .fan__text::before { content: "“"; }
+  .fan__text::after { content: "”"; }
+  .fan__cite {
+    margin-top: var(--space-sm);
+    font-size: var(--text-sm);
+    color: var(--muted);
+  }
+  .fan__cite a {
+    color: var(--accent-strong);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .fan__cite a:hover { text-decoration: underline; }
+  .fan__fav { color: var(--muted); }
+  .fan__source {
+    display: inline-block;
+    margin-top: var(--space-md);
+    font-size: var(--text-sm);
+    color: var(--accent-strong);
+  }
 
   .album__credits {
     margin-top: var(--space-xl);

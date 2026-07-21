@@ -7,23 +7,20 @@ cover: "/images/albums/lets-go-piss-in-the-lake.jpg"
 bandcampId: "3035346994"
 bandcamp: "https://arthhur.bandcamp.com/album/lets-go-piss-in-the-lake"
 credits: |-
-  dedicated to smudge
   all songs by arthhur
-  arthhur is:
-  matt ciani - drums, group vox, synths, percussion
-  luke dahlgren - bass, group vox, drum synth, percussion
-  mike fox - guitar, lead vox, synths, piano, percussion
+  words by jon massey -  siloschoice.bandcamp.com  (track 1), harliss brockman (track 4)
 
-  w/
-  audrey alger-daniels - strings, lead/group vox
-  nico ciani - percussion
-  joe duran - sax
-  josh jessen - synth
-  noah wood - sax
+  matt ciani - vintage vibe 64, moog minifooger mf delay, mxr chorus
+  luke dalhgren - bass
+  mike fox - guitar, moog grandmother, prophet-6, strymon volante, strymon deco, additional percussion
 
-  mixed by matt ciani at victory audio wreckers in chicago, il
-  mastered by green door studios in glasgow, scotland
-  artwork by jaime zuverza
+  additional synthesis/processing by nick turner -  tyresta.bandcamp.com  (buchla music easel, Zoom Livetrak 12)
+
+  recorded at the office in evanston, il.
+  mixed by mike fox
+  mastered by black knoll studios, NY
+
+  photo by luke dahlgren, edited by mike fox.
 ---
 
 A joy of a release.

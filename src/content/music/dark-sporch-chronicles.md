@@ -6,6 +6,9 @@ genre: ["Synthwave", "Electronic"]
 cover: "/images/albums/dark-sporch-chronicles.jpg"
 bandcampId: "399208951"
 bandcamp: "https://arthhur.bandcamp.com/album/dark-sporch-chronicles-ep"
+credits: |-
+  tracks 1-5,7,8 by arthhur/mike fox.
+  track 6 originally composed by camille saint-saëns.
 ---
 
 I had bought a polyphonic synthesizer. Plantasia was all the rage.

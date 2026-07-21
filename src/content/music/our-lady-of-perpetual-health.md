@@ -14,6 +14,18 @@ press:
   - outlet: "Rosy Overdrive"
     quote: "An accessible but decidedly offbeat collection of excellently-penned pop songs."
     href: "https://rosyoverdrive.com/2023/09/25/pressing-concerns-coventry-the-garment-district-soft-screams-guest-directors/"
+credits: |-
+  All songs by Coventry
+  Mike Fox - vox, guitar, bass, piano, synth, percussion, computer
+  Jon Massey - vox, guitar, bass, drums, synth, percussion, computer
+
+  Mastered by Doug Van Sloan @ Focus Mastering in Omaha, NE
+  Album cover photo by Kyle Thomas Stone
+reviews:
+  - name: "APVrresto"
+    url: "https://bandcamp.com/sababa72"
+    text: "This is a really, really great record. Perfect accompaniment to a coffee and a candy bar. I once had a weird dream where Workbook-era Bob Mould formed a band with the Barenaked Ladies, and I think they sounded something like this. There might have also been some members from Steely Dan and XTC involved... good stuff!"
+    favTrack: "Wishboats"
 ---
 
 Like if The Beatles got really into 90's REM, and very gentle 80's ambient music. This is my fav. Jon writes some of my favorite music and it was always very inspiring to hear him play while we lived together.

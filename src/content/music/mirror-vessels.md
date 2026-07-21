@@ -8,6 +8,7 @@ bandcampId: "2910950592"
 bandcamp: "https://fleshofthestars.bandcamp.com/album/mirror-vessels"
 credits: |-
   all songs written by flesh of the stars.
+
   matt ciani: electric & acoustic guitar, vocals, synthesizers, electric piano.
   sam corman penzel: drums.
   mike fox: electric guitar, vocals, synthesizers, acoustic piano.
@@ -17,7 +18,20 @@ credits: |-
   recorded at the office in evanston, illinois & wholesome center for the arts in chicago, illinois.
   mixed by matt ciani at home in chicago, illinois.
   mastered by harris newman at grey market mastering in montreal, quebec.
+
   artwork by nico ciani.
+reviews:
+  - name: "Patrick Testa"
+    url: "https://bandcamp.com/patricktesta"
+    text: "Such an amazing step into the sunshine! But it really sparkles in the context of the whole album."
+    favTrack: "Mirror (Electronic Realization)"
+  - name: "Zach"
+    url: "https://bandcamp.com/uglystupidbabies"
+    text: "I had high hopes for this album and holy fuck was I not disappointed. The instruments continue to be heavy yet ethereal, atmospheric yet unpredictable, the synth is growing ever more prevalent, which I like. Matt Ciani's vocals come through in a big way, I don't know if he's pent up from COVID or just growing more…"
+  - name: "Doghouse Media"
+    url: "https://bandcamp.com/mike_mf_deuces"
+    text: "To me, they always amp it up each and every release. Also, so peaceful and uplifting, at least that is what I take from it. - Mikey, metaldevastationradio.com"
+    favTrack: "Vessels"
 ---
 
 Murky, strange and somewhat angelic. I really love this record.
