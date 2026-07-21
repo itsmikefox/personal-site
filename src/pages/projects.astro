@@ -1,6 +1,16 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { projects } from "../data/projects";
+import { getCollection } from "astro:content";
+
+// Newest first — a precise `date` beats a bare `year` (treated as Dec 31 of
+// that year); undated entries sort last, then alphabetical.
+const all = await getCollection("projects", ({ data }) => !data.draft);
+const when = (p: (typeof all)[number]) =>
+  p.data.date?.valueOf() ??
+  (p.data.year ? Date.UTC(Number(p.data.year.slice(0, 4)), 11, 31) : -Infinity);
+const projects = all.sort(
+  (a, b) => when(b) - when(a) || a.data.title.localeCompare(b.data.title)
+);
 ---
 
 <BaseLayout title="Projects" wide>
@@ -11,14 +21,16 @@ import { projects } from "../data/projects";
 
   <div class="grid">
     {
-      projects.map((p) => {
+      projects.map(({ data: p }) => {
+        // The year chip: explicit `year` wins, else derived from `date`.
+        const year = p.year ?? (p.date && String(p.date.getUTCFullYear()));
         const inner = (
           <>
             <h3>{p.title}{p.href && " →"}</h3>
             <p>{p.description}</p>
-            {(p.tags.length > 0 || p.year) && (
+            {(p.tags.length > 0 || year) && (
               <div class="tag-row">
-                {p.year && <span class="tag">{p.year}</span>}
+                {year && <span class="tag">{year}</span>}
                 {p.tags.map((t) => (
                   <span class="tag">{t}</span>
                 ))}

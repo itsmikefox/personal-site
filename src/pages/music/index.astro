@@ -1,0 +1,65 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+// Newest first — a precise `releaseDate` beats a bare `year` (treated as
+// Dec 31 of that year); undated releases sort last, then `order`, then title.
+const all = await getCollection("music", ({ data }) => !data.draft);
+const when = (r: (typeof all)[number]) =>
+  r.data.releaseDate?.valueOf() ??
+  (r.data.year ? Date.UTC(Number(r.data.year.slice(0, 4)), 11, 31) : -Infinity);
+const releases = all.sort(
+  (a, b) =>
+    when(b) - when(a) ||
+    a.data.order - b.data.order ||
+    a.data.title.localeCompare(b.data.title)
+);
+
+// Frontmatter dates parse as UTC midnight — format in UTC so they don't
+// slip back a day in western timezones.
+const fmt = (d: Date) =>
+  d.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" });
+---
+
+<BaseLayout title="Music" description="Records I've made and played on — doom, post-punk, ambient, and electronic.">
+  <div class="page-head">
+    <h1>Music</h1>
+    <p>Recordings, demos, and whatever else I've been making.</p>
+  </div>
+
+  <ul class="entry-list">
+    {
+      releases.map((r) => {
+        const year =
+          r.data.year ?? (r.data.releaseDate && String(r.data.releaseDate.getUTCFullYear()));
+        const metaLine =
+          r.data.meta ??
+          [r.data.artist, r.data.releaseDate ? fmt(r.data.releaseDate) : year]
+            .filter(Boolean)
+            .join(" · ");
+        return (
+          <li class="entry">
+            <a href={`/music/${r.id}/`}>{r.data.title}</a>
+            {metaLine && <div class="entry__meta">{metaLine}</div>}
+            {r.data.genre.length > 0 && (
+              <span class="tag-row">
+                {r.data.genre.map((g) => (
+                  <span class="tag">{g}</span>
+                ))}
+              </span>
+            )}
+          </li>
+        );
+      })
+    }
+  </ul>
+</BaseLayout>
+
+<style>
+  .tag-row {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+    margin-top: var(--space-xs);
+  }
+</style>

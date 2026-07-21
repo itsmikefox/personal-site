@@ -6,7 +6,7 @@ import sitemap from "@astrojs/sitemap";
 // Update `site` to your real domain before deploying — it powers the sitemap,
 // RSS feed, and any absolute URLs.
 export default defineConfig({
-  site: "https://example.com",
+  site: "https://mikefox.com",
   integrations: [mdx(), sitemap()],
   markdown: {
     shikiConfig: {

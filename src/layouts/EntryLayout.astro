@@ -1,11 +1,17 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
+import { SITE_TITLE } from "../consts";
 
 // Shared layout for a single piece of writing or a single poem.
 interface Props {
   title: string;
   description?: string;
   date?: Date;
+  updatedDate?: Date;
+  /** Social share image for this entry (root-relative path or absolute URL). */
+  ogImage?: string;
+  /** When the piece was composed, if different from `date` (poems: "2019", "2019-03"). */
+  written?: string;
   backHref: string;
   backLabel: string;
   tags?: string[];
@@ -17,6 +23,9 @@ const {
   title,
   description,
   date,
+  updatedDate,
+  ogImage,
+  written,
   backHref,
   backLabel,
   tags = [],
@@ -28,9 +37,46 @@ const {
 const dateStr = date
   ? date.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" })
   : undefined;
+
+// JSON-LD structured data: BlogPosting for writing, CreativeWork for poems.
+const iso = (d: Date) => d.toISOString().split("T")[0];
+const pageUrl = new URL(Astro.url.pathname, Astro.site).href;
+const author = { "@type": "Person", name: SITE_TITLE, url: Astro.site?.href };
+const schema =
+  variant === "poetry"
+    ? {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        name: title,
+        genre: "Poetry",
+        inLanguage: "en",
+        ...(description && { description }),
+        ...(date && { datePublished: iso(date) }),
+        ...(written && { dateCreated: written }),
+        author,
+        mainEntityOfPage: pageUrl,
+      }
+    : {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        headline: title,
+        ...(description && { description }),
+        ...(date && { datePublished: iso(date) }),
+        ...(updatedDate && { dateModified: iso(updatedDate) }),
+        ...(tags.length > 0 && { keywords: tags.join(", ") }),
+        ...(ogImage && { image: new URL(ogImage, Astro.site).href }),
+        author,
+        mainEntityOfPage: pageUrl,
+      };
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout
+  title={title}
+  description={description}
+  ogImage={ogImage}
+  article={date ? { published: date, updated: updatedDate } : undefined}
+  schema={schema}
+>
   <article class:list={["entry-page", `entry-page--${variant}`]}>
     <a href={backHref} class="back">← {backLabel}</a>
 

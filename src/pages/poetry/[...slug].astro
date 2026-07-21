@@ -16,7 +16,9 @@ const { Content } = await render(poem);
 
 <EntryLayout
   title={poem.data.title}
+  description={poem.data.description}
   date={poem.data.pubDate}
+  written={poem.data.written}
   backHref="/poetry"
   backLabel="Poetry"
   variant="poetry"

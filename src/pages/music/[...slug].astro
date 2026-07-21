@@ -1,0 +1,234 @@
+---
+import { getCollection, render } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+export async function getStaticPaths() {
+  const releases = await getCollection("music", ({ data }) => !data.draft);
+  return releases.map((release) => ({
+    params: { slug: release.id },
+    props: { release },
+  }));
+}
+
+const { release } = Astro.props;
+const d = release.data;
+const { Content } = await render(release);
+
+const year = d.year ?? (d.releaseDate && String(d.releaseDate.getUTCFullYear()));
+const metaLine = d.meta ?? [d.artist, year].filter(Boolean).join(" · ");
+
+// Platform links, in display order.
+const PLATFORMS = [
+  ["bandcamp", "Bandcamp"],
+  ["spotify", "Spotify"],
+  ["soundcloud", "SoundCloud"],
+  ["youtube", "YouTube"],
+] as const;
+const links = PLATFORMS.filter(([key]) => d[key]).map(([key, label]) => ({
+  label,
+  href: d[key]!,
+}));
+
+// Other releases by the same artist, newest first.
+const moreByArtist = d.artist
+  ? (
+      await getCollection(
+        "music",
+        ({ data }) => !data.draft && data.artist === d.artist
+      )
+    )
+      .filter((r) => r.id !== release.id)
+      .sort(
+        (a, b) =>
+          Number(b.data.year ?? 0) - Number(a.data.year ?? 0) ||
+          a.data.title.localeCompare(b.data.title)
+      )
+  : [];
+
+const pageUrl = new URL(Astro.url.pathname, Astro.site).href;
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "MusicAlbum",
+  name: d.title,
+  ...(d.artist && { byArtist: { "@type": "MusicGroup", name: d.artist } }),
+  ...(year && { datePublished: year }),
+  ...(d.genre.length > 0 && { genre: d.genre.join(", ") }),
+  ...(d.cover && { image: new URL(d.cover, Astro.site).href }),
+  ...(links.length > 0 && { sameAs: links.map((l) => l.href) }),
+  mainEntityOfPage: pageUrl,
+};
+
+const description =
+  d.description ??
+  (d.artist && year ? `${d.title} — an album by ${d.artist} (${year}).` : undefined);
+---
+
+<BaseLayout title={d.title} description={description} ogImage={d.cover} schema={schema}>
+  <article class="album">
+    <a href="/music" class="back">← Music</a>
+
+    <header class="album__head">
+      {d.cover && <img class="album__cover" src={d.cover} alt={`${d.title} cover art`} width="200" height="200" />}
+      <div class="album__id">
+        <h1>{d.title}</h1>
+        {metaLine && <div class="album__meta">{metaLine}</div>}
+        {
+          d.genre.length > 0 && (
+            <div class="tag-row">
+              {d.genre.map((g) => (
+                <span class="tag">{g}</span>
+              ))}
+            </div>
+          )
+        }
+        {
+          links.length > 0 && (
+            <div class="album__links">
+              {links.map((l) => (
+                <a href={l.href} target="_blank" rel="noopener">
+                  {l.label}
+                </a>
+              ))}
+            </div>
+          )
+        }
+      </div>
+    </header>
+
+    {
+      d.bandcampId && (
+        <iframe
+          class="album__player"
+          src={`https://bandcamp.com/EmbeddedPlayer/album=${d.bandcampId}/size=large/bgcol=333333/linkcol=e99708/tracklist=false/artwork=small/transparent=true/`}
+          seamless
+          loading="lazy"
+          title={`${d.title} — Bandcamp player`}
+        >
+          {d.bandcamp && <a href={d.bandcamp}>{d.title}</a>}
+        </iframe>
+      )
+    }
+
+    <div class="prose">
+      <Content />
+    </div>
+
+    {
+      d.credits && (
+        <section class="album__credits">
+          <h2>Credits</h2>
+          <p>{d.credits}</p>
+        </section>
+      )
+    }
+
+    {
+      moreByArtist.length > 0 && (
+        <nav class="album__more">
+          <h2>More from {d.artist}</h2>
+          <ul>
+            {moreByArtist.map((r) => (
+              <li>
+                <a href={`/music/${r.id}/`}>{r.data.title}</a>
+                {r.data.year && <span class="album__more-year"> ({r.data.year})</span>}
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )
+    }
+  </article>
+</BaseLayout>
+
+<style>
+  .back {
+    display: inline-block;
+    margin-bottom: var(--space-md);
+    font-size: var(--text-sm);
+    color: var(--muted);
+    text-decoration: none;
+  }
+  .back:hover { color: var(--accent); }
+
+  .album__head {
+    display: flex;
+    gap: var(--space-lg);
+    align-items: flex-start;
+    margin-bottom: var(--space-lg);
+  }
+  .album__cover {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid var(--border);
+    flex-shrink: 0;
+  }
+  .album__meta {
+    margin-top: var(--space-xs);
+    color: var(--muted);
+    font-size: var(--text-sm);
+  }
+  .tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+    margin-top: var(--space-sm);
+  }
+  .album__links {
+    display: flex;
+    gap: var(--space-md);
+    margin-top: var(--space-sm);
+    font-size: var(--text-sm);
+  }
+  .album__player {
+    border: 0;
+    width: 100%;
+    height: 120px;
+    margin-bottom: var(--space-lg);
+  }
+  .album__credits {
+    margin-top: var(--space-xl);
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--border);
+  }
+  .album__credits h2 {
+    font-size: var(--text-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+  }
+  .album__credits p {
+    white-space: pre-line;
+    color: var(--muted);
+    font-size: var(--text-sm);
+  }
+  .album__more {
+    margin-top: var(--space-xl);
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--border);
+  }
+  .album__more h2 {
+    font-size: var(--text-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+  }
+  .album__more ul {
+    list-style: none;
+    padding: 0;
+    margin-top: var(--space-sm);
+  }
+  .album__more li {
+    margin-bottom: var(--space-xs);
+  }
+  .album__more-year {
+    color: var(--muted);
+    font-size: var(--text-sm);
+  }
+
+  @media (max-width: 600px) {
+    .album__head {
+      flex-direction: column;
+    }
+  }
+</style>
