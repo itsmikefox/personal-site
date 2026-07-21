@@ -11,9 +11,10 @@ plush from rich labor
 yellow, blue, red figures in a loose grid\
 metered stripes of beige and brown.\
 Winter sun slides off the sky, like a yolk separated from it's white\
-gently johnny, the daylight fades to candle red.
+daylight fades to candle red.
 
-press an ear into the tweed cushion, listening for my heartbeat\
-The phone lights up with real estate off market offers\
-Unfamiliar digits rattle on the coffee table.\
-we're all good here. let it ring.
+push ears into tweed cushion, resting on your steady pulse\
+our phones light up with off market offers\
+Unfamiliar digits rattling the coffee table.\
+we are good.\ 
+let it ring.

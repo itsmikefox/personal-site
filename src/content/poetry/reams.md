@@ -6,8 +6,8 @@ pubDate: 2026-07-12
 Thirty six dreamers\
 drawing reams of multicolor thread across the sand\
 desert heat, a blade against their cheeks\
-laboring against pools of sand\
-bent backs as they unwind vibrant silks and cotton.
+laboring against pools of grit\
+backs bent as they unwind vibrant wool linen, and silk.
 
 All humming different songs in the same key.\
 Blending together as a ever shifting chord.
