@@ -1,12 +1,14 @@
 ---
-import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import Base from "../../components/base/Base.astro";
+import { getCollection } from "astro:content";
+import { buildPoetry } from "../../lib/bases";
 
-const poems = (await getCollection("poetry", ({ data }) => !data.draft)).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-);
-
-const fmt = (d: Date) => d.toLocaleDateString("en-US", { year: "numeric", timeZone: "UTC" });
+// Text-forward Base: a Ledger index (default) leading with each poem's real
+// opening line, plus a sortable Table. buildPoetry derives the opening line and
+// length from the poem body.
+const entries = await getCollection("poetry", ({ data }) => !data.draft);
+const config = buildPoetry(entries);
 ---
 
 <BaseLayout title="Poetry" description="Poems.">
@@ -15,24 +17,5 @@ const fmt = (d: Date) => d.toLocaleDateString("en-US", { year: "numeric", timeZo
     <p>Short verse, kept plain.</p>
   </div>
 
-  {
-    poems.length === 0 ? (
-      <p class="muted">
-        No poems yet. Add a Markdown file to <code>src/content/poetry/</code>.
-      </p>
-    ) : (
-      <ul class="entry-list">
-        {poems.map((poem) => (
-          <li class="entry">
-            <a href={`/poetry/${poem.id}/`}>{poem.data.title}</a>
-            <div class="entry__meta">{fmt(poem.data.pubDate)}</div>
-          </li>
-        ))}
-      </ul>
-    )
-  }
+  <Base {...config} />
 </BaseLayout>
-
-<style>
-  .muted { color: var(--muted); }
-</style>

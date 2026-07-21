@@ -1,0 +1,66 @@
+---
+// Table view — sortable columns derived from frontmatter. Headers carry
+// data-sort-key; the client reorders rows by each item's data-s-<key>.
+import { itemAttrs, type BaseItem, type Column } from "../../lib/bases";
+
+interface Props {
+  items: BaseItem[];
+  columns: Column[];
+  hasCover?: boolean;
+}
+const { items, columns, hasCover = false } = Astro.props;
+
+// Column value off the item — keys line up with BaseItem field names.
+const cell = (it: BaseItem, key: string): unknown => (it as Record<string, unknown>)[key];
+---
+
+<div class="btable-scroll">
+  <table class="btable">
+    <thead>
+      <tr>
+        {
+          columns.map((c) => (
+            <th data-sort-key={c.key} class={`bcol--${c.type}`} scope="col">
+              <span class="bth">{c.label}<span class="bth__arrow" aria-hidden="true" /></span>
+            </th>
+          ))
+        }
+      </tr>
+    </thead>
+    <tbody>
+      {
+        items.map((it) => (
+          <tr {...itemAttrs(it)}>
+            {columns.map((c) => {
+              if (c.type === "title") {
+                return (
+                  <td class="bt-titlecell">
+                    {hasCover && it.cover && (
+                      <img class="bt-thumb" src={it.cover} alt="" loading="lazy" width="36" height="36" />
+                    )}
+                    <a class="bt-title" href={it.url}>{it.title}</a>
+                  </td>
+                );
+              }
+              if (c.type === "tags") {
+                const tags = (cell(it, c.key) as string[] | undefined) ?? [];
+                return (
+                  <td>
+                    <span class="btag-row">
+                      {tags.map((t) => <span class="btag">{t}</span>)}
+                    </span>
+                  </td>
+                );
+              }
+              if (c.type === "open") {
+                return <td class="bt-open">{(cell(it, c.key) as string) ?? ""}</td>;
+              }
+              const v = cell(it, c.key);
+              return <td class={c.type === "num" ? "bt-num" : ""}>{v ?? "—"}</td>;
+            })}
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</div>

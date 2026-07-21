@@ -1,0 +1,255 @@
+---
+// Base — renders a collection as switchable views (Gallery / Ledger / Table)
+// with spreadsheet-style facet filters and search.
+//
+// Progressive enhancement: the default view renders as static HTML with real
+// links (works with no JS, and is what crawlers see). The controls are hidden
+// until the client script marks the base [data-js]; filtering/sorting/search
+// then operate on the already-rendered DOM.
+import "../../styles/base.css";
+import GalleryView from "./GalleryView.astro";
+import LedgerView from "./LedgerView.astro";
+import TableView from "./TableView.astro";
+import type { BaseConfig } from "../../lib/bases";
+
+type Props = BaseConfig;
+const { kind, items, facets, columns, views, defaultView } = Astro.props;
+
+const hasCover = items.some((it) => it.cover);
+
+const viewLabel = (v: string): string =>
+  v === "gallery" ? "Gallery" : v === "ledger" ? "Ledger" : v === "table" ? "Table" : "Cards";
+
+// Small inline icons (set:html) — Gallery = grid, Ledger = lines, Table = grid+rule.
+const viewIcon = (v: string): string => {
+  const g =
+    '<rect x="1" y="1" width="6" height="6" rx="1"/><rect x="9" y="1" width="6" height="6" rx="1"/><rect x="1" y="9" width="6" height="6" rx="1"/><rect x="9" y="9" width="6" height="6" rx="1"/>';
+  const l = '<line x1="2" y1="4" x2="14" y2="4"/><line x1="2" y1="8" x2="14" y2="8"/><line x1="2" y1="12" x2="14" y2="12"/>';
+  const t = '<rect x="1" y="2" width="14" height="12" rx="1"/><line x1="1" y1="6" x2="15" y2="6"/><line x1="6" y1="6" x2="6" y2="14"/>';
+  const inner = v === "gallery" ? g : v === "ledger" ? l : t;
+  return `<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">${inner}</svg>`;
+};
+---
+
+<section class={`base base--${kind}`} data-base data-default={defaultView}>
+  <div class="base__controls">
+    <div class="base__toolbar">
+      <div class="base__views" role="group" aria-label="Choose a view">
+        {
+          views.map((v) => (
+            <button class="base__viewbtn" type="button" data-view-btn={v} aria-pressed={v === defaultView}>
+              <span class="base__ico" set:html={viewIcon(v)} />
+              <span>{viewLabel(v)}</span>
+            </button>
+          ))
+        }
+      </div>
+    </div>
+
+    <div class="base__qbar">
+      <div class="base__facets">
+        {
+          facets.map((f) => (
+            <div class="bfacet" data-facet={f.key}>
+              <button class="bfacet__btn" type="button" data-facet-btn aria-expanded="false">
+                {f.label}
+                <span class="bfacet__badge" data-badge />
+                <svg viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M1 1l4 4 4-4" /></svg>
+              </button>
+              <div class="bfacet__panel" data-facet-panel hidden>
+                {f.values.map((val) => (
+                  <label class="bfacet__row">
+                    <input type="checkbox" value={val.value} />
+                    <span>{val.value}</span>
+                    <span class="bfacet__count">{val.count}</span>
+                  </label>
+                ))}
+                <div class="bfacet__foot">
+                  <button type="button" data-facet-clear>Clear</button>
+                  <button type="button" class="bfacet__done" data-facet-done>Done</button>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+        <button class="base__clear" type="button" data-clear hidden>Clear filters</button>
+      </div>
+
+      <span class="base__count" data-count>{items.length} of {items.length}</span>
+
+      <label class="base__search">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="7" cy="7" r="5" /><line x1="11" y1="11" x2="15" y2="15" /></svg>
+        <input type="search" data-search-input placeholder="Search…" aria-label={`Search ${kind}`} />
+      </label>
+    </div>
+  </div>
+
+  {
+    views.map((v) => (
+      <div class="base__view" data-view={v} hidden={v !== defaultView}>
+        {v === "gallery" && <GalleryView items={items} />}
+        {v === "ledger" && <LedgerView items={items} kind={kind} />}
+        {v === "table" && <TableView items={items} columns={columns} hasCover={hasCover} />}
+      </div>
+    ))
+  }
+
+  <p class="base__empty" data-empty hidden>Nothing matches those filters.</p>
+</section>
+
+<script>
+  // Progressive enhancement for every [data-base] on the page. DOM-only:
+  // filters/search hide items; the table sort reorders rows. No re-render.
+  document.querySelectorAll<HTMLElement>("[data-base]").forEach((base) => {
+    base.setAttribute("data-js", "");
+
+    const viewEls = Array.from(base.querySelectorAll<HTMLElement>("[data-view]"));
+    const viewBtns = Array.from(base.querySelectorAll<HTMLButtonElement>("[data-view-btn]"));
+    const items = Array.from(base.querySelectorAll<HTMLElement>("[data-item]"));
+    const searchInput = base.querySelector<HTMLInputElement>("[data-search-input]");
+    const countEl = base.querySelector<HTMLElement>("[data-count]");
+    const emptyEl = base.querySelector<HTMLElement>("[data-empty]");
+    const clearBtn = base.querySelector<HTMLButtonElement>("[data-clear]");
+    const dropdowns = Array.from(base.querySelectorAll<HTMLElement>("[data-facet]"));
+
+    let activeView = base.getAttribute("data-default") || viewEls[0]?.getAttribute("data-view") || "";
+    let query = "";
+    const filters: Record<string, Set<string>> = {};
+
+    const activeContainer = () => base.querySelector<HTMLElement>(`[data-view="${activeView}"]`);
+
+    function apply() {
+      const keys = Object.keys(filters);
+      for (const it of items) {
+        let ok = true;
+        for (const k of keys) {
+          const set = filters[k];
+          if (!set || set.size === 0) continue;
+          const vals = (it.getAttribute("data-" + k) || "").split("|").filter(Boolean);
+          if (!vals.some((v) => set.has(v))) {
+            ok = false;
+            break;
+          }
+        }
+        if (ok && query) ok = (it.getAttribute("data-search") || "").includes(query);
+        it.classList.toggle("is-hidden", !ok);
+      }
+
+      const container = activeContainer();
+      const total = container ? container.querySelectorAll("[data-item]").length : 0;
+      const vis = container ? container.querySelectorAll("[data-item]:not(.is-hidden)").length : 0;
+      if (countEl) countEl.textContent = `${vis} of ${total}`;
+      if (emptyEl) emptyEl.hidden = vis !== 0;
+
+      const anyFilter = Object.values(filters).some((s) => s && s.size > 0);
+      if (clearBtn) clearBtn.hidden = !anyFilter;
+
+      for (const dd of dropdowns) {
+        const k = dd.getAttribute("data-facet") || "";
+        const n = filters[k] ? filters[k].size : 0;
+        const badge = dd.querySelector<HTMLElement>("[data-badge]");
+        if (badge) {
+          badge.textContent = n ? String(n) : "";
+          badge.classList.toggle("on", n > 0);
+        }
+        dd.querySelector("[data-facet-btn]")?.classList.toggle("active", n > 0);
+      }
+    }
+
+    // View switching
+    for (const btn of viewBtns) {
+      btn.addEventListener("click", () => {
+        activeView = btn.getAttribute("data-view-btn") || activeView;
+        for (const v of viewEls) v.hidden = v.getAttribute("data-view") !== activeView;
+        for (const b of viewBtns) b.setAttribute("aria-pressed", String(b === btn));
+        apply();
+      });
+    }
+
+    // Search
+    searchInput?.addEventListener("input", () => {
+      query = (searchInput.value || "").trim().toLowerCase();
+      apply();
+    });
+
+    // Facet dropdowns
+    const closeAll = () => {
+      for (const dd of dropdowns) {
+        const panel = dd.querySelector<HTMLElement>("[data-facet-panel]");
+        if (panel) panel.hidden = true;
+        dd.querySelector("[data-facet-btn]")?.setAttribute("aria-expanded", "false");
+      }
+    };
+    for (const dd of dropdowns) {
+      const key = dd.getAttribute("data-facet") || "";
+      filters[key] = new Set();
+      const btn = dd.querySelector<HTMLButtonElement>("[data-facet-btn]");
+      const panel = dd.querySelector<HTMLElement>("[data-facet-panel]");
+      btn?.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const willOpen = !!panel?.hidden;
+        closeAll();
+        if (panel) panel.hidden = !willOpen;
+        btn.setAttribute("aria-expanded", String(willOpen));
+      });
+      panel?.addEventListener("click", (e) => e.stopPropagation());
+      panel?.querySelectorAll<HTMLInputElement>("input[type=checkbox]").forEach((cb) => {
+        cb.addEventListener("change", () => {
+          if (cb.checked) filters[key].add(cb.value);
+          else filters[key].delete(cb.value);
+          apply();
+        });
+      });
+      panel?.querySelector("[data-facet-clear]")?.addEventListener("click", () => {
+        filters[key].clear();
+        panel.querySelectorAll<HTMLInputElement>("input").forEach((i) => (i.checked = false));
+        apply();
+      });
+      panel?.querySelector("[data-facet-done]")?.addEventListener("click", () => {
+        if (panel) panel.hidden = true;
+        btn?.setAttribute("aria-expanded", "false");
+      });
+    }
+    document.addEventListener("click", closeAll);
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeAll();
+    });
+    clearBtn?.addEventListener("click", () => {
+      for (const s of Object.values(filters)) s.clear();
+      base.querySelectorAll<HTMLInputElement>("[data-facet-panel] input").forEach((i) => (i.checked = false));
+      apply();
+    });
+
+    // Table sort
+    base.querySelectorAll<HTMLTableElement>("table").forEach((table) => {
+      const tbody = table.querySelector("tbody");
+      if (!tbody) return;
+      let sortKey: string | null = null;
+      let dir = 1;
+      table.querySelectorAll<HTMLElement>("th[data-sort-key]").forEach((th) => {
+        th.addEventListener("click", () => {
+          const k = th.getAttribute("data-sort-key") || "";
+          if (sortKey === k) dir = -dir;
+          else {
+            sortKey = k;
+            dir = 1;
+          }
+          const rows = Array.from(tbody.querySelectorAll("tr"));
+          rows.sort((a, b) => {
+            const av = a.getAttribute("data-s-" + k) || "";
+            const bv = b.getAttribute("data-s-" + k) || "";
+            const an = parseFloat(av);
+            const bn = parseFloat(bv);
+            const numeric = /^-?\d/.test(av) && /^-?\d/.test(bv) && !isNaN(an) && !isNaN(bn);
+            return (numeric ? an - bn : av.localeCompare(bv)) * dir;
+          });
+          for (const r of rows) tbody.appendChild(r);
+          table.querySelectorAll("th").forEach((x) => x.removeAttribute("data-dir"));
+          th.setAttribute("data-dir", dir < 0 ? "desc" : "asc");
+        });
+      });
+    });
+
+    apply();
+  });
+</script>

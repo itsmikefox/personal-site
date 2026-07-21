@@ -1,0 +1,32 @@
+---
+// Ledger view — a numbered typographic index. The visual/browse view for
+// text-forward collections (poetry, writing) where cover cards don't suit.
+// Row numbers come from a CSS counter so they stay contiguous when filtered.
+import { itemAttrs, type BaseItem } from "../../lib/bases";
+
+interface Props {
+  items: BaseItem[];
+  kind: string;
+}
+const { items, kind } = Astro.props;
+
+const meta = (it: BaseItem): string =>
+  kind === "poetry"
+    ? [it.lines != null ? `${it.lines} lines` : "", it.year].filter(Boolean).join(" · ")
+    : it.date ?? "";
+---
+
+<ol class={`bledger bledger--${kind}`}>
+  {
+    items.map((it) => (
+      <li class="bledger__row" {...itemAttrs(it)}>
+        <span class="bledger__ix" aria-hidden="true" />
+        <span class="bledger__body">
+          <a class="bledger__title" href={it.url}>{it.title}</a>
+          {(it.open ?? it.desc) && <span class="bledger__lead">{it.open ?? it.desc}</span>}
+        </span>
+        <span class="bledger__meta">{meta(it)}</span>
+      </li>
+    ))
+  }
+</ol>
