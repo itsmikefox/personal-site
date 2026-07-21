@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import { personSchema } from "../lib/author";
 
 // Pull the three most recent, non-draft writing entries for the homepage.
 const posts = (await getCollection("writing", ({ data }) => !data.draft))
@@ -35,12 +36,7 @@ const schema = [
     description: SITE_DESCRIPTION,
     url: Astro.site?.href,
   },
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    name: SITE_TITLE,
-    url: Astro.site?.href,
-  },
+  personSchema(Astro.site?.href),
 ];
 ---
 
@@ -48,10 +44,10 @@ const schema = [
   <section class="intro">
     <h1>Software by day.<br />Everything else after dark.</h1>
     <p class="lead">
-      I build software and make things on the side — writing, poetry, and music.
-      This is where I keep them. <a href="/about">More about me →</a>
+      I'm Mike Fox, I live in Chicago and I try to find new and unique ways to cross pollinate my interests. That means
+      songs (as BigBluestem), circuits, software, writing, art and design, ecology
+      and gardening. This is where any results pile up. <a href="/about">More about me →</a>
     </p>
-    <!-- TODO: rewrite this in your own voice. One honest paragraph beats ten polished ones. -->
   </section>
 
   <div class="cols">

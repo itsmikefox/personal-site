@@ -1,21 +1,36 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { SOCIALS } from "../consts";
+import { personSchema } from "../lib/author";
 const links = SOCIALS.filter((s) => s.href);
+
+// This page is the canonical description of the person, so mark it as the
+// Person entity's mainEntityOfPage.
+const schema = personSchema(
+  Astro.site?.href,
+  new URL(Astro.url.pathname, Astro.site).href
+);
 ---
 
-<BaseLayout title="About" description="A little about me and how to get in touch.">
+<BaseLayout
+  title="About"
+  description="About Mike Fox — musician, artist, and maker in Chicago, releasing music as BigBluestem and working as technical lead at PrintNinja."
+  schema={schema}
+>
   <div class="page-head">
     <h1>About</h1>
   </div>
 
   <div class="prose">
     <p>
-      Howdy, I'm Mike. I'm a musician, artist, maker, and writer. I live in Ecoregion 34b (Chicago, IL) with my partner Erin.
+      Howdy, I'm Mike. I make things: music, circuits, software, art, gardens, and writing. My favorite
+      trick is finding new and unusual ways to cross-pollinate one interest with another. I live in
+      Ecoregion 34b (Chicago, IL) with my partner Erin.
     </p>
     <p>
-      I currently release music under the name BigBluestem. I also work as the technical lead for the indie printbroker PrintNinja.
-      I love physics, electronics and good stories. Tryin' to cover all my bases before I die.
+      Currently, I release music under the name BigBluestem and work as the technical lead for PrintNinja
+      (a printer focused on serving independent creators). I love physics, electronics, ecology, and a
+      good story. I learn by building. Tryin' to cover all my bases before I die.
     </p>
 
     <h2>Get in touch</h2>
