@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 
 // Pull the three most recent, non-draft writing entries for the homepage.
 const posts = (await getCollection("writing", ({ data }) => !data.draft))
@@ -24,9 +25,26 @@ const fmt = (d: Date) =>
   // Frontmatter dates parse as UTC midnight — format in UTC so they don't
   // slip back a day in western timezones.
   d.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric", timeZone: "UTC" });
+
+// Entity markup for the homepage: this site, and the person it belongs to.
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    url: Astro.site?.href,
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: SITE_TITLE,
+    url: Astro.site?.href,
+  },
+];
 ---
 
-<BaseLayout>
+<BaseLayout schema={schema}>
   <section class="intro">
     <h1>Software by day.<br />Everything else after dark.</h1>
     <p class="lead">
@@ -83,23 +101,15 @@ const fmt = (d: Date) =>
     margin-bottom: var(--space-2xl);
   }
   /* The hero is the one place the display face runs at full weight.
-     In dark mode it takes the orange signal; in light, prussian ink. */
+     --hero is orange in Night Edition, prussian ink in Morning. */
   .intro h1 {
     font-weight: 900;
     font-size: clamp(2.4rem, 6vw, 3.6rem);
     line-height: 1.02;
     letter-spacing: -0.02em;
-    color: var(--hero, var(--ink));
+    color: var(--hero);
     margin-bottom: var(--space-md);
     text-wrap: balance;
-  }
-  :global([data-theme="dark"]) .intro h1 {
-    color: var(--mark);
-  }
-  @media (prefers-color-scheme: dark) {
-    :global(:root:not([data-theme])) .intro h1 {
-      color: var(--mark);
-    }
   }
   .lead {
     font-size: var(--text-xl);

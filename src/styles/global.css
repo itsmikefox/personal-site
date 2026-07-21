@@ -64,24 +64,10 @@
   --fill-poetry-b: #7e4e90;
   --fill-music: #0d5f4e;
 
-  /* Light theme — "Morning Edition" (default) */
-  --bg: #f7f4ea;
-  --surface: #fdfcf7;
-  --ink: #0b2652;            /* prussian is the ink itself */
-  --ink-soft: #33456b;
-  --muted: #54627f;
-  --border: #ded9c8;
-  --accent: #8a5c00;         /* text-safe amber — orange's daylight voice (5.3:1) */
-  --accent-strong: #7d5300;
-  --accent-wash: #faedcd;
-  --mark: #fba700;           /* pure orange: highlighter marks, rules, fills */
-  --brand: #0b2652;
-  --code-bg: #f1ecdc;
-  --selection: #ffe3a3;
-}
-
-:root[data-theme="dark"] {
-  --bg: #0b2652;             /* prussian becomes the atmosphere */
+  /* Dark theme — "Night Edition" (the site default; also the no-JS
+     fallback, since the inline script in BaseLayout only ever sets
+     data-theme when JS runs) */
+  --bg: #0b2652;             /* prussian is the atmosphere */
   --surface: #102e60;
   --ink: #e9e6da;
   --ink-soft: #c6cede;
@@ -90,31 +76,31 @@
   --accent: #fba700;         /* orange sings on prussian (7.5:1) */
   --accent-strong: #ffc14d;
   --accent-wash: #16376e;
-  --mark: #fba700;
+  --mark: #fba700;           /* pure orange: marks, rules, fills */
   --brand: #fba700;
+  --hero: #fba700;           /* homepage display headline */
   --code-bg: #113067;
   --selection: #3d548c;
 }
 
-/* Respect OS preference on first load only if the visitor hasn't chosen.
-   The inline script in BaseLayout sets data-theme before paint; this block
-   is the no-JS fallback. */
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme]) {
-    --bg: #0b2652;
-    --surface: #102e60;
-    --ink: #e9e6da;
-    --ink-soft: #c6cede;
-    --muted: #8fa0c2;
-    --border: #27437a;
-    --accent: #fba700;
-    --accent-strong: #ffc14d;
-    --accent-wash: #16376e;
-    --mark: #fba700;
-    --brand: #fba700;
-    --code-bg: #113067;
-    --selection: #3d548c;
-  }
+/* Light theme — "Morning Edition", applied only by the toggle's saved
+   choice. Same personality on cream: prussian becomes the ink, links
+   use a text-safe amber (pure orange fails WCAG as text on light). */
+:root[data-theme="light"] {
+  --bg: #f7f4ea;
+  --surface: #fdfcf7;
+  --ink: #0b2652;
+  --ink-soft: #33456b;
+  --muted: #54627f;
+  --border: #ded9c8;
+  --accent: #8a5c00;         /* amber — orange's daylight voice (5.3:1) */
+  --accent-strong: #7d5300;
+  --accent-wash: #faedcd;
+  --mark: #fba700;
+  --brand: #0b2652;
+  --hero: #0b2652;
+  --code-bg: #f1ecdc;
+  --selection: #ffe3a3;
 }
 
 /* 3. Base ----------------------------------------------------------------- */
@@ -302,6 +288,7 @@ main {
 }
 .entry:last-child { border-bottom: none; }
 .entry a {
+  font-family: var(--font-display);
   font-size: var(--text-xl);
   font-weight: 600;
   color: var(--ink);
