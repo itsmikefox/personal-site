@@ -6,6 +6,21 @@ genre: ["Atmospheric Doom"]
 cover: "/images/albums/mercy.jpg"
 bandcampId: "3098679693"
 bandcamp: "https://fleshofthestars.bandcamp.com/album/mercy"
+press:
+  - outlet: "Stereogum"
+    author: "Wyatt Marshall, The Black Market"
+    quote: "Like Pallbearer, the Chicago band goes big on the dueling fuzzed out leads, pairing them with gorgeous, nostalgic vocals."
+    href: "https://www.stereogum.com/2053229/the-black-market-the-month-in-metal-july-2019/columns/the-black-market/"
+  - outlet: "Heavy Blog Is Heavy"
+    author: "Simon Handmaker"
+    quote: "Everything works together to create a majestic piece of doom metal."
+    href: "https://www.heavyblogisheavy.com/2019/05/21/premiere-celebrate-flesh-of-the-stars-return-with-rites/"
+  - outlet: "Astral Noize"
+    label: "Review"
+    href: "https://astralnoizeuk.wordpress.com/2019/07/02/review-flesh-of-the-stars-mercy/"
+  - outlet: "Invisible Oranges"
+    label: "Interview"
+    href: "https://www.invisibleoranges.com/flesh-of-the-stars-interview-premiere/"
 ---
 
 Like a lot of flesh releases, this was heavily inspired by a beloved book. Matt and I had gotten real into [Death In Spring](https://www.openletterbooks.org/products/death-in-spring) by Mercè Rodoreda, [wonderfully translated by Martha Tennent](https://www.youtube.com/watch?v=Ck3R_iZZJx4).^1 That book has some of the most incredible, surreal prose. It's simultaneously very moving and upsetting, which drove a lot of what we wanted to do with this.

@@ -15,6 +15,10 @@ youtube: ""
 order: 0
 draft: false
 cover: /images/albums/take-care-stay-warm.jpg
+press:
+  - outlet: "Rosy Overdrive"
+    quote: "The limited palette isn’t at all a hindrance for the journey on which Big Bluestem take us on their debut record."
+    href: "https://rosyoverdrive.com/2026/04/28/pressing-concerns-big-bluestem-softjaw-loto-shapes-like-people/"
 ---
 First release from a batch of 90 songs I wrote the previous summer. I spent a couple years fuckin' round in the woodshed, wrote a bunch of music that I ultimately didn't feel like releasing, learned a lot but primarily spent my time fixing our first house, learning about native plants, and spending valuable time with loved ones. So that's what the songs are about.
 ## On Form

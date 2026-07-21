@@ -13,6 +13,24 @@ const optionalDate = z.preprocess(blank, z.coerce.date().optional());
 // "required" error instead of silently coercing null to Jan 1 1970.
 const requiredDate = z.preprocess(blank, z.coerce.date());
 const tagList = z.preprocess(blank, z.array(z.string()).default([]));
+// Press quotes — a list of coverage. Each entry needs an outlet + link; the
+// quote and author are optional (a link-only "featured in" entry is fine).
+// Edit in Obsidian's source view (YAML list), not the Properties panel.
+const pressList = z.preprocess(
+  blank,
+  z
+    .array(
+      z.object({
+        outlet: z.string(),
+        href: z.string(),
+        quote: optionalString,
+        author: optionalString,
+        // Kind of coverage for link-only items: "Interview", "Feature", "Review"…
+        label: optionalString,
+      })
+    )
+    .default([])
+);
 const draftFlag = z.preprocess(blank, z.boolean().default(false));
 const sortOrder = z.preprocess(blank, z.number().default(0));
 // Obsidian stores "2025" as a bare number — accept both and normalize.
@@ -103,6 +121,8 @@ const music = defineCollection({
     // Personnel / recording credits — multi-line, shown at the foot of the
     // album page exactly as written.
     credits: optionalString,
+    // Press coverage — pull-quotes and links, shown in a "Press" section.
+    press: pressList,
     // Tiebreak for same-year/undated releases. Lower numbers sort first.
     order: sortOrder,
     draft: draftFlag,

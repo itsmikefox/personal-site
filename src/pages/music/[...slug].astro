@@ -45,6 +45,17 @@ const moreByArtist = d.artist
       )
   : [];
 
+// Press with a quote becomes a schema.org Review for rich results.
+const reviews = d.press
+  .filter((p) => p.quote)
+  .map((p) => ({
+    "@type": "Review",
+    reviewBody: p.quote,
+    ...(p.author && { author: { "@type": "Person", name: p.author } }),
+    publisher: { "@type": "Organization", name: p.outlet },
+    url: p.href,
+  }));
+
 const pageUrl = new URL(Astro.url.pathname, Astro.site).href;
 const schema = {
   "@context": "https://schema.org",
@@ -55,8 +66,14 @@ const schema = {
   ...(d.genre.length > 0 && { genre: d.genre.join(", ") }),
   ...(d.cover && { image: new URL(d.cover, Astro.site).href }),
   ...(links.length > 0 && { sameAs: links.map((l) => l.href) }),
+  ...(reviews.length > 0 && { review: reviews }),
   mainEntityOfPage: pageUrl,
 };
+
+// Press splits into pull-quotes (rendered as blockquotes) and link-only
+// coverage (interviews, features — rendered as a compact list).
+const pressQuotes = d.press.filter((p) => p.quote);
+const pressLinks = d.press.filter((p) => !p.quote);
 
 const description =
   d.description ??
@@ -112,6 +129,42 @@ const description =
     <div class="prose">
       <Content />
     </div>
+
+    {
+      d.press.length > 0 && (
+        <section class="album__press">
+          <h2>Press</h2>
+          {pressQuotes.length > 0 && (
+            <ul class="press-list">
+              {pressQuotes.map((p) => (
+                <li class="press">
+                  <blockquote class="press__quote">{`“${p.quote}”`}</blockquote>
+                  <cite class="press__cite">
+                    <a href={p.href} target="_blank" rel="noopener">
+                      {p.outlet}
+                    </a>
+                    {p.author && <span class="press__author"> — {p.author}</span>}
+                  </cite>
+                </li>
+              ))}
+            </ul>
+          )}
+          {pressLinks.length > 0 && (
+            <ul class="press-more">
+              {pressLinks.map((p) => (
+                <li>
+                  {p.label && <span class="press-more__label">{p.label}</span>}
+                  <a href={p.href} target="_blank" rel="noopener">
+                    {p.outlet}
+                  </a>
+                  {p.author && <span class="press__author"> — {p.author}</span>}
+                </li>
+              ))}
+            </ul>
+          )}
+        </section>
+      )
+    }
 
     {
       d.credits && (
@@ -186,6 +239,61 @@ const description =
     height: 120px;
     margin-bottom: var(--space-lg);
   }
+  .album__press {
+    margin-top: var(--space-xl);
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--border);
+  }
+  .album__press h2 {
+    font-size: var(--text-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+  }
+  .press-list {
+    list-style: none;
+    padding: 0;
+    margin: var(--space-sm) 0 0;
+  }
+  .press {
+    padding-left: var(--space-md);
+    border-left: 2px solid var(--accent);
+    margin-bottom: var(--space-lg);
+  }
+  .press:last-child { margin-bottom: 0; }
+  .press-more {
+    list-style: none;
+    padding: 0;
+    margin: var(--space-md) 0 0;
+    font-size: var(--text-sm);
+  }
+  .press-more li { margin-bottom: var(--space-2xs); }
+  .press-more a { color: var(--accent-strong); }
+  .press-more__label {
+    display: inline-block;
+    min-width: 5.5em;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 0.8em;
+  }
+  .press__quote {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: var(--text-lg);
+    line-height: 1.45;
+    color: var(--ink);
+  }
+  .press__cite {
+    display: block;
+    margin-top: var(--space-xs);
+    font-size: var(--text-sm);
+    font-style: normal;
+    color: var(--muted);
+  }
+  .press__cite a { color: var(--accent-strong); }
+  .press__author { color: var(--muted); }
+
   .album__credits {
     margin-top: var(--space-xl);
     padding-top: var(--space-md);

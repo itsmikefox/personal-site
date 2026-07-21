@@ -13,6 +13,13 @@ spotify: ""
 soundcloud: ""
 youtube: ""
 credits: ""
+# Press coverage. Each entry needs outlet + href; quote and author optional.
+# Edit here in source view — the Properties panel can't handle nested lists.
+press:
+  # - outlet: "Publication"
+  #   author: "Writer"
+  #   quote: "A quotable line of praise."
+  #   href: "https://example.com/review"
 order: 0
 draft: true
 ---

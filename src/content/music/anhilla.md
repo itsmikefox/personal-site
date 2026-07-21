@@ -13,6 +13,18 @@ credits: |-
   mike fox: guitars, vocals, synths.
   travis marmon: bass, vocals.
   rachel rustemeyer: vocals.
+press:
+  - outlet: "Wonderbox Metal"
+    quote: "Anhilla is the sound of a band coming of age and spreading their wings."
+    href: "https://wonderboxmetal.com/2017/02/21/flesh-of-the-stars-anhilla-review/"
+  - outlet: "Heavy Blog Is Heavy"
+    label: "Interview"
+    author: "Simon Handmaker"
+    href: "https://www.heavyblogisheavy.com/2017/04/14/flesh-of-the-stars-the-heavy-blog-interview-pt-1/"
+  - outlet: "Everything Is Noise"
+    label: "Feature"
+    author: "Tim Fleskes"
+    href: "https://everythingisnoise.net/weekly-featured-artist/wfa-flesh-of-the-stars/"
 ---
 
 ## Personal Notes
