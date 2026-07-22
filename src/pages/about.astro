@@ -60,25 +60,36 @@ const schema = personSchema(
 <style>
   .about-top {
     display: grid;
-    grid-template-columns: 15rem 1fr;
+    grid-template-columns: 1fr 15rem;
     gap: var(--space-xl);
     align-items: start;
     margin-bottom: var(--space-lg);
   }
+  /* Photo on the right, bio on the left. Explicit placement keeps the
+     photo first in source order, so it still stacks on top on mobile. */
+  .about-bio {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0;
+  }
   .about-photo {
+    grid-column: 2;
+    grid-row: 1;
     width: 100%;
     height: auto;
     display: block;
     border-radius: var(--radius);
     border: 1px solid var(--border);
   }
-  .about-bio {
-    margin: 0;
-  }
   @media (max-width: 40rem) {
     .about-top {
       grid-template-columns: 1fr;
       gap: var(--space-md);
+    }
+    .about-bio,
+    .about-photo {
+      grid-column: auto;
+      grid-row: auto;
     }
     .about-photo {
       max-width: 15rem;
