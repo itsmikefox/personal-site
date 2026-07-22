@@ -21,18 +21,34 @@ const schema = personSchema(
     <h1>About</h1>
   </div>
 
-  <div class="prose">
-    <p>
-      Howdy, I'm Mike. I make things: music, circuits, software, art, gardens, and writing. My favorite
-      trick is finding new and unusual ways to cross-pollinate one interest with another. I live in
-      Ecoregion 34b (Chicago, IL) with my partner Erin.
-    </p>
-    <p>
-      Currently, I release music under the name BigBluestem and work as the technical lead for PrintNinja
-      (a printer focused on serving independent creators). I love physics, electronics, ecology, and a
-      good story. I learn by building. Tryin' to cover all my bases before I die.
-    </p>
+  <div class="about-top">
+    <img
+      class="about-photo"
+      src="/images/mike-480.jpg"
+      srcset="/images/mike-240.jpg 240w, /images/mike-480.jpg 480w, /images/mike-720.jpg 720w"
+      sizes="(max-width: 40rem) 60vw, 15rem"
+      width="240"
+      height="320"
+      alt="Mike Fox, smiling in a cap, round glasses, and a worn brown leather jacket against a white brick wall"
+      loading="eager"
+      decoding="async"
+    />
 
+    <div class="prose about-bio">
+      <p>
+        Howdy, I'm Mike. I make things: music, circuits, software, art, gardens, and writing. My favorite
+        trick is finding new and unusual ways to cross-pollinate one interest with another. I live in
+        Ecoregion 34b (Chicago, IL) with my partner Erin.
+      </p>
+      <p>
+        Currently, I release music under the name BigBluestem and work as the technical lead for PrintNinja
+        (a printer focused on serving independent creators). I love physics, electronics, ecology, and a
+        good story. I learn by building. Tryin' to cover all my bases before I die.
+      </p>
+    </div>
+  </div>
+
+  <div class="prose">
     <h2>Get in touch</h2>
     <p>The best ways to reach me:</p>
     <ul>
@@ -40,3 +56,32 @@ const schema = personSchema(
     </ul>
   </div>
 </BaseLayout>
+
+<style>
+  .about-top {
+    display: grid;
+    grid-template-columns: 15rem 1fr;
+    gap: var(--space-xl);
+    align-items: start;
+    margin-bottom: var(--space-lg);
+  }
+  .about-photo {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+  }
+  .about-bio {
+    margin: 0;
+  }
+  @media (max-width: 40rem) {
+    .about-top {
+      grid-template-columns: 1fr;
+      gap: var(--space-md);
+    }
+    .about-photo {
+      max-width: 15rem;
+    }
+  }
+</style>
