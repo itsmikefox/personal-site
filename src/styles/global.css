@@ -63,6 +63,11 @@
   --fill-poetry-a: #994d85;
   --fill-poetry-b: #7e4e90;
   --fill-music: #0d5f4e;
+  /* Meta pages — deep, muted hues that harmonize with the identity fills
+     above; each takes white type (verified ≥5.8:1). */
+  --fill-links: #155e63;      /* teal */
+  --fill-experience: #3f57a6; /* indigo */
+  --fill-about: #8a5a2b;      /* sepia — a nod to the About portrait */
 
   /* Dark theme — "Night Edition" (the site default; also the no-JS
      fallback, since the inline script in BaseLayout only ever sets

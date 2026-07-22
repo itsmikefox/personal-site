@@ -73,7 +73,7 @@ const isActive = (href: string) =>
   /* The active section is a square filled tab in its identity color;
      everything else stays quiet — no hover treatment. Color is never
      the only cue: active links also gain weight and carry aria-current.
-     Sections without a color fall back to orange. */
+     Every section has its own fill; orange also serves as the fallback. */
   .nav__link {
     display: inline-flex;
     align-items: center;
@@ -105,6 +105,18 @@ const isActive = (href: string) =>
   .nav__link[data-section="music"].is-active {
     color: #ffffff;
     background: var(--fill-music);
+  }
+  .nav__link[data-section="links"].is-active {
+    color: #ffffff;
+    background: var(--fill-links);
+  }
+  .nav__link[data-section="experience"].is-active {
+    color: #ffffff;
+    background: var(--fill-experience);
+  }
+  .nav__link[data-section="about"].is-active {
+    color: #ffffff;
+    background: var(--fill-about);
   }
 
   /* On narrow screens the nav wraps under the brand row. */
