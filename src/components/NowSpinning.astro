@@ -1,0 +1,274 @@
+---
+// "Now Spinning" — a live element showing what Mike's been listening to, pulled
+// from Last.fm in the browser on page load (no rebuild needed, always current).
+// Renders nothing without an API key, and hides itself if Last.fm is slow or
+// down — it's an enhancement, never load-bearing.
+import { LASTFM_USER, LASTFM_API_KEY } from "../consts";
+
+const profileUrl = `https://www.last.fm/user/${LASTFM_USER}`;
+const RECENT = 5; // number of small tiles beside the headline track
+---
+
+{
+  LASTFM_API_KEY && (
+    <section
+      class="ns"
+      data-ns
+      data-user={LASTFM_USER}
+      data-key={LASTFM_API_KEY}
+      aria-label="What I've been listening to"
+      hidden
+    >
+      <a class="ns__now" data-ns-head href={profileUrl} target="_blank" rel="noopener">
+        <span class="ns__art">
+          <img class="ns__art-img" data-ns-art alt="" width="120" height="120" loading="lazy" hidden />
+          <span class="ns__pulse" aria-hidden="true" />
+        </span>
+        <span class="ns__info">
+          <span class="ns__status" data-ns-status>Now spinning</span>
+          <span class="ns__track" data-ns-track />
+          <span class="ns__artist" data-ns-artist />
+        </span>
+      </a>
+
+      <div class="ns__recent">
+        <div class="ns__tiles">
+          {Array.from({ length: RECENT }).map(() => (
+            <a class="ns__tile" data-ns-tile href="#" target="_blank" rel="noopener" hidden>
+              <img class="ns__tile-img" data-ns-tile-art alt="" width="52" height="52" loading="lazy" hidden />
+            </a>
+          ))}
+        </div>
+        <a class="ns__more" href={profileUrl} target="_blank" rel="noopener">Last.fm ↗</a>
+      </div>
+    </section>
+  )
+}
+
+<style>
+  .ns {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-md) var(--space-lg);
+    padding: var(--space-md);
+    margin-bottom: var(--space-xl);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+  }
+
+  /* headline: current / most-recent track */
+  .ns__now {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    text-decoration: none;
+    color: inherit;
+    min-width: 0;
+    flex: 1 1 16rem;
+  }
+  .ns__art {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    flex: none;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: var(--fill-music);
+  }
+  .ns__art-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  /* pulse dot — only shown while a track is actually playing */
+  .ns__pulse {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--mark);
+    box-shadow: 0 0 0 2px var(--surface);
+    opacity: 0;
+  }
+  .ns.is-playing .ns__pulse {
+    opacity: 1;
+    animation: ns-pulse 1.8s ease-in-out infinite;
+  }
+  @keyframes ns-pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.5); opacity: 0.45; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .ns.is-playing .ns__pulse { animation: none; }
+  }
+
+  .ns__info {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+  .ns__status {
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .ns.is-playing .ns__status {
+    color: var(--accent);
+  }
+  .ns__track {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: var(--text-lg);
+    line-height: 1.2;
+    color: var(--ink);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .ns__now:hover .ns__track {
+    color: var(--accent);
+  }
+  .ns__artist {
+    font-size: var(--text-sm);
+    color: var(--muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* recent tiles */
+  .ns__recent {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-left: auto;
+  }
+  .ns__tiles {
+    display: flex;
+    gap: var(--space-xs);
+  }
+  .ns__tile {
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: var(--fill-music);
+    flex: none;
+    transition: transform 0.15s ease;
+  }
+  .ns__tile:hover {
+    transform: translateY(-2px);
+  }
+  .ns__tile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .ns__more {
+    font-size: var(--text-sm);
+    color: var(--accent);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .ns__more:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 34rem) {
+    .ns__recent {
+      margin-left: 0;
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+</style>
+
+<script>
+  // Fetch recent scrobbles and fill the pre-rendered skeleton. All optional —
+  // any failure leaves the element hidden.
+  const API = "https://ws.audioscrobbler.com/2.0/";
+
+  const pickImg = (images: Array<{ "#text": string; size: string }> | undefined): string => {
+    if (!Array.isArray(images)) return "";
+    const by: Record<string, string> = {};
+    for (const im of images) by[im.size] = im["#text"];
+    return by.extralarge || by.large || by.medium || by.small || "";
+  };
+
+  const relTime = (uts: number): string => {
+    const s = Math.floor(Date.now() / 1000) - uts;
+    if (s < 60) return "just now";
+    const m = Math.floor(s / 60);
+    if (m < 60) return `${m} minute${m > 1 ? "s" : ""} ago`;
+    const h = Math.floor(m / 60);
+    if (h < 24) return `${h} hour${h > 1 ? "s" : ""} ago`;
+    const d = Math.floor(h / 24);
+    if (d < 7) return `${d} day${d > 1 ? "s" : ""} ago`;
+    return new Date(uts * 1000).toLocaleDateString("en-US", { month: "short", day: "numeric" });
+  };
+
+  const setImg = (img: HTMLImageElement | null, src: string) => {
+    if (img && src) {
+      img.src = src;
+      img.hidden = false;
+    }
+  };
+
+  const section = document.querySelector<HTMLElement>("[data-ns]");
+  const user = section?.dataset.user;
+  const key = section?.dataset.key;
+
+  if (section && user && key) {
+    const url = `${API}?method=user.getrecenttracks&user=${encodeURIComponent(user)}&api_key=${encodeURIComponent(key)}&format=json&limit=${1 + 5}`;
+    fetch(url)
+      .then((r) => (r.ok ? r.json() : Promise.reject()))
+      .then((data) => {
+        const tracks = data?.recenttracks?.track;
+        if (!Array.isArray(tracks) || tracks.length === 0) return;
+
+        const [head, ...rest] = tracks;
+        const playing = head["@attr"]?.nowplaying === "true";
+
+        setImg(section.querySelector<HTMLImageElement>("[data-ns-art]"), pickImg(head.image));
+        const trackEl = section.querySelector<HTMLElement>("[data-ns-track]");
+        const artistEl = section.querySelector<HTMLElement>("[data-ns-artist]");
+        const statusEl = section.querySelector<HTMLElement>("[data-ns-status]");
+        const headLink = section.querySelector<HTMLAnchorElement>("[data-ns-head]");
+        if (trackEl) trackEl.textContent = head.name || "";
+        if (artistEl) artistEl.textContent = head.artist?.["#text"] || head.artist?.name || "";
+        if (headLink && head.url) headLink.href = head.url;
+        if (statusEl) {
+          if (playing) {
+            section.classList.add("is-playing");
+            statusEl.textContent = "Now playing";
+          } else {
+            statusEl.textContent = head.date?.uts ? relTime(Number(head.date.uts)) : "Recently played";
+          }
+        }
+
+        const tiles = Array.from(section.querySelectorAll<HTMLAnchorElement>("[data-ns-tile]"));
+        rest.slice(0, tiles.length).forEach((t, i) => {
+          const tile = tiles[i];
+          setImg(tile.querySelector<HTMLImageElement>("[data-ns-tile-art]"), pickImg(t.image));
+          if (t.url) tile.href = t.url;
+          tile.title = `${t.name}${t.artist?.["#text"] ? " — " + t.artist["#text"] : ""}`;
+          tile.hidden = false;
+        });
+
+        section.hidden = false;
+      })
+      .catch(() => {
+        /* leave the element hidden */
+      });
+  }
+</script>

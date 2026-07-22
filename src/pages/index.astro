@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import NowSpinning from "../components/NowSpinning.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import { personSchema } from "../lib/author";
 
@@ -49,6 +50,8 @@ const schema = [
       and gardening. This is where any results pile up. <a href="/about">More about me →</a>
     </p>
   </section>
+
+  <NowSpinning />
 
   <div class="cols">
     <section class="home-block">

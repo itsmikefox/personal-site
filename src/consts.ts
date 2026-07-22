@@ -49,6 +49,14 @@ export const NAV: { label: string; href: string }[] = [
   { label: "About", href: "/about" },
 ];
 
+// Last.fm — powers the homepage "Now spinning" element. The key is a public,
+// read-only API key, so it's safe to ship in client JS (that's the normal
+// pattern for these widgets). Register one at
+// https://www.last.fm/api/account/create. Leave LASTFM_API_KEY empty to hide
+// the element entirely.
+export const LASTFM_USER = "Mod-man";
+export const LASTFM_API_KEY = "2fb18a8443318d71021bb49fcf47389e";
+
 // Footer / about links. Leave a value empty ("") to hide that item.
 export const SOCIALS: { label: string; href: string }[] = [
   { label: "Email", href: "mailto:itismikefox@gmail.com" },
