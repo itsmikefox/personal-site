@@ -1,8 +1,11 @@
 ---
 // "Now Spinning" — a live element showing what Mike's been listening to, pulled
 // from Last.fm in the browser on page load (no rebuild needed, always current).
-// Renders nothing without an API key, and hides itself if Last.fm is slow or
-// down — it's an enhancement, never load-bearing.
+//
+// Default state: a static "Listening — Last.fm ↗" link, rendered server-side so
+// there's always something (works with no JS, and shows if Last.fm is down).
+// When the fetch succeeds it's swapped for the rich strip: the current/most
+// recent track with art, plus a row of recent tracks.
 import { LASTFM_USER, LASTFM_API_KEY } from "../consts";
 
 const profileUrl = `https://www.last.fm/user/${LASTFM_USER}`;
@@ -10,36 +13,44 @@ const RECENT = 5; // number of small tiles beside the headline track
 ---
 
 {
-  LASTFM_API_KEY && (
+  LASTFM_USER && (
     <section
       class="ns"
       data-ns
       data-user={LASTFM_USER}
       data-key={LASTFM_API_KEY}
       aria-label="What I've been listening to"
-      hidden
     >
-      <a class="ns__now" data-ns-head href={profileUrl} target="_blank" rel="noopener">
-        <span class="ns__art">
-          <img class="ns__art-img" data-ns-art alt="" width="120" height="120" loading="lazy" hidden />
-          <span class="ns__pulse" aria-hidden="true" />
-        </span>
-        <span class="ns__info">
-          <span class="ns__status" data-ns-status>Now spinning</span>
-          <span class="ns__track" data-ns-track />
-          <span class="ns__artist" data-ns-artist />
-        </span>
+      {/* Default state — always present; hidden once the live strip loads */}
+      <a class="ns__fallback" data-ns-fallback href={profileUrl} target="_blank" rel="noopener">
+        <span class="ns__fallback-eyebrow">Listening</span>
+        <span class="ns__fallback-text">What I've been playing, over on Last.fm ↗</span>
       </a>
 
-      <div class="ns__recent">
-        <div class="ns__tiles">
-          {Array.from({ length: RECENT }).map(() => (
-            <a class="ns__tile" data-ns-tile href="#" target="_blank" rel="noopener" hidden>
-              <img class="ns__tile-img" data-ns-tile-art alt="" width="52" height="52" loading="lazy" hidden />
-            </a>
-          ))}
+      {/* Live strip — revealed after a successful fetch */}
+      <div class="ns__live" data-ns-live hidden>
+        <a class="ns__now" data-ns-head href={profileUrl} target="_blank" rel="noopener">
+          <span class="ns__art">
+            <img class="ns__art-img" data-ns-art alt="" width="120" height="120" loading="lazy" hidden />
+            <span class="ns__pulse" aria-hidden="true" />
+          </span>
+          <span class="ns__info">
+            <span class="ns__status" data-ns-status>Now spinning</span>
+            <span class="ns__track" data-ns-track />
+            <span class="ns__artist" data-ns-artist />
+          </span>
+        </a>
+
+        <div class="ns__recent">
+          <div class="ns__tiles">
+            {Array.from({ length: RECENT }).map(() => (
+              <a class="ns__tile" data-ns-tile href="#" target="_blank" rel="noopener" hidden>
+                <img class="ns__tile-img" data-ns-tile-art alt="" width="52" height="52" loading="lazy" hidden />
+              </a>
+            ))}
+          </div>
+          <a class="ns__more" href={profileUrl} target="_blank" rel="noopener">Last.fm ↗</a>
         </div>
-        <a class="ns__more" href={profileUrl} target="_blank" rel="noopener">Last.fm ↗</a>
       </div>
     </section>
   )
@@ -47,12 +58,45 @@ const RECENT = 5; // number of small tiles beside the headline track
 
 <style>
   .ns {
+    margin-top: var(--space-lg);
+  }
+  /* The `hidden` attribute must win over the display rules below (a bare
+     [hidden] is only a low-priority UA style, which our .ns__* display
+     declarations would otherwise override). */
+  .ns [hidden] {
+    display: none !important;
+  }
+
+  /* default / fallback state */
+  .ns__fallback {
+    display: inline-flex;
+    align-items: baseline;
+    gap: var(--space-sm);
+    padding: var(--space-sm) 0;
+    text-decoration: none;
+    color: var(--muted);
+  }
+  .ns__fallback-eyebrow {
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  .ns__fallback-text {
+    font-size: var(--text-sm);
+  }
+  .ns__fallback:hover .ns__fallback-text {
+    color: var(--ink);
+  }
+
+  /* live strip */
+  .ns__live {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: var(--space-md) var(--space-lg);
     padding: var(--space-md);
-    margin-bottom: var(--space-xl);
     border: 1px solid var(--border);
     border-radius: var(--radius);
     background: var(--surface);
@@ -194,8 +238,8 @@ const RECENT = 5; // number of small tiles beside the headline track
 </style>
 
 <script>
-  // Fetch recent scrobbles and fill the pre-rendered skeleton. All optional —
-  // any failure leaves the element hidden.
+  // Fetch recent scrobbles and fill the pre-rendered skeleton, then swap the
+  // fallback link for the live strip. Any failure leaves the fallback in place.
   const API = "https://ws.audioscrobbler.com/2.0/";
 
   const pickImg = (images: Array<{ "#text": string; size: string }> | undefined): string => {
@@ -265,10 +309,14 @@ const RECENT = 5; // number of small tiles beside the headline track
           tile.hidden = false;
         });
 
-        section.hidden = false;
+        // Swap the default fallback for the live strip.
+        const live = section.querySelector<HTMLElement>("[data-ns-live]");
+        const fallback = section.querySelector<HTMLElement>("[data-ns-fallback]");
+        if (live) live.hidden = false;
+        if (fallback) fallback.hidden = true;
       })
       .catch(() => {
-        /* leave the element hidden */
+        /* leave the default fallback link in place */
       });
   }
 </script>
