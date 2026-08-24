@@ -1,7 +1,7 @@
 ---
 title: "Dark Sporch Chronicles"
 artist: "Arthhur"
-year: "2020"
+year: "2018"
 genre: ["Synthwave", "Electronic"]
 cover: "/images/albums/dark-sporch-chronicles.jpg"
 bandcampId: "399208951"

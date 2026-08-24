@@ -16,5 +16,5 @@ daylight fades to candle red.
 push ears into tweed cushion, resting on your steady pulse\
 our phones light up with off market offers\
 Unfamiliar digits rattling the coffee table.\
-we are good.\ 
+we are good. \
 let it ring.

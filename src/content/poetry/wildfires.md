@@ -11,4 +11,4 @@ and loose fellow souls in plume
 hack and drag, our breath hitched tight\
 day nor night is spared from smoke\
 the seasons now off-axis\
-South wind acts as collar choke
+South wind acts as collars choke

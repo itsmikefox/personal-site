@@ -43,11 +43,10 @@ const schema = [
 
 <BaseLayout schema={schema}>
   <section class="intro">
-    <h1>Software by day.<br />Everything else after dark.</h1>
+    <h1>Hello</h1>
     <p class="lead">
-      I'm Mike Fox, I live in Chicago and I try to find new and unique ways to cross pollinate my interests. That means
-      songs (as BigBluestem), circuits, software, writing, art and design, ecology
-      and gardening. <a href="/about">More about me →</a>
+     I'm Mike Fox, I'm a American Midwesterner located in Ecoregion 34b. I create songs (as Big Bluestem), circuits, software, essays, art, furniture, and gardens.
+ <a href="/about">More about me →</a>
     </p>
   </section>
 
@@ -56,7 +55,7 @@ const schema = [
       <h2 class="sec">Recent writing</h2>
       {
         posts.length === 0 ? (
-          <p class="muted">No posts yet — your first one is waiting in <code>src/content/writing/</code>.</p>
+          <p class="muted">No posts yet.</p>
         ) : (
           <ol class="idx">
             {posts.map((post) => (
@@ -85,7 +84,7 @@ const schema = [
             </cite>
           </blockquote>
         ) : (
-          <p class="muted">No poems yet — add one to <code>src/content/poetry/</code>.</p>
+          <p class="muted">No poems yet.</p>
         )
       }
     </section>
