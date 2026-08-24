@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__plugin_playwright_playwright__browser_resize",
+      "mcp__plugin_playwright_playwright__browser_click",
+      "Bash(perl -pi -e 's/⟑/●/g; s/⌇/◐/g; s/❦/◈/g;' prairie.html)",
+      "Bash(perl -0pi -e ' *)",
+      "Bash(open \"http://localhost:8791/prairie.html\")"
+    ]
+  }
+}
