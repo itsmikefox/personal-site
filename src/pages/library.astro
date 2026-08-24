@@ -6,8 +6,8 @@ import { getCollection } from "astro:content";
 import { buildBooks } from "../lib/bases";
 import { SITE_TITLE } from "../consts";
 
-// The shelf, straight out of Obsidian. `pnpm books` regenerates the snapshot
-// this reads; nothing here is hand-maintained.
+// The shelf out of Obsidian. `pnpm books` regenerates the snapshot
+// this reads; nothing here is hand-maintained!!!
 const entries = await getCollection("books");
 const config = buildBooks(entries);
 
@@ -30,16 +30,14 @@ const schema = {
 
 <BaseLayout
   title="Library"
-  description={`Every book on my shelves — ${config.items.length} of them, searchable by genre, decade, and format. Ask about any of them.`}
+  description={`Every book we've got in the house: ${config.items.length} of them and counting! searchable by genre, decade, and format!`}
   wide
   schema={schema}
 >
   <div class="page-head">
     <h1>Library</h1>
     <p>
-      Everything on my shelves — {config.items.length} books, {withCover} of them
-      with covers. Open any one to ask about it: I'll happily lend a copy, or point
-      you at where to find your own.
+      Every book in our house: {config.items.length} books/magazines/zines. Click on one if you'd like more info, or if you want to request me to lend it out!
     </p>
   </div>
 
