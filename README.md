@@ -68,6 +68,40 @@ second line here.
 A new stanza after the blank line.
 ```
 
+## The library
+
+`/library` is a public view of the `Books.base` folder in Obsidian, listed as an
+entry on the Projects page rather than in the main nav. It's the one part of the
+site that isn't authored here — the vault is the source of truth, and a script
+pulls a snapshot into the repo:
+
+```sh
+pnpm books              # re-import from Obsidian, fetching any new covers
+pnpm books --no-fetch   # re-import metadata only, reuse cached covers
+```
+
+That reads `E01_Books/*.md` (override the path with `BOOKS_VAULT=…`) and writes:
+
+- `src/data/books.json` — one record per book, **frontmatter only**. Note bodies
+  are never read, so private reading notes and `[[wikilinks]]` to personal notes
+  can't leak into the site.
+- `public/images/books/` — every cover, cached locally so no page hotlinks
+  OpenLibrary or Google Books. Placeholders (1x1 GIFs, "image not available"
+  banners, HTML error pages) are rejected; books without a usable cover get a
+  typographic fold instead, and the script prints their names so you can fix
+  them in Obsidian.
+
+Along the way it normalizes the vault's inconsistencies: strips the
+`# physical / digital / both` template comment out of `format`, flattens
+`"[[Aldo Leopold]]"` to a plain name, flips `Lowry, Erin` to `Erin Lowry` (but
+leaves `Grant Morrison, Frank Quitely` alone — that's two authors, not an
+inversion), and splits `Literary Fiction/Comedy` into two genres.
+
+Visitors can request any book. Requests go to [Formspree](https://formspree.io):
+create a form, then put its ID in `FORMSPREE_ID` in `src/consts.ts`. Until you
+do, the request button falls back to a prefilled `mailto:` link, so the feature
+works either way.
+
 ## Customizing the look
 
 Everything visual is driven by CSS variables at the top of

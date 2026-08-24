@@ -1,0 +1,48 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Base from "../components/base/Base.astro";
+import BookPanel from "../components/BookPanel.astro";
+import { getCollection } from "astro:content";
+import { buildBooks } from "../lib/bases";
+import { SITE_TITLE } from "../consts";
+
+// The shelf, straight out of Obsidian. `pnpm books` regenerates the snapshot
+// this reads; nothing here is hand-maintained.
+const entries = await getCollection("books");
+const config = buildBooks(entries);
+
+const withCover = config.items.filter((it) => it.cover).length;
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: `Library · ${SITE_TITLE}`,
+  description: `A catalog of the ${config.items.length} books on Mike Fox's shelves, browsable by genre, decade, and format.`,
+  url: new URL("/library", Astro.site).href,
+  about: { "@type": "Thing", name: "Books" },
+  mainEntity: {
+    "@type": "Collection",
+    name: "Mike Fox's library",
+    collectionSize: config.items.length,
+  },
+};
+---
+
+<BaseLayout
+  title="Library"
+  description={`Every book on my shelves — ${config.items.length} of them, searchable by genre, decade, and format. Ask about any of them.`}
+  wide
+  schema={schema}
+>
+  <div class="page-head">
+    <h1>Library</h1>
+    <p>
+      Everything on my shelves — {config.items.length} books, {withCover} of them
+      with covers. Open any one to ask about it: I'll happily lend a copy, or point
+      you at where to find your own.
+    </p>
+  </div>
+
+  <Base {...config} />
+  <BookPanel items={config.items} />
+</BaseLayout>

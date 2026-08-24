@@ -68,6 +68,7 @@
   --fill-links: #155e63;      /* teal */
   --fill-experience: #3f57a6; /* indigo */
   --fill-about: #8a5a2b;      /* sepia — a nod to the About portrait */
+  --fill-library: #7a2233;    /* oxblood — the color of a cloth binding (10:1 on white) */
 
   /* Dark theme — "Night Edition" (the site default; also the no-JS
      fallback, since the inline script in BaseLayout only ever sets

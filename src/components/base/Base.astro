@@ -14,7 +14,7 @@ import CardsView from "./CardsView.astro";
 import type { BaseConfig } from "../../lib/bases";
 
 type Props = BaseConfig;
-const { kind, items, facets, columns, views, defaultView } = Astro.props;
+const { kind, items, facets, columns, views, defaultView, detail = false } = Astro.props;
 
 const hasCover = items.some((it) => it.cover);
 
@@ -90,9 +90,9 @@ const viewIcon = (v: string): string => {
   {
     views.map((v) => (
       <div class="base__view" data-view={v} hidden={v !== defaultView}>
-        {v === "gallery" && <GalleryView items={items} />}
+        {v === "gallery" && <GalleryView items={items} detail={detail} />}
         {v === "ledger" && <LedgerView items={items} kind={kind} />}
-        {v === "table" && <TableView items={items} columns={columns} hasCover={hasCover} />}
+        {v === "table" && <TableView items={items} columns={columns} hasCover={hasCover} detail={detail} />}
         {v === "cards" && <CardsView items={items} />}
       </div>
     ))

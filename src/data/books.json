@@ -1,0 +1,7075 @@
+[
+  {
+    "id": "50-years-of-text-games",
+    "title": "50 Years of Text Games",
+    "author": "Aaron A. Reed",
+    "year": 2022,
+    "publisher": "",
+    "genre": [
+      "Gaming",
+      "History"
+    ],
+    "format": "physical",
+    "cover": "/images/books/50-years-of-text-games.jpg",
+    "source": "50 Years of Text Games.md"
+  },
+  {
+    "id": "a-case-of-curiosities",
+    "title": "A Case of Curiosities",
+    "author": "Allen Kurzweil",
+    "year": 1992,
+    "publisher": "",
+    "genre": [
+      "Historical Fiction"
+    ],
+    "format": "physical",
+    "cover": "/images/books/a-case-of-curiosities.jpg",
+    "source": "A Case of Curiosities.md"
+  },
+  {
+    "id": "a-confederacy-of-dunces",
+    "title": "A Confederacy of Dunces",
+    "author": "John Kennedy Toole",
+    "year": 1980,
+    "publisher": "Louisiana State University Press",
+    "genre": [
+      "Literary Fiction",
+      "Comedy"
+    ],
+    "format": "physical",
+    "cover": "/images/books/a-confederacy-of-dunces.jpg",
+    "source": "A Confederacy of Dunces.md"
+  },
+  {
+    "id": "a-council-of-dolls",
+    "title": "A Council of Dolls",
+    "author": "Mona Susan Power",
+    "year": 2023,
+    "publisher": "",
+    "genre": [
+      "Literary Fiction"
+    ],
+    "format": "physical",
+    "cover": "/images/books/a-council-of-dolls.jpg",
+    "source": "A Council of Dolls.md"
+  },
+  {
+    "id": "a-marvelous-life-the-amazing-story-of-stan-lee",
+    "title": "A Marvelous Life: The Amazing Story of Stan Lee",
+    "author": "Danny Fingeroth",
+    "year": 2019,
+    "publisher": "",
+    "genre": [
+      "Biography",
+      "Comics"
+    ],
+    "format": "physical",
+    "cover": "/images/books/a-marvelous-life-the-amazing-story-of-stan-lee.jpg",
+    "source": "A Marvelous Life- The Amazing Story of Stan Lee.md"
+  },
+  {
+    "id": "a-night-in-the-lonesome-october",
+    "title": "A Night in the Lonesome October",
+    "author": "Roger Zelazny",
+    "year": 1993,
+    "publisher": "",
+    "genre": [
+      "Fantasy",
+      "Horror"
+    ],
+    "format": "physical",
+    "cover": "/images/books/a-night-in-the-lonesome-october.jpg",
+    "source": "A Night in the Lonesome October.md"
+  },
+  {
+    "id": "a-paradise-built-in-hell",
+    "title": "A Paradise Built in Hell",
+    "author": "Rebecca Solnit",
+    "year": 2009,
+    "publisher": "",
+    "genre": [
+      "Social Science",
+      "Disaster Studies"
+    ],
+    "format": "",
+    "cover": "/images/books/a-paradise-built-in-hell.jpg",
+    "source": "A Paradise Built in Hell.md"
+  },
+  {
+    "id": "a-sand-county-almanac",
+    "title": "A Sand County Almanac",
+    "author": "Aldo Leopold",
+    "year": 1949,
+    "publisher": "Oxford University Press",
+    "genre": [
+      "Nature Writing",
+      "Environmental Literature"
+    ],
+    "format": "",
+    "cover": "/images/books/a-sand-county-almanac.jpg",
+    "source": "A Sand County Almanac.md"
+  },
+  {
+    "id": "a-source-book-of-modern-transistor-circuits",
+    "title": "A Source Book of Modern Transistor Circuits",
+    "author": "John Markus Cowles",
+    "year": 1968,
+    "publisher": "",
+    "genre": [
+      "Electronics"
+    ],
+    "format": "physical",
+    "cover": "/images/books/a-source-book-of-modern-transistor-circuits.jpg",
+    "source": "A Source Book of Modern Transistor Circuits.md"
+  },
+  {
+    "id": "a-swim-in-the-pond-in-the-rain",
+    "title": "A Swim in the Pond in the Rain",
+    "author": "George Saunders",
+    "year": 2021,
+    "publisher": "Random House",
+    "genre": [
+      "Literary Criticism",
+      "Writing Guide"
+    ],
+    "format": "",
+    "cover": "/images/books/a-swim-in-the-pond-in-the-rain.jpg",
+    "source": "A Swim in the Pond in the Rain.md"
+  },
+  {
+    "id": "a-walk-in-the-woods",
+    "title": "A Walk in the Woods",
+    "author": "Bill Bryson",
+    "year": 1998,
+    "publisher": "Rediscovering America on the Appalachian Trail*. New York: Broadway Books",
+    "genre": [
+      "Non-Fiction",
+      "Travel Writing"
+    ],
+    "format": "",
+    "cover": "/images/books/a-walk-in-the-woods.jpg",
+    "source": "A Walk in the Woods.md"
+  },
+  {
+    "id": "acoustical-measurements-acoustical-society-of-america",
+    "title": "Acoustical Measurements (Acoustical Society of America)",
+    "author": "Leo L. Beranek",
+    "year": 1949,
+    "publisher": "",
+    "genre": [
+      "Audio Engineering"
+    ],
+    "format": "physical",
+    "cover": "/images/books/acoustical-measurements-acoustical-society-of-america.jpg",
+    "source": "Acoustical Measurements (Acoustical Society of America).md"
+  },
+  {
+    "id": "adventure-zone-here-there-be-gerblins",
+    "title": "Adventure Zone - Here There Be Gerblins",
+    "author": "McElroy, Clint, Griffin McElroy, Justin McElroy, Travis McElroy, and Carey Pietsch",
+    "year": 2018,
+    "publisher": "Here There Be Gerblins_. New York: First Second",
+    "genre": [
+      "Graphic Novel",
+      "Fantasy"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Adventure Zone - Here There Be Gerblins.md"
+  },
+  {
+    "id": "adventure-zone-murder-on-the-rockport-limited",
+    "title": "Adventure Zone - Murder On The Rockport Limited",
+    "author": "McElroy, Clint, Griffin McElroy, Justin McElroy, Travis McElroy, and Carey Pietsch",
+    "year": 2019,
+    "publisher": "Murder on the Rockport Limited!_ New York: First Second",
+    "genre": [
+      "Graphic Novel",
+      "Fantasy"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Adventure Zone - Murder On The Rockport Limited.md"
+  },
+  {
+    "id": "adventure-zone-petals-to-the-metal",
+    "title": "Adventure Zone - Petals To The Metal",
+    "author": "McElroy, Clint, Griffin McElroy, Justin McElroy, Travis McElroy, and Carey Pietsch",
+    "year": 2020,
+    "publisher": "Petals to the Metal_. New York: First Second",
+    "genre": [
+      "Graphic Novel",
+      "Fantasy"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Adventure Zone - Petals To The Metal.md"
+  },
+  {
+    "id": "adventure-zone-the-crystal-kingdom",
+    "title": "Adventure Zone - The Crystal Kingdom",
+    "author": "McElroy, Clint, Griffin McElroy, Justin McElroy, Travis McElroy, and Carey Pietsch",
+    "year": 2021,
+    "publisher": "The Crystal Kingdom_. New York: First Second",
+    "genre": [
+      "Graphic Novel",
+      "Fantasy"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Adventure Zone - The Crystal Kingdom.md"
+  },
+  {
+    "id": "adventure-zone-the-eleventh-hour",
+    "title": "Adventure Zone - The Eleventh Hour",
+    "author": "McElroy, Clint, Griffin McElroy, Justin McElroy, Travis McElroy, and Carey Pietsch",
+    "year": 2022,
+    "publisher": "The Eleventh Hour_. New York: First Second",
+    "genre": [
+      "Graphic Novel",
+      "Fantasy"
+    ],
+    "format": "physical",
+    "cover": "/images/books/adventure-zone-the-eleventh-hour.jpg",
+    "source": "Adventure Zone - The Eleventh Hour.md"
+  },
+  {
+    "id": "alchemy-and-mysticism",
+    "title": "Alchemy and Mysticism",
+    "author": "Alexander Roob",
+    "year": 1997,
+    "publisher": "",
+    "genre": [
+      "Art",
+      "History"
+    ],
+    "format": "physical",
+    "cover": "/images/books/alchemy-and-mysticism.jpg",
+    "source": "Alchemy and Mysticism.md"
+  },
+  {
+    "id": "all-about-love",
+    "title": "All About Love",
+    "author": "bell hooks",
+    "year": 2000,
+    "publisher": "",
+    "genre": [
+      "Philosophy",
+      "Self-Help"
+    ],
+    "format": "physical",
+    "cover": "/images/books/all-about-love.jpg",
+    "source": "All About Love.md"
+  },
+  {
+    "id": "all-you-need-to-know-about-the-music-business",
+    "title": "All You Need to Know About the Music Business",
+    "author": "Donald Passman",
+    "year": 2019,
+    "publisher": "Simon & Schuster",
+    "genre": [
+      "Music Business"
+    ],
+    "format": "physical",
+    "cover": "/images/books/all-you-need-to-know-about-the-music-business.jpg",
+    "source": "Everything You Need To Know About The Music Industry.md"
+  },
+  {
+    "id": "all-star-superman",
+    "title": "All-Star Superman",
+    "author": "Grant Morrison, Frank Quitely",
+    "year": 2011,
+    "publisher": "",
+    "genre": [
+      "Comics",
+      "Superhero"
+    ],
+    "format": "physical",
+    "cover": "/images/books/all-star-superman.jpg",
+    "source": "All-Star Superman.md"
+  },
+  {
+    "id": "americanah",
+    "title": "Americanah",
+    "author": "Chimamanda Ngozi Adichie",
+    "year": 2013,
+    "publisher": "",
+    "genre": [
+      "Literary Fiction"
+    ],
+    "format": "physical",
+    "cover": "/images/books/americanah.jpg",
+    "source": "Americanah.md"
+  },
+  {
+    "id": "an-indigenous-peoples-history-of-the-united-states",
+    "title": "An Indigenous Peoples' History of the United States",
+    "author": "Roxanne Dunbar-Ortiz",
+    "year": 2014,
+    "publisher": "",
+    "genre": [
+      "History"
+    ],
+    "format": "physical",
+    "cover": "/images/books/an-indigenous-peoples-history-of-the-united-states.jpg",
+    "source": "An Indigenous Peoples' History of the United States.md"
+  },
+  {
+    "id": "angel-hill",
+    "title": "Angel Hill",
+    "author": "Michael Longley",
+    "year": 2017,
+    "publisher": "",
+    "genre": [
+      "Poetry"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Angel Hill.md"
+  },
+  {
+    "id": "animation-the-mechanics-of-motion",
+    "title": "Animation - The Mechanics Of Motion",
+    "author": "Chris Webster",
+    "year": 2005,
+    "publisher": "The Mechanics of Motion_. Oxford: Focal Press",
+    "genre": [
+      "Animation",
+      "Technical"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Animation - The Mechanics Of Motion.md"
+  },
+  {
+    "id": "armageddon-what-the-bible-really-says-about-the-end",
+    "title": "Armageddon: What the Bible Really Says About the End",
+    "author": "Bart D. Ehrman",
+    "year": 2023,
+    "publisher": "",
+    "genre": [
+      "Religion",
+      "History"
+    ],
+    "format": "physical",
+    "cover": "/images/books/armageddon-what-the-bible-really-says-about-the-end.jpg",
+    "source": "Armageddon- What the Bible Really Says About the End.md"
+  },
+  {
+    "id": "art-fear",
+    "title": "Art & Fear",
+    "author": "Bayles, David, and Ted Orland",
+    "year": 1993,
+    "publisher": "Observations on the Perils (and Rewards) of Artmaking_. Santa Cruz:",
+    "genre": [
+      "Art",
+      "Creativity",
+      "Craft"
+    ],
+    "format": "physical",
+    "cover": "/images/books/art-fear.jpg",
+    "source": "Art & Fear.md"
+  },
+  {
+    "id": "art-and-geometry-a-study-in-space-intuitions",
+    "title": "Art and Geometry: A Study in Space Intuitions",
+    "author": "William M. Ivins Jr.",
+    "year": 1946,
+    "publisher": "",
+    "genre": [
+      "Art",
+      "Mathematics"
+    ],
+    "format": "physical",
+    "cover": "/images/books/art-and-geometry-a-study-in-space-intuitions.jpg",
+    "source": "Art and Geometry- A Study in Space Intuitions.md"
+  },
+  {
+    "id": "art-work-everything-you-need-to-know-as-you-pursue-your-art-career",
+    "title": "Art/Work: Everything You Need to Know as You Pursue Your Art Career",
+    "author": "Heather Darcy Bhandari, Jonathan Melber",
+    "year": 2009,
+    "publisher": "",
+    "genre": [
+      "Art",
+      "Career"
+    ],
+    "format": "physical",
+    "cover": "/images/books/art-work-everything-you-need-to-know-as-you-pursue-your-art-career.jpg",
+    "source": "Art-Work- Everything You Need to Know as You Pursue Your Art Career.md"
+  },
+  {
+    "id": "at-least-were-trying",
+    "title": "At Least We're Trying",
+    "author": "Nico Ciani",
+    "year": 2019,
+    "publisher": "",
+    "genre": [
+      "Poetry"
+    ],
+    "format": "physical",
+    "cover": "/images/books/at-least-were-trying.jpg",
+    "source": "At Least We're Trying.md"
+  },
+  {
+    "id": "attached-the-new-science-of-adult-attachment",
+    "title": "Attached: The New Science of Adult Attachment",
+    "author": "Amir Levine, Rachel Heller",
+    "year": 2010,
+    "publisher": "",
+    "genre": [
+      "Psychology",
+      "Relationships"
+    ],
+    "format": "physical",
+    "cover": "/images/books/attached-the-new-science-of-adult-attachment.jpg",
+    "source": "Attached- The New Science of Adult Attachment.md"
+  },
+  {
+    "id": "automate-this",
+    "title": "Automate This",
+    "author": "Christopher Steiner",
+    "year": 2012,
+    "publisher": "How Algorithms Came to Rule Our World_. New York: Portfolio/Penguin",
+    "genre": [
+      "Technology",
+      "Business"
+    ],
+    "format": "physical",
+    "cover": "/images/books/automate-this.jpg",
+    "source": "Automate This.md"
+  },
+  {
+    "id": "bach-six-suites-for-violoncello-solo",
+    "title": "Bach: Six Suites for Violoncello Solo",
+    "author": "J.S. Bach",
+    "year": 1717,
+    "publisher": "",
+    "genre": [
+      "Music Score"
+    ],
+    "format": "physical",
+    "cover": "/images/books/bach-six-suites-for-violoncello-solo.jpg",
+    "source": "Bach- Six Suites for Violoncello Solo.md"
+  },
+  {
+    "id": "bad-blood-secrets-and-lies-in-a-silicon-valley-startup",
+    "title": "Bad Blood: Secrets and Lies in a Silicon Valley Startup",
+    "author": "John Carreyrou",
+    "year": 2018,
+    "publisher": "",
+    "genre": [
+      "Business",
+      "True Crime"
+    ],
+    "format": "physical",
+    "cover": "/images/books/bad-blood-secrets-and-lies-in-a-silicon-valley-startup.jpg",
+    "source": "Bad Blood- Secrets and Lies in a Silicon Valley Startup.md"
+  },
+  {
+    "id": "bad-company-private-equity-and-the-death-of-the-american-dream",
+    "title": "Bad Company: Private Equity and the Death of the American Dream",
+    "author": "Brendan Ballou",
+    "year": 2023,
+    "publisher": "",
+    "genre": [
+      "Business",
+      "Economics"
+    ],
+    "format": "physical",
+    "cover": "/images/books/bad-company-private-equity-and-the-death-of-the-american-dream.jpg",
+    "source": "Bad Company- Private Equity and the Death of the American Dream.md"
+  },
+  {
+    "id": "bad-feminist",
+    "title": "Bad Feminist",
+    "author": "Roxane Gay",
+    "year": 2014,
+    "publisher": "",
+    "genre": [
+      "Essays",
+      "Feminism"
+    ],
+    "format": "physical",
+    "cover": "/images/books/bad-feminist.jpg",
+    "source": "Bad Feminist.md"
+  },
+  {
+    "id": "bashos-narrow-road",
+    "title": "Basho's Narrow Road",
+    "author": "Matsuo Basho",
+    "year": 1702,
+    "publisher": "",
+    "genre": [
+      "Poetry",
+      "Travel"
+    ],
+    "format": "physical",
+    "cover": "/images/books/bashos-narrow-road.jpg",
+    "source": "Basho's Narrow Road.md"
+  },
+  {
+    "id": "beatles-complete",
+    "title": "Beatles Complete",
+    "author": "The Beatles",
+    "year": 1979,
+    "publisher": "Atv Music Publications",
+    "genre": [
+      "Music Score"
+    ],
+    "format": "physical",
+    "cover": "/images/books/beatles-complete.jpg",
+    "source": "Beatles Complete.md"
+  },
+  {
+    "id": "beautiful-world-where-are-you",
+    "title": "Beautiful World, Where Are You",
+    "author": "Sally Rooney",
+    "year": 2021,
+    "publisher": "Farrar, Straus and Giroux",
+    "genre": [
+      "Literary Fiction"
+    ],
+    "format": "",
+    "cover": "/images/books/beautiful-world-where-are-you.jpg",
+    "source": "Beautiful World, Where Are You.md"
+  },
+  {
+    "id": "beyond-heaven-chicago-house-party-flyers-from-1983-1989",
+    "title": "Beyond Heaven: Chicago House Party Flyers from 1983-1989",
+    "author": "Brandon Walters",
+    "year": 2018,
+    "publisher": "Chicago House Party Flyers from 1983-1989_. Chicago: Almighty & Insane Books",
+    "genre": [
+      "Music History",
+      "Visual Culture"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Beyond Heaven - Chicago House Music Flyers.md"
+  },
+  {
+    "id": "bitch-planet",
+    "title": "Bitch Planet",
+    "author": "DeConnick, Kelly Sue, and Valentine De Landro",
+    "year": 2015,
+    "publisher": "Image Comics",
+    "genre": [
+      "Graphic Novel",
+      "Science Fiction",
+      "Feminist"
+    ],
+    "format": "physical",
+    "cover": "/images/books/bitch-planet.jpg",
+    "source": "Bitch Planet.md"
+  },
+  {
+    "id": "blood-meridian",
+    "title": "Blood Meridian",
+    "author": "Cormac McCarthy",
+    "year": 1985,
+    "publisher": "Random House",
+    "genre": [
+      "Western",
+      "Historical Fiction"
+    ],
+    "format": "",
+    "cover": "/images/books/blood-meridian.jpg",
+    "source": "Blood Meridian.md"
+  },
+  {
+    "id": "brahms-and-the-principle-of-developing-variation",
+    "title": "Brahms and the Principle of Developing Variation",
+    "author": "Walter Frisch",
+    "year": 1984,
+    "publisher": "",
+    "genre": [
+      "Music Theory"
+    ],
+    "format": "digital",
+    "cover": "",
+    "source": "Brahms and the Principle of Developing Variation.md"
+  },
+  {
+    "id": "braiding-sweetgrass-indigenous-wisdom-scientific-knowledge-and-the",
+    "title": "Braiding Sweetgrass: Indigenous Wisdom, Scientific Knowledge and the",
+    "author": "Robin Wall Kimmerer",
+    "year": 2013,
+    "publisher": "Milkweed Editions",
+    "genre": [
+      "Nature Writing",
+      "Indigenous Studies"
+    ],
+    "format": "physical",
+    "cover": "/images/books/braiding-sweetgrass-indigenous-wisdom-scientific-knowledge-and-the.jpg",
+    "source": "Braiding Sweetgrass.md"
+  },
+  {
+    "id": "bright-sided",
+    "title": "Bright-Sided",
+    "author": "Barbara Ehrenreich",
+    "year": 2009,
+    "publisher": "",
+    "genre": [
+      "Cultural Criticism"
+    ],
+    "format": "physical",
+    "cover": "/images/books/bright-sided.jpg",
+    "source": "Bright-Sided.md"
+  },
+  {
+    "id": "broke-millenial-takes-on-investing",
+    "title": "Broke Millenial Takes On Investing",
+    "author": "Erin Lowry",
+    "year": 2019,
+    "publisher": "A Beginner's Guide to Leveling Up Your Money_. New York: TarcherPerigee",
+    "genre": [
+      "Personal Finance"
+    ],
+    "format": "physical",
+    "cover": "/images/books/broke-millenial-takes-on-investing.jpg",
+    "source": "Broke Millenial Takes On Investing.md"
+  },
+  {
+    "id": "broken-mirror",
+    "title": "Broken Mirror",
+    "author": "Mercè Rodoreda",
+    "year": 1988,
+    "publisher": "University of Nebraska Press",
+    "genre": [
+      "Literary Fiction"
+    ],
+    "format": "",
+    "cover": "/images/books/broken-mirror.jpg",
+    "source": "Broken Mirror.md"
+  },
+  {
+    "id": "bronco-bill",
+    "title": "Bronco Bill",
+    "author": "Saalfield Publishing",
+    "year": null,
+    "publisher": "",
+    "genre": [
+      "Western Comics"
+    ],
+    "format": "physical",
+    "cover": "/images/books/bronco-bill.jpg",
+    "source": "Bronco Bill.md"
+  },
+  {
+    "id": "broom-of-the-system",
+    "title": "Broom Of The System",
+    "author": "David Foster Wallace",
+    "year": 1987,
+    "publisher": "",
+    "genre": [
+      "Literary Fiction",
+      "Postmodern"
+    ],
+    "format": "physical",
+    "cover": "/images/books/broom-of-the-system.jpg",
+    "source": "Broom Of The System.md"
+  },
+  {
+    "id": "bullshit-jobs",
+    "title": "Bullshit Jobs",
+    "author": "David Graeber",
+    "year": 2018,
+    "publisher": "",
+    "genre": [
+      "Economics",
+      "Work"
+    ],
+    "format": "physical",
+    "cover": "/images/books/bullshit-jobs.jpg",
+    "source": "Bullshit Jobs.md"
+  },
+  {
+    "id": "burgmuller-op-109-18-characteristic-studies-for-the-piano",
+    "title": "Burgmüller Op. 109: 18 Characteristic Studies for the Piano",
+    "author": "Johann Burgmüller",
+    "year": 1858,
+    "publisher": "",
+    "genre": [
+      "Music Score"
+    ],
+    "format": "physical",
+    "cover": "/images/books/burgmuller-op-109-18-characteristic-studies-for-the-piano.jpg",
+    "source": "Burgmüller Op. 109- 18 Characteristic Studies for the Piano.md"
+  },
+  {
+    "id": "but-is-it-art",
+    "title": "But Is It Art",
+    "author": "Cynthia Freeland",
+    "year": 2001,
+    "publisher": "An Introduction to Art Theory_. Oxford: Oxford University Press",
+    "genre": [
+      "Art Theory",
+      "Philosophy"
+    ],
+    "format": "physical",
+    "cover": "/images/books/but-is-it-art.jpg",
+    "source": "But Is It Art.md"
+  },
+  {
+    "id": "c-programming",
+    "title": "C Programming",
+    "author": "Greg Perry",
+    "year": 2013,
+    "publisher": "Que Publishing",
+    "genre": [
+      "Programming",
+      "Computer Science"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "C Programming Absolute Beginner's Guide 3rd Edition.md"
+  },
+  {
+    "id": "cains-jawbone",
+    "title": "Cain's Jawbone",
+    "author": "Edward Powys Mathers",
+    "year": 1934,
+    "publisher": "",
+    "genre": [
+      "Puzzle",
+      "Mystery"
+    ],
+    "format": "physical",
+    "cover": "/images/books/cains-jawbone.jpg",
+    "source": "Cain's Jawbone.md"
+  },
+  {
+    "id": "candide",
+    "title": "Candide",
+    "author": "Voltaire",
+    "year": 1759,
+    "publisher": "",
+    "genre": [
+      "Classic Fiction",
+      "Satire"
+    ],
+    "format": "physical",
+    "cover": "/images/books/candide.jpg",
+    "source": "Candide.md"
+  },
+  {
+    "id": "caps-lock",
+    "title": "Caps Lock",
+    "author": "Ruben Pater van der Velden",
+    "year": 2021,
+    "publisher": "How Capitalism Took Hold of Graphic Design_. Amsterdam: Valiz",
+    "genre": [
+      "Design",
+      "Cultural Criticism"
+    ],
+    "format": "physical",
+    "cover": "/images/books/caps-lock.jpg",
+    "source": "Caps Lock.md"
+  },
+  {
+    "id": "celestia",
+    "title": "Celestia",
+    "author": "Manuele Fior",
+    "year": 2022,
+    "publisher": "Fantagraphics",
+    "genre": [
+      "Graphic Novel",
+      "Science Fiction"
+    ],
+    "format": "physical",
+    "cover": "/images/books/celestia.jpg",
+    "source": "Celestia.md"
+  },
+  {
+    "id": "chaos-charles-manson-the-cia-and-the-secret-history-of-the-sixties",
+    "title": "Chaos: Charles Manson, the CIA, and the Secret History of the Sixties",
+    "author": "Tom O'Neill",
+    "year": 2019,
+    "publisher": "",
+    "genre": [
+      "True Crime",
+      "History"
+    ],
+    "format": "physical",
+    "cover": "/images/books/chaos-charles-manson-the-cia-and-the-secret-history-of-the-sixties.jpg",
+    "source": "Chaos- Charles Manson, the CIA, and the Secret History of the Sixties.md"
+  },
+  {
+    "id": "chokepoint-capitalism",
+    "title": "Chokepoint Capitalism",
+    "author": "Rebecca Giblin, Cory Doctorow",
+    "year": 2022,
+    "publisher": "",
+    "genre": [
+      "Economics",
+      "Technology"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Chokepoint Capitalism.md"
+  },
+  {
+    "id": "circe",
+    "title": "Circe",
+    "author": "Madeline Miller",
+    "year": 2018,
+    "publisher": "",
+    "genre": [
+      "Fantasy",
+      "Mythology"
+    ],
+    "format": "physical",
+    "cover": "/images/books/circe.jpg",
+    "source": "Circe.md"
+  },
+  {
+    "id": "cloud-atlas",
+    "title": "Cloud Atlas",
+    "author": "David Mitchell",
+    "year": 2004,
+    "publisher": "",
+    "genre": [
+      "Literary Fiction"
+    ],
+    "format": "physical",
+    "cover": "/images/books/cloud-atlas.jpg",
+    "source": "Cloud Atlas.md"
+  },
+  {
+    "id": "cognitive-behavior-therapy-second-edition",
+    "title": "Cognitive Behavior Therapy (Second Edition)",
+    "author": "Judith S. Beck",
+    "year": 2011,
+    "publisher": "",
+    "genre": [
+      "Psychology"
+    ],
+    "format": "physical",
+    "cover": "/images/books/cognitive-behavior-therapy-second-edition.jpg",
+    "source": "Cognitive Behavior Therapy (Second Edition).md"
+  },
+  {
+    "id": "college-algebra-eighth-edition",
+    "title": "College Algebra (Eighth Edition)",
+    "author": "Ron Larson",
+    "year": 2017,
+    "publisher": "Cengage Learning",
+    "genre": [
+      "Mathematics",
+      "Textbook"
+    ],
+    "format": "",
+    "cover": "/images/books/college-algebra-eighth-edition.jpg",
+    "source": "College Algebra (Eighth Edition).md"
+  },
+  {
+    "id": "college-algebra-8e-student-solutions-manual",
+    "title": "College Algebra 8e Student Solutions Manual",
+    "author": "Ron Larson",
+    "year": 2017,
+    "publisher": "Cengage Learning",
+    "genre": [
+      "Mathematics",
+      "Textbook"
+    ],
+    "format": "",
+    "cover": "/images/books/college-algebra-8e-student-solutions-manual.jpg",
+    "source": "College Algebra 8e Student Solutions Manual.md"
+  },
+  {
+    "id": "come-as-you-are",
+    "title": "Come As You Are",
+    "author": "Emily Nagoski",
+    "year": 2015,
+    "publisher": "",
+    "genre": [
+      "Psychology",
+      "Sexuality"
+    ],
+    "format": "physical",
+    "cover": "/images/books/come-as-you-are.jpg",
+    "source": "Come As You Are.md"
+  },
+  {
+    "id": "comet-in-moominland",
+    "title": "Comet in Moominland",
+    "author": "Tove Jansson",
+    "year": 1946,
+    "publisher": "",
+    "genre": [
+      "Children's Fantasy"
+    ],
+    "format": "physical",
+    "cover": "/images/books/comet-in-moominland.jpg",
+    "source": "Comet in Moominland.md"
+  },
+  {
+    "id": "complete-guitar-repair",
+    "title": "Complete Guitar Repair",
+    "author": "Hideo Kamimoto",
+    "year": 1997,
+    "publisher": "Oak Publications",
+    "genre": [
+      "Music",
+      "Instrument Repair"
+    ],
+    "format": "physical",
+    "cover": "/images/books/complete-guitar-repair.jpg",
+    "source": "Complete Guitar Repair.md"
+  },
+  {
+    "id": "composing-music",
+    "title": "Composing Music",
+    "author": "William Russo",
+    "year": 1988,
+    "publisher": "",
+    "genre": [
+      "Music Instruction"
+    ],
+    "format": "physical",
+    "cover": "/images/books/composing-music.jpg",
+    "source": "Composing Music.md"
+  },
+  {
+    "id": "concrete-botany-the-ecology-of-plants-in-the-age-of-human-disturbance",
+    "title": "Concrete Botany: The Ecology of Plants in the Age of Human Disturbance",
+    "author": "Joey Santore",
+    "year": 2026,
+    "publisher": "Cool Springs Press",
+    "genre": [
+      "Nature",
+      "Botany"
+    ],
+    "format": "physical",
+    "cover": "/images/books/concrete-botany-the-ecology-of-plants-in-the-age-of-human-disturbance.jpg",
+    "source": "Concrete Botany.md"
+  },
+  {
+    "id": "contemporary-business-report-writing",
+    "title": "Contemporary Business Report Writing",
+    "author": "Shirley Kuiper",
+    "year": 2009,
+    "publisher": "South-Western College Publishing",
+    "genre": [
+      "Business",
+      "Writing"
+    ],
+    "format": "",
+    "cover": "/images/books/contemporary-business-report-writing.jpg",
+    "source": "Contemporary Business Report Writing.md"
+  },
+  {
+    "id": "contemporary-japanese-literature",
+    "title": "Contemporary Japanese Literature",
+    "author": "Howard Hibbett",
+    "year": 1977,
+    "publisher": "",
+    "genre": [
+      "Literature",
+      "Anthology"
+    ],
+    "format": "physical",
+    "cover": "/images/books/contemporary-japanese-literature.jpg",
+    "source": "Contemporary Japanese Literature.md"
+  },
+  {
+    "id": "cooks-illustrated-issues-174-198",
+    "title": "Cook's Illustrated Issues 174-198",
+    "author": "Cook's Illustrated",
+    "year": 2022,
+    "publisher": "",
+    "genre": [
+      "Cooking Magazine"
+    ],
+    "format": "physical",
+    "cover": "/images/books/cooks-illustrated-issues-174-198.jpg",
+    "source": "Cook's Illustrated Issues 174-198.md"
+  },
+  {
+    "id": "cosmic-music-the-life-art-and-transcendence-of-alice-coltrane",
+    "title": "Cosmic Music: The Life, Art, and Transcendence of Alice Coltrane",
+    "author": "Andy Beta",
+    "year": 2026,
+    "publisher": "Da Capo",
+    "genre": [
+      "Music Biography"
+    ],
+    "format": "physical",
+    "cover": "/images/books/cosmic-music-the-life-art-and-transcendence-of-alice-coltrane.jpg",
+    "source": "Cosmic Music.md"
+  },
+  {
+    "id": "counterpoint-based-on-eighteenth-century-practic",
+    "title": "Counterpoint: Based on Eighteenth-Century Practic",
+    "author": "Kent Kennan",
+    "year": 1999,
+    "publisher": "Based on Eighteenth-Century Practice_. Upper Saddle River: Prentice Hall",
+    "genre": [
+      "Music Theory"
+    ],
+    "format": "physical",
+    "cover": "/images/books/counterpoint-based-on-eighteenth-century-practic.jpg",
+    "source": "Counterpoint.md"
+  },
+  {
+    "id": "creative-illustration",
+    "title": "Creative Illustration",
+    "author": "Andrew Loomis",
+    "year": 1947,
+    "publisher": "",
+    "genre": [
+      "Art",
+      "Illustration"
+    ],
+    "format": "digital",
+    "cover": "",
+    "source": "Creative Illustration.md"
+  },
+  {
+    "id": "crisis-zone",
+    "title": "Crisis Zone",
+    "author": "Simon Hanselmann",
+    "year": 2021,
+    "publisher": "",
+    "genre": [
+      "Comics",
+      "Graphic Novels"
+    ],
+    "format": "physical",
+    "cover": "/images/books/crisis-zone.jpg",
+    "source": "Crisis Zone.md"
+  },
+  {
+    "id": "crowd-the-critic-and-the-muse",
+    "title": "Crowd The Critic And The Muse",
+    "author": "Kenyon McCarthy",
+    "year": 2012,
+    "publisher": "A Book for Creators_. CreateSpace Independent Publishing Platform",
+    "genre": [
+      "Creativity",
+      "Self-Help"
+    ],
+    "format": "",
+    "cover": "/images/books/crowd-the-critic-and-the-muse.jpg",
+    "source": "Crowd The Critic And The Muse.md"
+  },
+  {
+    "id": "crying-in-h-mart",
+    "title": "Crying in H Mart",
+    "author": "Michelle Zauner",
+    "year": 2021,
+    "publisher": "",
+    "genre": [
+      "Memoir"
+    ],
+    "format": "physical",
+    "cover": "/images/books/crying-in-h-mart.jpg",
+    "source": "Crying in H Mart.md"
+  },
+  {
+    "id": "crying-of-lot-49",
+    "title": "Crying Of Lot 49",
+    "author": "Thomas Pynchon",
+    "year": 1965,
+    "publisher": "",
+    "genre": [
+      "Literary Fiction",
+      "Postmodern"
+    ],
+    "format": "physical",
+    "cover": "/images/books/crying-of-lot-49.jpg",
+    "source": "Crying Of Lot 49.md"
+  },
+  {
+    "id": "curiosity-a-guide-to-understanding-the-world",
+    "title": "Curiosity: A Guide to Understanding the World",
+    "author": "Kurzgesagt",
+    "year": 2023,
+    "publisher": "",
+    "genre": [
+      "Science",
+      "Philosophy"
+    ],
+    "format": "physical",
+    "cover": "/images/books/curiosity-a-guide-to-understanding-the-world.jpg",
+    "source": "Curiosity- A Guide to Understanding the World.md"
+  },
+  {
+    "id": "cuyahoga",
+    "title": "Cuyahoga",
+    "author": "Pete Beatty",
+    "year": 2020,
+    "publisher": "Scribner",
+    "genre": [
+      "Historical Fiction",
+      "Tall Tale"
+    ],
+    "format": "",
+    "cover": "/images/books/cuyahoga.jpg",
+    "source": "Cuyahoga.md"
+  },
+  {
+    "id": "d-mons-are-forever",
+    "title": "Dæmons Are Forever",
+    "author": "David Gordon White",
+    "year": 2020,
+    "publisher": "",
+    "genre": [
+      "Religion",
+      "History"
+    ],
+    "format": "physical",
+    "cover": "/images/books/d-mons-are-forever.jpg",
+    "source": "Dæmons Are Forever.md"
+  },
+  {
+    "id": "dali",
+    "title": "Dali",
+    "author": "Various Authors",
+    "year": 1994,
+    "publisher": "Shooting Star Press",
+    "genre": [
+      "Art",
+      "Biography"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Dali.md"
+  },
+  {
+    "id": "dance-punk-genre-a-33-1-3-series",
+    "title": "Dance-Punk (Genre: A 33 1/3 Series)",
+    "author": "Larissa Wodtke",
+    "year": 2023,
+    "publisher": "",
+    "genre": [
+      "Music"
+    ],
+    "format": "physical",
+    "cover": "/images/books/dance-punk-genre-a-33-1-3-series.jpg",
+    "source": "Dance-Punk (Genre- A 33 1-3 Series).md"
+  },
+  {
+    "id": "dark-money",
+    "title": "Dark Money",
+    "author": "Jane Mayer",
+    "year": 2016,
+    "publisher": "",
+    "genre": [
+      "Politics"
+    ],
+    "format": "physical",
+    "cover": "/images/books/dark-money.jpg",
+    "source": "Dark Money.md"
+  },
+  {
+    "id": "daybook",
+    "title": "Daybook",
+    "author": "Anne Truitt",
+    "year": 1984,
+    "publisher": "The Journal of an Artist_. New York: Penguin Books",
+    "genre": [
+      "Art",
+      "Memoir"
+    ],
+    "format": "",
+    "cover": "/images/books/daybook.jpg",
+    "source": "Daybook.md"
+  },
+  {
+    "id": "death-in-spring",
+    "title": "Death In Spring",
+    "author": "Mercè Rodoreda",
+    "year": 2009,
+    "publisher": "Open Letter",
+    "genre": [
+      "Literary Fiction"
+    ],
+    "format": "physical",
+    "cover": "/images/books/death-in-spring.jpg",
+    "source": "Death In Spring.md"
+  },
+  {
+    "id": "decolonizing-diet-project-cookbook",
+    "title": "Decolonizing Diet Project Cookbook",
+    "author": "Martin Reinhardt, Leora Lancaster, April Lindala",
+    "year": 2020,
+    "publisher": "",
+    "genre": [
+      "Cooking",
+      "Indigenous"
+    ],
+    "format": "physical",
+    "cover": "/images/books/decolonizing-diet-project-cookbook.jpg",
+    "source": "Decolonizing Diet Project Cookbook.md"
+  },
+  {
+    "id": "deep-state",
+    "title": "Deep State",
+    "author": "James B. Stewart",
+    "year": 2019,
+    "publisher": "",
+    "genre": [
+      "Politics",
+      "Current Events"
+    ],
+    "format": "physical",
+    "cover": "/images/books/deep-state.jpg",
+    "source": "Deep State.md"
+  },
+  {
+    "id": "devil-house",
+    "title": "Devil House",
+    "author": "John Darnielle",
+    "year": 2022,
+    "publisher": "MCD x FSG",
+    "genre": [
+      "Literary Fiction",
+      "True Crime"
+    ],
+    "format": "physical",
+    "cover": "/images/books/devil-house.jpg",
+    "source": "Devil House.md"
+  },
+  {
+    "id": "devil-in-the-white-city",
+    "title": "Devil In The White City",
+    "author": "Erik Larson",
+    "year": 2003,
+    "publisher": "",
+    "genre": [
+      "History",
+      "True Crime"
+    ],
+    "format": "physical",
+    "cover": "/images/books/devil-in-the-white-city.jpg",
+    "source": "Devil In The White City.md"
+  },
+  {
+    "id": "devotions",
+    "title": "Devotions",
+    "author": "Mary Oliver",
+    "year": 2017,
+    "publisher": "",
+    "genre": [
+      "Poetry"
+    ],
+    "format": "physical",
+    "cover": "/images/books/devotions.jpg",
+    "source": "Devotions.md"
+  },
+  {
+    "id": "dhalgren",
+    "title": "Dhalgren",
+    "author": "Samuel R. Delany",
+    "year": 1975,
+    "publisher": "",
+    "genre": [
+      "Science Fiction"
+    ],
+    "format": "physical",
+    "cover": "/images/books/dhalgren.jpg",
+    "source": "Dhalgren.md"
+  },
+  {
+    "id": "dialect-a-game-about-language-and-how-it-dies",
+    "title": "Dialect: A Game About Language and How It Dies",
+    "author": "Thorny Games",
+    "year": 2018,
+    "publisher": "",
+    "genre": [
+      "Tabletop RPG"
+    ],
+    "format": "physical",
+    "cover": "/images/books/dialect-a-game-about-language-and-how-it-dies.jpg",
+    "source": "Dialect- A Game About Language and How It Dies.md"
+  },
+  {
+    "id": "digital-computer-fundamentals-third-edition",
+    "title": "Digital Computer Fundamentals (Third Edition)",
+    "author": "Thomas C. Bartee",
+    "year": 1972,
+    "publisher": "",
+    "genre": [
+      "Computer Science"
+    ],
+    "format": "physical",
+    "cover": "/images/books/digital-computer-fundamentals-third-edition.jpg",
+    "source": "Digital Computer Fundamentals (Third Edition).md"
+  },
+  {
+    "id": "digital-computer-lab-workbook",
+    "title": "Digital Computer Lab Workbook",
+    "author": "Thomas C. Bartee",
+    "year": 1972,
+    "publisher": "",
+    "genre": [
+      "Computer Science"
+    ],
+    "format": "physical",
+    "cover": "/images/books/digital-computer-lab-workbook.jpg",
+    "source": "Digital Computer Lab Workbook.md"
+  },
+  {
+    "id": "diy-projects-for-the-self-sufficient-homeowner",
+    "title": "DIY Projects for the Self-Sufficient Homeowner",
+    "author": "Betsy Matheson",
+    "year": 2011,
+    "publisher": "",
+    "genre": [
+      "DIY",
+      "Home"
+    ],
+    "format": "physical",
+    "cover": "/images/books/diy-projects-for-the-self-sufficient-homeowner.jpg",
+    "source": "DIY Projects for the Self-Sufficient Homeowner.md"
+  },
+  {
+    "id": "doctor-who-celebrating-50-years",
+    "title": "Doctor Who: Celebrating 50 Years",
+    "author": "Alan Kistler",
+    "year": 2013,
+    "publisher": "",
+    "genre": [
+      "Television",
+      "Reference"
+    ],
+    "format": "physical",
+    "cover": "/images/books/doctor-who-celebrating-50-years.jpg",
+    "source": "Doctor Who- Celebrating 50 Years.md"
+  },
+  {
+    "id": "drawing-and-sketching",
+    "title": "Drawing and Sketching",
+    "author": "William F Powell",
+    "year": 2003,
+    "publisher": "A Complete Guide_. New York: Walter Foster Publishing",
+    "genre": [],
+    "format": "",
+    "cover": "/images/books/drawing-and-sketching.jpg",
+    "source": "Drawing and Sketching.md"
+  },
+  {
+    "id": "drawing-the-head-and-hands",
+    "title": "Drawing the Head and Hands",
+    "author": "Andrew Loomis",
+    "year": 1956,
+    "publisher": "",
+    "genre": [
+      "Art",
+      "Drawing Instruction"
+    ],
+    "format": "digital",
+    "cover": "",
+    "source": "Drawing the Head and Hands.md"
+  },
+  {
+    "id": "dress-design-draping-and-flat-pattern-making",
+    "title": "Dress Design: Draping and Flat Pattern Making",
+    "author": "Marion Hillhouse, Evelyn Mansfield",
+    "year": 1948,
+    "publisher": "",
+    "genre": [
+      "Fashion",
+      "Design"
+    ],
+    "format": "physical",
+    "cover": "/images/books/dress-design-draping-and-flat-pattern-making.jpg",
+    "source": "Dress Design- Draping and Flat Pattern Making.md"
+  },
+  {
+    "id": "ducks-two-years-in-the-oil-sands",
+    "title": "Ducks: Two Years in the Oil Sands",
+    "author": "Kate Beaton",
+    "year": 2022,
+    "publisher": "",
+    "genre": [
+      "Comics",
+      "Graphic Novels",
+      "Memoir"
+    ],
+    "format": "physical",
+    "cover": "/images/books/ducks-two-years-in-the-oil-sands.jpg",
+    "source": "Ducks- Two Years in the Oil Sands.md"
+  },
+  {
+    "id": "east-of-eden",
+    "title": "East of Eden",
+    "author": "John Steinbeck",
+    "year": 1952,
+    "publisher": "Viking Press",
+    "genre": [
+      "Literary Fiction"
+    ],
+    "format": "",
+    "cover": "/images/books/east-of-eden.jpg",
+    "source": "East of Eden.md"
+  },
+  {
+    "id": "eight-old-english-poems",
+    "title": "Eight Old English Poems",
+    "author": "John C. Pope",
+    "year": 1966,
+    "publisher": "",
+    "genre": [
+      "Poetry",
+      "Classic"
+    ],
+    "format": "physical",
+    "cover": "/images/books/eight-old-english-poems.jpg",
+    "source": "Eight Old English Poems.md"
+  },
+  {
+    "id": "electronic-projects-for-musicians",
+    "title": "Electronic Projects For Musicians",
+    "author": "Craig Anderton",
+    "year": 1980,
+    "publisher": "Music Sales America",
+    "genre": [
+      "Electronics",
+      "Music Production"
+    ],
+    "format": "physical",
+    "cover": "/images/books/electronic-projects-for-musicians.jpg",
+    "source": "Electronic Projects For Musicians.md"
+  },
+  {
+    "id": "electronic-puzzles-and-games",
+    "title": "Electronic Puzzles and Games",
+    "author": "Matthew Mandl",
+    "year": 1970,
+    "publisher": "",
+    "genre": [
+      "Electronics",
+      "DIY"
+    ],
+    "format": "physical",
+    "cover": "/images/books/electronic-puzzles-and-games.jpg",
+    "source": "Electronic Puzzles and Games.md"
+  },
+  {
+    "id": "elements-of-euclid",
+    "title": "Elements Of Euclid",
+    "author": "Oliver Bryne Euclid",
+    "year": 1482,
+    "publisher": "",
+    "genre": [
+      "Mathematics",
+      "Geometry"
+    ],
+    "format": "",
+    "cover": "/images/books/elements-of-euclid.jpg",
+    "source": "Elements Of Euclid.md"
+  },
+  {
+    "id": "endurance-shackletons-incredible-voyage",
+    "title": "Endurance: Shackleton's Incredible Voyage",
+    "author": "Alfred Lansing",
+    "year": 1959,
+    "publisher": "",
+    "genre": [
+      "History",
+      "Adventure"
+    ],
+    "format": "physical",
+    "cover": "/images/books/endurance-shackletons-incredible-voyage.jpg",
+    "source": "Endurance- Shackleton's Incredible Voyage.md"
+  },
+  {
+    "id": "engineering-circuit-analysis-second-edition",
+    "title": "Engineering Circuit Analysis (Second Edition)",
+    "author": "William H. Hayt",
+    "year": 1971,
+    "publisher": "",
+    "genre": [
+      "Engineering"
+    ],
+    "format": "physical",
+    "cover": "/images/books/engineering-circuit-analysis-second-edition.jpg",
+    "source": "Engineering Circuit Analysis (Second Edition).md"
+  },
+  {
+    "id": "enormous-changes-at-the-last-minute",
+    "title": "Enormous Changes at the Last Minute",
+    "author": "Grace Paley",
+    "year": 1974,
+    "publisher": "",
+    "genre": [
+      "Short Stories"
+    ],
+    "format": "physical",
+    "cover": "/images/books/enormous-changes-at-the-last-minute.jpg",
+    "source": "Enormous Changes at the Last Minute.md"
+  },
+  {
+    "id": "envisioning-information",
+    "title": "Envisioning Information",
+    "author": "Edward Tufte",
+    "year": 1990,
+    "publisher": "",
+    "genre": [
+      "Design",
+      "Data Visualization"
+    ],
+    "format": "physical",
+    "cover": "/images/books/envisioning-information.jpg",
+    "source": "Envisioning Information.md"
+  },
+  {
+    "id": "eva-hesse",
+    "title": "Eva Hesse",
+    "author": "Elisabeth Sussman",
+    "year": 2002,
+    "publisher": "Yale University Press",
+    "genre": [
+      "Art Monograph"
+    ],
+    "format": "physical",
+    "cover": "/images/books/eva-hesse.jpg",
+    "source": "Eva Hesse.md"
+  },
+  {
+    "id": "eva-hesse-diaries",
+    "title": "Eva Hesse - Diaries",
+    "author": "Eva Hesse",
+    "year": 2016,
+    "publisher": "Diaries_. New Haven: Yale University Press",
+    "genre": [
+      "Art",
+      "Diary"
+    ],
+    "format": "physical",
+    "cover": "/images/books/eva-hesse-diaries.jpg",
+    "source": "Eva Hesse - Diaries.md"
+  },
+  {
+    "id": "eva-hesse-longing-belonging-and-displacement",
+    "title": "Eva Hesse: Longing, Belonging and Displacement",
+    "author": "Eva Hesse, Vanessa Corby",
+    "year": 2010,
+    "publisher": "",
+    "genre": [
+      "Art"
+    ],
+    "format": "physical",
+    "cover": "/images/books/eva-hesse-longing-belonging-and-displacement.jpg",
+    "source": "Eva Hesse- Longing, Belonging and Displacement.md"
+  },
+  {
+    "id": "everybody-has-a-podcast-except-you",
+    "title": "Everybody Has a Podcast (Except You)",
+    "author": "Justin McElroy, Travis McElroy, Griffin McElroy",
+    "year": 2021,
+    "publisher": "",
+    "genre": [
+      "Media",
+      "How-To"
+    ],
+    "format": "physical",
+    "cover": "/images/books/everybody-has-a-podcast-except-you.jpg",
+    "source": "Everybody Has a Podcast (Except You).md"
+  },
+  {
+    "id": "fantastic-beasts-and-where-to-find-them",
+    "title": "Fantastic Beasts and Where to Find Them",
+    "author": "J.K. Rowling",
+    "year": 2001,
+    "publisher": "",
+    "genre": [
+      "Fantasy"
+    ],
+    "format": "physical",
+    "cover": "/images/books/fantastic-beasts-and-where-to-find-them.jpg",
+    "source": "Fantastic Beasts and Where to Find Them.md"
+  },
+  {
+    "id": "fantastic-four-by-jonathan-hickman-the-complete-collection",
+    "title": "Fantastic Four by Jonathan Hickman: The Complete Collection",
+    "author": "Jonathan Hickman",
+    "year": 2018,
+    "publisher": "",
+    "genre": [
+      "Comics",
+      "Graphic Novels"
+    ],
+    "format": "physical",
+    "cover": "/images/books/fantastic-four-by-jonathan-hickman-the-complete-collection.jpg",
+    "source": "Fantastic Four by Jonathan Hickman- The Complete Collection.md"
+  },
+  {
+    "id": "fantasyland-how-america-went-haywire",
+    "title": "Fantasyland: How America Went Haywire",
+    "author": "Kurt Andersen",
+    "year": 2017,
+    "publisher": "",
+    "genre": [
+      "History",
+      "Culture"
+    ],
+    "format": "physical",
+    "cover": "/images/books/fantasyland-how-america-went-haywire.jpg",
+    "source": "Fantasyland- How America Went Haywire.md"
+  },
+  {
+    "id": "farming-while-black",
+    "title": "Farming While Black",
+    "author": "Leah Penniman",
+    "year": 2018,
+    "publisher": "",
+    "genre": [
+      "Agriculture",
+      "History"
+    ],
+    "format": "physical",
+    "cover": "/images/books/farming-while-black.jpg",
+    "source": "Farming While Black.md"
+  },
+  {
+    "id": "ficciones",
+    "title": "Ficciones",
+    "author": "Jorge Luis Borges",
+    "year": 1956,
+    "publisher": "Penguin Books",
+    "genre": [
+      "Short Stories",
+      "Literary Fiction"
+    ],
+    "format": "physical",
+    "cover": "/images/books/ficciones.jpg",
+    "source": "Ficciones.md"
+  },
+  {
+    "id": "fierce-poise",
+    "title": "Fierce Poise",
+    "author": "Alexander Nemerov",
+    "year": 2021,
+    "publisher": "Helen Frankenthaler and 1950s New York*. New York: Penguin Press",
+    "genre": [
+      "Biography",
+      "Art History"
+    ],
+    "format": "",
+    "cover": "/images/books/fierce-poise.jpg",
+    "source": "Fierce Poise.md"
+  },
+  {
+    "id": "figure-drawing-for-all-its-worth",
+    "title": "Figure Drawing for All It's Worth",
+    "author": "Andrew Loomis",
+    "year": 1943,
+    "publisher": "",
+    "genre": [
+      "Art",
+      "Drawing Instruction"
+    ],
+    "format": "digital",
+    "cover": "",
+    "source": "Figure Drawing for All It's Worth.md"
+  },
+  {
+    "id": "financial-fitness",
+    "title": "Financial Fitness",
+    "author": "Duncan Matheson",
+    "year": 2015,
+    "publisher": "The Ultimate Guide to Financial Independence_. Charleston: CreateSpace Independent Publishing",
+    "genre": [
+      "Personal Finance"
+    ],
+    "format": "",
+    "cover": "/images/books/financial-fitness.jpg",
+    "source": "Financial Fitness.md"
+  },
+  {
+    "id": "financial-fitness-the-offense-defense-and-playing-field-of-personal-finance",
+    "title": "Financial Fitness: The Offense, Defense and Playing Field of Personal Finance",
+    "author": "Chris Brady, Orrin Woodward",
+    "year": 2014,
+    "publisher": "",
+    "genre": [
+      "Personal Finance"
+    ],
+    "format": "physical",
+    "cover": "/images/books/financial-fitness-the-offense-defense-and-playing-field-of-personal-finance.jpg",
+    "source": "Financial Fitness- The Offense, Defense and Playing Field of Personal Finance.md"
+  },
+  {
+    "id": "fine-waters-a-connoisseurs-guide-to-the-world-of-premium-waters",
+    "title": "Fine Waters: A Connoisseur's Guide to the World of Premium Waters",
+    "author": "Michael Mascha",
+    "year": 2006,
+    "publisher": "",
+    "genre": [
+      "Food",
+      "Reference"
+    ],
+    "format": "physical",
+    "cover": "/images/books/fine-waters-a-connoisseurs-guide-to-the-world-of-premium-waters.jpg",
+    "source": "Fine Waters- A Connoisseur's Guide to the World of Premium Waters.md"
+  },
+  {
+    "id": "finn-family-moomintroll",
+    "title": "Finn Family Moomintroll",
+    "author": "Tove Jansson",
+    "year": 1948,
+    "publisher": "",
+    "genre": [
+      "Children's Fantasy"
+    ],
+    "format": "physical",
+    "cover": "/images/books/finn-family-moomintroll.jpg",
+    "source": "Finn Family Moomintroll.md"
+  },
+  {
+    "id": "flood-33-1-3",
+    "title": "Flood (33 1/3)",
+    "author": "S. Alexander Reed, Philip Sandifer",
+    "year": 2017,
+    "publisher": "",
+    "genre": [
+      "Music"
+    ],
+    "format": "physical",
+    "cover": "/images/books/flood-33-1-3.jpg",
+    "source": "Flood (33 1-3).md"
+  },
+  {
+    "id": "flowering-trees-and-shrubs",
+    "title": "Flowering Trees and Shrubs",
+    "author": "Richard Bird",
+    "year": 1994,
+    "publisher": "",
+    "genre": [
+      "Gardening"
+    ],
+    "format": "physical",
+    "cover": "/images/books/flowering-trees-and-shrubs.jpg",
+    "source": "Flowering Trees and Shrubs.md"
+  },
+  {
+    "id": "fluid-concepts-and-creative-analogies",
+    "title": "Fluid Concepts And Creative Analogies",
+    "author": "Douglas R Hofstadter",
+    "year": 1995,
+    "publisher": "Computer Models of the Fundamental Mechanisms of Thought_. New York:",
+    "genre": [
+      "Cognitive Science",
+      "AI",
+      "Philosophy"
+    ],
+    "format": "physical",
+    "cover": "/images/books/fluid-concepts-and-creative-analogies.jpg",
+    "source": "Fluid Concepts And Creative Analogies.md"
+  },
+  {
+    "id": "for-whom-the-bell-tolls",
+    "title": "For Whom the Bell Tolls",
+    "author": "Ernest Hemingway",
+    "year": 1940,
+    "publisher": "Charles Scribner's Sons",
+    "genre": [
+      "Literary Fiction",
+      "War Novel"
+    ],
+    "format": "",
+    "cover": "/images/books/for-whom-the-bell-tolls.jpg",
+    "source": "For Whom the Bell Tolls.md"
+  },
+  {
+    "id": "fountains-of-paradise",
+    "title": "Fountains of Paradise",
+    "author": "Arthur C. Clarke",
+    "year": 1979,
+    "publisher": "Harcourt Brace Jovanovich",
+    "genre": [
+      "Science Fiction"
+    ],
+    "format": "",
+    "cover": "/images/books/fountains-of-paradise.jpg",
+    "source": "Fountains of Paradise.md"
+  },
+  {
+    "id": "fox-8",
+    "title": "Fox 8",
+    "author": "George Saunders",
+    "year": 2013,
+    "publisher": "",
+    "genre": [
+      "Fiction",
+      "Fable"
+    ],
+    "format": "physical",
+    "cover": "/images/books/fox-8.jpg",
+    "source": "Fox 8.md"
+  },
+  {
+    "id": "from-margin-to-center",
+    "title": "From Margin to Center",
+    "author": "bell hooks",
+    "year": 1984,
+    "publisher": "",
+    "genre": [
+      "Feminism",
+      "Theory"
+    ],
+    "format": "physical",
+    "cover": "/images/books/from-margin-to-center.jpg",
+    "source": "From Margin to Center.md"
+  },
+  {
+    "id": "fun-with-a-pencil",
+    "title": "Fun With a Pencil",
+    "author": "Andrew Loomis",
+    "year": 1939,
+    "publisher": "",
+    "genre": [
+      "Art",
+      "Drawing Instruction"
+    ],
+    "format": "digital",
+    "cover": "",
+    "source": "Fun With a Pencil.md"
+  },
+  {
+    "id": "fundamentals-of-guitar-a-workbook",
+    "title": "Fundamentals of Guitar: A Workbook",
+    "author": "Miles Okazaki",
+    "year": 2015,
+    "publisher": "",
+    "genre": [
+      "Music",
+      "Instruction"
+    ],
+    "format": "",
+    "cover": "/images/books/fundamentals-of-guitar-a-workbook.jpg",
+    "source": "Fundamentals Of Guitar - A Workbook.md"
+  },
+  {
+    "id": "fundamentals-of-musical-composition",
+    "title": "Fundamentals of Musical Composition",
+    "author": "Arnold Schoenberg",
+    "year": 1967,
+    "publisher": "Faber and Faber",
+    "genre": [
+      "Music Theory"
+    ],
+    "format": "physical",
+    "cover": "/images/books/fundamentals-of-musical-composition.jpg",
+    "source": "Fundamentals Of Musical Composition.md"
+  },
+  {
+    "id": "gathering-moss-a-natural-and-cultural-history-of-mosses",
+    "title": "Gathering Moss: A Natural and Cultural History of Mosses",
+    "author": "Robin Wall Kimmerer",
+    "year": 2003,
+    "publisher": "A Natural and Cultural History of Mosses_. Corvallis: Oregon State",
+    "genre": [
+      "Nature Writing",
+      "Indigenous Studies"
+    ],
+    "format": "physical",
+    "cover": "/images/books/gathering-moss-a-natural-and-cultural-history-of-mosses.jpg",
+    "source": "Gathering Moss.md"
+  },
+  {
+    "id": "ghost",
+    "title": "Ghost",
+    "author": "E.R. Hemingway",
+    "year": 2016,
+    "publisher": "",
+    "genre": [
+      "Comics",
+      "Illustrated"
+    ],
+    "format": "physical",
+    "cover": "/images/books/ghost.jpg",
+    "source": "Ghost.md"
+  },
+  {
+    "id": "ghost-in-the-wires",
+    "title": "Ghost in the Wires",
+    "author": "Kevin Mitnick",
+    "year": 2011,
+    "publisher": "",
+    "genre": [
+      "Memoir",
+      "Technology"
+    ],
+    "format": "physical",
+    "cover": "/images/books/ghost-in-the-wires.jpg",
+    "source": "Ghost in the Wires.md"
+  },
+  {
+    "id": "godel-escher-bach-an-eternal-golden-braid",
+    "title": "Godel Escher Bach - An Eternal Golden Braid",
+    "author": "Douglas R Hofstadter",
+    "year": 1979,
+    "publisher": "An Eternal Golden Braid_. New York: Basic Books",
+    "genre": [
+      "Philosophy",
+      "Mathematics",
+      "Computer Science"
+    ],
+    "format": "physical",
+    "cover": "/images/books/godel-escher-bach-an-eternal-golden-braid.jpg",
+    "source": "Godel Escher Bach - An Eternal Golden Braid.md"
+  },
+  {
+    "id": "good-omens",
+    "title": "Good Omens",
+    "author": "Neil Gaiman and Terry Pratchett",
+    "year": 1990,
+    "publisher": "Gollancz",
+    "genre": [
+      "Fantasy",
+      "Comedy"
+    ],
+    "format": "",
+    "cover": "/images/books/good-omens.jpg",
+    "source": "Good Omens.md"
+  },
+  {
+    "id": "gorse-fires",
+    "title": "Gorse Fires",
+    "author": "Michael Longley",
+    "year": 1991,
+    "publisher": "",
+    "genre": [
+      "Poetry"
+    ],
+    "format": "physical",
+    "cover": "/images/books/gorse-fires.jpg",
+    "source": "Gorse Fires.md"
+  },
+  {
+    "id": "gravitys-rainbow",
+    "title": "Gravity's Rainbow",
+    "author": "Thomas Pynchon",
+    "year": 1973,
+    "publisher": "",
+    "genre": [
+      "Literary Fiction",
+      "Postmodern"
+    ],
+    "format": "physical",
+    "cover": "/images/books/gravitys-rainbow.jpg",
+    "source": "Gravity's Rainbow.md"
+  },
+  {
+    "id": "groundcover-revolution-how-to-use-sustainable-low-maintenance",
+    "title": "Groundcover Revolution: How to use sustainable, low-maintenance,",
+    "author": "Kathy Jentz",
+    "year": 2023,
+    "publisher": "",
+    "genre": [
+      "Gardening",
+      "Permaculture"
+    ],
+    "format": "physical",
+    "cover": "/images/books/groundcover-revolution-how-to-use-sustainable-low-maintenance.jpg",
+    "source": "Groundcover Revolution.md"
+  },
+  {
+    "id": "guerrilla-girls-bedside-companion-to-the-history-of-western-art",
+    "title": "Guerrilla Girls' Bedside Companion to the History of Western Art",
+    "author": "Guerrilla Girls",
+    "year": 1998,
+    "publisher": "",
+    "genre": [
+      "Art History"
+    ],
+    "format": "physical",
+    "cover": "/images/books/guerrilla-girls-bedside-companion-to-the-history-of-western-art.jpg",
+    "source": "Guerrilla Girls' Bedside Companion to the History of Western Art.md"
+  },
+  {
+    "id": "guitar-player-magazine-january-2008",
+    "title": "Guitar Player Magazine, January 2008",
+    "author": "Guitar Player",
+    "year": 2008,
+    "publisher": "",
+    "genre": [
+      "Music Magazine"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Guitar Player Magazine, January 2008.md"
+  },
+  {
+    "id": "guitar-player-magazine-june-2009",
+    "title": "Guitar Player Magazine, June 2009",
+    "author": "Guitar Player",
+    "year": 2009,
+    "publisher": "",
+    "genre": [
+      "Music Magazine"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Guitar Player Magazine, June 2009.md"
+  },
+  {
+    "id": "guitar-world-september-2008",
+    "title": "Guitar World, September 2008",
+    "author": "Guitar World",
+    "year": 2008,
+    "publisher": "",
+    "genre": [
+      "Music Magazine"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Guitar World, September 2008.md"
+  },
+  {
+    "id": "half-magic",
+    "title": "Half Magic",
+    "author": "Edward Eager",
+    "year": 1954,
+    "publisher": "",
+    "genre": [
+      "Children's Fantasy"
+    ],
+    "format": "physical",
+    "cover": "/images/books/half-magic.jpg",
+    "source": "Half Magic.md"
+  },
+  {
+    "id": "hand-lettering-for-everyone-a-creative-workbook",
+    "title": "Hand Lettering for Everyone: A Creative Workbook",
+    "author": "Cristina Vanko",
+    "year": 2017,
+    "publisher": "",
+    "genre": [
+      "Art",
+      "Craft"
+    ],
+    "format": "physical",
+    "cover": "/images/books/hand-lettering-for-everyone-a-creative-workbook.jpg",
+    "source": "Hand Lettering for Everyone- A Creative Workbook.md"
+  },
+  {
+    "id": "handbook-for-sound-engineers",
+    "title": "Handbook for Sound Engineers",
+    "author": "Glen Ballou",
+    "year": 2015,
+    "publisher": "",
+    "genre": [
+      "Audio Engineering"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Handbook for Sound Engineers.md"
+  },
+  {
+    "id": "handmade-electronic-music",
+    "title": "Handmade Electronic Music",
+    "author": "Nicolas Collins",
+    "year": 2009,
+    "publisher": "The Art of Hardware Hacking_. New York: Routledge",
+    "genre": [
+      "Electronics",
+      "DIY Audio"
+    ],
+    "format": "physical",
+    "cover": "/images/books/handmade-electronic-music.jpg",
+    "source": "Handmade Electronic Music.md"
+  },
+  {
+    "id": "harry-potter-and-the-cursed-child",
+    "title": "Harry Potter and the Cursed Child",
+    "author": "J.K. Rowling, John Tiffany, Jack Thorne",
+    "year": 2016,
+    "publisher": "",
+    "genre": [
+      "Fantasy"
+    ],
+    "format": "physical",
+    "cover": "/images/books/harry-potter-and-the-cursed-child.jpg",
+    "source": "Harry Potter and the Cursed Child.md"
+  },
+  {
+    "id": "harry-potter-and-the-deathly-hallows",
+    "title": "Harry Potter and the Deathly Hallows",
+    "author": "J.K. Rowling",
+    "year": 2007,
+    "publisher": "",
+    "genre": [
+      "Fantasy"
+    ],
+    "format": "physical",
+    "cover": "/images/books/harry-potter-and-the-deathly-hallows.jpg",
+    "source": "Harry Potter and the Deathly Hallows.md"
+  },
+  {
+    "id": "harry-potter-and-the-goblet-of-fire",
+    "title": "Harry Potter and the Goblet of Fire",
+    "author": "J.K. Rowling",
+    "year": 2000,
+    "publisher": "",
+    "genre": [
+      "Fantasy"
+    ],
+    "format": "physical",
+    "cover": "/images/books/harry-potter-and-the-goblet-of-fire.jpg",
+    "source": "Harry Potter and the Goblet of Fire.md"
+  },
+  {
+    "id": "harry-potter-and-the-half-blood-prince",
+    "title": "Harry Potter and the Half-Blood Prince",
+    "author": "J.K. Rowling",
+    "year": 2005,
+    "publisher": "",
+    "genre": [
+      "Fantasy"
+    ],
+    "format": "physical",
+    "cover": "/images/books/harry-potter-and-the-half-blood-prince.jpg",
+    "source": "Harry Potter and the Half-Blood Prince.md"
+  },
+  {
+    "id": "harry-potter-and-the-order-of-the-phoenix",
+    "title": "Harry Potter and the Order of the Phoenix",
+    "author": "J.K. Rowling",
+    "year": 2003,
+    "publisher": "",
+    "genre": [
+      "Fantasy"
+    ],
+    "format": "physical",
+    "cover": "/images/books/harry-potter-and-the-order-of-the-phoenix.jpg",
+    "source": "Harry Potter and the Order of the Phoenix.md"
+  },
+  {
+    "id": "harry-potter-and-the-prisoner-of-azkaban",
+    "title": "Harry Potter and the Prisoner of Azkaban",
+    "author": "J.K. Rowling",
+    "year": 1999,
+    "publisher": "",
+    "genre": [
+      "Fantasy"
+    ],
+    "format": "physical",
+    "cover": "/images/books/harry-potter-and-the-prisoner-of-azkaban.jpg",
+    "source": "Harry Potter and the Prisoner of Azkaban.md"
+  },
+  {
+    "id": "has-modernism-failed",
+    "title": "Has Modernism Failed?",
+    "author": "Has Modernism Failed? Gablik, Suzi",
+    "year": 2004,
+    "publisher": "Thames & Hudson",
+    "genre": [],
+    "format": "physical",
+    "cover": "/images/books/has-modernism-failed.jpg",
+    "source": "Has Modernism Failed?.md"
+  },
+  {
+    "id": "haunted-heartland",
+    "title": "Haunted Heartland",
+    "author": "Beth Scott, Michael Norman",
+    "year": 1985,
+    "publisher": "",
+    "genre": [
+      "Folklore",
+      "Paranormal"
+    ],
+    "format": "physical",
+    "cover": "/images/books/haunted-heartland.jpg",
+    "source": "Haunted Heartland.md"
+  },
+  {
+    "id": "haunted-junk-drawer",
+    "title": "Haunted Junk Drawer",
+    "author": "Eric Bartholomew",
+    "year": 2020,
+    "publisher": "",
+    "genre": [
+      "Poetry",
+      "Zine"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Haunted Junk Drawer.md"
+  },
+  {
+    "id": "haydn-london-symphonies-nos-99-104-in-full-score",
+    "title": "Haydn: London Symphonies Nos. 99-104 in Full Score",
+    "author": "Joseph Haydn",
+    "year": 1795,
+    "publisher": "",
+    "genre": [
+      "Music Score"
+    ],
+    "format": "physical",
+    "cover": "/images/books/haydn-london-symphonies-nos-99-104-in-full-score.jpg",
+    "source": "Haydn- London Symphonies Nos. 99-104 in Full Score.md"
+  },
+  {
+    "id": "hector-fox-and-the-giant-quest",
+    "title": "Hector Fox and the Giant Quest",
+    "author": "Astrid Sheckels",
+    "year": 2018,
+    "publisher": "",
+    "genre": [
+      "Children's Fiction"
+    ],
+    "format": "physical",
+    "cover": "/images/books/hector-fox-and-the-giant-quest.jpg",
+    "source": "Hector Fox and the Giant Quest.md"
+  },
+  {
+    "id": "here-there-everywhere",
+    "title": "Here There & Everywhere",
+    "author": "Geoff Emerick",
+    "year": 2006,
+    "publisher": "",
+    "genre": [
+      "Music History",
+      "Memoir"
+    ],
+    "format": "physical",
+    "cover": "/images/books/here-there-everywhere.jpg",
+    "source": "Here There & Everywhere.md"
+  },
+  {
+    "id": "hermit-in-paris-autobiographical-writings",
+    "title": "Hermit in Paris: Autobiographical Writings",
+    "author": "Italo Calvino",
+    "year": 2003,
+    "publisher": "Pantheon",
+    "genre": [
+      "Essays",
+      "Memoir"
+    ],
+    "format": "physical",
+    "cover": "/images/books/hermit-in-paris-autobiographical-writings.jpg",
+    "source": "Hermit in Paris.md"
+  },
+  {
+    "id": "hi-fructose-the-new-contemporary-art-magazine-volume-32",
+    "title": "Hi-Fructose: The New Contemporary Art Magazine Volume 32",
+    "author": "Hi-Fructose",
+    "year": 2014,
+    "publisher": "",
+    "genre": [
+      "Art Magazine"
+    ],
+    "format": "physical",
+    "cover": "/images/books/hi-fructose-the-new-contemporary-art-magazine-volume-32.jpg",
+    "source": "Hi-Fructose- The New Contemporary Art Magazine Volume 32.md"
+  },
+  {
+    "id": "hi-fructose-the-new-contemporary-art-magazine-volume-33",
+    "title": "Hi-Fructose: The New Contemporary Art Magazine Volume 33",
+    "author": "Hi-Fructose",
+    "year": 2014,
+    "publisher": "",
+    "genre": [
+      "Art Magazine"
+    ],
+    "format": "physical",
+    "cover": "/images/books/hi-fructose-the-new-contemporary-art-magazine-volume-33.jpg",
+    "source": "Hi-Fructose- The New Contemporary Art Magazine Volume 33.md"
+  },
+  {
+    "id": "hot-shop-music",
+    "title": "Hot Shop Music",
+    "author": "A. Pearl Dick",
+    "year": 2018,
+    "publisher": "",
+    "genre": [
+      "Poetry"
+    ],
+    "format": "physical",
+    "cover": "/images/books/hot-shop-music.jpg",
+    "source": "Hot Shop Music.md"
+  },
+  {
+    "id": "house-of-leaves",
+    "title": "House of Leaves",
+    "author": "Mark Z. Danielewski",
+    "year": 2000,
+    "publisher": "Pantheon Books",
+    "genre": [
+      "Experimental Fiction",
+      "Horror"
+    ],
+    "format": "",
+    "cover": "/images/books/house-of-leaves.jpg",
+    "source": "House of Leaves.md"
+  },
+  {
+    "id": "how-to-blow-up-a-pipeline",
+    "title": "How to Blow Up a Pipeline",
+    "author": "Andreas Malm",
+    "year": 2021,
+    "publisher": "",
+    "genre": [
+      "Politics",
+      "Environment"
+    ],
+    "format": "physical",
+    "cover": "/images/books/how-to-blow-up-a-pipeline.jpg",
+    "source": "How to Blow Up a Pipeline.md"
+  },
+  {
+    "id": "how-to-do-nothing",
+    "title": "How To Do Nothing",
+    "author": "Jenny Odell",
+    "year": 2019,
+    "publisher": "",
+    "genre": [
+      "Essays",
+      "Cultural Criticism"
+    ],
+    "format": "physical",
+    "cover": "/images/books/how-to-do-nothing.jpg",
+    "source": "How To Do Nothing.md"
+  },
+  {
+    "id": "how-to-draw-everything",
+    "title": "How to Draw Everything",
+    "author": "Barrington Barber",
+    "year": 2017,
+    "publisher": "Arcturus Publishing",
+    "genre": [
+      "Art",
+      "Instruction"
+    ],
+    "format": "",
+    "cover": "/images/books/how-to-draw-everything.jpg",
+    "source": "How to Draw Everything.md"
+  },
+  {
+    "id": "how-to-invent-everything",
+    "title": "How To Invent Everything",
+    "author": "Ryan North",
+    "year": 2018,
+    "publisher": "",
+    "genre": [
+      "Science",
+      "Humor"
+    ],
+    "format": "physical",
+    "cover": "/images/books/how-to-invent-everything.jpg",
+    "source": "How To Invent Everything.md"
+  },
+  {
+    "id": "how-to-sign-hello-to-your-friends-in-american-sign-language",
+    "title": "How To Sign Hello To Your Friends in American Sign Language",
+    "author": "Uncredited",
+    "year": 2025,
+    "publisher": "",
+    "genre": [
+      "Language",
+      "Zine"
+    ],
+    "format": "physical",
+    "cover": "/images/books/how-to-sign-hello-to-your-friends-in-american-sign-language.jpg",
+    "source": "How To Sign Hello To Your Friends in American Sign Language.md"
+  },
+  {
+    "id": "howls-moving-castle-symphonic-variation",
+    "title": "Howl's Moving Castle: Symphonic Variation",
+    "author": "Joe Hisaishi",
+    "year": 2004,
+    "publisher": "",
+    "genre": [
+      "Music Score"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Howl's Moving Castle- Symphonic Variation.md"
+  },
+  {
+    "id": "hudebni-veda-2-2024",
+    "title": "Hudební Věda 2/2024",
+    "author": "Hudební Věda",
+    "year": 2024,
+    "publisher": "",
+    "genre": [
+      "Music Journal"
+    ],
+    "format": "physical",
+    "cover": "/images/books/hudebni-veda-2-2024.jpg",
+    "source": "Hudební Věda 2-2024.md"
+  },
+  {
+    "id": "hyperion",
+    "title": "Hyperion",
+    "author": "Dan Simmons",
+    "year": 1989,
+    "publisher": "",
+    "genre": [
+      "Science Fiction"
+    ],
+    "format": "physical",
+    "cover": "/images/books/hyperion.jpg",
+    "source": "Hyperion.md"
+  },
+  {
+    "id": "i-am-not-but-i-know-i-am",
+    "title": "I Am Not, But I Know I Am",
+    "author": "Louie Giglio",
+    "year": 2005,
+    "publisher": "",
+    "genre": [
+      "Religion",
+      "Christian"
+    ],
+    "format": "physical",
+    "cover": "/images/books/i-am-not-but-i-know-i-am.jpg",
+    "source": "I Am Not, But I Know I Am.md"
+  },
+  {
+    "id": "i-thought-it-was-just-me-but-it-isnt",
+    "title": "I Thought It Was Just Me (But It Isn't)",
+    "author": "Brené Brown",
+    "year": 2007,
+    "publisher": "",
+    "genre": [
+      "Psychology",
+      "Self-Help"
+    ],
+    "format": "physical",
+    "cover": "/images/books/i-thought-it-was-just-me-but-it-isnt.jpg",
+    "source": "I Thought It Was Just Me (But It Isn't).md"
+  },
+  {
+    "id": "i-watched-the-bows",
+    "title": "I Watched the Bows",
+    "author": "Emily Lee Luan",
+    "year": 2020,
+    "publisher": "",
+    "genre": [
+      "Poetry"
+    ],
+    "format": "physical",
+    "cover": "/images/books/i-watched-the-bows.jpg",
+    "source": "I Watched the Boughs.md"
+  },
+  {
+    "id": "i-who-have-never-known-men",
+    "title": "I Who Have Never Known Men",
+    "author": "Jacqueline Harpman",
+    "year": 1995,
+    "publisher": "",
+    "genre": [
+      "Literary Fiction"
+    ],
+    "format": "physical",
+    "cover": "/images/books/i-who-have-never-known-men.jpg",
+    "source": "I Who Have Never Known Men.md"
+  },
+  {
+    "id": "if-on-a-winters-night-a-traveler",
+    "title": "If On A Winter's Night A Traveler",
+    "author": "Italo Calvino",
+    "year": 1981,
+    "publisher": "Harcourt Brace Jovanovich",
+    "genre": [
+      "Postmodern Fiction",
+      "Metafiction"
+    ],
+    "format": "",
+    "cover": "/images/books/if-on-a-winters-night-a-traveler.jpg",
+    "source": "If On A Winter's Night A Traveler.md"
+  },
+  {
+    "id": "immortal-axes-guitars-that-rock",
+    "title": "Immortal Axes: Guitars That Rock",
+    "author": "Lisa S. Johnson, Brad Tolinski, Peter Frampton, Suzi Quatro",
+    "year": 2021,
+    "publisher": "Princeton Architectural Press",
+    "genre": [
+      "Music",
+      "Photography"
+    ],
+    "format": "physical",
+    "cover": "/images/books/immortal-axes-guitars-that-rock.jpg",
+    "source": "Immortal Axes.md"
+  },
+  {
+    "id": "in-these-times-december-2025",
+    "title": "In These Times, December 2025",
+    "author": "In These Times",
+    "year": 2025,
+    "publisher": "",
+    "genre": [
+      "Politics Magazine"
+    ],
+    "format": "physical",
+    "cover": "/images/books/in-these-times-december-2025.jpg",
+    "source": "In These Times, December 2025.md"
+  },
+  {
+    "id": "indie-city-games",
+    "title": "Indie City Games",
+    "author": "Indie City Games",
+    "year": 2022,
+    "publisher": "",
+    "genre": [
+      "Tabletop RPG Zine"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Indie City Games #003.md"
+  },
+  {
+    "id": "indie-city-games-2",
+    "title": "Indie City Games",
+    "author": "Indie City Games",
+    "year": 2023,
+    "publisher": "",
+    "genre": [
+      "Tabletop RPG Zine"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Indie City Games #005.md"
+  },
+  {
+    "id": "indie-city-games-3",
+    "title": "Indie City Games",
+    "author": "Indie City Games",
+    "year": 2023,
+    "publisher": "",
+    "genre": [
+      "Tabletop RPG Zine"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Indie City Games #006.md"
+  },
+  {
+    "id": "infinite-jest",
+    "title": "Infinite Jest",
+    "author": "David Foster Wallace",
+    "year": 1996,
+    "publisher": "Little, Brown and Company",
+    "genre": [
+      "Literary Fiction"
+    ],
+    "format": "",
+    "cover": "/images/books/infinite-jest.jpg",
+    "source": "Infinite Jest.md"
+  },
+  {
+    "id": "inherent-vice",
+    "title": "Inherent Vice",
+    "author": "Thomas Pynchon",
+    "year": 2009,
+    "publisher": "",
+    "genre": [
+      "Literary Fiction",
+      "Noir"
+    ],
+    "format": "physical",
+    "cover": "/images/books/inherent-vice.jpg",
+    "source": "Inherent Vice.md"
+  },
+  {
+    "id": "inside-chefs-fridges-europe",
+    "title": "Inside Chefs' Fridges: Europe",
+    "author": "Carrie Solomon, Adrian Moore",
+    "year": 2015,
+    "publisher": "",
+    "genre": [
+      "Cooking"
+    ],
+    "format": "physical",
+    "cover": "/images/books/inside-chefs-fridges-europe.jpg",
+    "source": "Inside Chefs' Fridges- Europe.md"
+  },
+  {
+    "id": "intermezzo",
+    "title": "Intermezzo",
+    "author": "Sally Rooney",
+    "year": 2024,
+    "publisher": "",
+    "genre": [
+      "Literary Fiction"
+    ],
+    "format": "physical",
+    "cover": "/images/books/intermezzo.jpg",
+    "source": "Intermezzo.md"
+  },
+  {
+    "id": "inventing-the-american-guitar-the-pre-civil-war-innovations-of-c-f-martin-and-hi",
+    "title": "Inventing the American Guitar: The Pre-Civil War Innovations of C.F. Martin and His Contemporaries",
+    "author": "Robert Shaw, Peter Szego",
+    "year": 2013,
+    "publisher": "Hal Leonard Books",
+    "genre": [
+      "Music History"
+    ],
+    "format": "physical",
+    "cover": "/images/books/inventing-the-american-guitar-the-pre-civil-war-innovations-of-c-f-martin-and-hi.jpg",
+    "source": "Inventing The American Guitar.md"
+  },
+  {
+    "id": "inventions-of-the-march-hare",
+    "title": "Inventions Of The March Hare",
+    "author": "T.S. Elliot",
+    "year": 1996,
+    "publisher": "",
+    "genre": [
+      "Poetry"
+    ],
+    "format": "physical",
+    "cover": "/images/books/inventions-of-the-march-hare.jpg",
+    "source": "Inventions Of The March Hare.md"
+  },
+  {
+    "id": "invisible-cities",
+    "title": "Invisible Cities",
+    "author": "Italo Calvino",
+    "year": 1972,
+    "publisher": "",
+    "genre": [
+      "Literary Fiction",
+      "Experimental"
+    ],
+    "format": "physical",
+    "cover": "/images/books/invisible-cities.jpg",
+    "source": "Invisible Cities.md"
+  },
+  {
+    "id": "its-not-always-depression",
+    "title": "It's Not Always Depression",
+    "author": "Hilary Jacobs Hendel",
+    "year": 2018,
+    "publisher": "",
+    "genre": [
+      "Psychology"
+    ],
+    "format": "physical",
+    "cover": "/images/books/its-not-always-depression.jpg",
+    "source": "It's Not Always Depression.md"
+  },
+  {
+    "id": "its-over",
+    "title": "It's Over",
+    "author": "Ron Regé Jr.",
+    "year": 2020,
+    "publisher": "",
+    "genre": [
+      "Comics"
+    ],
+    "format": "physical",
+    "cover": "/images/books/its-over.jpg",
+    "source": "It's Over.md"
+  },
+  {
+    "id": "ivanhoe",
+    "title": "Ivanhoe",
+    "author": "Sir Walter Scott",
+    "year": 1820,
+    "publisher": "Archibald Constable",
+    "genre": [
+      "Historical Fiction"
+    ],
+    "format": "",
+    "cover": "/images/books/ivanhoe.jpg",
+    "source": "Ivanhoe.md"
+  },
+  {
+    "id": "japanese-music-harmony-fundamental-of-fluctuation",
+    "title": "Japanese Music Harmony: Fundamental of Fluctuation",
+    "author": "Hiromitsu Agawa",
+    "year": 2020,
+    "publisher": "",
+    "genre": [
+      "Music Theory"
+    ],
+    "format": "digital",
+    "cover": "/images/books/japanese-music-harmony-fundamental-of-fluctuation.jpg",
+    "source": "Japanese Music Harmony.md"
+  },
+  {
+    "id": "joe-hisaishi-spirited-away-suite",
+    "title": "Joe Hisaishi: Spirited Away Suite",
+    "author": "Joe Hisaishi",
+    "year": 2001,
+    "publisher": "",
+    "genre": [
+      "Music Score"
+    ],
+    "format": "physical",
+    "cover": "/images/books/joe-hisaishi-spirited-away-suite.jpg",
+    "source": "Joe Hisaishi- Spirited Away Suite.md"
+  },
+  {
+    "id": "joe-kuberts-world-of-cartooning",
+    "title": "Joe Kubert's World of Cartooning",
+    "author": "Joe Kubert",
+    "year": 1996,
+    "publisher": "",
+    "genre": [
+      "Art",
+      "Comics"
+    ],
+    "format": "physical",
+    "cover": "/images/books/joe-kuberts-world-of-cartooning.jpg",
+    "source": "Joe Kubert's World of Cartooning.md"
+  },
+  {
+    "id": "jonathan-strange-mr-norrell",
+    "title": "Jonathan Strange & Mr Norrell",
+    "author": "Susanna Clarke",
+    "year": 2004,
+    "publisher": "Bloomsbury",
+    "genre": [
+      "Historical Fantasy"
+    ],
+    "format": "",
+    "cover": "/images/books/jonathan-strange-mr-norrell.jpg",
+    "source": "Jonathan Strange & Mr Norrell.md"
+  },
+  {
+    "id": "kavi-gupta-spring-2022",
+    "title": "Kavi Gupta Spring 2022",
+    "author": "Kavi Gupta Gallery",
+    "year": 2022,
+    "publisher": "",
+    "genre": [
+      "Art Catalog"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Kavi Gupta Spring 2022.md"
+  },
+  {
+    "id": "kilgore-quarterly-spring-2015",
+    "title": "Kilgore Quarterly, Spring 2015",
+    "author": "Kilgore Quarterly",
+    "year": 2015,
+    "publisher": "",
+    "genre": [
+      "Literary Magazine"
+    ],
+    "format": "physical",
+    "cover": "/images/books/kilgore-quarterly-spring-2015.jpg",
+    "source": "Kilgore Quarterly, Spring 2015.md"
+  },
+  {
+    "id": "king-arthur-the-knights-of-the-round-table",
+    "title": "King Arthur & The Knights of the Round Table",
+    "author": "Roger Lancelyn Green",
+    "year": 1953,
+    "publisher": "Puffin Books",
+    "genre": [
+      "Mythology",
+      "Legend"
+    ],
+    "format": "",
+    "cover": "/images/books/king-arthur-the-knights-of-the-round-table.jpg",
+    "source": "King Arthur & The Knights of the Round Table.md"
+  },
+  {
+    "id": "king-cat-comix-and-stories-no-76",
+    "title": "King-Cat Comix and Stories No. 76",
+    "author": "John Porcellino",
+    "year": 2016,
+    "publisher": "",
+    "genre": [
+      "Comics",
+      "Zine"
+    ],
+    "format": "physical",
+    "cover": "/images/books/king-cat-comix-and-stories-no-76.jpg",
+    "source": "King-Cat Comix and Stories No. 76.md"
+  },
+  {
+    "id": "klara-and-the-sun",
+    "title": "Klara and the Sun",
+    "author": "Kazuo Ishiguro",
+    "year": 2021,
+    "publisher": "Alfred A. Knopf",
+    "genre": [
+      "Literary Fiction",
+      "Science Fiction"
+    ],
+    "format": "physical",
+    "cover": "/images/books/klara-and-the-sun.jpg",
+    "source": "Klara and the Sun.md"
+  },
+  {
+    "id": "know-your-onions-graphic-design",
+    "title": "Know Your Onions: Graphic Design",
+    "author": "Drew de Soto",
+    "year": 2014,
+    "publisher": "",
+    "genre": [
+      "Design"
+    ],
+    "format": "physical",
+    "cover": "/images/books/know-your-onions-graphic-design.jpg",
+    "source": "Know Your Onions- Graphic Design.md"
+  },
+  {
+    "id": "krautrock-genre-a-33-1-3-series",
+    "title": "Krautrock (Genre: A 33 1/3 Series)",
+    "author": "Marshall Gu",
+    "year": 2023,
+    "publisher": "",
+    "genre": [
+      "Music"
+    ],
+    "format": "physical",
+    "cover": "/images/books/krautrock-genre-a-33-1-3-series.jpg",
+    "source": "Krautrock (Genre- A 33 1-3 Series).md"
+  },
+  {
+    "id": "languid-swords",
+    "title": "Languid Swords",
+    "author": "Jon Massey",
+    "year": 2021,
+    "publisher": "",
+    "genre": [
+      "Comics",
+      "Zine"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Languid Swords #3.md"
+  },
+  {
+    "id": "laserwriter-ii",
+    "title": "LaserWriter II",
+    "author": "Tamara Shopsin",
+    "year": 2021,
+    "publisher": "",
+    "genre": [
+      "Literary Fiction",
+      "Technology"
+    ],
+    "format": "physical",
+    "cover": "/images/books/laserwriter-ii.jpg",
+    "source": "LaserWriter II.md"
+  },
+  {
+    "id": "last-date-in-el-zapotal",
+    "title": "Last Date in El Zapotal",
+    "author": "Mateo García Elizondo",
+    "year": 2024,
+    "publisher": "",
+    "genre": [
+      "Fiction"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Last Date in El Zapotal.md"
+  },
+  {
+    "id": "latin-an-intensive-course",
+    "title": "Latin - An Intensive Course",
+    "author": "",
+    "year": 1977,
+    "publisher": "An Intensive Course_. Berkeley: University of California Press",
+    "genre": [
+      "Language",
+      "Textbook"
+    ],
+    "format": "physical",
+    "cover": "/images/books/latin-an-intensive-course.jpg",
+    "source": "Latin - An Intensive Course.md"
+  },
+  {
+    "id": "laus-in-ecclesia-learning-georgian-chant-volumes-1-and-2",
+    "title": "Laus in Ecclesia: Learning Georgian Chant, Volumes 1 and 2",
+    "author": "Clear Creek Monks",
+    "year": 2016,
+    "publisher": "",
+    "genre": [
+      "Music Instruction"
+    ],
+    "format": "physical",
+    "cover": "/images/books/laus-in-ecclesia-learning-georgian-chant-volumes-1-and-2.jpg",
+    "source": "Laus in Ecclesia- Learning Georgian Chant, Volumes 1 and 2.md"
+  },
+  {
+    "id": "lets-explore-diabetes-with-owls",
+    "title": "Let's Explore Diabetes with Owls",
+    "author": "David Sedaris",
+    "year": 2013,
+    "publisher": "Little, Brown and Company",
+    "genre": [
+      "Essays",
+      "Humor"
+    ],
+    "format": "physical",
+    "cover": "/images/books/lets-explore-diabetes-with-owls.jpg",
+    "source": "Let's Explore Diabetes with Owls.md"
+  },
+  {
+    "id": "letters-to-a-young-poet",
+    "title": "Letters to a Young Poet",
+    "author": "Rainer Maria Rilke",
+    "year": 1929,
+    "publisher": "",
+    "genre": [
+      "Letters",
+      "Philosophy"
+    ],
+    "format": "physical",
+    "cover": "/images/books/letters-to-a-young-poet.jpg",
+    "source": "Letters to a Young Poet.md"
+  },
+  {
+    "id": "letters-to-margaret",
+    "title": "Letters to Margaret",
+    "author": "Hayley Gold",
+    "year": 2020,
+    "publisher": "",
+    "genre": [
+      "Zine",
+      "Memoir"
+    ],
+    "format": "physical",
+    "cover": "/images/books/letters-to-margaret.jpg",
+    "source": "Letters to Margaret.md"
+  },
+  {
+    "id": "liberation-day",
+    "title": "Liberation Day",
+    "author": "George Saunders",
+    "year": 2022,
+    "publisher": "Random House",
+    "genre": [
+      "Short Story Collection"
+    ],
+    "format": "",
+    "cover": "/images/books/liberation-day.jpg",
+    "source": "Liberation Day.md"
+  },
+  {
+    "id": "lincoln-in-the-bardo",
+    "title": "Lincoln in the Bardo",
+    "author": "George Saunders",
+    "year": 2017,
+    "publisher": "Random House",
+    "genre": [
+      "Historical Fiction",
+      "Experimental Fiction"
+    ],
+    "format": "physical",
+    "cover": "/images/books/lincoln-in-the-bardo.jpg",
+    "source": "Lincoln In The Bardo.md"
+  },
+  {
+    "id": "live-sound-for-musicians",
+    "title": "Live Sound for Musicians",
+    "author": "Rudy Trubitt",
+    "year": 1997,
+    "publisher": "",
+    "genre": [
+      "Audio Engineering"
+    ],
+    "format": "physical",
+    "cover": "/images/books/live-sound-for-musicians.jpg",
+    "source": "Live Sound for Musicians.md"
+  },
+  {
+    "id": "longitude-the-true-story-of-a-lone-genius-who-solved-the-greatest-scientific-pro",
+    "title": "Longitude - The True Story of a Lone Genius Who Solved the Greatest Scientific Problem of His Time",
+    "author": "Dava Sobel",
+    "year": 1995,
+    "publisher": "",
+    "genre": [],
+    "format": "",
+    "cover": "/images/books/longitude-the-true-story-of-a-lone-genius-who-solved-the-greatest-scientific-pro.jpg",
+    "source": "Longitude - The True Story of a Lone Genius Who Solved the Greatest Scientific Problem of His Time.md"
+  },
+  {
+    "id": "lula-cafe-cookbook",
+    "title": "Lula Café Cookbook",
+    "author": "Jason Hammel",
+    "year": 2019,
+    "publisher": "",
+    "genre": [
+      "Cooking",
+      "Chicago"
+    ],
+    "format": "physical",
+    "cover": "/images/books/lula-cafe-cookbook.jpg",
+    "source": "Lula Café Cookbook.md"
+  },
+  {
+    "id": "m-c-escher-the-graphic-work",
+    "title": "M.C. Escher: The Graphic Work",
+    "author": "M.C. Escher",
+    "year": 1959,
+    "publisher": "Taschen",
+    "genre": [
+      "Art"
+    ],
+    "format": "physical",
+    "cover": "/images/books/m-c-escher-the-graphic-work.jpg",
+    "source": "M.C. Escher- The Graphic Work.md"
+  },
+  {
+    "id": "maggot-brain-number-16-spring-2024",
+    "title": "Maggot Brain Number 16, Spring 2024",
+    "author": "Maggot Brain",
+    "year": 2024,
+    "publisher": "",
+    "genre": [
+      "Music Magazine"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Maggot Brain Number 16, Spring 2024.md"
+  },
+  {
+    "id": "mahler-symphony-no-8-in-full-score",
+    "title": "Mahler Symphony No. 8 in Full Score",
+    "author": "Gustav Mahler",
+    "year": 1910,
+    "publisher": "",
+    "genre": [
+      "Music Score"
+    ],
+    "format": "physical",
+    "cover": "/images/books/mahler-symphony-no-8-in-full-score.jpg",
+    "source": "Mahler Symphony No. 8 in Full Score.md"
+  },
+  {
+    "id": "mahler-symphony-no-9-in-full-score",
+    "title": "Mahler Symphony No. 9 in Full Score",
+    "author": "Gustav Mahler",
+    "year": 1912,
+    "publisher": "",
+    "genre": [
+      "Music Score"
+    ],
+    "format": "physical",
+    "cover": "/images/books/mahler-symphony-no-9-in-full-score.jpg",
+    "source": "Mahler Symphony No. 9 in Full Score.md"
+  },
+  {
+    "id": "make-analog-synthesizers",
+    "title": "MAKE - Analog Synthesizers",
+    "author": "Ray Wilson",
+    "year": 2013,
+    "publisher": "",
+    "genre": [
+      "Electronics",
+      "DIY Synthesizers"
+    ],
+    "format": "physical",
+    "cover": "/images/books/make-analog-synthesizers.jpg",
+    "source": "MAKE - Analog Synthesizers.md"
+  },
+  {
+    "id": "make-ink",
+    "title": "Make Ink",
+    "author": "Jason Logan",
+    "year": 2018,
+    "publisher": "A Forager's Guide to Natural Inkmaking_. New York: Abrams",
+    "genre": [
+      "Craft",
+      "DIY"
+    ],
+    "format": "",
+    "cover": "/images/books/make-ink.jpg",
+    "source": "Make Ink.md"
+  },
+  {
+    "id": "make-magazine-issue-92",
+    "title": "Make Magazine Issue 92",
+    "author": "Make",
+    "year": 2024,
+    "publisher": "",
+    "genre": [
+      "Maker Magazine"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Make Magazine Issue 92.md"
+  },
+  {
+    "id": "make-magazine-issue-93",
+    "title": "Make Magazine Issue 93",
+    "author": "Make",
+    "year": 2024,
+    "publisher": "",
+    "genre": [
+      "Maker Magazine"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Make Magazine Issue 93.md"
+  },
+  {
+    "id": "make-magazine-issue-94",
+    "title": "Make Magazine Issue 94",
+    "author": "Make",
+    "year": 2024,
+    "publisher": "",
+    "genre": [
+      "Maker Magazine"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Make Magazine Issue 94.md"
+  },
+  {
+    "id": "make-magazine-issue-95",
+    "title": "Make Magazine Issue 95",
+    "author": "Make",
+    "year": 2024,
+    "publisher": "",
+    "genre": [
+      "Maker Magazine"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Make Magazine Issue 95.md"
+  },
+  {
+    "id": "making-sense-of-god",
+    "title": "Making Sense of God",
+    "author": "Timothy Keller",
+    "year": 2016,
+    "publisher": "",
+    "genre": [
+      "Religion",
+      "Christian"
+    ],
+    "format": "physical",
+    "cover": "/images/books/making-sense-of-god.jpg",
+    "source": "Making Sense of God.md"
+  },
+  {
+    "id": "mans-search-for-meaning",
+    "title": "Man's Search for Meaning",
+    "author": "Viktor E. Frankl",
+    "year": 1946,
+    "publisher": "",
+    "genre": [
+      "Psychology",
+      "Philosophy"
+    ],
+    "format": "physical",
+    "cover": "/images/books/mans-search-for-meaning.jpg",
+    "source": "Man's Search for Meaning.md"
+  },
+  {
+    "id": "manish-nai",
+    "title": "Manish Nai",
+    "author": "Manish Nai",
+    "year": 2019,
+    "publisher": "Kavi Gupta Gallery",
+    "genre": [
+      "Art Catalog"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Manish Nai.md"
+  },
+  {
+    "id": "marvels",
+    "title": "Marvels",
+    "author": "Busiek, Kurt, and Alex Ross",
+    "year": 2009,
+    "publisher": "Marvel Comics",
+    "genre": [
+      "Graphic Novel",
+      "Superhero"
+    ],
+    "format": "physical",
+    "cover": "/images/books/marvels.jpg",
+    "source": "Marvels.md"
+  },
+  {
+    "id": "master-handbook-of-acoustics",
+    "title": "Master Handbook of Acoustics",
+    "author": "F. Alton Everest",
+    "year": 2009,
+    "publisher": "",
+    "genre": [
+      "Audio Engineering"
+    ],
+    "format": "physical",
+    "cover": "/images/books/master-handbook-of-acoustics.jpg",
+    "source": "Master Handbook of Acoustics.md"
+  },
+  {
+    "id": "master-of-reality",
+    "title": "Master of Reality",
+    "author": "John Darnielle",
+    "year": 2008,
+    "publisher": "Continuum",
+    "genre": [
+      "Music Criticism",
+      "Fiction"
+    ],
+    "format": "physical",
+    "cover": "/images/books/master-of-reality.jpg",
+    "source": "Master of Reality.md"
+  },
+  {
+    "id": "mastering-audio-the-art-and-the-science-third-edition",
+    "title": "Mastering Audio: The Art and the Science (Third Edition)",
+    "author": "Bob Katz",
+    "year": 2015,
+    "publisher": "",
+    "genre": [
+      "Audio Engineering"
+    ],
+    "format": "physical",
+    "cover": "/images/books/mastering-audio-the-art-and-the-science-third-edition.jpg",
+    "source": "Mastering Audio- The Art and the Science (Third Edition).md"
+  },
+  {
+    "id": "masters-of-empire-great-lakes-indians-and-the-making-of-america",
+    "title": "Masters of Empire: Great Lakes Indians and the Making of America",
+    "author": "Michael McDonnell",
+    "year": 2015,
+    "publisher": "",
+    "genre": [
+      "History"
+    ],
+    "format": "physical",
+    "cover": "/images/books/masters-of-empire-great-lakes-indians-and-the-making-of-america.jpg",
+    "source": "Masters of Empire- Great Lakes Indians and the Making of America.md"
+  },
+  {
+    "id": "mating-in-captivity-reconciling-the-erotic-and-the-domestic",
+    "title": "Mating in Captivity: Reconciling the Erotic and the Domestic",
+    "author": "Esther Perel",
+    "year": 2006,
+    "publisher": "HarperCollins",
+    "genre": [
+      "Psychology",
+      "Relationships"
+    ],
+    "format": "physical",
+    "cover": "/images/books/mating-in-captivity-reconciling-the-erotic-and-the-domestic.jpg",
+    "source": "Mating in Captivity.md"
+  },
+  {
+    "id": "me-earl-the-dying-girl",
+    "title": "Me, Earl & The Dying Girl",
+    "author": "Jesse Andrews",
+    "year": 2012,
+    "publisher": "Amulet Books",
+    "genre": [
+      "Young Adult Fiction"
+    ],
+    "format": "",
+    "cover": "/images/books/me-earl-the-dying-girl.jpg",
+    "source": "Me, Earl & The Dying Girl.md"
+  },
+  {
+    "id": "meditations",
+    "title": "Meditations",
+    "author": "Marcus Aurelius",
+    "year": 180,
+    "publisher": "",
+    "genre": [
+      "Philosophy"
+    ],
+    "format": "physical",
+    "cover": "/images/books/meditations.jpg",
+    "source": "Meditations.md"
+  },
+  {
+    "id": "mere-christianity",
+    "title": "Mere Christianity",
+    "author": "C.S. Lewis",
+    "year": 1952,
+    "publisher": "",
+    "genre": [
+      "Religion",
+      "Christian"
+    ],
+    "format": "physical",
+    "cover": "/images/books/mere-christianity.jpg",
+    "source": "Mere Christianity.md"
+  },
+  {
+    "id": "mickey-bakers-complete-course-in-jazz-guitar",
+    "title": "Mickey Baker's Complete Course in Jazz Guitar",
+    "author": "Mickey Baker",
+    "year": 1955,
+    "publisher": "",
+    "genre": [
+      "Music Instruction"
+    ],
+    "format": "physical",
+    "cover": "/images/books/mickey-bakers-complete-course-in-jazz-guitar.jpg",
+    "source": "Mickey Baker's Complete Course in Jazz Guitar.md"
+  },
+  {
+    "id": "midwest-foraging-115-wild-and-flavorful-edibles-from-burdock-to-wild-peach",
+    "title": "Midwest Foraging: 115 Wild and Flavorful Edibles from Burdock to Wild Peach",
+    "author": "Lisa M. Rose",
+    "year": 2015,
+    "publisher": "115 Wild and Flavorful Edibles from Burdock to Wild Peach_.",
+    "genre": [
+      "Foraging",
+      "Nature"
+    ],
+    "format": "physical",
+    "cover": "/images/books/midwest-foraging-115-wild-and-flavorful-edibles-from-burdock-to-wild-peach.jpg",
+    "source": "Midwest Foraging.md"
+  },
+  {
+    "id": "mister-miracle",
+    "title": "Mister Miracle",
+    "author": "King, Tom, and Mitch Gerads",
+    "year": 2019,
+    "publisher": "DC Comics",
+    "genre": [
+      "Graphic Novel",
+      "Superhero"
+    ],
+    "format": "physical",
+    "cover": "/images/books/mister-miracle.jpg",
+    "source": "Mister Miracle.md"
+  },
+  {
+    "id": "monstress-awakening",
+    "title": "Monstress - Awakening",
+    "author": "Liu, Marjorie, and Sana Takeda",
+    "year": 2016,
+    "publisher": "Awakening_. Portland: Image Comics",
+    "genre": [
+      "Graphic Novel",
+      "Fantasy"
+    ],
+    "format": "physical",
+    "cover": "/images/books/monstress-awakening.jpg",
+    "source": "Monstress - Awakening.md"
+  },
+  {
+    "id": "monstress-haven",
+    "title": "Monstress - Haven",
+    "author": "Liu, Marjorie, and Sana Takeda",
+    "year": 2018,
+    "publisher": "Haven_. Portland: Image Comics",
+    "genre": [
+      "Graphic Novel",
+      "Dark Fantasy"
+    ],
+    "format": "physical",
+    "cover": "/images/books/monstress-haven.jpg",
+    "source": "Monstress - Haven.md"
+  },
+  {
+    "id": "monstress-the-blood",
+    "title": "Monstress - The Blood",
+    "author": "Liu, Marjorie, and Sana Takeda",
+    "year": 2017,
+    "publisher": "The Blood_. Portland: Image Comics",
+    "genre": [
+      "Graphic Novel",
+      "Dark Fantasy"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Monstress - The Blood.md"
+  },
+  {
+    "id": "moominland-midwinter",
+    "title": "Moominland Midwinter",
+    "author": "Tove Jansson",
+    "year": 1957,
+    "publisher": "",
+    "genre": [
+      "Children's Fantasy"
+    ],
+    "format": "physical",
+    "cover": "/images/books/moominland-midwinter.jpg",
+    "source": "Moominland Midwinter.md"
+  },
+  {
+    "id": "moondog-the-viking-of-6th-avenue-the-authorized-biography",
+    "title": "Moondog, The Viking of 6th Avenue: The Authorized Biography",
+    "author": "Robert Scotto",
+    "year": 2007,
+    "publisher": "Process Media",
+    "genre": [
+      "Music Biography"
+    ],
+    "format": "physical",
+    "cover": "/images/books/moondog-the-viking-of-6th-avenue-the-authorized-biography.jpg",
+    "source": "Moondog- The Viking of 6th Avenue.md"
+  },
+  {
+    "id": "mushroom-cultivation-on-logs-and-outdoor-beds",
+    "title": "Mushroom Cultivation on Logs and Outdoor Beds",
+    "author": "Sporecraft",
+    "year": 2016,
+    "publisher": "",
+    "genre": [
+      "Gardening",
+      "Mushrooms"
+    ],
+    "format": "physical",
+    "cover": "/images/books/mushroom-cultivation-on-logs-and-outdoor-beds.jpg",
+    "source": "Mushroom Cultivation on Logs and Outdoor Beds.md"
+  },
+  {
+    "id": "mushrooming-with-confidence-a-guide-to-collecting-edible-and-tasty-mushrooms",
+    "title": "Mushrooming with Confidence: A Guide to Collecting Edible and Tasty Mushrooms",
+    "author": "Alexander Schwab",
+    "year": 2011,
+    "publisher": "A Guide to Collecting Edible and Tasty Mushrooms_. New York: Skyhorse Publishing",
+    "genre": [
+      "Foraging",
+      "Nature"
+    ],
+    "format": "",
+    "cover": "/images/books/mushrooming-with-confidence-a-guide-to-collecting-edible-and-tasty-mushrooms.jpg",
+    "source": "Mushrooming With Confidence.md"
+  },
+  {
+    "id": "music-cultures-of-the-pacific-the-near-east-and-asia",
+    "title": "Music Cultures Of The Pacific, The Near-East, And Asia",
+    "author": "",
+    "year": 2009,
+    "publisher": "Routledge",
+    "genre": [
+      "Ethnomusicology"
+    ],
+    "format": "",
+    "cover": "/images/books/music-cultures-of-the-pacific-the-near-east-and-asia.jpg",
+    "source": "Music Cultures Of The Pacific, The Near-East, And Asia.md"
+  },
+  {
+    "id": "music-in-rural-new-england-family-and-community-life-1870-1940",
+    "title": "Music in Rural New England Family and Community Life, 1870-1940",
+    "author": "Jennifer C. Post",
+    "year": 2004,
+    "publisher": "",
+    "genre": [
+      "Music History"
+    ],
+    "format": "physical",
+    "cover": "/images/books/music-in-rural-new-england-family-and-community-life-1870-1940.jpg",
+    "source": "Music in Rural New England Family and Community Life, 1870-1940.md"
+  },
+  {
+    "id": "musicophilia",
+    "title": "Musicophilia",
+    "author": "Oliver Sacks",
+    "year": 2007,
+    "publisher": "Tales of Music and the Brain_. New York: Knopf",
+    "genre": [
+      "Neuroscience",
+      "Music"
+    ],
+    "format": "physical",
+    "cover": "/images/books/musicophilia.jpg",
+    "source": "Musicophilia.md"
+  },
+  {
+    "id": "musimathics-i",
+    "title": "Musimathics I",
+    "author": "Gareth Loy",
+    "year": 2006,
+    "publisher": "MIT Press",
+    "genre": [
+      "Music Theory",
+      "Mathematics"
+    ],
+    "format": "physical",
+    "cover": "/images/books/musimathics-i.jpg",
+    "source": "Musimathics I.md"
+  },
+  {
+    "id": "musimathics-ii",
+    "title": "Musimathics II",
+    "author": "Gareth Loy",
+    "year": 2007,
+    "publisher": "MIT Press",
+    "genre": [
+      "Music Theory",
+      "Mathematics"
+    ],
+    "format": "physical",
+    "cover": "/images/books/musimathics-ii.jpg",
+    "source": "Musimathics II.md"
+  },
+  {
+    "id": "myths-to-live-by",
+    "title": "Myths to Live By",
+    "author": "Joseph Campbell",
+    "year": 1972,
+    "publisher": "",
+    "genre": [
+      "Mythology",
+      "Philosophy"
+    ],
+    "format": "physical",
+    "cover": "/images/books/myths-to-live-by.jpg",
+    "source": "Myths to Live By.md"
+  },
+  {
+    "id": "naked-in-a-cactus-garden",
+    "title": "Naked in a Cactus Garden",
+    "author": "Jesse Golson",
+    "year": 2023,
+    "publisher": "Self-published",
+    "genre": [
+      "Literary Fiction"
+    ],
+    "format": "",
+    "cover": "",
+    "source": "Naked in a Cactus Garden.md"
+  },
+  {
+    "id": "national-audubon-society-field-guide-to-north-american-birds-eastern-region",
+    "title": "National Audubon Society Field Guide to North American Birds (Eastern Region)",
+    "author": "National Audubon Society",
+    "year": 1994,
+    "publisher": "",
+    "genre": [
+      "Nature",
+      "Field Guide"
+    ],
+    "format": "physical",
+    "cover": "/images/books/national-audubon-society-field-guide-to-north-american-birds-eastern-region.jpg",
+    "source": "National Audubon Society Field Guide to North American Birds (Eastern Region).md"
+  },
+  {
+    "id": "national-audubon-society-field-guide-to-north-american-butterflies",
+    "title": "National Audubon Society Field Guide to North American Butterflies",
+    "author": "National Audubon Society",
+    "year": 1981,
+    "publisher": "",
+    "genre": [
+      "Nature",
+      "Field Guide"
+    ],
+    "format": "physical",
+    "cover": "/images/books/national-audubon-society-field-guide-to-north-american-butterflies.jpg",
+    "source": "National Audubon Society Field Guide to North American Butterflies.md"
+  },
+  {
+    "id": "national-audubon-society-field-guide-to-north-american-trees-eastern-region",
+    "title": "National Audubon Society Field Guide to North American Trees (Eastern Region)",
+    "author": "National Audubon Society",
+    "year": 1980,
+    "publisher": "",
+    "genre": [
+      "Nature",
+      "Field Guide"
+    ],
+    "format": "physical",
+    "cover": "/images/books/national-audubon-society-field-guide-to-north-american-trees-eastern-region.jpg",
+    "source": "National Audubon Society Field Guide to North American Trees (Eastern Region).md"
+  },
+  {
+    "id": "national-geographic-february-2016",
+    "title": "National Geographic, February 2016",
+    "author": "National Geographic",
+    "year": 2016,
+    "publisher": "",
+    "genre": [
+      "Magazine"
+    ],
+    "format": "physical",
+    "cover": "/images/books/national-geographic-february-2016.jpg",
+    "source": "National Geographic, February 2016.md"
+  },
+  {
+    "id": "natural-beauty",
+    "title": "Natural Beauty",
+    "author": "Ling Ling Huang",
+    "year": 2023,
+    "publisher": "Atria Books",
+    "genre": [
+      "Literary Fiction"
+    ],
+    "format": "",
+    "cover": "/images/books/natural-beauty.jpg",
+    "source": "Natural Beauty.md"
+  },
+  {
+    "id": "natures-garden-a-guide-to-identifying-harvesting-and-preparing",
+    "title": "Nature's Garden: A Guide to Identifying, Harvesting, and Preparing",
+    "author": "Samuel Thayer",
+    "year": 2010,
+    "publisher": "Forager's Harvest Press",
+    "genre": [
+      "Foraging",
+      "Nature"
+    ],
+    "format": "physical",
+    "cover": "/images/books/natures-garden-a-guide-to-identifying-harvesting-and-preparing.jpg",
+    "source": "Nature's Garden.md"
+  },
+  {
+    "id": "natures-metropolis-chicago-and-the-great-west",
+    "title": "Nature's Metropolis: Chicago and the Great West",
+    "author": "William Cronon",
+    "year": 1991,
+    "publisher": "",
+    "genre": [
+      "History",
+      "Chicago"
+    ],
+    "format": "physical",
+    "cover": "/images/books/natures-metropolis-chicago-and-the-great-west.jpg",
+    "source": "Nature's Metropolis- Chicago and the Great West.md"
+  },
+  {
+    "id": "never-let-me-go",
+    "title": "Never Let Me Go",
+    "author": "Kazuo Ishiguro",
+    "year": 2005,
+    "publisher": "Faber and Faber",
+    "genre": [
+      "Literary Fiction",
+      "Science Fiction"
+    ],
+    "format": "",
+    "cover": "/images/books/never-let-me-go.jpg",
+    "source": "Never Let Me Go.md"
+  },
+  {
+    "id": "night-in-the-lonesome-october",
+    "title": "Night In The Lonesome October",
+    "author": "Richard Laymon",
+    "year": 2002,
+    "publisher": "47North",
+    "genre": [
+      "Fantasy",
+      "Horror"
+    ],
+    "format": "physical",
+    "cover": "/images/books/night-in-the-lonesome-october.jpg",
+    "source": "Night in the Lonesome October.md"
+  },
+  {
+    "id": "no-small-plans",
+    "title": "No Small Plans",
+    "author": "Chicago Architecture Foundation, Gabrielle Lyon, and Eyes of the Cat",
+    "year": 2017,
+    "publisher": "Chicago Architecture Foundation",
+    "genre": [
+      "Graphic Novel",
+      "Urban Planning"
+    ],
+    "format": "physical",
+    "cover": "/images/books/no-small-plans.jpg",
+    "source": "No Small Plans.md"
+  },
+  {
+    "id": "nortons-anthology",
+    "title": "Norton's Anthology",
+    "author": "",
+    "year": 2019,
+    "publisher": "W.W. Norton & Company",
+    "genre": [
+      "Music History",
+      "Anthology"
+    ],
+    "format": "",
+    "cover": "/images/books/nortons-anthology.jpg",
+    "source": "Norton's Anthology Of Western Music.md"
+  },
+  {
+    "id": "novacene",
+    "title": "Novacene",
+    "author": "James Lovelock",
+    "year": 2019,
+    "publisher": "",
+    "genre": [
+      "Science",
+      "Philosophy"
+    ],
+    "format": "physical",
+    "cover": "/images/books/novacene.jpg",
+    "source": "Novacene.md"
+  },
+  {
+    "id": "nw",
+    "title": "NW",
+    "author": "Zadie Smith",
+    "year": 2012,
+    "publisher": "",
+    "genre": [
+      "Literary Fiction"
+    ],
+    "format": "physical",
+    "cover": "/images/books/nw.jpg",
+    "source": "NW.md"
+  },
+  {
+    "id": "of-thorn-and-briar",
+    "title": "Of Thorn and Briar",
+    "author": "Paul Shortland Lamb",
+    "year": 2017,
+    "publisher": "",
+    "genre": [
+      "Poetry",
+      "Folklore"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Of Thorn and Briar.md"
+  },
+  {
+    "id": "on-the-future",
+    "title": "On the Future",
+    "author": "Martin Rees",
+    "year": 2018,
+    "publisher": "",
+    "genre": [
+      "Science",
+      "Future"
+    ],
+    "format": "physical",
+    "cover": "/images/books/on-the-future.jpg",
+    "source": "On the Future.md"
+  },
+  {
+    "id": "on-vegetables",
+    "title": "On Vegetables",
+    "author": "Jeremy Fox",
+    "year": 2017,
+    "publisher": "",
+    "genre": [
+      "Cooking"
+    ],
+    "format": "physical",
+    "cover": "/images/books/on-vegetables.jpg",
+    "source": "On Vegetables.md"
+  },
+  {
+    "id": "organizational-communication",
+    "title": "Organizational Communication",
+    "author": "Katherine Miller",
+    "year": 2014,
+    "publisher": "Approaches and Processes_. Boston: Wadsworth Publishing",
+    "genre": [
+      "Business",
+      "Communication"
+    ],
+    "format": "",
+    "cover": "/images/books/organizational-communication.jpg",
+    "source": "Organizational Communication.md"
+  },
+  {
+    "id": "originals",
+    "title": "Originals",
+    "author": "Adam Grant",
+    "year": 2016,
+    "publisher": "How Non-Conformists Move the World_. New York: Viking",
+    "genre": [
+      "Business",
+      "Psychology"
+    ],
+    "format": "physical",
+    "cover": "/images/books/originals.jpg",
+    "source": "Originals.md"
+  },
+  {
+    "id": "outlines-of-music-theory",
+    "title": "Outlines Of Music Theory",
+    "author": "Arthur E Heacox",
+    "year": 1910,
+    "publisher": "Theodore Presser",
+    "genre": [
+      "Music Theory"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Outlines Of Music Theory.md"
+  },
+  {
+    "id": "overtones-and-undertones",
+    "title": "Overtones and Undertones",
+    "author": "Royal S. Brown",
+    "year": 1994,
+    "publisher": "",
+    "genre": [
+      "Film Music"
+    ],
+    "format": "physical",
+    "cover": "/images/books/overtones-and-undertones.jpg",
+    "source": "Overtones and Undertones.md"
+  },
+  {
+    "id": "oxford-garlands-elegies-and-epitaphs",
+    "title": "Oxford Garlands: Elegies and Epitaphs",
+    "author": "Robert Maynard Leonard",
+    "year": 1915,
+    "publisher": "Oxford University Press",
+    "genre": [
+      "Poetry Anthology"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Elegies and Epitaphs.md"
+  },
+  {
+    "id": "papermaking",
+    "title": "Papermaking",
+    "author": "Jules Heller",
+    "year": 1979,
+    "publisher": "Watson-Guptill Publications",
+    "genre": [
+      "Craft",
+      "DIY"
+    ],
+    "format": "",
+    "cover": "/images/books/papermaking.jpg",
+    "source": "Papermaking.md"
+  },
+  {
+    "id": "parable-of-the-sower",
+    "title": "Parable of the Sower",
+    "author": "Octavia Butler",
+    "year": 1993,
+    "publisher": "Four Walls Eight Windows",
+    "genre": [
+      "Science Fiction"
+    ],
+    "format": "",
+    "cover": "/images/books/parable-of-the-sower.jpg",
+    "source": "Parable of the Sower.md"
+  },
+  {
+    "id": "parable-of-the-talents",
+    "title": "Parable of the Talents",
+    "author": "Octavia Butler",
+    "year": 1998,
+    "publisher": "",
+    "genre": [
+      "Science Fiction"
+    ],
+    "format": "",
+    "cover": "/images/books/parable-of-the-talents.jpg",
+    "source": "Parable of the Talents.md"
+  },
+  {
+    "id": "periodic-tales-a-cultural-history-of-the-elements-from-arsenic-to-zinc",
+    "title": "Periodic Tales: A Cultural History of the Elements from Arsenic to Zinc",
+    "author": "Hugh Aldersey-Williams",
+    "year": 2011,
+    "publisher": "",
+    "genre": [
+      "Science",
+      "History"
+    ],
+    "format": "physical",
+    "cover": "/images/books/periodic-tales-a-cultural-history-of-the-elements-from-arsenic-to-zinc.jpg",
+    "source": "Periodic Tales- A Cultural History of the Elements from Arsenic to Zinc.md"
+  },
+  {
+    "id": "persepolis",
+    "title": "Persepolis",
+    "author": "Marjane Satrapi",
+    "year": 2000,
+    "publisher": "",
+    "genre": [
+      "Comics",
+      "Memoir"
+    ],
+    "format": "physical",
+    "cover": "/images/books/persepolis.jpg",
+    "source": "Persepolis.md"
+  },
+  {
+    "id": "picasso",
+    "title": "Picasso",
+    "author": "Various Authors",
+    "year": 1994,
+    "publisher": "Shooting Star Press",
+    "genre": [
+      "Art",
+      "Biography"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Picasso.md"
+  },
+  {
+    "id": "pidgin-issue-28",
+    "title": "Pidgin Issue 28",
+    "author": "Pidgin",
+    "year": 2020,
+    "publisher": "",
+    "genre": [
+      "Art",
+      "Literary Magazine"
+    ],
+    "format": "physical",
+    "cover": "/images/books/pidgin-issue-28.jpg",
+    "source": "Pidgin Issue 28.md"
+  },
+  {
+    "id": "piranesi",
+    "title": "piranesi",
+    "author": "Susanna Clarke",
+    "year": 2020,
+    "publisher": "Bloomsbury",
+    "genre": [
+      "Fantasy",
+      "Literary Fiction"
+    ],
+    "format": "",
+    "cover": "/images/books/piranesi.jpg",
+    "source": "Piranesi.md"
+  },
+  {
+    "id": "plastics",
+    "title": "Plastics",
+    "author": "Sylvia Katz",
+    "year": 1978,
+    "publisher": "",
+    "genre": [
+      "Design",
+      "History"
+    ],
+    "format": "physical",
+    "cover": "/images/books/plastics.jpg",
+    "source": "Plastics.md"
+  },
+  {
+    "id": "poetry-magazine-january-2012",
+    "title": "Poetry Magazine, January 2012",
+    "author": "Poetry Foundation",
+    "year": 2012,
+    "publisher": "Poetry Foundation",
+    "genre": [
+      "Poetry Magazine"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Poetry Magazine, January 2012.md"
+  },
+  {
+    "id": "poetry-magazine-july-august-2018",
+    "title": "Poetry Magazine, July-August 2018",
+    "author": "Poetry Foundation",
+    "year": 2018,
+    "publisher": "Poetry Foundation",
+    "genre": [
+      "Poetry Magazine"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Poetry Magazine, July-August 2018.md"
+  },
+  {
+    "id": "poetry-magazine-march-2008",
+    "title": "Poetry Magazine, March 2008",
+    "author": "Poetry Foundation",
+    "year": 2008,
+    "publisher": "Poetry Foundation",
+    "genre": [
+      "Poetry Magazine"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Poetry Magazine, March 2008.md"
+  },
+  {
+    "id": "poetry-magazine-may-2011",
+    "title": "Poetry Magazine, May 2011",
+    "author": "Poetry Foundation",
+    "year": 2011,
+    "publisher": "Poetry Foundation",
+    "genre": [
+      "Poetry Magazine"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Poetry Magazine, May 2011.md"
+  },
+  {
+    "id": "poetry-magazine-may-2019",
+    "title": "Poetry Magazine, May 2019",
+    "author": "Poetry Foundation",
+    "year": 2019,
+    "publisher": "",
+    "genre": [
+      "Poetry Magazine"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Poetry Magazine, May 2019.md"
+  },
+  {
+    "id": "poetry-magazine-november-2019",
+    "title": "Poetry Magazine, November 2019",
+    "author": "Poetry Foundation",
+    "year": 2019,
+    "publisher": "",
+    "genre": [
+      "Poetry Magazine"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Poetry Magazine, November 2019.md"
+  },
+  {
+    "id": "poetry-magazine-october-2019",
+    "title": "Poetry Magazine, October 2019",
+    "author": "Poetry Foundation",
+    "year": 2019,
+    "publisher": "",
+    "genre": [
+      "Poetry Magazine"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Poetry Magazine, October 2019.md"
+  },
+  {
+    "id": "popeye-and-the-jeep",
+    "title": "Popeye and the Jeep",
+    "author": "E.C. Segar",
+    "year": 1937,
+    "publisher": "",
+    "genre": [
+      "Comics"
+    ],
+    "format": "physical",
+    "cover": "/images/books/popeye-and-the-jeep.jpg",
+    "source": "Popeye and the Jeep.md"
+  },
+  {
+    "id": "practical-electronics-for-inventors",
+    "title": "Practical Electronics for Inventors",
+    "author": "Paul Scherz, Simon Monk",
+    "year": 2016,
+    "publisher": "",
+    "genre": [
+      "Electronics"
+    ],
+    "format": "physical",
+    "cover": "/images/books/practical-electronics-for-inventors.jpg",
+    "source": "Practical Electronics for Inventors.md"
+  },
+  {
+    "id": "practical-statistics-for-data-scientists",
+    "title": "Practical Statistics For Data Scientists",
+    "author": "Bruce, Peter, Andrew Bruce, and Peter Gedeck",
+    "year": 2020,
+    "publisher": "50+ Essential Concepts Using R and Python_. Sebastopol: O'Reilly Media",
+    "genre": [
+      "Data Science",
+      "Statistics"
+    ],
+    "format": "",
+    "cover": "/images/books/practical-statistics-for-data-scientists.jpg",
+    "source": "Practical Statistics For Data Scientists.md"
+  },
+  {
+    "id": "principia-discordia",
+    "title": "Principia Discordia",
+    "author": "Malaclypse the Younger",
+    "year": 1963,
+    "publisher": "",
+    "genre": [
+      "Religion",
+      "Humor"
+    ],
+    "format": "physical",
+    "cover": "/images/books/principia-discordia.jpg",
+    "source": "Principia Discordia.md"
+  },
+  {
+    "id": "principles-of-physics-second-edition",
+    "title": "Principles of Physics (Second Edition)",
+    "author": "Frederick J. Bueche",
+    "year": 1977,
+    "publisher": "",
+    "genre": [
+      "Physics"
+    ],
+    "format": "physical",
+    "cover": "/images/books/principles-of-physics-second-edition.jpg",
+    "source": "Principles of Physics (Second Edition).md"
+  },
+  {
+    "id": "pure",
+    "title": "Pure",
+    "author": "Linda Kay Klein",
+    "year": 2018,
+    "publisher": "",
+    "genre": [
+      "Religion",
+      "Memoir"
+    ],
+    "format": "physical",
+    "cover": "/images/books/pure.jpg",
+    "source": "Pure.md"
+  },
+  {
+    "id": "quantum-mechanics-the-theoretical-minimum",
+    "title": "Quantum Mechanics: The Theoretical Minimum",
+    "author": "Leonard Susskind, Art Friedman",
+    "year": 2014,
+    "publisher": "",
+    "genre": [
+      "Physics"
+    ],
+    "format": "physical",
+    "cover": "/images/books/quantum-mechanics-the-theoretical-minimum.jpg",
+    "source": "Quantum Mechanics- The Theoretical Minimum.md"
+  },
+  {
+    "id": "radio-electronics-volume-46-number-3",
+    "title": "Radio Electronics Volume 46 Number 3",
+    "author": "Radio Electronics",
+    "year": 1975,
+    "publisher": "",
+    "genre": [
+      "Electronics Magazine"
+    ],
+    "format": "physical",
+    "cover": "/images/books/radio-electronics-volume-46-number-3.jpg",
+    "source": "Radio Electronics Volume 46 Number 3.md"
+  },
+  {
+    "id": "rag-and-pulp",
+    "title": "Rag and Pulp",
+    "author": "Verso Jewelry",
+    "year": 2019,
+    "publisher": "",
+    "genre": [
+      "Crafts",
+      "Zine"
+    ],
+    "format": "physical",
+    "cover": "/images/books/rag-and-pulp.jpg",
+    "source": "Rag and Pulp.md"
+  },
+  {
+    "id": "raw-dog-the-naked-truth-about-hot-dogs",
+    "title": "Raw Dog: The Naked Truth About Hot Dogs",
+    "author": "Jamie Loftus",
+    "year": 2023,
+    "publisher": "",
+    "genre": [
+      "Food",
+      "Humor"
+    ],
+    "format": "physical",
+    "cover": "/images/books/raw-dog-the-naked-truth-about-hot-dogs.jpg",
+    "source": "Raw Dog- The Naked Truth About Hot Dogs.md"
+  },
+  {
+    "id": "realistic-guide-to-telescopes",
+    "title": "Realistic Guide to Telescopes",
+    "author": "RadioShack",
+    "year": 1979,
+    "publisher": "",
+    "genre": [
+      "Astronomy"
+    ],
+    "format": "physical",
+    "cover": "/images/books/realistic-guide-to-telescopes.jpg",
+    "source": "Realistic Guide to Telescopes.md"
+  },
+  {
+    "id": "recording-music-on-location",
+    "title": "Recording Music on Location",
+    "author": "Bruce Bartlett, Jenny Bartlett",
+    "year": 2014,
+    "publisher": "",
+    "genre": [
+      "Audio Engineering"
+    ],
+    "format": "physical",
+    "cover": "/images/books/recording-music-on-location.jpg",
+    "source": "Recording Music on Location.md"
+  },
+  {
+    "id": "red-bird",
+    "title": "Red Bird",
+    "author": "Mary Oliver",
+    "year": 2008,
+    "publisher": "Beacon Press",
+    "genre": [
+      "Poetry"
+    ],
+    "format": "physical",
+    "cover": "/images/books/red-bird.jpg",
+    "source": "Red Bird.md"
+  },
+  {
+    "id": "red-state-revolt-the-teachers-strike-wave-and-working-class-politics",
+    "title": "Red State Revolt: The Teachers' Strike Wave and Working-Class Politics",
+    "author": "Eric Blanc",
+    "year": 2019,
+    "publisher": "",
+    "genre": [
+      "Politics",
+      "Labor"
+    ],
+    "format": "physical",
+    "cover": "/images/books/red-state-revolt-the-teachers-strike-wave-and-working-class-politics.jpg",
+    "source": "Red State Revolt- The Teachers' Strike Wave and Working-Class Politics.md"
+  },
+  {
+    "id": "rednecks-queers-country-music",
+    "title": "Rednecks, Queers, & Country Music",
+    "author": "Nadine Hubbs",
+    "year": 2014,
+    "publisher": "University of California Press",
+    "genre": [
+      "Music History",
+      "Cultural Studies"
+    ],
+    "format": "physical",
+    "cover": "/images/books/rednecks-queers-country-music.jpg",
+    "source": "Rednecks, Queers, & Country Music.md"
+  },
+  {
+    "id": "renoir",
+    "title": "Renoir",
+    "author": "Various Authors",
+    "year": 1994,
+    "publisher": "Shooting Star Press",
+    "genre": [
+      "Art",
+      "Biography"
+    ],
+    "format": "physical",
+    "cover": "/images/books/renoir.jpg",
+    "source": "Renoir.md"
+  },
+  {
+    "id": "restoration-agriculture-real-world-permaculture-for-farmers",
+    "title": "Restoration Agriculture: Real-World Permaculture for Farmers",
+    "author": "Mark Shepard",
+    "year": 2013,
+    "publisher": "Real-World Permaculture for Farmers_. Austin: Acres U.S.A.",
+    "genre": [
+      "Permaculture",
+      "Agriculture"
+    ],
+    "format": "physical",
+    "cover": "/images/books/restoration-agriculture-real-world-permaculture-for-farmers.jpg",
+    "source": "Restoration Agriculture.md"
+  },
+  {
+    "id": "revolution-in-the-valley",
+    "title": "Revolution in the Valley",
+    "author": "Andy Hertzfeld",
+    "year": 2004,
+    "publisher": "",
+    "genre": [
+      "Technology",
+      "History"
+    ],
+    "format": "physical",
+    "cover": "/images/books/revolution-in-the-valley.jpg",
+    "source": "Revolution in the Valley.md"
+  },
+  {
+    "id": "river-of-shadows-eadweard-muybridge-and-the-technological-wild-west",
+    "title": "River of Shadows: Eadweard Muybridge and the Technological Wild West",
+    "author": "Rebecca Solnit",
+    "year": 2003,
+    "publisher": "Viking",
+    "genre": [
+      "History",
+      "Biography"
+    ],
+    "format": "physical",
+    "cover": "/images/books/river-of-shadows-eadweard-muybridge-and-the-technological-wild-west.jpg",
+    "source": "River Of Shadows.md"
+  },
+  {
+    "id": "rock-and-roll-billboards",
+    "title": "Rock and Roll Billboards",
+    "author": "Robert Landau",
+    "year": 2015,
+    "publisher": "Angel City Press",
+    "genre": [
+      "Music",
+      "Photography"
+    ],
+    "format": "",
+    "cover": "/images/books/rock-and-roll-billboards.jpg",
+    "source": "Rock and Roll Billboards.md"
+  },
+  {
+    "id": "room-full-of-mirrors-a-biography-of-jimi-hendrix",
+    "title": "Room Full of Mirrors: A Biography of Jimi Hendrix",
+    "author": "Charles R. Cross",
+    "year": 2005,
+    "publisher": "",
+    "genre": [
+      "Music Biography"
+    ],
+    "format": "physical",
+    "cover": "/images/books/room-full-of-mirrors-a-biography-of-jimi-hendrix.jpg",
+    "source": "Room Full of Mirrors- A Biography of Jimi Hendrix.md"
+  },
+  {
+    "id": "rtl-cookbook",
+    "title": "RTL Cookbook",
+    "author": "Don Lancaster",
+    "year": 1969,
+    "publisher": "",
+    "genre": [
+      "Electronics"
+    ],
+    "format": "physical",
+    "cover": "/images/books/rtl-cookbook.jpg",
+    "source": "RTL Cookbook.md"
+  },
+  {
+    "id": "sacred-texts-of-the-world",
+    "title": "Sacred Texts of the World",
+    "author": "Ninian Smart, Richard D. Hecht",
+    "year": 1982,
+    "publisher": "",
+    "genre": [
+      "Religion"
+    ],
+    "format": "physical",
+    "cover": "/images/books/sacred-texts-of-the-world.jpg",
+    "source": "Sacred Texts of the World.md"
+  },
+  {
+    "id": "salt-fat-acid-heat",
+    "title": "Salt Fat Acid Heat",
+    "author": "Samin Nosrat",
+    "year": 2017,
+    "publisher": "",
+    "genre": [
+      "Cooking"
+    ],
+    "format": "physical",
+    "cover": "/images/books/salt-fat-acid-heat.jpg",
+    "source": "Salt Fat Acid Heat.md"
+  },
+  {
+    "id": "salvador",
+    "title": "Salvador",
+    "author": "Joan Didion",
+    "year": 1983,
+    "publisher": "",
+    "genre": [
+      "Essays",
+      "Journalism"
+    ],
+    "format": "physical",
+    "cover": "/images/books/salvador.jpg",
+    "source": "Salvador.md"
+  },
+  {
+    "id": "satans-silence-ritual-abuse-and-the-making-of-a-modern-american-witch-hunt",
+    "title": "Satan's Silence: Ritual Abuse and the Making of a Modern American Witch Hunt",
+    "author": "Debbie Nathan, Michael Snedeker",
+    "year": 1995,
+    "publisher": "",
+    "genre": [
+      "History",
+      "Psychology"
+    ],
+    "format": "physical",
+    "cover": "/images/books/satans-silence-ritual-abuse-and-the-making-of-a-modern-american-witch-hunt.jpg",
+    "source": "Satan's Silence- Ritual Abuse and the Making of a Modern American Witch Hunt.md"
+  },
+  {
+    "id": "sauces-classical-and-contemporary-sauce-making",
+    "title": "Sauces: Classical and Contemporary Sauce Making",
+    "author": "James Peterson",
+    "year": 1991,
+    "publisher": "",
+    "genre": [
+      "Cooking"
+    ],
+    "format": "physical",
+    "cover": "/images/books/sauces-classical-and-contemporary-sauce-making.jpg",
+    "source": "Sauces- Classical and Contemporary Sauce Making.md"
+  },
+  {
+    "id": "saving-time",
+    "title": "Saving Time",
+    "author": "Jenny Odell",
+    "year": 2023,
+    "publisher": "",
+    "genre": [
+      "Essays",
+      "Philosophy"
+    ],
+    "format": "physical",
+    "cover": "/images/books/saving-time.jpg",
+    "source": "Saving Time.md"
+  },
+  {
+    "id": "schuberts-complete-sonatas-for-pianoforte-solo",
+    "title": "Schubert's Complete Sonatas for Pianoforte Solo",
+    "author": "Franz Schubert",
+    "year": 1828,
+    "publisher": "",
+    "genre": [
+      "Music Score"
+    ],
+    "format": "physical",
+    "cover": "/images/books/schuberts-complete-sonatas-for-pianoforte-solo.jpg",
+    "source": "Schubert's Complete Sonatas for Pianoforte Solo.md"
+  },
+  {
+    "id": "sea-of-tranquility",
+    "title": "Sea of Tranquility",
+    "author": "Emily St. John Mandel",
+    "year": 2022,
+    "publisher": "Alfred A. Knopf",
+    "genre": [
+      "Literary Fiction",
+      "Science Fiction"
+    ],
+    "format": "",
+    "cover": "/images/books/sea-of-tranquility.jpg",
+    "source": "Sea of Tranquility.md"
+  },
+  {
+    "id": "sentience",
+    "title": "Sentience",
+    "author": "Ted Hayes",
+    "year": 2018,
+    "publisher": "",
+    "genre": [
+      "Comics",
+      "Graphic Novels"
+    ],
+    "format": "physical",
+    "cover": "/images/books/sentience.jpg",
+    "source": "Sentience.md"
+  },
+  {
+    "id": "setting-an-intention",
+    "title": "Setting an Intention",
+    "author": "Adam Taubenfligel",
+    "year": 2018,
+    "publisher": "",
+    "genre": [
+      "Self-Help",
+      "Spirituality"
+    ],
+    "format": "physical",
+    "cover": "/images/books/setting-an-intention.jpg",
+    "source": "Setting an Intention.md"
+  },
+  {
+    "id": "sex-object",
+    "title": "Sex Object",
+    "author": "Jessica Valenti",
+    "year": 2016,
+    "publisher": "",
+    "genre": [
+      "Memoir",
+      "Feminism"
+    ],
+    "format": "physical",
+    "cover": "/images/books/sex-object.jpg",
+    "source": "Sex Object.md"
+  },
+  {
+    "id": "shameless",
+    "title": "Shameless",
+    "author": "Nadia Bolz-Weber",
+    "year": 2019,
+    "publisher": "",
+    "genre": [
+      "Religion",
+      "Sexuality"
+    ],
+    "format": "physical",
+    "cover": "/images/books/shameless.jpg",
+    "source": "Shameless.md"
+  },
+  {
+    "id": "shameless-distortion-the-photography-of-bill-kagan",
+    "title": "Shameless Distortion: The Photography of Bill Kagan",
+    "author": "Bill Kagan",
+    "year": 2010,
+    "publisher": "",
+    "genre": [
+      "Photography"
+    ],
+    "format": "physical",
+    "cover": "",
+    "source": "Shameless Distortion- The Photography of Bill Kagan.md"
+  },
+  {
+    "id": "shop-class-as-soulcraft",
+    "title": "Shop Class as Soulcraft",
+    "author": "Matthew B. Crawford",
+    "year": 2009,
+    "publisher": "",
+    "genre": [
+      "Philosophy",
+      "Work"
+    ],
+    "format": "physical",
+    "cover": "/images/books/shop-class-as-soulcraft.jpg",
+    "source": "Shop Class as Soulcraft.md"
+  },
+  {
+    "id": "simply-blending",
+    "title": "Simply Blending",
+    "author": "Vitamix",
+    "year": 2022,
+    "publisher": "",
+    "genre": [
+      "Cooking"
+    ],
+    "format": "physical",
+    "cover": "/images/books/simply-blending.jpg",
+    "source": "Simply Blending.md"
+  },
+  {
+    "id": "slouching-towards-bethlehem",
+    "title": "Slouching Towards Bethlehem",
+    "author": "Joan Didion",
+    "year": 1968,
+    "publisher": "",
+    "genre": [
+      "Essays"
+    ],
+    "format": "physical",
+    "cover": "/images/books/slouching-towards-bethlehem.jpg",
+    "source": "Slouching Towards Bethlehem.md"
+  },
+  {
+    "id": "small-unit-raids-an-illustrated-manual",
+    "title": "Small Unit Raids: An Illustrated Manual",
+    "author": "Matthew Luke",
+    "year": 2019,
+    "publisher": "",
+    "genre": [
+      "Military"
+    ],
+    "format": "physical",
+    "cover": "/images/books/small-unit-raids-an-illustrated-manual.jpg",
+    "source": "Small Unit Raids- An Illustrated Manual.md"
+  },
+  {
+    "id": "small-unit-tactics-an-illustrated-manual",
+    "title": "Small Unit Tactics: An Illustrated Manual",
+    "author": "Matthew Luke",
+    "year": 2019,
+    "publisher": "",
+    "genre": [
+      "Military"
+    ],
+    "format": "physical",
+    "cover": "/images/books/small-unit-tactics-an-illustrated-manual.jpg",
+    "source": "Small Unit Tactics- An Illustrated Manual.md"
+  },
+  {
+    "id": "songwriting-essential-guide-to-lyric-form-and-structure",
+    "title": "Songwriting - Essential Guide To Lyric Form And Structure",
+    "author": "Pat Pattison",
+    "year": 1991,
+    "publisher": "Essential Guide to Lyric Form and Structure_. Boston: Berklee Press",
+    "genre": [
+      "Songwriting",
+      "Craft"
+    ],
+    "format": "physical",
+    "cover": "/images/books/songwriting-essential-guide-to-lyric-form-and-structure.jpg",
+    "source": "Songwriting - Essential Guide To Lyric Form And Structure.md"
+  },
+  {
+    "id": "songwriting-without-boundaries-lyric-writing-exercises",
+    "title": "Songwriting Without Boundaries - Lyric Writing Exercises",
+    "author": "Pat Pattison",
+    "year": 2012,
+    "publisher": "Lyric Writing Exercises for Finding Your Voice_. Cincinnati:",
+    "genre": [
+      "Songwriting",
+      "Craft"
+    ],
+    "format": "physical",
+    "cover": "/images/books/songwriting-without-boundaries-lyric-writing-exercises.jpg",
+    "source": "Songwriting Without Boundaries - Lyric Writing Exercises.md"
+  },
+  {
+    "id": "songwriting-a-complete-guide-to-the-craft",
+    "title": "Songwriting: A Complete Guide to the Craft",
+    "author": "Stephen Citron",
+    "year": 1985,
+    "publisher": "",
+    "genre": [
+      "Music Instruction"
+    ],
+    "format": "physical",
+    "cover": "/images/books/songwriting-a-complete-guide-to-the-craft.jpg",
+    "source": "Songwriting- A Complete Guide to the Craft.md"
+  },
+  {
+    "id": "sound-on-sound-magazine-april-2021",
+    "title": "Sound on Sound Magazine, April 2021",
+    "author": "Sound on Sound",
+    "year": 2021,
+    "publisher": "",
+    "genre": [
+      "Audio Magazine"
+    ],
+    "format": "physical",
+    "cover": "/images/books/sound-on-sound-magazine-april-2021.jpg",
+    "source": "Sound on Sound Magazine, April 2021.md"
+  },
+  {
+    "id": "sound-on-sound-magazine-august-2021",
+    "title": "Sound on Sound Magazine, August 2021",
+    "author": "Sound on Sound",
+    "year": 2021,
+    "publisher": "",
+    "genre": [
+      "Audio Magazine"
+    ],
+    "format": "physical",
+    "cover": "/images/books/sound-on-sound-magazine-august-2021.jpg",
+    "source": "Sound on Sound Magazine, August 2021.md"
+  },
+  {
+    "id": "sound-on-sound-magazine-december-2020",
+    "title": "Sound on Sound Magazine, December 2020",
+    "author": "Sound on Sound",
+    "year": 2020,
+    "publisher": "",
+    "genre": [
+      "Audio Magazine"
+    ],
+    "format": "physical",
+    "cover": "/images/books/sound-on-sound-magazine-december-2020.jpg",
+    "source": "Sound on Sound Magazine, December 2020.md"
+  },
+  {
+    "id": "sound-on-sound-magazine-february-2021",
+    "title": "Sound on Sound Magazine, February 2021",
+    "author": "Sound on Sound",
+    "year": 2021,
+    "publisher": "",
+    "genre": [
+      "Audio Magazine"
+    ],
+    "format": "physical",
+    "cover": "/images/books/sound-on-sound-magazine-february-2021.jpg",
+    "source": "Sound on Sound Magazine, February 2021.md"
+  },
+  {
+    "id": "sound-on-sound-magazine-january-2021",
+    "title": "Sound on Sound Magazine, January 2021",
+    "author": "Sound on Sound",
+    "year": 2021,
+    "publisher": "",
+    "genre": [
+      "Audio Magazine"
+    ],
+    "format": "physical",
+    "cover": "/images/books/sound-on-sound-magazine-january-2021.jpg",
+    "source": "Sound on Sound Magazine, January 2021.md"
+  },
+  {
+    "id": "sound-on-sound-magazine-july-2021",
+    "title": "Sound on Sound Magazine, July 2021",
+    "author": "Sound on Sound",
+    "year": 2021,
+    "publisher": "",
+    "genre": [
+      "Audio Magazine"
+    ],
+    "format": "physical",
+    "cover": "/images/books/sound-on-sound-magazine-july-2021.jpg",
+    "source": "Sound on Sound Magazine, July 2021.md"
+  },
+  {
+    "id": "sound-on-sound-magazine-june-2021",
+    "title": "Sound on Sound Magazine, June 2021",
+    "author": "Sound on Sound",
+    "year": 2021,
+    "publisher": "",
+    "genre": [
+      "Audio Magazine"
+    ],
+    "format": "physical",
+    "cover": "/images/books/sound-on-sound-magazine-june-2021.jpg",
+    "source": "Sound on Sound Magazine, June 2021.md"
+  },
+  {
+    "id": "sound-on-sound-magazine-march-2021",
+    "title": "Sound on Sound Magazine, March 2021",
+    "author": "Sound on Sound",
+    "year": 2021,
+    "publisher": "",
+    "genre": [
+      "Audio Magazine"
+    ],
+    "format": "physical",
+    "cover": "/images/books/sound-on-sound-magazine-march-2021.jpg",
+    "source": "Sound on Sound Magazine, March 2021.md"
+  },
+  {
+    "id": "sound-on-sound-magazine-may-2021",
+    "title": "Sound on Sound Magazine, May 2021",
+    "author": "Sound on Sound",
+    "year": 2021,
+    "publisher": "",
+    "genre": [
+      "Audio Magazine"
+    ],
+    "format": "physical",
+    "cover": "/images/books/sound-on-sound-magazine-may-2021.jpg",
+    "source": "Sound on Sound Magazine, May 2021.md"
+  },
+  {
+    "id": "sound-on-sound-magazine-november-2020",
+    "title": "Sound on Sound Magazine, November 2020",
+    "author": "Sound on Sound",
+    "year": 2020,
+    "publisher": "",
+    "genre": [
+      "Audio Magazine"
+    ],
+    "format": "physical",
+    "cover": "/images/books/sound-on-sound-magazine-november-2020.jpg",
+    "source": "Sound on Sound Magazine, November 2020.md"
+  },
+  {
+    "id": "sound-on-sound-magazine-october-2021",
+    "title": "Sound on Sound Magazine, October 2021",
+    "author": "Sound on Sound",
+    "year": 2021,
+    "publisher": "",
+    "genre": [
+      "Audio Magazine"
+    ],
+    "format": "physical",
+    "cover": "/images/books/sound-on-sound-magazine-october-2021.jpg",
+    "source": "Sound on Sound Magazine, October 2021.md"
+  },
+  {
+    "id": "sound-on-sound-magazine-september-2021",
+    "title": "Sound on Sound Magazine, September 2021",
+    "author": "Sound on Sound",
+    "year": 2021,
+    "publisher": "",
+    "genre": [
+      "Audio Magazine"
+    ],
+    "format": "physical",
+    "cover": "/images/books/sound-on-sound-magazine-september-2021.jpg",
+    "source": "Sound on Sound Magazine, September 2021.md"
+  },
+  {
+    "id": "spotify-teardown",
+    "title": "Spotify Teardown",
+    "author": "Eriksson, Maria, Rasmus Fleischer, Anna Johansson, Pelle Snickars, and Patrick Vonderau",
+    "year": 2019,
+    "publisher": "Inside the Black Box of Streaming Music_. Cambridge: MIT Press",
+    "genre": [
+      "Music",
+      "Technology"
+    ],
+    "format": "",
+    "cover": "/images/books/spotify-teardown.jpg",
+    "source": "Spotify Teardown.md"
+  },
+  {
+    "id": "st-martins-handbook",
+    "title": "St. Martin's Handbook",
+    "author": "Andrea A Lunsford",
+    "year": 2021,
+    "publisher": "Bedford/St. Martin's",
+    "genre": [
+      "Writing",
+      "Reference"
+    ],
+    "format": "",
+    "cover": "/images/books/st-martins-handbook.jpg",
+    "source": "St. Martin's Handbook.md"
+  },
+  {
+    "id": "star-songs-and-water-spirits",
+    "title": "Star Songs and Water Spirits",
+    "author": "Victoria Brehm",
+    "year": 2011,
+    "publisher": "",
+    "genre": [
+      "Mythology",
+      "Folklore"
+    ],
+    "format": "physical",
+    "cover": "/images/books/star-songs-and-water-spirits.jpg",
+    "source": "Star Songs and Water Spirits.md"
+  },
+  {
+    "id": "steal-like-an-artist",
+    "title": "Steal Like An Artist",
+    "author": "Austin Kleon",
+    "year": 2012,
+    "publisher": "10 Things Nobody Told You About Being Creative_. New York: Workman Publishing",
+    "genre": [
+      "Creativity",
+      "Self-Help"
+    ],
+    "format": "physical",
+    "cover": "/images/books/steal-like-an-artist.jpg",
+    "source": "Steal Like An Artist.md"
+  },
+  {
+    "id": "strong-female-protagonist-book-one",
+    "title": "Strong Female Protagonist Book One",
+    "author": "Brennan Lee Mulligan, Molly Ostertag",
+    "year": 2014,
+    "publisher": "",
+    "genre": [
+      "Comics",
+      "Graphic Novels"
+    ],
+    "format": "physical",
+    "cover": "/images/books/strong-female-protagonist-book-one.jpg",
+    "source": "Strong Female Protagonist Book One.md"
+  },
+  {
+    "id": "subhuman-redneck-poems",
+    "title": "Subhuman Redneck Poems",
+    "author": "Les Murray",
+    "year": 1996,
+    "publisher": "Duffy & Snellgrove",
+    "genre": [
+      "Poetry"
+    ],
+    "format": "physical",
+    "cover": "/images/books/subhuman-redneck-poems.jpg",
+    "source": "Subhuman Redneck Poems.md"
+  },
+  {
+    "id": "subvert-plan-for-the-artist-owned-internet",
+    "title": "Subvert: Plan for the Artist-Owned Internet",
+    "author": "Subvert",
+    "year": 2023,
+    "publisher": "",
+    "genre": [
+      "Art",
+      "Technology"
+    ],
+    "format": "physical",
+    "cover": "/images/books/subvert-plan-for-the-artist-owned-internet.jpg",
+    "source": "Subvert- Plan for the Artist-Owned Internet.md"
+  },
+  {
+    "id": "successful-drawing",
+    "title": "Successful Drawing",
+    "author": "Andrew Loomis",
+    "year": 1951,
+    "publisher": "",
+    "genre": [
+      "Art",
+      "Drawing Instruction"
+    ],
+    "format": "digital",
+    "cover": "",
+    "source": "Successful Drawing.md"
+  },
+  {
+    "id": "sun-ras-chicago",
+    "title": "Sun Ra's Chicago",
+    "author": "William Sites",
+    "year": 2020,
+    "publisher": "",
+    "genre": [
+      "Music",
+      "Chicago"
+    ],
+    "format": "physical",
+    "cover": "/images/books/sun-ras-chicago.jpg",
+    "source": "Sun Ra's Chicago.md"
+  },
+  {
+    "id": "sunflower-splendor",
+    "title": "Sunflower Splendor",
+    "author": "Wu-chi Liu and Irving Yucheng Lo, eds",
+    "year": 1975,
+    "publisher": "Three Thousand Years of Chinese Poetry*. Bloomington: Indiana University Press",
+    "genre": [
+      "Poetry Anthology"
+    ],
+    "format": "",
+    "cover": "/images/books/sunflower-splendor.jpg",
+    "source": "Sunflower Splendor.md"
+  },
+  {
+    "id": "super-sourdough",
+    "title": "Super Sourdough",
+    "author": "James Morton",
+    "year": 2019,
+    "publisher": "",
+    "genre": [
+      "Cooking",
+      "Baking"
+    ],
+    "format": "physical",
+    "cover": "/images/books/super-sourdough.jpg",
+    "source": "Super Sourdough.md"
+  },
+  {
+    "id": "tailspin-tommy",
+    "title": "Tailspin Tommy",
+    "author": "Saalfield Publishing",
+    "year": null,
+    "publisher": "",
+    "genre": [
+      "Aviation Comics"
+    ],
+    "format": "physical",
+    "cover": "/images/books/tailspin-tommy.jpg",
+    "source": "Tailspin Tommy.md"
+  },
+  {
+    "id": "tape-op-magazine-issue-114",
+    "title": "Tape Op Magazine Issue 114",
+    "author": "Tape Op",
+    "year": 2016,
+    "publisher": "",
+    "genre": [
+      "Audio Magazine"
+    ],
+    "format": "physical",
+    "cover": "/images/books/tape-op-magazine-issue-114.jpg",
+    "source": "Tape Op Magazine Issue 114.md"
+  },
+  {
+    "id": "tape-op-magazine-issue-115",
+    "title": "Tape Op Magazine Issue 115",
+    "author": "Tape Op",
+    "year": 2016,
+    "publisher": "",
+    "genre": [
+      "Audio Magazine"
+    ],
+    "format": "physical",
+    "cover": "/images/books/tape-op-magazine-issue-115.jpg",
+    "source": "Tape Op Magazine Issue 115.md"
+  },
+  {
+    "id": "tape-op-magazine-issue-116",
+    "title": "Tape Op Magazine Issue 116",
+    "author": "Tape Op",
+    "year": 2016,
+    "publisher": "",
+    "genre": [
+      "Audio Magazine"
+    ],
+    "format": "physical",
+    "cover": "/images/books/tape-op-magazine-issue-116.jpg",
+    "source": "Tape Op Magazine Issue 116.md"
+  },
+  {
+    "id": "tape-op-magazine-issue-117",
+    "title": "Tape Op Magazine Issue 117",
+    "author": "Tape Op",
+    "year": 2017,
+    "publisher": "",
+    "genre": [
+      "Audio Magazine"
+    ],
+    "format": "physical",
+    "cover": "/images/books/tape-op-magazine-issue-117.jpg",
+    "source": "Tape Op Magazine Issue 117.md"
+  },
+  {
+    "id": "tape-op-magazine-issue-118",
+    "title": "Tape Op Magazine Issue 118",
+    "author": "Tape Op",
+    "year": 2017,
+    "publisher": "",
+    "genre": [
+      "Audio Magazine"
+    ],
+    "format": "physical",
+    "cover": "/images/books/tape-op-magazine-issue-118.jpg",
+    "source": "Tape Op Magazine Issue 118.md"
+  },
+  {
+    "id": "tape-op-magazine-issue-119",
+    "title": "Tape Op Magazine Issue 119",
+    "author": "Tape Op",
+    "year": 2017,
+    "publisher": "",
+    "genre": [
+      "Audio Magazine"
+    ],
+    "format": "physical",
+    "cover": "/images/books/tape-op-magazine-issue-119.jpg",
+    "source": "Tape Op Magazine Issue 119.md"
+  },
+  {
+    "id": "tape-op-magazine-issue-120",
+    "title": "Tape Op Magazine Issue 120",
+    "author": "Tape Op",
+    "year": 2017,
+    "publisher": "",
+    "genre": [
+      "Audio Magazine"
+    ],
+    "format": "physical",
+    "cover": "/images/books/tape-op-magazine-issue-120.jpg",
+    "source": "Tape Op Magazine Issue 120.md"
+  },
+  {
+    "id": "teaming-with-microbes-the-organic-gardeners-guide-to-the-soil-food-web",
+    "title": "Teaming with Microbes: The Organic Gardener's Guide to the Soil Food Web",
+    "author": "Wayne Lewis",
+    "year": 2010,
+    "publisher": "The Organic Gardener's Guide to the Soil Food Web_. Portland: Timber Press",
+    "genre": [
+      "Gardening",
+      "Soil Science"
+    ],
+    "format": "physical",
+    "cover": "/images/books/teaming-with-microbes-the-organic-gardeners-guide-to-the-soil-food-web.jpg",
+    "source": "Teaming With Microbes.md"
+  },
+  {
+    "id": "tenth-of-december",
+    "title": "Tenth of December",
+    "author": "George Saunders",
+    "year": 2013,
+    "publisher": "Random House",
+    "genre": [
+      "Short Story Collection"
+    ],
+    "format": "",
+    "cover": "/images/books/tenth-of-december.jpg",
+    "source": "Tenth of December.md"
+  },
+  {
+    "id": "terminal-boredom",
+    "title": "Terminal Boredom",
+    "author": "Izumi Suzuki",
+    "year": 2021,
+    "publisher": "Verso",
+    "genre": [
+      "Science Fiction",
+      "Short Stories"
+    ],
+    "format": "",
+    "cover": "/images/books/terminal-boredom.jpg",
+    "source": "Terminal Boredom.md"
+  },
+  {
+    "id": "the-amazing-adventures-of-kavalier-clay",
+    "title": "The Amazing Adventures of Kavalier & Clay",
+    "author": "Michael Chabon",
+    "year": 2000,
+    "publisher": "Random House",
+    "genre": [
+      "Literary Fiction",
+      "Historical Fiction"
+    ],
+    "format": "",
+    "cover": "/images/books/the-amazing-adventures-of-kavalier-clay.jpg",
+    "source": "The Amazing Adventures of Kavalier & Clay.md"
+  },
+  {
+    "id": "the-american-indian-craft-book",
+    "title": "The American Indian Craft Book",
+    "author": "Marz Minor, Nono Minor",
+    "year": 1972,
+    "publisher": "",
+    "genre": [
+      "Crafts",
+      "Culture"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-american-indian-craft-book.jpg",
+    "source": "The American Indian Craft Book.md"
+  },
+  {
+    "id": "the-art-of-andrew-wyeth",
+    "title": "The Art Of Andrew Wyeth",
+    "author": "Wanda M Corn",
+    "year": 1973,
+    "publisher": "New York Graphic Society",
+    "genre": [
+      "Art",
+      "Monograph"
+    ],
+    "format": "",
+    "cover": "/images/books/the-art-of-andrew-wyeth.jpg",
+    "source": "The Art Of Andrew Wyeth.md"
+  },
+  {
+    "id": "the-art-of-electronics-3rd-edition",
+    "title": "The Art of Electronics (3rd Edition)",
+    "author": "Paul Horowitz, Winfield Hill",
+    "year": 2015,
+    "publisher": "",
+    "genre": [
+      "Electronics"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-art-of-electronics-3rd-edition.jpg",
+    "source": "The Art of Electronics (3rd Edition).md"
+  },
+  {
+    "id": "the-artists-way",
+    "title": "The Artist's Way",
+    "author": "Julia Cameron",
+    "year": 1992,
+    "publisher": "",
+    "genre": [
+      "Creativity",
+      "Self-Help"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-artists-way.jpg",
+    "source": "The Artist's Way.md"
+  },
+  {
+    "id": "the-baron-in-the-trees",
+    "title": "The Baron in the Trees",
+    "author": "Italo Calvino",
+    "year": 1957,
+    "publisher": "",
+    "genre": [
+      "Literary Fiction"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-baron-in-the-trees.jpg",
+    "source": "The Baron in the Trees.md"
+  },
+  {
+    "id": "the-battle-of-lincoln-park",
+    "title": "The Battle of Lincoln Park",
+    "author": "Daniel Kay Hertz",
+    "year": 2018,
+    "publisher": "",
+    "genre": [
+      "History",
+      "Chicago"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-battle-of-lincoln-park.jpg",
+    "source": "The Battle of Lincoln Park.md"
+  },
+  {
+    "id": "the-beatles-anthology",
+    "title": "The Beatles Anthology",
+    "author": "The Beatles",
+    "year": 2000,
+    "publisher": "Chronicle Books",
+    "genre": [
+      "Music History",
+      "Documentary"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-beatles-anthology.jpg",
+    "source": "The Beatles Anthology.md"
+  },
+  {
+    "id": "the-biplane-houses",
+    "title": "The Biplane Houses",
+    "author": "Les Murray",
+    "year": 2006,
+    "publisher": "Black Inc.",
+    "genre": [
+      "Poetry"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-biplane-houses.jpg",
+    "source": "The Biplane Houses.md"
+  },
+  {
+    "id": "the-black-wraith",
+    "title": "The Black Wraith",
+    "author": "Harris Williams",
+    "year": 1940,
+    "publisher": "",
+    "genre": [
+      "Comics"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-black-wraith.jpg",
+    "source": "The Black Wraith.md"
+  },
+  {
+    "id": "the-book-of-delights",
+    "title": "The Book Of Delights",
+    "author": "Ross Gay",
+    "year": 2019,
+    "publisher": "",
+    "genre": [
+      "Essays",
+      "Poetry"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-book-of-delights.jpg",
+    "source": "The Book Of Delights.md"
+  },
+  {
+    "id": "the-book-of-imaginary-beings",
+    "title": "The Book of Imaginary Beings",
+    "author": "Jorge Luis Borges",
+    "year": 1957,
+    "publisher": "",
+    "genre": [
+      "Fantasy",
+      "Reference"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-book-of-imaginary-beings.jpg",
+    "source": "The Book of Imaginary Beings.md"
+  },
+  {
+    "id": "the-book-of-nightmares",
+    "title": "The Book Of Nightmares",
+    "author": "Galway Kinnell",
+    "year": 1971,
+    "publisher": "",
+    "genre": [
+      "Poetry"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-book-of-nightmares.jpg",
+    "source": "The Book Of Nightmares.md"
+  },
+  {
+    "id": "the-book-of-symbols",
+    "title": "The Book of Symbols",
+    "author": "Archive for Research in Archetypal Symbolism",
+    "year": 2010,
+    "publisher": "",
+    "genre": [
+      "Art",
+      "Symbolism"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-book-of-symbols.jpg",
+    "source": "The Book of Symbols.md"
+  },
+  {
+    "id": "the-book-of-the-dead",
+    "title": "The Book of the Dead",
+    "author": "Muriel Rukeyser",
+    "year": 1938,
+    "publisher": "",
+    "genre": [
+      "Poetry"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-book-of-the-dead.jpg",
+    "source": "The Book of the Dead.md"
+  },
+  {
+    "id": "the-boy-mechanic",
+    "title": "The Boy Mechanic",
+    "author": "Popular Mechanics",
+    "year": 1913,
+    "publisher": "",
+    "genre": [
+      "DIY",
+      "Reference"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-boy-mechanic.jpg",
+    "source": "The Boy Mechanic.md"
+  },
+  {
+    "id": "the-buried-giant",
+    "title": "The Buried Giant",
+    "author": "Kazuo Ishiguro",
+    "year": 2015,
+    "publisher": "",
+    "genre": [
+      "Literary Fiction",
+      "Fantasy"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-buried-giant.jpg",
+    "source": "The Buried Giant.md"
+  },
+  {
+    "id": "the-call-to-write",
+    "title": "The Call to Write",
+    "author": "John Trimbur",
+    "year": 2013,
+    "publisher": "Cengage Learning",
+    "genre": [
+      "Writing",
+      "Textbook"
+    ],
+    "format": "",
+    "cover": "/images/books/the-call-to-write.jpg",
+    "source": "The Call to Write.md"
+  },
+  {
+    "id": "the-castle-in-the-attic",
+    "title": "The Castle in the Attic",
+    "author": "Elizabeth Winthrop",
+    "year": 1985,
+    "publisher": "",
+    "genre": [
+      "Children's Fiction"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-castle-in-the-attic.jpg",
+    "source": "The Castle in the Attic.md"
+  },
+  {
+    "id": "the-catcher-in-the-rye",
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "year": 1951,
+    "publisher": "Little, Brown and Company",
+    "genre": [
+      "Literary Fiction",
+      "Coming-of-age"
+    ],
+    "format": "",
+    "cover": "/images/books/the-catcher-in-the-rye.jpg",
+    "source": "The Catcher in the Rye.md"
+  },
+  {
+    "id": "the-circle-maker",
+    "title": "The Circle Maker",
+    "author": "Mark Batterson",
+    "year": 2011,
+    "publisher": "",
+    "genre": [
+      "Religion",
+      "Christian"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-circle-maker.jpg",
+    "source": "The Circle Maker.md"
+  },
+  {
+    "id": "the-cloud-of-unknowing",
+    "title": "The Cloud of Unknowing",
+    "author": "Patrick J. Gallacher",
+    "year": 1300,
+    "publisher": "",
+    "genre": [
+      "Religion",
+      "Mysticism"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-cloud-of-unknowing.jpg",
+    "source": "The Cloud of Unknowing.md"
+  },
+  {
+    "id": "the-code-book",
+    "title": "The Code Book",
+    "author": "Simon Singh",
+    "year": 1999,
+    "publisher": "",
+    "genre": [
+      "Mathematics",
+      "History"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-code-book.jpg",
+    "source": "The Code Book.md"
+  },
+  {
+    "id": "the-code-breaker-jennifer-doudna-gene-editing-and-the-future-of-the-human-race",
+    "title": "The Code Breaker: Jennifer Doudna, Gene Editing, and the Future of the Human Race",
+    "author": "Walter Isaacson",
+    "year": 2021,
+    "publisher": "",
+    "genre": [
+      "Science",
+      "Biography"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-code-breaker-jennifer-doudna-gene-editing-and-the-future-of-the-human-race.jpg",
+    "source": "The Code Breaker- Jennifer Doudna, Gene Editing, and the Future of the Human Race.md"
+  },
+  {
+    "id": "the-collected-stories-of-arthur-c-clarke",
+    "title": "The Collected Stories of Arthur C. Clarke",
+    "author": "Arthur C. Clarke",
+    "year": 2001,
+    "publisher": "",
+    "genre": [
+      "Science Fiction"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-collected-stories-of-arthur-c-clarke.jpg",
+    "source": "The Collected Stories of Arthur C. Clarke.md"
+  },
+  {
+    "id": "the-commuter",
+    "title": "The Commuter",
+    "author": "Jane Rubietta",
+    "year": 2026,
+    "publisher": "",
+    "genre": [
+      "Literary Fiction"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-commuter.jpg",
+    "source": "The Commuter.md"
+  },
+  {
+    "id": "the-complete-basho",
+    "title": "The Complete Basho",
+    "author": "Matsuo Basho",
+    "year": 2002,
+    "publisher": "",
+    "genre": [
+      "Poetry",
+      "Haiku"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-complete-basho.jpg",
+    "source": "The Complete Basho.md"
+  },
+  {
+    "id": "the-complete-chronicles-of-narnia",
+    "title": "The Complete Chronicles of Narnia",
+    "author": "C.S. Lewis",
+    "year": 1956,
+    "publisher": "",
+    "genre": [
+      "Fantasy",
+      "Children's"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-complete-chronicles-of-narnia.jpg",
+    "source": "The Complete Chronicles of Narnia.md"
+  },
+  {
+    "id": "the-complete-haiku-of-matsuo-basho",
+    "title": "The Complete Haiku of Matsuo Basho",
+    "author": "Matsuo Basho",
+    "year": 2008,
+    "publisher": "",
+    "genre": [
+      "Poetry"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-complete-haiku-of-matsuo-basho.jpg",
+    "source": "The Complete Haiku of Matsuo Basho.md"
+  },
+  {
+    "id": "the-complete-plotto",
+    "title": "The Complete PLOTTO",
+    "author": "William Wallace Cook",
+    "year": 2011,
+    "publisher": "A Master Book of All Plots_. Portland: Tin House Books",
+    "genre": [
+      "Writing",
+      "Reference"
+    ],
+    "format": "",
+    "cover": "/images/books/the-complete-plotto.jpg",
+    "source": "The Complete PLOTTO.md"
+  },
+  {
+    "id": "the-complete-sherlock-holmes",
+    "title": "The Complete Sherlock Holmes",
+    "author": "Sir Arthur Conan Doyle",
+    "year": 1927,
+    "publisher": "Doubleday",
+    "genre": [
+      "Mystery",
+      "Detective Fiction"
+    ],
+    "format": "",
+    "cover": "/images/books/the-complete-sherlock-holmes.jpg",
+    "source": "The Complete Sherlock Holmes.md"
+  },
+  {
+    "id": "the-creative-call",
+    "title": "The Creative Call",
+    "author": "Janice Elsheimer",
+    "year": 2001,
+    "publisher": "",
+    "genre": [
+      "Creativity",
+      "Spirituality"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-creative-call.jpg",
+    "source": "The Creative Call.md"
+  },
+  {
+    "id": "the-dawn-of-everything",
+    "title": "The Dawn of Everything",
+    "author": "David Graeber, David Wengrow",
+    "year": 2021,
+    "publisher": "",
+    "genre": [
+      "History",
+      "Anthropology"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-dawn-of-everything.jpg",
+    "source": "The Dawn of Everything.md"
+  },
+  {
+    "id": "the-demon-haunted-world",
+    "title": "The Demon-Haunted World",
+    "author": "Carl Sagan",
+    "year": 1995,
+    "publisher": "",
+    "genre": [
+      "Science",
+      "Skepticism"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-demon-haunted-world.jpg",
+    "source": "The Demon-Haunted World.md"
+  },
+  {
+    "id": "the-desert-eagle-and-the-hidden-fortress",
+    "title": "The Desert Eagle and the Hidden Fortress",
+    "author": "Saalfield Publishing",
+    "year": null,
+    "publisher": "",
+    "genre": [
+      "Western Comics"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-desert-eagle-and-the-hidden-fortress.jpg",
+    "source": "The Desert Eagle and the Hidden Fortress.md"
+  },
+  {
+    "id": "the-design-of-everyday-things",
+    "title": "The Design of Everyday Things",
+    "author": "Don Norman",
+    "year": 1988,
+    "publisher": "",
+    "genre": [
+      "Design"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-design-of-everyday-things.jpg",
+    "source": "The Design of Everyday Things.md"
+  },
+  {
+    "id": "the-dog-of-the-south",
+    "title": "The Dog of the South",
+    "author": "Charles Portis",
+    "year": 1979,
+    "publisher": "Alfred A. Knopf",
+    "genre": [
+      "Literary Fiction",
+      "Comedy"
+    ],
+    "format": "",
+    "cover": "/images/books/the-dog-of-the-south.jpg",
+    "source": "The Dog of the South.md"
+  },
+  {
+    "id": "the-eighth",
+    "title": "The Eighth",
+    "author": "Gustav Mahler",
+    "year": 2011,
+    "publisher": "Mahler and His World_. Oxford: Oxford University Press",
+    "genre": [
+      "Music History",
+      "Mahler"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-eighth.jpg",
+    "source": "The Eighth.md"
+  },
+  {
+    "id": "the-elegance-of-the-hedgehog",
+    "title": "The Elegance of the Hedgehog",
+    "author": "Muriel Barbery",
+    "year": 2006,
+    "publisher": "",
+    "genre": [
+      "Literary Fiction"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-elegance-of-the-hedgehog.jpg",
+    "source": "The Elegance of the Hedgehog.md"
+  },
+  {
+    "id": "the-end-of-policing",
+    "title": "The End of Policing",
+    "author": "Alex S. Vitale",
+    "year": 2017,
+    "publisher": "",
+    "genre": [
+      "Politics",
+      "Criminal Justice"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-end-of-policing.jpg",
+    "source": "The End of Policing.md"
+  },
+  {
+    "id": "the-enormous-room",
+    "title": "The Enormous Room",
+    "author": "E.E. Cummings",
+    "year": 1922,
+    "publisher": "",
+    "genre": [
+      "Memoir",
+      "WWI"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-enormous-room.jpg",
+    "source": "The Enormous Room.md"
+  },
+  {
+    "id": "the-eye-of-the-painter-and-the-elements-of-beauty",
+    "title": "The Eye of the Painter and the Elements of Beauty",
+    "author": "Andrew Loomis",
+    "year": 1961,
+    "publisher": "",
+    "genre": [
+      "Art",
+      "Drawing Instruction"
+    ],
+    "format": "digital",
+    "cover": "",
+    "source": "The Eye of the Painter and the Elements of Beauty.md"
+  },
+  {
+    "id": "the-fatal-shore-the-epic-of-australias-founding",
+    "title": "The Fatal Shore: The Epic of Australia's Founding",
+    "author": "Robert Hughes",
+    "year": 1987,
+    "publisher": "",
+    "genre": [
+      "History"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-fatal-shore-the-epic-of-australias-founding.jpg",
+    "source": "The Fatal Shore- The Epic of Australia's Founding.md"
+  },
+  {
+    "id": "the-fellowship-of-the-ring",
+    "title": "The Fellowship of the Ring",
+    "author": "J.R.R. Tolkien",
+    "year": 1954,
+    "publisher": "",
+    "genre": [
+      "Fantasy"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-fellowship-of-the-ring.jpg",
+    "source": "The Fellowship of the Ring.md"
+  },
+  {
+    "id": "the-flavor-bible",
+    "title": "The Flavor Bible",
+    "author": "Karen Page, Andrew Dornenburg",
+    "year": 2008,
+    "publisher": "",
+    "genre": [
+      "Cooking",
+      "Reference"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-flavor-bible.jpg",
+    "source": "The Flavor Bible.md"
+  },
+  {
+    "id": "the-food-of-a-younger-land",
+    "title": "The Food of a Younger Land",
+    "author": "Mark Kurlansky",
+    "year": 2009,
+    "publisher": "",
+    "genre": [
+      "Food",
+      "History"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-food-of-a-younger-land.jpg",
+    "source": "The Food of a Younger Land.md"
+  },
+  {
+    "id": "the-foragers-harvest-a-guide-to-identifying-harvesting-and-preparing",
+    "title": "The Forager's Harvest: A Guide to Identifying, Harvesting, and Preparing",
+    "author": "Samuel Thayer",
+    "year": 2006,
+    "publisher": "Forager's Harvest Press",
+    "genre": [
+      "Foraging",
+      "Nature"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-foragers-harvest-a-guide-to-identifying-harvesting-and-preparing.jpg",
+    "source": "The Forager's Harvest.md"
+  },
+  {
+    "id": "the-foxfire-book",
+    "title": "The Foxfire Book",
+    "author": "Eliot Wigginton",
+    "year": 1972,
+    "publisher": "",
+    "genre": [
+      "Folklore",
+      "DIY"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-foxfire-book.jpg",
+    "source": "The Foxfire Book.md"
+  },
+  {
+    "id": "the-gift",
+    "title": "The Gift",
+    "author": "Lewis Hyde",
+    "year": 2007,
+    "publisher": "Creativity and the Artist in the Modern World_. New York: Vintage Books",
+    "genre": [
+      "Art Theory",
+      "Economics",
+      "Creativity"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-gift.jpg",
+    "source": "The Gift.md"
+  },
+  {
+    "id": "the-hobbit",
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "year": 1937,
+    "publisher": "",
+    "genre": [
+      "Fantasy"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-hobbit.jpg",
+    "source": "The Hobbit.md"
+  },
+  {
+    "id": "the-hundred-thousand-fools-of-god-musical-travels-in-central-asia",
+    "title": "The Hundred Thousand Fools Of God - Musical Travels In Central Asia",
+    "author": "Theodore Levin",
+    "year": 1996,
+    "publisher": "Musical Travels in Central Asia_. Bloomington: Indiana University Press",
+    "genre": [
+      "Ethnomusicology",
+      "Travel"
+    ],
+    "format": "",
+    "cover": "/images/books/the-hundred-thousand-fools-of-god-musical-travels-in-central-asia.jpg",
+    "source": "The Hundred Thousand Fools Of God - Musical Travels In Central Asia.md"
+  },
+  {
+    "id": "the-i-ching-or-book-of-changes",
+    "title": "The I Ching or Book of Changes",
+    "author": "Richard Wilhelm, Cary F. Baynes",
+    "year": 1950,
+    "publisher": "",
+    "genre": [
+      "Philosophy",
+      "Spirituality"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-i-ching-or-book-of-changes.jpg",
+    "source": "The I Ching or Book of Changes.md"
+  },
+  {
+    "id": "the-illustrated-worlds-religions",
+    "title": "The Illustrated World's Religions",
+    "author": "Huston Smith",
+    "year": 1991,
+    "publisher": "",
+    "genre": [
+      "Religion"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-illustrated-worlds-religions.jpg",
+    "source": "The Illustrated World's Religions.md"
+  },
+  {
+    "id": "the-interview",
+    "title": "The Interview",
+    "author": "Fior Manuele",
+    "year": 2017,
+    "publisher": "Fantagraphics",
+    "genre": [
+      "Graphic Novel",
+      "Science Fiction"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-interview.jpg",
+    "source": "The Interview.md"
+  },
+  {
+    "id": "the-ladies-of-grace-adieu",
+    "title": "The Ladies of Grace Adieu",
+    "author": "Susanna Clarke",
+    "year": 2006,
+    "publisher": "",
+    "genre": [
+      "Fantasy",
+      "Short Stories"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-ladies-of-grace-adieu.jpg",
+    "source": "The Ladies of Grace Adieu.md"
+  },
+  {
+    "id": "the-left-hand-of-darkness",
+    "title": "The Left Hand of Darkness",
+    "author": "Ursula K. Le Guin",
+    "year": 1969,
+    "publisher": "Ace Books",
+    "genre": [
+      "Science Fiction"
+    ],
+    "format": "",
+    "cover": "/images/books/the-left-hand-of-darkness.jpg",
+    "source": "The Left Hand of Darkness.md"
+  },
+  {
+    "id": "the-lore-of-scotland",
+    "title": "The Lore of Scotland",
+    "author": "Jennifer Westwood, Sophia Kingshill",
+    "year": 2009,
+    "publisher": "",
+    "genre": [
+      "Folklore"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-lore-of-scotland.jpg",
+    "source": "The Lore of Scotland.md"
+  },
+  {
+    "id": "the-luminaries",
+    "title": "The Luminaries",
+    "author": "Eleanor Catton",
+    "year": 2013,
+    "publisher": "",
+    "genre": [
+      "Literary Fiction"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-luminaries.jpg",
+    "source": "The Luminaries.md"
+  },
+  {
+    "id": "the-magicians",
+    "title": "The Magicians",
+    "author": "Lev Grossman",
+    "year": 2009,
+    "publisher": "Viking",
+    "genre": [
+      "Fantasy",
+      "Literary Fiction"
+    ],
+    "format": "",
+    "cover": "/images/books/the-magicians.jpg",
+    "source": "The Magicians.md"
+  },
+  {
+    "id": "the-marriage-of-cadmus-and-harmony",
+    "title": "The Marriage of Cadmus and Harmony",
+    "author": "Roberto Calasso",
+    "year": 1993,
+    "publisher": "",
+    "genre": [
+      "Mythology",
+      "Philosophy"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-marriage-of-cadmus-and-harmony.jpg",
+    "source": "The Marriage of Cadmus and Harmony.md"
+  },
+  {
+    "id": "the-mending-directory",
+    "title": "The Mending Directory",
+    "author": "Erin Eggenburg",
+    "year": 2022,
+    "publisher": "",
+    "genre": [
+      "Crafts",
+      "Repair"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-mending-directory.jpg",
+    "source": "The Mending Directory.md"
+  },
+  {
+    "id": "the-mythical-man-month",
+    "title": "The Mythical Man Month",
+    "author": "Frederick P Brooks",
+    "year": 1995,
+    "publisher": "Essays on Software Engineering_. Reading: Addison-Wesley",
+    "genre": [
+      "Software Engineering"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-mythical-man-month.jpg",
+    "source": "The Mythical Man Month.md"
+  },
+  {
+    "id": "the-narrow-road-to-the-deep-north-and-other-travel-sketches",
+    "title": "The Narrow Road to the Deep North and Other Travel Sketches",
+    "author": "Matsuo Basho",
+    "year": 1702,
+    "publisher": "",
+    "genre": [
+      "Poetry",
+      "Travel"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-narrow-road-to-the-deep-north-and-other-travel-sketches.jpg",
+    "source": "The Narrow Road to the Deep North and Other Travel Sketches.md"
+  },
+  {
+    "id": "the-neon-wilderness",
+    "title": "The Neon Wilderness",
+    "author": "Nelson Algren",
+    "year": 1947,
+    "publisher": "Seven Stories Press",
+    "genre": [
+      "Short Story Collection"
+    ],
+    "format": "",
+    "cover": "/images/books/the-neon-wilderness.jpg",
+    "source": "The Neon Wilderness.md"
+  },
+  {
+    "id": "the-new-jim-crow",
+    "title": "The New Jim Crow",
+    "author": "Michelle Alexander",
+    "year": 2010,
+    "publisher": "",
+    "genre": [
+      "Politics",
+      "Criminal Justice"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-new-jim-crow.jpg",
+    "source": "The New Jim Crow.md"
+  },
+  {
+    "id": "the-new-moosewood-cookbook",
+    "title": "The New Moosewood Cookbook",
+    "author": "Mollie Katzen",
+    "year": 1977,
+    "publisher": "",
+    "genre": [
+      "Cooking",
+      "Vegetarian"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-new-moosewood-cookbook.jpg",
+    "source": "The New Moosewood Cookbook.md"
+  },
+  {
+    "id": "the-new-urban-crisis",
+    "title": "The New Urban Crisis",
+    "author": "Richard Florida",
+    "year": 2017,
+    "publisher": "",
+    "genre": [
+      "Urban Planning",
+      "Economics"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-new-urban-crisis.jpg",
+    "source": "The New Urban Crisis.md"
+  },
+  {
+    "id": "the-nix",
+    "title": "The Nix",
+    "author": "Nathan Hill",
+    "year": 2016,
+    "publisher": "Alfred A. Knopf",
+    "genre": [
+      "Literary Fiction"
+    ],
+    "format": "",
+    "cover": "/images/books/the-nix.jpg",
+    "source": "The Nix.md"
+  },
+  {
+    "id": "the-noma-guide-to-fermentation",
+    "title": "The Noma Guide to Fermentation",
+    "author": "René Redzepi, David Zilber",
+    "year": 2018,
+    "publisher": "",
+    "genre": [
+      "Cooking",
+      "Fermentation"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-noma-guide-to-fermentation.jpg",
+    "source": "The Noma Guide to Fermentation.md"
+  },
+  {
+    "id": "the-nonexistent-knight",
+    "title": "The Nonexistent Knight",
+    "author": "Italo Calvino",
+    "year": 1962,
+    "publisher": "Harcourt, Brace & World",
+    "genre": [
+      "Literary Fiction",
+      "Fantasy"
+    ],
+    "format": "",
+    "cover": "/images/books/the-nonexistent-knight.jpg",
+    "source": "The Nonexistent Knight.md"
+  },
+  {
+    "id": "the-notebook-why-personal-finance-doesnt-have-to-be-complicated",
+    "title": "The Notebook - Why Personal Finance Doesn't Have To Be Complicated",
+    "author": "Carl Richards",
+    "year": 2020,
+    "publisher": "Why Personal Finance Doesn't Have to Be Complicated_. New York: Portfolio",
+    "genre": [
+      "Personal Finance"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-notebook-why-personal-finance-doesnt-have-to-be-complicated.jpg",
+    "source": "The Index Card - Why Personal Finance Doesn't Have To Be Complicated.md"
+  },
+  {
+    "id": "the-odyssey",
+    "title": "The Odyssey",
+    "author": "Homer",
+    "year": 2017,
+    "publisher": "W. W. Norton & Company",
+    "genre": [
+      "Epic Poetry"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-odyssey.jpg",
+    "source": "The Odyssey.md"
+  },
+  {
+    "id": "the-once-and-future-king",
+    "title": "The Once and Future King",
+    "author": "T.H. White",
+    "year": 1958,
+    "publisher": "Collins",
+    "genre": [
+      "Fantasy",
+      "Arthurian Literature"
+    ],
+    "format": "",
+    "cover": "/images/books/the-once-and-future-king.jpg",
+    "source": "The Once and Future King.md"
+  },
+  {
+    "id": "the-overstory",
+    "title": "The Overstory",
+    "author": "Richard Powers",
+    "year": 2018,
+    "publisher": "",
+    "genre": [
+      "Literary Fiction"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-overstory.jpg",
+    "source": "The Overstory.md"
+  },
+  {
+    "id": "the-phantom-tollbooth",
+    "title": "The Phantom Tollbooth",
+    "author": "Norton Juster",
+    "year": 1961,
+    "publisher": "Random House",
+    "genre": [
+      "Children's Literature",
+      "Fantasy"
+    ],
+    "format": "",
+    "cover": "/images/books/the-phantom-tollbooth.jpg",
+    "source": "The Phantom Tollbooth.md"
+  },
+  {
+    "id": "the-philosophy-of-andy-warhol",
+    "title": "The Philosophy of Andy Warhol",
+    "author": "Andy Warhol",
+    "year": 1975,
+    "publisher": "",
+    "genre": [
+      "Art",
+      "Philosophy"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-philosophy-of-andy-warhol.jpg",
+    "source": "The Philosophy of Andy Warhol.md"
+  },
+  {
+    "id": "the-plague",
+    "title": "The Plague",
+    "author": "Albert Camus",
+    "year": 1948,
+    "publisher": "Modern Library",
+    "genre": [
+      "Literary Fiction",
+      "Philosophical Fiction"
+    ],
+    "format": "",
+    "cover": "/images/books/the-plague.jpg",
+    "source": "The Plague.md"
+  },
+  {
+    "id": "the-power-of-habit",
+    "title": "The Power of Habit",
+    "author": "Charles Duhigg",
+    "year": 2012,
+    "publisher": "",
+    "genre": [
+      "Psychology",
+      "Self-Help"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-power-of-habit.jpg",
+    "source": "The Power of Habit.md"
+  },
+  {
+    "id": "the-practical-guide-to-calligraphy",
+    "title": "The Practical Guide to Calligraphy",
+    "author": "Rosemary Sassoon",
+    "year": 2005,
+    "publisher": "",
+    "genre": [
+      "Art",
+      "Calligraphy"
+    ],
+    "format": "",
+    "cover": "/images/books/the-practical-guide-to-calligraphy.jpg",
+    "source": "The Practical Guide to Calligraphy.md"
+  },
+  {
+    "id": "the-pursuit-of-the-millennium",
+    "title": "The Pursuit of the Millennium",
+    "author": "Norman Cohn",
+    "year": 1957,
+    "publisher": "",
+    "genre": [
+      "History",
+      "Religion"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-pursuit-of-the-millennium.jpg",
+    "source": "The Pursuit of the Millennium.md"
+  },
+  {
+    "id": "the-radiophonics-laboratory",
+    "title": "The Radiophonics Laboratory",
+    "author": "Justin Patrick Moore",
+    "year": 2020,
+    "publisher": "",
+    "genre": [
+      "Music",
+      "Sound Design"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-radiophonics-laboratory.jpg",
+    "source": "The Radiophonics Laboratory.md"
+  },
+  {
+    "id": "the-range-busters",
+    "title": "The Range Busters",
+    "author": "Saalfield Publishing",
+    "year": null,
+    "publisher": "",
+    "genre": [
+      "Western Comics"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-range-busters.jpg",
+    "source": "The Range Busters.md"
+  },
+  {
+    "id": "the-real-book-6th-edition",
+    "title": "The Real Book (6th Edition)",
+    "author": "Uncredited",
+    "year": 2004,
+    "publisher": "",
+    "genre": [
+      "Music Score",
+      "Jazz"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-real-book-6th-edition.jpg",
+    "source": "The Real Book (6th Edition).md"
+  },
+  {
+    "id": "the-reenchantment-of-art",
+    "title": "The Reenchantment Of Art",
+    "author": "Suzi Gablik",
+    "year": 1992,
+    "publisher": "Thames & Hudson",
+    "genre": [
+      "Art Criticism",
+      "Philosophy"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-reenchantment-of-art.jpg",
+    "source": "The Reenchantment Of Art.md"
+  },
+  {
+    "id": "the-rest-is-noise",
+    "title": "The Rest Is Noise",
+    "author": "Alex Ross",
+    "year": 2007,
+    "publisher": "",
+    "genre": [
+      "Music History",
+      "Cultural Criticism"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-rest-is-noise.jpg",
+    "source": "The Rest Is Noise.md"
+  },
+  {
+    "id": "the-return-of-merlin",
+    "title": "The Return of Merlin",
+    "author": "Deepak Chopra",
+    "year": 1995,
+    "publisher": "",
+    "genre": [
+      "Fantasy",
+      "Spirituality"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-return-of-merlin.jpg",
+    "source": "The Return of Merlin.md"
+  },
+  {
+    "id": "the-return-of-the-king",
+    "title": "The Return of the King",
+    "author": "J.R.R. Tolkien",
+    "year": 1955,
+    "publisher": "",
+    "genre": [
+      "Fantasy"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-return-of-the-king.jpg",
+    "source": "The Return of the King.md"
+  },
+  {
+    "id": "the-road-to-wigan-pier",
+    "title": "The Road to Wigan Pier",
+    "author": "George Orwell",
+    "year": 1937,
+    "publisher": "Victor Gollancz",
+    "genre": [
+      "Non-Fiction",
+      "Social Commentary"
+    ],
+    "format": "",
+    "cover": "/images/books/the-road-to-wigan-pier.jpg",
+    "source": "The Road to Wigan Pier.md"
+  },
+  {
+    "id": "the-saturday-night-ghost-club",
+    "title": "The Saturday Night Ghost Club",
+    "author": "Craig Davidson",
+    "year": 2018,
+    "publisher": "Penguin Books",
+    "genre": [
+      "Literary Fiction",
+      "Coming-of-age"
+    ],
+    "format": "",
+    "cover": "/images/books/the-saturday-night-ghost-club.jpg",
+    "source": "The Saturday Night Ghost Club.md"
+  },
+  {
+    "id": "the-scholars",
+    "title": "The Scholars",
+    "author": "Books to Acquire",
+    "year": 1957,
+    "publisher": "",
+    "genre": [
+      "Literary Fiction",
+      "Satire"
+    ],
+    "format": "",
+    "cover": "/images/books/the-scholars.jpg",
+    "source": "The Scholars.md"
+  },
+  {
+    "id": "the-second-sex",
+    "title": "The Second Sex",
+    "author": "Simone de Beauvoir",
+    "year": 1949,
+    "publisher": "",
+    "genre": [
+      "Philosophy",
+      "Feminism"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-second-sex.jpg",
+    "source": "The Second Sex.md"
+  },
+  {
+    "id": "the-serviceberry",
+    "title": "The Serviceberry",
+    "author": "Robin Wall Kimmerer",
+    "year": 2024,
+    "publisher": "Simon & Schuster Audio",
+    "genre": [
+      "Nature Writing",
+      "Indigenous Studies"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-serviceberry.jpg",
+    "source": "The Serviceberry.md"
+  },
+  {
+    "id": "the-start-up-of-you",
+    "title": "The Start-Up Of You",
+    "author": "Hoffman, Reid, and Ben Casnocha",
+    "year": 2012,
+    "publisher": "Crown Business",
+    "genre": [
+      "Business",
+      "Career"
+    ],
+    "format": "",
+    "cover": "/images/books/the-start-up-of-you.jpg",
+    "source": "The Start-Up Of You.md"
+  },
+  {
+    "id": "the-strategic-designer",
+    "title": "The Strategic Designer",
+    "author": "David Holston",
+    "year": 2011,
+    "publisher": "",
+    "genre": [
+      "Design"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-strategic-designer.jpg",
+    "source": "The Strategic Designer.md"
+  },
+  {
+    "id": "the-study-of-fugue",
+    "title": "The Study Of Fugue",
+    "author": "Alfred Mann",
+    "year": 1987,
+    "publisher": "Dover Publications",
+    "genre": [
+      "Music Theory",
+      "Composition"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-study-of-fugue.jpg",
+    "source": "The Study Of Fugue.md"
+  },
+  {
+    "id": "the-sun-also-rises",
+    "title": "The Sun Also Rises",
+    "author": "Ernest Hemingway",
+    "year": 1926,
+    "publisher": "Charles Scribner's Sons",
+    "genre": [
+      "Literary Fiction"
+    ],
+    "format": "",
+    "cover": "/images/books/the-sun-also-rises.jpg",
+    "source": "The Sun Also Rises.md"
+  },
+  {
+    "id": "the-three-body-problem",
+    "title": "The Three-Body Problem",
+    "author": "Liu Cixin",
+    "year": 2014,
+    "publisher": "Tor Books",
+    "genre": [
+      "Science Fiction"
+    ],
+    "format": "",
+    "cover": "/images/books/the-three-body-problem.jpg",
+    "source": "The Three-Body Problem.md"
+  },
+  {
+    "id": "the-two-towers",
+    "title": "The Two Towers",
+    "author": "J.R.R. Tolkien",
+    "year": 1954,
+    "publisher": "",
+    "genre": [
+      "Fantasy"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-two-towers.jpg",
+    "source": "The Two Towers.md"
+  },
+  {
+    "id": "the-ultimate-book-of-cross-sections",
+    "title": "The Ultimate Book of Cross-Sections",
+    "author": "DK Publishing",
+    "year": 1996,
+    "publisher": "",
+    "genre": [
+      "Reference",
+      "Illustrated"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-ultimate-book-of-cross-sections.jpg",
+    "source": "The Ultimate Book of Cross-Sections.md"
+  },
+  {
+    "id": "the-unconsoled",
+    "title": "The Unconsoled",
+    "author": "Kazuo Ishiguro",
+    "year": 1995,
+    "publisher": "Alfred A. Knopf",
+    "genre": [
+      "Literary Fiction"
+    ],
+    "format": "",
+    "cover": "/images/books/the-unconsoled.jpg",
+    "source": "The Unconsoled.md"
+  },
+  {
+    "id": "the-vienna-model-2",
+    "title": "The Vienna Model 2",
+    "author": "Helene Schauer, Madlyn Miessgang, Martin Embacher, Michael Rieper, Vanessa Braun",
+    "year": 2018,
+    "publisher": "",
+    "genre": [
+      "Architecture",
+      "Housing"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-vienna-model-2.jpg",
+    "source": "The Vienna Model 2.md"
+  },
+  {
+    "id": "the-virtuoso-pianist",
+    "title": "The Virtuoso Pianist",
+    "author": "Charles-Louis Hanon",
+    "year": 1873,
+    "publisher": "",
+    "genre": [
+      "Music Instruction"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-virtuoso-pianist.jpg",
+    "source": "The Virtuoso Pianist.md"
+  },
+  {
+    "id": "the-vulture",
+    "title": "The Vulture",
+    "author": "Gil Scott-Heron",
+    "year": 1970,
+    "publisher": "",
+    "genre": [
+      "Fiction"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-vulture.jpg",
+    "source": "The Vulture.md"
+  },
+  {
+    "id": "the-warmth-of-other-suns",
+    "title": "The Warmth of Other Suns",
+    "author": "Isabel Wilkerson",
+    "year": 2010,
+    "publisher": "",
+    "genre": [
+      "History"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-warmth-of-other-suns.jpg",
+    "source": "The Warmth of Other Suns.md"
+  },
+  {
+    "id": "the-way-of-kings",
+    "title": "The Way of Kings",
+    "author": "Brandon Sanderson",
+    "year": 2010,
+    "publisher": "",
+    "genre": [
+      "Fantasy"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-way-of-kings.jpg",
+    "source": "The Way of Kings.md"
+  },
+  {
+    "id": "the-way-things-work",
+    "title": "The Way Things Work",
+    "author": "David Macaulay",
+    "year": 1988,
+    "publisher": "",
+    "genre": [
+      "Reference",
+      "Illustrated"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-way-things-work.jpg",
+    "source": "The Way Things Work.md"
+  },
+  {
+    "id": "the-who-anthology",
+    "title": "The Who Anthology",
+    "author": "The Who",
+    "year": 1994,
+    "publisher": "",
+    "genre": [
+      "Music Score"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-who-anthology.jpg",
+    "source": "The Who Anthology.md"
+  },
+  {
+    "id": "the-witch-family",
+    "title": "The Witch Family",
+    "author": "Eleanor Estes",
+    "year": 1960,
+    "publisher": "",
+    "genre": [
+      "Children's Fiction"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-witch-family.jpg",
+    "source": "The Witch Family.md"
+  },
+  {
+    "id": "the-world-atlas-of-coffee",
+    "title": "The World Atlas of Coffee",
+    "author": "James Hoffmann",
+    "year": 2014,
+    "publisher": "",
+    "genre": [
+      "Food",
+      "Coffee"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-world-atlas-of-coffee.jpg",
+    "source": "The World Atlas of Coffee.md"
+  },
+  {
+    "id": "the-world-of-music",
+    "title": "The World of Music",
+    "author": "David Willoughby",
+    "year": 2012,
+    "publisher": "",
+    "genre": [
+      "Music"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-world-of-music.jpg",
+    "source": "The World of Music.md"
+  },
+  {
+    "id": "the-zero-waste-chef",
+    "title": "The Zero-Waste Chef",
+    "author": "Anne-Marie Bonneau",
+    "year": 2021,
+    "publisher": "",
+    "genre": [
+      "Cooking",
+      "Sustainability"
+    ],
+    "format": "physical",
+    "cover": "/images/books/the-zero-waste-chef.jpg",
+    "source": "The Zero-Waste Chef.md"
+  },
+  {
+    "id": "their-eyes-were-watching-god",
+    "title": "Their Eyes Were Watching God",
+    "author": "Zora Neale Hurston",
+    "year": 1937,
+    "publisher": "J.B. Lippincott",
+    "genre": [
+      "Literary Fiction"
+    ],
+    "format": "",
+    "cover": "/images/books/their-eyes-were-watching-god.jpg",
+    "source": "Their Eyes Were Watching God.md"
+  },
+  {
+    "id": "then-we-came-to-the-end",
+    "title": "Then We Came to the End",
+    "author": "Joshua Ferris",
+    "year": 2007,
+    "publisher": "Little, Brown and Company",
+    "genre": [
+      "Literary Fiction"
+    ],
+    "format": "",
+    "cover": "/images/books/then-we-came-to-the-end.jpg",
+    "source": "Then We Came to the End.md"
+  },
+  {
+    "id": "thing-explainer",
+    "title": "Thing Explainer",
+    "author": "Randall Munroe",
+    "year": 2015,
+    "publisher": "",
+    "genre": [
+      "Science",
+      "Humor"
+    ],
+    "format": "physical",
+    "cover": "/images/books/thing-explainer.jpg",
+    "source": "Thing Explainer.md"
+  },
+  {
+    "id": "this",
+    "title": "This",
+    "author": "Michael Gungor",
+    "year": 2019,
+    "publisher": "",
+    "genre": [
+      "Art",
+      "Philosophy"
+    ],
+    "format": "physical",
+    "cover": "/images/books/this.jpg",
+    "source": "This.md"
+  },
+  {
+    "id": "this-is-how-you-lose-her",
+    "title": "This Is How You Lose Her",
+    "author": "Junot Díaz",
+    "year": 2012,
+    "publisher": "Riverhead Books",
+    "genre": [
+      "Short Story Collection"
+    ],
+    "format": "",
+    "cover": "/images/books/this-is-how-you-lose-her.jpg",
+    "source": "This Is How You Lose Her.md"
+  },
+  {
+    "id": "tracers-in-the-dark-the-global-hunt-for-the-crime-lords-of-cryptocurrency",
+    "title": "Tracers in the Dark: The Global Hunt for the Crime Lords of Cryptocurrency",
+    "author": "Andy Greenberg",
+    "year": 2022,
+    "publisher": "",
+    "genre": [
+      "Technology",
+      "True Crime"
+    ],
+    "format": "physical",
+    "cover": "/images/books/tracers-in-the-dark-the-global-hunt-for-the-crime-lords-of-cryptocurrency.jpg",
+    "source": "Tracers in the Dark- The Global Hunt for the Crime Lords of Cryptocurrency.md"
+  },
+  {
+    "id": "traditional-indian-cooking",
+    "title": "Traditional Indian Cooking",
+    "author": "Ramola Parbhoo",
+    "year": 1995,
+    "publisher": "",
+    "genre": [
+      "Cooking"
+    ],
+    "format": "physical",
+    "cover": "/images/books/traditional-indian-cooking.jpg",
+    "source": "Traditional Indian Cooking.md"
+  },
+  {
+    "id": "travels-over-feeling-arthur-russell-a-life",
+    "title": "Travels Over Feeling: Arthur Russell, A Life",
+    "author": "Richard King",
+    "year": 2023,
+    "publisher": "",
+    "genre": [
+      "Music Biography"
+    ],
+    "format": "physical",
+    "cover": "/images/books/travels-over-feeling-arthur-russell-a-life.jpg",
+    "source": "Travels Over Feeling- Arthur Russell, A Life.md"
+  },
+  {
+    "id": "ultimate-book-of-cocktails",
+    "title": "Ultimate Book of Cocktails",
+    "author": "Dan Jones",
+    "year": 2017,
+    "publisher": "",
+    "genre": [
+      "Cocktails"
+    ],
+    "format": "physical",
+    "cover": "/images/books/ultimate-book-of-cocktails.jpg",
+    "source": "Ultimate Book of Cocktails.md"
+  },
+  {
+    "id": "understanding-comics",
+    "title": "Understanding Comics",
+    "author": "Scott McCloud",
+    "year": 1994,
+    "publisher": "The Invisible Art_. New York: William Morrow",
+    "genre": [
+      "Comics",
+      "Art Theory"
+    ],
+    "format": "physical",
+    "cover": "/images/books/understanding-comics.jpg",
+    "source": "Understanding Comics.md"
+  },
+  {
+    "id": "understanding-variation",
+    "title": "Understanding Variation",
+    "author": "Donald J. Wheeler",
+    "year": 1993,
+    "publisher": "",
+    "genre": [
+      "Statistics",
+      "Business"
+    ],
+    "format": "physical",
+    "cover": "/images/books/understanding-variation.jpg",
+    "source": "Understanding Variation.md"
+  },
+  {
+    "id": "underworld",
+    "title": "Underworld",
+    "author": "Don DeLillo",
+    "year": 1997,
+    "publisher": "Scribner",
+    "genre": [
+      "Literary Fiction"
+    ],
+    "format": "",
+    "cover": "/images/books/underworld.jpg",
+    "source": "Underworld.md"
+  },
+  {
+    "id": "unfathomable-city-a-new-orleans-atlas",
+    "title": "Unfathomable City: A New Orleans Atlas",
+    "author": "Rebecca Solnit",
+    "year": 2013,
+    "publisher": "",
+    "genre": [
+      "Geography",
+      "Essays"
+    ],
+    "format": "physical",
+    "cover": "/images/books/unfathomable-city-a-new-orleans-atlas.jpg",
+    "source": "Unfathomable City- A New Orleans Atlas.md"
+  },
+  {
+    "id": "unusual-sounds-the-hidden-history-of-library-music",
+    "title": "Unusual Sounds: The Hidden History of Library Music",
+    "author": "David Hollander",
+    "year": 2018,
+    "publisher": "",
+    "genre": [
+      "Music History"
+    ],
+    "format": "physical",
+    "cover": "/images/books/unusual-sounds-the-hidden-history-of-library-music.jpg",
+    "source": "Unusual Sounds- The Hidden History of Library Music.md"
+  },
+  {
+    "id": "unversed-a-comic-anthology",
+    "title": "Unversed: A Comic Anthology",
+    "author": "Mackenzie Baker, Shayla Charnett, Hope Dibby, Unah Denight, Maria Frantz, Clive Hawken, Tandy Kunkle, Vance Lump, Conor MacBride, Seaerra Miller, Alex Yip",
+    "year": 2019,
+    "publisher": "",
+    "genre": [
+      "Comics Anthology"
+    ],
+    "format": "physical",
+    "cover": "/images/books/unversed-a-comic-anthology.jpg",
+    "source": "Unversed- A Comic Anthology.md"
+  },
+  {
+    "id": "v",
+    "title": "V",
+    "author": "Thomas Pynchon",
+    "year": 1963,
+    "publisher": "J.B. Lippincott",
+    "genre": [
+      "Literary Fiction"
+    ],
+    "format": "",
+    "cover": "/images/books/v.jpg",
+    "source": "V.md"
+  },
+  {
+    "id": "violin-playing-as-i-teach-it",
+    "title": "Violin Playing As I Teach It",
+    "author": "Leopold Auer",
+    "year": 1921,
+    "publisher": "Frederick A. Stokes Company",
+    "genre": [
+      "Music",
+      "Instruction"
+    ],
+    "format": "",
+    "cover": "/images/books/violin-playing-as-i-teach-it.jpg",
+    "source": "Violin Playing As I Teach It.md"
+  },
+  {
+    "id": "vitamin-t-threads-and-textiles",
+    "title": "Vitamin T: Threads and Textiles",
+    "author": "Phaidon",
+    "year": 2019,
+    "publisher": "",
+    "genre": [
+      "Art",
+      "Textiles"
+    ],
+    "format": "physical",
+    "cover": "/images/books/vitamin-t-threads-and-textiles.jpg",
+    "source": "Vitamin T- Threads and Textiles.md"
+  },
+  {
+    "id": "walden",
+    "title": "Walden",
+    "author": "Henry David Thoreau",
+    "year": 1854,
+    "publisher": "Ticknor and Fields",
+    "genre": [
+      "Non-Fiction",
+      "Philosophy"
+    ],
+    "format": "physical",
+    "cover": "/images/books/walden.jpg",
+    "source": "Walden.md"
+  },
+  {
+    "id": "war-of-art",
+    "title": "War Of Art",
+    "author": "Steven Pressfield",
+    "year": 2002,
+    "publisher": "Break Through the Blocks and Win Your Inner Creative Battles_. New",
+    "genre": [
+      "Creativity",
+      "Self-Help"
+    ],
+    "format": "physical",
+    "cover": "/images/books/war-of-art.jpg",
+    "source": "War Of Art.md"
+  },
+  {
+    "id": "warlock",
+    "title": "Warlock",
+    "author": "Oakley Hall",
+    "year": 1958,
+    "publisher": "",
+    "genre": [
+      "Western Fiction"
+    ],
+    "format": "physical",
+    "cover": "/images/books/warlock.jpg",
+    "source": "Warlock.md"
+  },
+  {
+    "id": "we-ride-upon-sticks",
+    "title": "We Ride Upon Sticks",
+    "author": "Quan Barry",
+    "year": 2020,
+    "publisher": "Pantheon Books",
+    "genre": [
+      "Literary Fiction",
+      "Magical Realism"
+    ],
+    "format": "",
+    "cover": "/images/books/we-ride-upon-sticks.jpg",
+    "source": "We Ride Upon Sticks.md"
+  },
+  {
+    "id": "what-if",
+    "title": "What If?",
+    "author": "Randall Munroe",
+    "year": 2014,
+    "publisher": "",
+    "genre": [
+      "Science",
+      "Humor"
+    ],
+    "format": "physical",
+    "cover": "/images/books/what-if.jpg",
+    "source": "What If.md"
+  },
+  {
+    "id": "where-many-rivers-meet",
+    "title": "Where Many Rivers Meet",
+    "author": "David Whyte",
+    "year": 1990,
+    "publisher": "",
+    "genre": [
+      "Poetry"
+    ],
+    "format": "physical",
+    "cover": "/images/books/where-many-rivers-meet.jpg",
+    "source": "Where Many Rivers Meet.md"
+  },
+  {
+    "id": "white-cat-black-dog",
+    "title": "White Cat, Black Dog",
+    "author": "Kelly Link",
+    "year": 2023,
+    "publisher": "Random House",
+    "genre": [
+      "Short Stories",
+      "Fantasy"
+    ],
+    "format": "physical",
+    "cover": "/images/books/white-cat-black-dog.jpg",
+    "source": "White Cat, Black Dog.md"
+  },
+  {
+    "id": "white-teeth",
+    "title": "White Teeth",
+    "author": "Zadie Smith",
+    "year": 2000,
+    "publisher": "Hamish Hamilton",
+    "genre": [
+      "Literary Fiction"
+    ],
+    "format": "",
+    "cover": "/images/books/white-teeth.jpg",
+    "source": "White Teeth.md"
+  },
+  {
+    "id": "wired-magazine-january-february-2025",
+    "title": "Wired Magazine, January/February 2025",
+    "author": "Wired",
+    "year": 2025,
+    "publisher": "",
+    "genre": [
+      "Technology Magazine"
+    ],
+    "format": "physical",
+    "cover": "/images/books/wired-magazine-january-february-2025.jpg",
+    "source": "Wired Magazine, January-February 2025.md"
+  },
+  {
+    "id": "wired-magazine-july-august-2025",
+    "title": "Wired Magazine, July/August 2025",
+    "author": "Wired",
+    "year": 2025,
+    "publisher": "",
+    "genre": [
+      "Technology Magazine"
+    ],
+    "format": "physical",
+    "cover": "/images/books/wired-magazine-july-august-2025.jpg",
+    "source": "Wired Magazine, July-August 2025.md"
+  },
+  {
+    "id": "wired-magazine-march-april-2025",
+    "title": "Wired Magazine, March/April 2025",
+    "author": "Wired",
+    "year": 2025,
+    "publisher": "",
+    "genre": [
+      "Technology Magazine"
+    ],
+    "format": "physical",
+    "cover": "/images/books/wired-magazine-march-april-2025.jpg",
+    "source": "Wired Magazine, March-April 2025.md"
+  },
+  {
+    "id": "wired-magazine-may-june-2025",
+    "title": "Wired Magazine, May/June 2025",
+    "author": "Wired",
+    "year": 2025,
+    "publisher": "",
+    "genre": [
+      "Technology Magazine"
+    ],
+    "format": "physical",
+    "cover": "/images/books/wired-magazine-may-june-2025.jpg",
+    "source": "Wired Magazine, May-June 2025.md"
+  },
+  {
+    "id": "wired-magazine-september-october-2025",
+    "title": "Wired Magazine, September/October 2025",
+    "author": "Wired",
+    "year": 2025,
+    "publisher": "",
+    "genre": [
+      "Technology Magazine"
+    ],
+    "format": "physical",
+    "cover": "/images/books/wired-magazine-september-october-2025.jpg",
+    "source": "Wired Magazine, September-October 2025.md"
+  },
+  {
+    "id": "wizard-how-to-draw",
+    "title": "Wizard - How To Draw",
+    "author": "Christopher Hart",
+    "year": 2000,
+    "publisher": "How to Draw_. New York: Watson-Guptill Publications",
+    "genre": [
+      "Art",
+      "Instruction"
+    ],
+    "format": "physical",
+    "cover": "/images/books/wizard-how-to-draw.jpg",
+    "source": "Wizard - How To Draw.md"
+  },
+  {
+    "id": "wolf-in-white-van",
+    "title": "Wolf in White Van",
+    "author": "John Darnielle",
+    "year": 2014,
+    "publisher": "Farrar, Straus and Giroux",
+    "genre": [
+      "Literary Fiction"
+    ],
+    "format": "",
+    "cover": "/images/books/wolf-in-white-van.jpg",
+    "source": "Wolf in White Van.md"
+  },
+  {
+    "id": "worms-eat-my-garbage",
+    "title": "Worms Eat My Garbage",
+    "author": "Mary Appelhof",
+    "year": 1982,
+    "publisher": "",
+    "genre": [
+      "Gardening",
+      "Composting"
+    ],
+    "format": "",
+    "cover": "/images/books/worms-eat-my-garbage.jpg",
+    "source": "Worms Eat My Garbage.md"
+  },
+  {
+    "id": "writing-for-television-radio-and-new-media",
+    "title": "Writing For Television, Radio, and New Media",
+    "author": "Robert L Hilliard",
+    "year": 2014,
+    "publisher": "Cengage Learning",
+    "genre": [
+      "Writing",
+      "Media"
+    ],
+    "format": "",
+    "cover": "/images/books/writing-for-television-radio-and-new-media.jpg",
+    "source": "Writing For Television, Radio, and New Media.md"
+  },
+  {
+    "id": "writing-music-for-hit-songs",
+    "title": "Writing Music For Hit Songs",
+    "author": "Jimmy Webb",
+    "year": 1999,
+    "publisher": "Omnibus Press",
+    "genre": [
+      "Songwriting",
+      "Music Theory"
+    ],
+    "format": "physical",
+    "cover": "/images/books/writing-music-for-hit-songs.jpg",
+    "source": "Writing Music For Hit Songs.md"
+  },
+  {
+    "id": "you-love-comics-2023",
+    "title": "You Love Comics 2023",
+    "author": "Uncredited",
+    "year": 2023,
+    "publisher": "",
+    "genre": [
+      "Comics Anthology"
+    ],
+    "format": "physical",
+    "cover": "/images/books/you-love-comics-2023.jpg",
+    "source": "You Love Comics 2023.md"
+  }
+]

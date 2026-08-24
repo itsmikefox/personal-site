@@ -515,3 +515,52 @@
     width: calc(100cqw - 2rem);
   }
 }
+
+/* ── Detail-panel items ──────────────────────────────────────────────────── */
+/* Books have no page of their own, so their cards and title cells are buttons
+   that open the shared panel. Strip the control chrome and they read exactly
+   like the links they sit beside — but stay focusable and Enter/Space-operable
+   for free, which a clickable <div> would not. */
+button.bcard,
+.bt-title--open {
+  appearance: none;
+  font: inherit;
+  border: 0;
+  background: none;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+}
+button.bcard:focus-visible,
+.bt-title--open:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+.bt-title--open {
+  color: var(--ink);
+}
+.bt-title--open:hover {
+  color: var(--accent);
+}
+
+/* ── Books ───────────────────────────────────────────────────────────────── */
+/* Book jackets are portraits, not the square sleeves the Gallery assumes.
+   `contain` on a tinted ground keeps odd scans and wide art books whole
+   instead of cropping their titles off. */
+.base--books .bcard__art {
+  aspect-ratio: 2 / 3;
+  background: color-mix(in srgb, var(--bg) 70%, var(--border));
+}
+.base--books .bcard__art img {
+  object-fit: contain;
+}
+.base--books .bcard__fold {
+  background: var(--fill-library);
+}
+.base--books .bcard__title {
+  font-size: var(--text-sm);
+}
+.base--books .bt-thumb {
+  object-fit: contain;
+}

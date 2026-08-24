@@ -1,5 +1,5 @@
 import { defineCollection, z } from "astro:content";
-import { glob } from "astro/loaders";
+import { glob, file } from "astro/loaders";
 
 // ── Obsidian-friendly field helpers ─────────────────────────────────────────
 // Obsidian's Properties panel writes a cleared property as a bare key
@@ -148,4 +148,28 @@ const music = defineCollection({
   }),
 });
 
-export const collections = { writing, poetry, projects, music };
+// Library. Unlike the others, this collection isn't hand-authored here — it's
+// a generated snapshot of the Obsidian `Books.base` vault folder, written by
+// `pnpm books`. Frontmatter only, by design: note bodies stay private.
+// Re-run the import after editing books in Obsidian; don't edit the JSON.
+const books = defineCollection({
+  loader: file("./src/data/books.json"),
+  schema: z.object({
+    title: z.string(),
+    // Flattened out of Obsidian's "[[Author Name]]" wikilink at import.
+    author: z.string().default(""),
+    // First publication year. Null for the handful with no year recorded.
+    year: z.number().nullable().default(null),
+    publisher: z.string().default(""),
+    // "Literary Fiction/Comedy" in the vault becomes ["Literary Fiction", "Comedy"].
+    genre: z.array(z.string()).default([]),
+    // "physical" | "digital" | "" — the template comment is stripped on import.
+    format: z.string().default(""),
+    // Root-relative path to the cached cover under public/images/books/.
+    cover: z.string().default(""),
+    // Originating vault filename, kept for traceability back to Obsidian.
+    source: z.string().optional(),
+  }),
+});
+
+export const collections = { writing, poetry, projects, music, books };

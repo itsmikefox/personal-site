@@ -7,8 +7,9 @@ interface Props {
   items: BaseItem[];
   columns: Column[];
   hasCover?: boolean;
+  detail?: boolean;
 }
-const { items, columns, hasCover = false } = Astro.props;
+const { items, columns, hasCover = false, detail = false } = Astro.props;
 
 // Column value off the item — keys line up with BaseItem field names.
 const cell = (it: BaseItem, key: string): unknown => (it as Record<string, unknown>)[key];
@@ -41,6 +42,8 @@ const cell = (it: BaseItem, key: string): unknown => (it as Record<string, unkno
                     )}
                     {la ? (
                       <a class="bt-title" {...la}>{it.title}{it.external ? " ↗" : ""}</a>
+                    ) : detail && it.id ? (
+                      <button class="bt-title bt-title--open" type="button" data-open={it.id}>{it.title}</button>
                     ) : (
                       <span class="bt-title">{it.title}</span>
                     )}

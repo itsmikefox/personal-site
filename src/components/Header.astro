@@ -4,10 +4,16 @@ import ThemeToggle from "./ThemeToggle.astro";
 
 // Highlight the active section. We match on the first path segment so that
 // /writing/some-post still lights up the "Writing" tab.
+//
+// A page can also belong to a section it doesn't sit under: the library is a
+// project, reached from /projects, so that tab stays lit while you're in it.
+const SECTION_OF: Record<string, string> = { "/library": "/projects" };
+
 const path = Astro.url.pathname;
-const section = "/" + (path.split("/")[1] ?? "");
+const trimmed = path.length > 1 ? path.replace(/\/$/, "") : path;
+const section = SECTION_OF[trimmed] ?? "/" + (path.split("/")[1] ?? "");
 const isActive = (href: string) =>
-  href === section || (href !== "/" && path.startsWith(href));
+  href === section || (href !== "/" && !SECTION_OF[trimmed] && path.startsWith(href));
 ---
 
 <header class="site-header">

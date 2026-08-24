@@ -57,6 +57,13 @@ export const NAV: { label: string; href: string }[] = [
 export const LASTFM_USER = "Mod-man";
 export const LASTFM_API_KEY = "2fb18a8443318d71021bb49fcf47389e";
 
+// Formspree endpoint for the library's "request this book" form. Create a form
+// at https://formspree.io, then paste just the ID from its endpoint URL
+// (https://formspree.io/f/XXXXXXXX → "XXXXXXXX"). Left empty, the request
+// button degrades to a prefilled mailto: link to AUTHOR.email instead — the
+// feature still works, it just routes through the visitor's mail client.
+export const FORMSPREE_ID = "";
+
 // Footer / about links. Leave a value empty ("") to hide that item.
 export const SOCIALS: { label: string; href: string }[] = [
   { label: "Email", href: "mailto:itismikefox@gmail.com" },

@@ -29,10 +29,16 @@ export interface BaseItem {
   // Internal page URL, external link (projects), or undefined (nothing to link to).
   url?: string;
   external?: boolean;
+  // Stable key for collections whose items open a detail panel instead of a
+  // page (books). Emitted as data-id so the panel script can look the record up.
+  id?: string;
   title: string;
   // Display fields (a view reads whichever it needs)
   cover?: string;
   artist?: string;
+  author?: string;
+  publisher?: string;
+  format?: string;
   year?: number | null;
   date?: string;
   genre?: string[];
@@ -57,6 +63,9 @@ export interface BaseConfig {
   columns: Column[];
   views: ViewKey[];
   defaultView: ViewKey;
+  // When true, items have no page of their own: views render them as buttons
+  // that open a detail panel (see src/components/BookPanel.astro).
+  detail?: boolean;
 }
 
 // Sentinel for undated items — sorts below any real year, stays numeric so the
@@ -74,6 +83,7 @@ export function itemAttrs(it: BaseItem): Record<string, string | boolean> {
     "data-item": true,
     "data-search": it.search,
   };
+  if (it.id) a["data-id"] = it.id;
   for (const [k, v] of Object.entries(it.attrs)) a[`data-${k}`] = v;
   for (const [k, v] of Object.entries(it.sort)) a[`data-s-${k}`] = String(v);
   return a;
@@ -92,7 +102,7 @@ function buildFacet(
   items: BaseItem[],
   key: string,
   label: string,
-  order: "alpha" | "num" = "alpha"
+  order: "alpha" | "num" | "count" = "alpha"
 ): Facet {
   const counts = new Map<string, number>();
   for (const it of items) {
@@ -102,7 +112,11 @@ function buildFacet(
     }
   }
   const values = [...counts.entries()].map(([value, count]) => ({ value, count }));
-  if (order === "num") {
+  if (order === "count") {
+    // Long-tail facets (book genres: 200+ values, most of them singletons) put
+    // the values that actually partition the collection at the top.
+    values.sort((a, b) => b.count - a.count || a.value.localeCompare(b.value));
+  } else if (order === "num") {
     // Highest number first (decades, years); non-numeric ("Undated") last.
     values.sort((a, b) => {
       if (a.value === "Undated") return 1;
@@ -298,7 +312,9 @@ export function buildWriting(entries: CollectionEntry<"writing">[]): BaseConfig 
 
 // ── Projects ─────────────────────────────────────────────────────────────────
 // Metadata records: a sortable Table by default, plus a card grid. Each item
-// links out to its `href` (new tab) or, lacking one, renders as a static card.
+// links to its `href` or, lacking one, renders as a static card. Off-site links
+// open in a new tab and get an arrow; a project that lives on this site (the
+// library) is an ordinary internal link.
 // Filterable by tag and year. Newest first (precise date beats a bare year).
 export function buildProjects(entries: CollectionEntry<"projects">[]): BaseConfig {
   const when = (e: CollectionEntry<"projects">) =>
@@ -319,7 +335,7 @@ export function buildProjects(entries: CollectionEntry<"projects">[]): BaseConfi
     const tags = d.tags ?? [];
     return {
       url: d.href,
-      external: !!d.href,
+      external: !!d.href && /^[a-z]+:/i.test(d.href),
       title: d.title,
       desc: d.description,
       year,
@@ -348,5 +364,73 @@ export function buildProjects(entries: CollectionEntry<"projects">[]): BaseConfi
     ],
     views: ["table", "cards"],
     defaultView: "table",
+  };
+}
+
+// ── Books ────────────────────────────────────────────────────────────────────
+// The library: a generated snapshot of the Obsidian `Books.base` vault folder
+// (see scripts/import-books.mjs). Unlike every other collection here, a book
+// has no page of its own — `detail: true` makes the views render items as
+// buttons that open the shared detail panel, where a visitor can request it.
+// Shelved A–Z by title, which is what the Gallery's cover grid reads as.
+export function buildBooks(entries: CollectionEntry<"books">[]): BaseConfig {
+  const sorted = [...entries].sort((a, b) => a.data.title.localeCompare(b.data.title));
+
+  const items: BaseItem[] = sorted.map((e) => {
+    const d = e.data;
+    const genre = d.genre ?? [];
+    const author = d.author ?? "";
+    const year = d.year ?? null;
+    // Only "physical" and "digital" survive import; "" means Mike never set it.
+    const format = d.format ? d.format[0].toUpperCase() + d.format.slice(1) : "";
+
+    return {
+      id: e.id,
+      title: d.title,
+      cover: d.cover || undefined,
+      author,
+      publisher: d.publisher,
+      format,
+      year,
+      genre,
+      attrs: {
+        genre: genre.join("|"),
+        decade: decadeLabel(year),
+        format,
+      },
+      search: [d.title, author, genre.join(" "), d.publisher, year ?? ""]
+        .filter(Boolean)
+        .join(" ")
+        .toLowerCase(),
+      sort: {
+        title: d.title.toLowerCase(),
+        // Sort on the last word of the name so the Author column reads as a
+        // shelf (Toole, Leopold) without storing a separate surname field.
+        author: (author.split(/\s+/).pop() ?? "").toLowerCase() + " " + author.toLowerCase(),
+        year: year ?? NO_YEAR,
+        genre: genre.join(", ").toLowerCase(),
+      },
+    };
+  });
+
+  return {
+    kind: "books",
+    items,
+    facets: [
+      // 200+ genres, nearly all singletons — frequency order puts the ones
+      // that actually divide the shelf within reach.
+      buildFacet(items, "genre", "Genre", "count"),
+      buildFacet(items, "decade", "Decade", "num"),
+      buildFacet(items, "format", "Format"),
+    ],
+    columns: [
+      { key: "title", label: "Title", type: "title" },
+      { key: "author", label: "Author", type: "text" },
+      { key: "year", label: "Year", type: "num" },
+      { key: "genre", label: "Genre", type: "tags" },
+    ],
+    views: ["gallery", "table"],
+    defaultView: "gallery",
+    detail: true,
   };
 }

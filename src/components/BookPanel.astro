@@ -1,0 +1,497 @@
+---
+// The library's detail panel. Books have no page of their own — clicking a
+// cover (or a title in the Table view) opens this shared <dialog> with that
+// book's record and a form to request it.
+//
+// Requests post to Formspree, configured by FORMSPREE_ID in consts.ts. With no
+// ID set the form is replaced by a prefilled mailto: link, so the feature works
+// out of the box and degrades to something that can't break.
+import { AUTHOR, FORMSPREE_ID } from "../consts";
+import type { BaseItem } from "../lib/bases";
+
+interface Props {
+  items: BaseItem[];
+}
+const { items } = Astro.props;
+
+// The panel's whole dataset, inlined as JSON. Only the fields shown below —
+// nothing from the note bodies ever reaches the page. Repeated keys cost
+// almost nothing once gzipped, so this stays readable rather than minified.
+const records = Object.fromEntries(
+  items
+    .filter((it) => it.id)
+    .map((it) => [
+      it.id,
+      {
+        title: it.title,
+        author: it.author ?? "",
+        year: it.year ?? null,
+        publisher: it.publisher ?? "",
+        genre: it.genre ?? [],
+        format: it.format ?? "",
+        cover: it.cover ?? "",
+      },
+    ])
+);
+
+const endpoint = FORMSPREE_ID ? `https://formspree.io/f/${FORMSPREE_ID}` : "";
+---
+
+<script type="application/json" data-books set:html={JSON.stringify(records)} />
+
+<dialog class="bpanel" data-book-panel aria-labelledby="bpanel-title">
+  <button class="bpanel__x" type="button" data-close aria-label="Close">
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+      <line x1="3" y1="3" x2="13" y2="13" /><line x1="13" y1="3" x2="3" y2="13" />
+    </svg>
+  </button>
+
+  <div class="bpanel__head">
+    <div class="bpanel__art">
+      <img data-p-cover alt="" width="240" height="360" />
+      <div class="bpanel__fold" data-p-fold hidden><span data-p-foldtitle></span></div>
+    </div>
+
+    <div class="bpanel__meta">
+      <h2 class="bpanel__title" id="bpanel-title" data-p-title></h2>
+      <p class="bpanel__author" data-p-author></p>
+      <dl class="bpanel__facts">
+        <div data-p-row="year"><dt>Published</dt><dd data-p-year></dd></div>
+        <div data-p-row="publisher"><dt>Publisher</dt><dd data-p-publisher></dd></div>
+        <div data-p-row="format"><dt>On the shelf</dt><dd data-p-format></dd></div>
+      </dl>
+      <p class="bpanel__genres" data-p-genres></p>
+    </div>
+  </div>
+
+  <div class="bpanel__ask">
+    {
+      endpoint ? (
+        <>
+          <h3 class="bpanel__askhead">Request this book</h3>
+          <p class="bpanel__blurb">
+            Want to borrow it, or want a pointer to a copy of your own? Ask and I'll get back to you.
+          </p>
+          <form class="breq" method="POST" action={endpoint} data-req-form>
+            {/* Honeypot — Formspree drops anything that fills this in. */}
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" class="breq__pot" />
+            <input type="hidden" name="book" data-req-book />
+            <input type="hidden" name="_subject" data-req-subject />
+
+            <div class="breq__grid">
+              <label class="breq__field">
+                <span>Your name</span>
+                <input type="text" name="name" required autocomplete="name" />
+              </label>
+              <label class="breq__field">
+                <span>Email</span>
+                <input type="email" name="email" required autocomplete="email" />
+              </label>
+            </div>
+            <label class="breq__field">
+              <span>Anything to add? <em>(optional)</em></span>
+              <textarea name="message" rows="3" placeholder="How you'd like to read it, when you need it back by, whatever." />
+            </label>
+
+            <div class="breq__foot">
+              <button class="breq__send" type="submit">Send request</button>
+              <p class="breq__status" data-req-status role="status" aria-live="polite" />
+            </div>
+          </form>
+        </>
+      ) : (
+        <>
+          <h3 class="bpanel__askhead">Request this book</h3>
+          <p class="bpanel__blurb">
+            Want to borrow it, or want a pointer to a copy of your own? Send me a note.
+          </p>
+          <a class="breq__send breq__send--mail" data-req-mailto href={`mailto:${AUTHOR.email}`}>
+            Email me about this book
+          </a>
+        </>
+      )
+    }
+  </div>
+</dialog>
+
+<script>
+  // Wires every [data-open] in the page to the shared panel. The panel is the
+  // only place a book's full record is rendered, so a book is addressable by
+  // #book-<id> in the URL — the closest thing it has to a permalink.
+  const panel = document.querySelector<HTMLDialogElement>("[data-book-panel]");
+  const dataEl = document.querySelector<HTMLScriptElement>("[data-books]");
+  if (panel && dataEl) {
+    type Book = {
+      title: string;
+      author: string;
+      year: number | null;
+      publisher: string;
+      genre: string[];
+      format: string;
+      cover: string;
+    };
+    const books: Record<string, Book> = JSON.parse(dataEl.textContent || "{}");
+
+    const q = <T extends HTMLElement>(sel: string) => panel.querySelector<T>(sel);
+    const img = q<HTMLImageElement>("[data-p-cover]");
+    const fold = q("[data-p-fold]");
+    const form = q<HTMLFormElement>("[data-req-form]");
+    const status = q("[data-req-status]");
+    const mailto = q<HTMLAnchorElement>("[data-req-mailto]");
+
+    const setRow = (key: string, value: string) => {
+      const row = q(`[data-p-row="${key}"]`);
+      const dd = q(`[data-p-${key}]`);
+      if (dd) dd.textContent = value;
+      if (row) row.hidden = !value;
+    };
+
+    function show(id: string) {
+      const b = books[id];
+      if (!b) return;
+
+      q("[data-p-title]")!.textContent = b.title;
+      q("[data-p-author]")!.textContent = b.author || "Author unrecorded";
+      setRow("year", b.year != null ? String(b.year) : "");
+      setRow("publisher", b.publisher);
+      setRow("format", b.format === "Digital" ? "Digital copy" : b.format === "Physical" ? "Physical copy" : "");
+      const genres = q("[data-p-genres]")!;
+      genres.textContent = b.genre.join(" · ");
+      genres.hidden = b.genre.length === 0;
+
+      // Cover, or a typographic fold in its place — same fallback as the grid.
+      if (img && fold) {
+        if (b.cover) {
+          img.src = b.cover;
+          img.alt = `${b.title} cover`;
+          img.hidden = false;
+          fold.hidden = true;
+        } else {
+          img.hidden = true;
+          img.removeAttribute("src");
+          fold.hidden = false;
+          q("[data-p-foldtitle]")!.textContent = b.title;
+        }
+      }
+
+      // Reset the form between books so one request can't carry into the next.
+      const label = [b.title, b.author].filter(Boolean).join(" — ");
+      if (form) {
+        form.reset();
+        form.hidden = false;
+        q<HTMLInputElement>("[data-req-book]")!.value = label;
+        q<HTMLInputElement>("[data-req-subject]")!.value = `Book request: ${b.title}`;
+        if (status) status.textContent = "";
+      }
+      if (mailto) {
+        mailto.href =
+          `mailto:${mailto.href.replace(/^mailto:/, "").split("?")[0]}` +
+          `?subject=${encodeURIComponent(`Book request: ${b.title}`)}` +
+          `&body=${encodeURIComponent(`Hi Mike — I'd like to ask about "${label}".\n\n`)}`;
+      }
+
+      if (!panel.open) panel.showModal();
+      history.replaceState(null, "", `#book-${id}`);
+    }
+
+    function hide() {
+      if (panel.open) panel.close();
+    }
+
+    for (const btn of document.querySelectorAll<HTMLElement>("[data-open]")) {
+      btn.addEventListener("click", () => show(btn.getAttribute("data-open")!));
+    }
+    q("[data-close]")?.addEventListener("click", hide);
+
+    // Clicking the backdrop closes: on a modal <dialog> the backdrop is the
+    // dialog element itself, so a click landing on it (not on its children)
+    // means outside.
+    panel.addEventListener("click", (e) => {
+      if (e.target === panel) hide();
+    });
+    panel.addEventListener("close", () => {
+      if (location.hash.startsWith("#book-")) {
+        history.replaceState(null, "", location.pathname + location.search);
+      }
+    });
+
+    // Submit in place, so a request never navigates away from the shelf.
+    form?.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const send = form.querySelector<HTMLButtonElement>(".breq__send")!;
+      send.disabled = true;
+      if (status) status.textContent = "Sending…";
+      try {
+        const res = await fetch(form.action, {
+          method: "POST",
+          body: new FormData(form),
+          headers: { Accept: "application/json" },
+        });
+        if (!res.ok) throw new Error(String(res.status));
+        form.hidden = true;
+        if (status) status.textContent = "Sent — I'll be in touch. Thanks!";
+      } catch {
+        if (status)
+          status.textContent = "That didn't go through. Email me instead: " + "itismikefox@gmail.com";
+        send.disabled = false;
+      }
+    });
+
+    // Deep link: /library#book-a-confederacy-of-dunces opens straight to it.
+    // Handled on hashchange too, so pasting a link while already on the page
+    // (or using Back/Forward) moves the panel instead of doing nothing.
+    function fromHash() {
+      if (!location.hash.startsWith("#book-")) {
+        hide();
+        return;
+      }
+      const id = decodeURIComponent(location.hash.slice("#book-".length));
+      if (books[id]) show(id);
+    }
+    window.addEventListener("hashchange", fromHash);
+    fromHash();
+  }
+</script>
+
+<style>
+  .bpanel {
+    width: min(46rem, calc(100vw - 2rem));
+    max-height: min(90vh, 52rem);
+    padding: 0;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    color: var(--ink);
+    overflow: auto;
+    /* The oxblood spine echoes the Library tab. */
+    border-left: 4px solid var(--fill-library);
+  }
+  .bpanel::backdrop {
+    background: rgb(4 12 28 / 62%);
+    backdrop-filter: blur(2px);
+  }
+  .bpanel__x {
+    position: sticky;
+    top: 0;
+    float: right;
+    margin: var(--space-sm) var(--space-sm) 0 0;
+    display: grid;
+    place-items: center;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: var(--bg);
+    color: var(--ink-soft);
+    cursor: pointer;
+  }
+  .bpanel__x svg {
+    width: 14px;
+    height: 14px;
+  }
+  .bpanel__x:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  /* Several panel parts are grids or flex containers, and an explicit `display`
+     beats the UA stylesheet's [hidden] rule — so toggling .hidden from the
+     script would leave empty label rows and a stacked fallback fold behind the
+     cover. Re-assert it once, for everything the script hides. */
+  .bpanel [hidden] {
+    display: none !important;
+  }
+
+  .bpanel__head {
+    display: grid;
+    grid-template-columns: 9rem minmax(0, 1fr);
+    gap: var(--space-lg);
+    padding: var(--space-lg);
+  }
+  .bpanel__art {
+    aspect-ratio: 2 / 3;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    background: var(--bg);
+  }
+  .bpanel__art img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .bpanel__fold {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: var(--space-sm);
+    color: #fff;
+    background: var(--fill-library);
+    font-family: var(--font-display);
+  }
+
+  .bpanel__title {
+    font-family: var(--font-display);
+    font-size: var(--text-2xl);
+    line-height: 1.1;
+    margin: 0 0 0.15em;
+  }
+  .bpanel__author {
+    margin: 0 0 var(--space-md);
+    color: var(--ink-soft);
+    font-size: var(--text-lg);
+    font-family: var(--font-serif);
+    font-style: italic;
+  }
+  .bpanel__facts {
+    margin: 0;
+    display: grid;
+    gap: 0.3rem;
+    font-size: var(--text-sm);
+  }
+  .bpanel__facts > div {
+    display: grid;
+    grid-template-columns: 6.5rem minmax(0, 1fr);
+    gap: var(--space-xs);
+  }
+  .bpanel__facts dt {
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 0.72rem;
+    padding-top: 0.15em;
+  }
+  .bpanel__facts dd {
+    margin: 0;
+  }
+  .bpanel__genres {
+    margin: var(--space-md) 0 0;
+    font-size: var(--text-sm);
+    color: var(--muted);
+  }
+
+  .bpanel__ask {
+    border-top: 1px solid var(--border);
+    background: color-mix(in srgb, var(--bg) 45%, transparent);
+    padding: var(--space-lg);
+  }
+  .bpanel__askhead {
+    font-family: var(--font-display);
+    font-size: var(--text-lg);
+    margin: 0 0 0.2em;
+  }
+  .bpanel__blurb {
+    margin: 0 0 var(--space-md);
+    color: var(--ink-soft);
+    font-size: var(--text-sm);
+  }
+
+  .breq__pot {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+  }
+  .breq__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-md);
+  }
+  .breq__field {
+    display: grid;
+    gap: 0.3rem;
+    margin-bottom: var(--space-md);
+    font-size: var(--text-sm);
+  }
+  .breq__field > span {
+    color: var(--ink-soft);
+  }
+  .breq__field em {
+    color: var(--muted);
+    font-style: normal;
+  }
+  .breq__field input,
+  .breq__field textarea {
+    font: inherit;
+    font-size: var(--text-sm);
+    color: var(--ink);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 0.5em 0.65em;
+    width: 100%;
+    resize: vertical;
+  }
+  .breq__field input:focus-visible,
+  .breq__field textarea:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+  }
+  .breq__foot {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+  }
+  .breq__send {
+    font: inherit;
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: #fff;
+    background: var(--fill-library);
+    border: 1px solid transparent;
+    border-radius: var(--radius-sm);
+    padding: 0.55em 1.1em;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .breq__send[disabled] {
+    opacity: 0.6;
+    cursor: default;
+  }
+  .breq__send:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+  .breq__status {
+    margin: 0;
+    font-size: var(--text-sm);
+    color: var(--ink-soft);
+  }
+
+  @media (max-width: 34rem) {
+    .bpanel__head {
+      grid-template-columns: 6rem minmax(0, 1fr);
+      gap: var(--space-md);
+      padding: var(--space-md);
+    }
+    .bpanel__ask {
+      padding: var(--space-md);
+    }
+    .breq__grid {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+    /* A two-column definition list has nowhere to go on a phone — "Louisiana
+       State University Press" wraps to four lines in 150px. Stack the label
+       over its value instead. */
+    .bpanel__facts {
+      gap: var(--space-sm);
+    }
+    .bpanel__facts > div {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+    .bpanel__title {
+      font-size: var(--text-xl);
+    }
+    .bpanel__author {
+      font-size: var(--text-base);
+    }
+  }
+</style>

@@ -1,29 +1,39 @@
 ---
-// Gallery view — cover-art grid. Best for collections with images (music).
+// Gallery view — cover-art grid. Best for collections with images (music,
+// books). Items normally link to their own page; in a `detail` base (books)
+// they have none, so each renders as a button that opens the detail panel.
 import { itemAttrs, type BaseItem } from "../../lib/bases";
 
 interface Props {
   items: BaseItem[];
+  detail?: boolean;
 }
-const { items } = Astro.props;
+const { items, detail = false } = Astro.props;
+
+const tagFor = (it: BaseItem) => (it.url ? "a" : detail && it.id ? "button" : "div");
+const tagAttrs = (it: BaseItem) =>
+  it.url ? { href: it.url } : detail && it.id ? { type: "button", "data-open": it.id } : {};
 ---
 
 <div class="bgallery">
   {
-    items.map((it) => (
-      <a class="bcard" href={it.url} {...itemAttrs(it)}>
-        <div class="bcard__art">
-          {it.cover ? (
-            <img src={it.cover} alt={`${it.title} cover`} loading="lazy" decoding="async" width="320" height="320" />
-          ) : (
-            <div class="bcard__fold"><span>{it.title}</span></div>
-          )}
-        </div>
-        <div class="bcard__meta">
-          <span class="bcard__title">{it.title}</span>
-          <span class="bcard__sub">{[it.artist, it.year].filter(Boolean).join(" · ")}</span>
-        </div>
-      </a>
-    ))
+    items.map((it) => {
+      const El = tagFor(it) as any;
+      return (
+        <El class="bcard" {...tagAttrs(it)} {...itemAttrs(it)}>
+          <div class="bcard__art">
+            {it.cover ? (
+              <img src={it.cover} alt={`${it.title} cover`} loading="lazy" decoding="async" width="320" height="320" />
+            ) : (
+              <div class="bcard__fold"><span>{it.title}</span></div>
+            )}
+          </div>
+          <div class="bcard__meta">
+            <span class="bcard__title">{it.title}</span>
+            <span class="bcard__sub">{[it.artist ?? it.author, it.year].filter(Boolean).join(" · ")}</span>
+          </div>
+        </El>
+      );
+    })
   }
 </div>
