@@ -2,7 +2,7 @@
 
 export const SITE_TITLE = "Mike Fox";
 export const SITE_DESCRIPTION =
-  "Mike Fox — a Chicago maker who cross-pollinates his interests and learns by building. Music as BigBluestem, plus software, electronics, writing, art, ecology, and gardening.";
+  "Mike Fox - Chicago creative, Professional weirdo, music as BigBluestem.";
 
 // Canonical identity for the site's author. Powers the Person JSON-LD on the
 // homepage and About page — the entity that ties "Mike Fox", "BigBluestem",
@@ -15,7 +15,7 @@ export const AUTHOR = {
   worksFor: "PrintNinja",
   location: "Chicago, IL",
   description:
-    "A Chicago maker who cross-pollinates his interests and learns by building with them — music as BigBluestem, plus software, electronics, writing, art and design, ecology, and gardening. Technical lead at PrintNinja.",
+    "Chicago maker who learns by building! Music as BigBluestem, electronics, writing, art and design, ecology. Technical lead at PrintNinja.",
   email: "itismikefox@gmail.com",
   sameAs: [
     "https://github.com/itsmikefox",
