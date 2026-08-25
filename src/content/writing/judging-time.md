@@ -7,27 +7,31 @@ tags: ["essays", "psychology", "estimation"]
 
 ## Intro
 
-There is a screw that has been sitting on my coffee table for the last month. It belongs to our fancy-schmancy mid-century couch (which I recently made new cushions for). I'm working from home this morning, and decided I'd screw it in. It's a flathead (hate), so I figured I'd just tighten it enough with my hand that at least it'd stay in place and I wouldn't have to look at it.
+There is a screw that has been sitting on my coffee table for well over a month. It belongs to our fancy-schmancy mid-century couch. I had recently reupholstered the thing and found it on the floor just after assembling the rest of the couch.
 
-This was something I would have expected to take maybe like 15-20 seconds. It took me 25 minutes. I had to tilt the couch over, portions of which came unmoored from their screws, the cloth was interfering with the threads in the metal frame, and after I cleared out the cloth, the screw still wouldn't fit (strange, because it *did* before, though it was a bit difficult to remove). By this point my fingers hurt, and the living room was in complete disarray.
+This morning, prior to hopping online for work, I decided that I'd just wrap things up and screw it in. It's a flathead (objectively the worst screw type), so I figured I'd simply tighten it with my hand. That way it'd at least stay in place and out of sight.
 
-Knowing that my patience eventually gives way to frustration, I started dedicating an increasing amount of my attention to any kind of win that might string me along:
+Naturally, this was something I would have expected to take maybe like 15-20 seconds. So of course, it took well over 25 minutes. 
+
+mid-way through I had the couch tilted on its back. sections had come unmoored from **their** screws, the cloth I had put great effort into fitting was pulled out of shape, and the screw still wouldn't fit. (strange, because it certainly did **before**). By this point my fingers hurt, and the living room was in complete disarray.
+
+Feeling my patience giving way to frustration, I began dedicating an increasing amount of attention towards process:
 
 1. Is there a screwdriver nearby? Probably yes, but not anywhere I can see or locate unless I dedicate a minute-plus to finding one (vastly exceeding my original estimate for the whole job, on a single subtask).
 2. Can I find something else to use instead, any flat stiff object? Yes! A guitar pick. It'll be soft, but as a proof of concept, and for a screw this size, it should be fine.
 3. It was not. The slot on the screw is unusually sharp (another frustration, and one I should have taken into account, as it was hurting my fingers) and it almost immediately cut into the guitar pick.
 
-By this point, I'm sweaty, exhausted, and fully preoccupied with my own irritation, thinking "This is total bullshit and I fucking hate it and fuck this couch and this screw."[^screws]
+By this point, sweaty, exhausted, and fully preoccupied with my own irritation, I relented. Logging on to work in a horrible mood and thinking "This is total bullshit, fuck this couch and this screw."[^screws]
 
 ## What's the Deal Here?
 
 ### Managing Frustration
 
-Maybe this is my own dumb brain, but I feel like there is a low-level stigma around talking about frustration and anger. Or at least in the western world, frustration is *embarrassing*. If you can't keep your cool, you look like a child, and I think that's reductive. We're bad at providing language for why and how frustration arises, and even worse at learning how to direct it to positive ends for ourselves and others.
+Keeping in mind my own embarrassment here, I believe there is a low-level stigma around talking about frustration/anger. At least within the communities I've grown up in, frustration feels *embarrassing*. If you can't keep your cool, people don't know what to do with you, and it's regarded as outright childish. We've done a poor job providing language for why and how frustration arises, and a worse one at teaching each other to direct it to positive ends.
 
 #### “Frustration Intolerance” / "This Shouldn't Be This Hard"
 
-It's a key human response to ask: why me? Irritation and discomfort due to circumstance is one of the most important aspects of human experience, and coping with the difference between our wishes and reality is a friction that occupies the heart of philosophy and art.
+It's a natural impulse to ask: why me? Irritation and discomfort due to circumstance is an important aspect of human experience, and coping with the difference between our wishes and reality is a friction that occupies the heart of philosophy and art.
 
 I can't put it better than author Neil Harrington does here:
 
@@ -37,26 +41,28 @@ I can't put it better than author Neil Harrington does here:
 >
 > - Harrington (2011)
 
-As a kid who threw a lot of fits and grew up to feel varying degrees of shame at his own failures to always articulate and express his frustration: this hits home. I'm a little surprised to have encountered so little literature on it during my education, and maybe embarrassingly, I never thought to look to see what kind of theories and therapies were out there.
+As a kid who threw a lot of fits, and grew up feeling varying degrees of shame at my failure to articulate and express difficulty: this hits home. I'm a little surprised to have encountered so little literature on it during my education, and truthfully, it never occurred to me to look to see what kind of theories and therapies were out there.
 
-Rational Emotive Behavior Therapy was one of the first frameworks to attempt to fully describe and define frustration, and to elaborate on when frustration becomes intolerable: "frustration intolerance arises, not just from the wish that reality was different, but from the collision of a demand with reality." (Harrington 2011)
+Rational Emotive Behavior Therapy was one of the first frameworks to attempt to fully describe and define frustration, and to elaborate on when that frustration becomes intolerable: "frustration intolerance arises, not just from the wish that reality was different, but from the collision of a demand with reality." (Harrington 2011)
 
-So in my case, the demand was "I want this screw back in this couch in the next 10 minutes," but the reality was "lol no."
+So in this particular case, the demand was "I want this screw back in this couch in the next 10 minutes," but the reality was "lol no."
 
-Harrington has provided us with a very handy "Frustration Discomfort Scale," which conceptually breaks it into subtypes:
+Mr. Harrington has provided us with a very handy "Frustration Discomfort Scale," which conceptually breaks it into subtypes:
 
 - Entitlement
 - Emotional intolerance
 - Discomfort intolerance
 - Achievement frustration
 
-Achievement frustration is particularly important for our context, because it comes from distress when work is obstructed. The calling card for achievement frustration is the thought: *this shouldn't be this hard*. The literature's move is not to talk yourself out of the frustration, but to drop the demand while keeping the preference.
+Achievement frustration is what hits hardest for me, because it comes from distress when work is obstructed. The calling card for achievement frustration is the thought: *this shouldn't be this hard*. (Which feels VERY familiar.) The literature's move is not to talk yourself out of the frustration, but to drop the demand while keeping the preference. Easy enough, except when it isn't.
 
 #### “Give Me Strength to Change What I Can and Accept the Things I Cannot"
 
-We often expect ourselves and others to behave as fully rational actors, with the idea that rationality is somehow divorced from emotion instead of being an extension of it. We have needs, preferences, and desires that might require attention and action from ourselves, and that we push to the side in pursuit of other goals. In my case with the screw: I didn't want to waste time. I was upset at the prospect of losing relaxation time before work, I felt a decline in self-worth because I felt like I couldn't fix a "simple" issue, and my hands and back hurt because I was on the floor holding a burred screw.
+We often expect ourselves and others to behave as fully rational actors, with the idea that rationality is somehow divorced from emotion instead of being an extension of it. We have needs, preferences, and desires that might require our attention or action, and too often we subconsciously push them to the side in pursuit of other goals. 
 
-All of these things were true, but trying to push through for an extended period netted me nothing. Operating with the expectation that "I can do this, I just need to keep trying the easy way" - because I didn't want to get up, go get additional tools, and lose the time - ended up dragging the process out longer and distracting me from fixing the real issues.
+In my case with the screw: I didn't want to waste time. I was upset at the prospect of losing relaxation time before work, and subsequently felt a decline in self-worth because I felt like I couldn't fix a "simple" issue. Leaving me with aching hands and a sore back because I was on the floor holding a burred screw.
+
+Trying to push through for an extended period netted me nothing. Operating with the expectation that "I can do this, I just need to keep pushing" - all because I didn't want to get up, go get additional tools, and lose "extra" time - ended up dragging the process out longer and distracting me from fixing the real issues.
 
 ### The Planning Fallacy (and Its Limits)
 
@@ -64,7 +70,7 @@ All of these things were true, but trying to push through for an extended period
 
 #### Time and Expectation
 
-I regularly feel like I'm running out of time, or that my time doesn't belong to me. Often when I'm getting frustrated or irritated, it's less about the specific situation and more about "losing relaxation time." I feel like, if I was given enough advance notice, if I knew exactly the amount of effort that any given task would require, I wouldn't lose my cool. The clearest answer for me, then, is to do a better job planning and estimating before I sit down to do something. The problem, though, is that people (writ large) are bad at forecasting when we'll finish tasks.
+I very regularly fear running out of time, panicked that my time doesn't belong to me. Often when I'm getting frustrated or irritated, it's less about the specific situation and more about "losing relaxation time." I would like to believe that if I was given enough advance notice, and if I knew exactly the amount of effort that any given task would require, I wouldn't lose my cool. If this isn't a delusion, the clearest answer for me, then, is to do a better job planning and estimating before I sit down to do something. The problem, though, is that people (writ large, not just me!) are bad at forecasting when we'll finish tasks.
 
 The difference between reality and "this should take like five minutes" is referred to in contemporary psychological literature as **the planning fallacy**. While the term itself originated in the work of (much-hyped) psychologist Daniel Kahneman and oft-undercited partner Amos Tversky,[^kahneman] researchers Buehler, Griffin, and Ross were the ones to introduce empirical evidence, in their 1994 paper *Exploring the "Planning Fallacy": Why People Underestimate Their Task Completion Times*.
 
@@ -79,7 +85,7 @@ The term "planning fallacy" itself seems a bit disingenuous if what we're actual
 
 #### The Limits of Study
 
-It might be worth noting that I have a general skepticism about this field as a whole. It's not because of the work of any particular academic, but more because of the real-world limitations in controlling for variables and getting ahold of a broad sample of the population for an extended time. (Academics, please feel free to tell me about how proper controls are or are not put into place for this.) Mostly, Buehler, Griffin, and Ross are looking exclusively at undergrads, in groups ranging from 33 to 123 people. That's not a great representation of the populace as a whole.
+It might be worth noting that I have a general skepticism about this field as a whole. Not because of the work of any particular academic, but more because of the real-world limitations in controlling for variables and getting ahold of a broad sample of the population for an extended time. (Academics, please feel free to tell me about how proper controls are or are not put into place for this.) Mostly, Buehler, Griffin, and Ross are looking exclusively at undergrads, in groups ranging from 33 to 123 people. That's not a great representation of the populace as a whole.
 
 But what's truly irritating about this kind of "economic"-centered psychology is more that it's quickly and blindly adopted by "business luminaries" and LinkedIn ghouls without context, and then applied broadly. It becomes quick and easy soundbites for folks to slip into their consultant slides (which they can then charge thousands for). Which indeed they do.
 
