@@ -5,7 +5,20 @@
       "mcp__plugin_playwright_playwright__browser_click",
       "Bash(perl -pi -e 's/⟑/●/g; s/⌇/◐/g; s/❦/◈/g;' prairie.html)",
       "Bash(perl -0pi -e ' *)",
-      "Bash(open \"http://localhost:8791/prairie.html\")"
+      "Bash(open \"http://localhost:8791/prairie.html\")",
+      "mcp__plugin_playwright_playwright__browser_console_messages",
+      "Bash(cd ~/rootstock && grep -n 'Chrome\\\\|t-all\\\\|t-file\\\\|is-solo\\\\|applyTheme\\(theme\\)\\\\|^render\\(\\);' list.html | tail -20 && echo \"--- tail ---\" && tail -30 list.html)",
+      "Read(//Users/mikefox/rootstock/**)",
+      "Bash(cd ~/rootstock *)",
+      "Bash(rm -f /Users/mikefox/personal-site/ed.png /Users/mikefox/personal-site/db.png)",
+      "Bash(open \"http://localhost:8792/list.html?v=5\")",
+      "Bash(rm -f /Users/mikefox/personal-site/pk.png /Users/mikefox/personal-site/plant*.png)",
+      "Bash(open \"http://localhost:8792/list.html?v=8\")",
+      "Bash(rm -f /Users/mikefox/personal-site/ws*.png)",
+      "Bash(open \"http://localhost:8792/list.html?v=13\")",
+      "Bash(rm -f /Users/mikefox/personal-site/clean*.png)",
+      "Bash(open \"http://localhost:8792/list.html?v=15\")",
+      "Bash(gh run *)"
     ]
   }
 }
