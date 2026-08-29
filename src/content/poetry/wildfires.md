@@ -3,7 +3,7 @@ title: "wildfires"
 pubDate: 2026-07-21
 ---
 
-like water breaks the glass edge\
+like water breaks the cup's edge\
 flames spill cross the ledge and bloom\
 a wash of petrol yellow\
 and loose fellow souls in plume
