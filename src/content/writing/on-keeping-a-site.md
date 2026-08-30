@@ -3,13 +3,12 @@ title: "On keeping a small site"
 description: "Notes on the value of a personal place online."
 pubDate: 2026-08-25
 tags: ["essays"]
-# TODO: "As they as, they're more of an adaptation..." in the Federation
-# section is garbled — did you mean "As they are"?
+
 ---
 
 
 # A Welcome Statement
-It's easy to be pessimistic about tech these days. Often me and my close friends might causually pine for a "90's" lifestyle, but truth be told, I don't think many of us would enjoy going back to that world.
+It's easy to be pessimistic about tech these days. Often me and my close friends might casually pine for a "90's" lifestyle, but truth be told, I don't think many of us would enjoy going back to that world.
 
 What I suspect we really want is less bullshit. [No predatory data collection, no manipulative app practices, no "uncancellable" fees etc.](https://deceptive.design/) An internet that benefits all people; Not just multibillionaire assholes looking to profit off of our time and interests. 
 

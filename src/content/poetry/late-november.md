@@ -14,6 +14,6 @@ as vapor clouds are drawn into dry morning air.\
 doubt settles in, like mice in our walls.
 
 meanwhile the furnaces kick on\
-gas is siponed through frosted iron\
+gas is siphoned through frosted iron\
 and those pinprick seeds are left to wait\
 under a blanket of snow.
