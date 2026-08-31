@@ -42,61 +42,87 @@ const schema = [
 ---
 
 <BaseLayout schema={schema}>
-  <section class="intro">
-    <h1>Hello</h1>
-    <p class="lead">
-     I'm Mike Fox, I'm an American Midwesterner located in <a href="https://bplant.org/region/743">Ecoregion 54b</a>. I create songs (as Big Bluestem), circuits, software, essays, art, furniture, and (with luck) gardens.
- <a href="/about">More about me →</a>
-    </p>
+  <section class="hero">
+    <div class="intro">
+      <h1>Hello</h1>
+      <p class="lead">
+       I'm Mike Fox, I'm an American Midwesterner located in <a href="https://bplant.org/region/743">Ecoregion 54b</a>. I create songs (as Big Bluestem), circuits, software, essays, art, furniture, and (with luck) gardens.
+      </p>
+      <p class="lead-more"><a href="/about">More about me →</a></p>
+    </div>
+
+    <img
+      class="hero-photo"
+      src="/images/sunflower-720.jpg"
+      srcset="/images/sunflower-480.jpg 480w, /images/sunflower-720.jpg 720w, /images/sunflower-1080.jpg 1080w"
+      sizes="(max-width: 44rem) 100vw, 18rem"
+      width="720"
+      height="959"
+      alt="Mike standing at dusk in a backyard garden, beneath a sunflower more than twice his height"
+      loading="eager"
+      decoding="async"
+    />
   </section>
 
-  <div class="cols">
-    <section class="home-block">
-      <h2 class="sec">Recent writing</h2>
-      {
-        posts.length === 0 ? (
-          <p class="muted">No posts yet.</p>
-        ) : (
-          <ol class="idx">
-            {posts.map((post) => (
-              <li>
-                <a href={`/writing/${post.id}/`}>{post.data.title}</a>
-                <span class="idx__date">{fmt(post.data.pubDate)}</span>
-              </li>
-            ))}
-            <li class="idx__more">
-              <a href="/writing">All writing →</a>
+  <section class="home-block">
+    <h2 class="sec">Recent writing</h2>
+    {
+      posts.length === 0 ? (
+        <p class="muted">No posts yet.</p>
+      ) : (
+        <ol class="idx">
+          {posts.map((post) => (
+            <li>
+              <a href={`/writing/${post.id}/`}>{post.data.title}</a>
+              <span class="idx__date">{fmt(post.data.pubDate)}</span>
             </li>
-          </ol>
-        )
-      }
-    </section>
+          ))}
+          <li class="idx__more">
+            <a href="/writing">All writing →</a>
+          </li>
+        </ol>
+      )
+    }
 
-    <section class="home-block">
-      <h2 class="sec">From the poetry shelf</h2>
-      {
-        latestPoem ? (
-          <blockquote class="poem">
-            <p>{excerptLines.map((line) => (<>{line}<br /></>))}</p>
-            <cite>
-              from <a href={`/poetry/${latestPoem.id}/`}>“{latestPoem.data.title}”</a>
-              · <a href="/poetry">{poems.length} poems →</a>
-            </cite>
-          </blockquote>
-        ) : (
-          <p class="muted">No poems yet.</p>
-        )
-      }
-    </section>
-  </div>
+    <h3 class="sub">From the poetry shelf</h3>
+    {
+      latestPoem ? (
+        <blockquote class="poem">
+          <p>{excerptLines.map((line) => (<span class="line">{line}</span>))}</p>
+          <cite>
+            from <a href={`/poetry/${latestPoem.id}/`}>“{latestPoem.data.title}”</a>
+            · <a href="/poetry">{poems.length} poems →</a>
+          </cite>
+        </blockquote>
+      ) : (
+        <p class="muted">No poems yet.</p>
+      )
+    }
+  </section>
 
   <NowSpinning />
 
 </BaseLayout>
 
 <style>
-  .intro {
+  /* Hero: the lead sits beside the garden portrait, which aligns its right
+     edge to the content column below it. */
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 18rem;
+    gap: var(--space-lg);
+    align-items: start;
     margin-bottom: var(--space-2xl);
+  }
+  .hero-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+    display: block;
+  }
+  @media (max-width: 44rem) {
+    .hero { grid-template-columns: 1fr; gap: var(--space-lg); }
+    .hero-photo { max-width: 22rem; }
   }
   /* The hero is the one place the display face runs at full weight.
      --hero is orange in Night Edition, prussian ink in Morning. */
@@ -114,15 +140,36 @@ const schema = [
     color: var(--ink-soft);
     max-width: 34rem;
   }
+  /* Its own line, so the arrow never gets orphaned mid-phrase. */
+  .lead-more {
+    margin-top: var(--space-md);
+  }
+  .lead-more a {
+    font-family: var(--font-sans);
+    font-weight: 500;
+    font-size: var(--text-base);
+    color: var(--accent);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .lead-more a:hover {
+    text-decoration: underline;
+  }
 
-  .cols {
-    display: grid;
-    grid-template-columns: 1.3fr 1fr;
-    gap: var(--space-xl);
+  .home-block {
     margin-bottom: var(--space-xl);
   }
-  @media (max-width: 44rem) {
-    .cols { grid-template-columns: 1fr; gap: var(--space-lg); }
+
+  /* Sub-heading inside "Recent writing" — quieter than .sec so the poetry
+     shelf reads as part of the section rather than a rival to it. */
+  .sub {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-size: var(--text-sm);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: var(--space-xl) 0 var(--space-md);
   }
 
   .sec {
@@ -194,6 +241,13 @@ const schema = [
     line-height: 1.55;
     color: var(--ink);
     margin: 0 0 var(--space-sm);
+  }
+  /* Each verse line is its own block, so a line too long for the column
+     indents on wrap instead of masquerading as the poet's own break. */
+  .poem .line {
+    display: block;
+    padding-left: 1.25em;
+    text-indent: -1.25em;
   }
   .poem cite {
     font-family: var(--font-sans);
