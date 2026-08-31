@@ -18,7 +18,15 @@
       "Bash(open \"http://localhost:8792/list.html?v=13\")",
       "Bash(rm -f /Users/mikefox/personal-site/clean*.png)",
       "Bash(open \"http://localhost:8792/list.html?v=15\")",
-      "Bash(gh run *)"
+      "Bash(gh run *)",
+      "Bash(curl -s https://alittlewhileaftertheendcame.com/poetry/late-november/)",
+      "Bash(curl -s https://alittlewhileaftertheendcame.com/writing/on-keeping-a-site/)",
+      "Bash(curl -s https://alittlewhileaftertheendcame.com/writing/judging-time/)",
+      "Bash(ls -lt ~/Downloads 2>/dev/null | head -10; echo \"=== DESKTOP ===\"; ls -lt ~/Desktop 2>/dev/null | head -10)",
+      "Read(//Users/mikefox/Desktop/**)",
+      "Bash(sips -g pixelWidth -g pixelHeight ~/Downloads/A4B42668-B0F3-4410-B343-A4274942D258.jpeg)",
+      "Bash(perl -pi -e 's{\"\\\\.\\\\./}{\"../../}g' a.astro b.astro c.astro)",
+      "Bash(curl -sf -o /dev/null http://localhost:4321/)"
     ]
   }
 }
