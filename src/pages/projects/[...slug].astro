@@ -1,0 +1,66 @@
+---
+import { getCollection, render } from "astro:content";
+import EntryLayout from "../../layouts/EntryLayout.astro";
+import MediaGallery from "../../components/MediaGallery.astro";
+
+// One page per project documented on this site. Entries that only point
+// somewhere else (`href`) have nothing to show here, so they're left to the
+// index, which links straight out to them. Drafts get no page at all.
+export async function getStaticPaths() {
+  const projects = await getCollection(
+    "projects",
+    ({ data }) => !data.draft && !data.href
+  );
+  return projects.map((project) => ({
+    params: { slug: project.id },
+    props: { project },
+  }));
+}
+
+const { project } = Astro.props;
+const { Content } = await render(project);
+const d = project.data;
+
+// scripts/optimize-media.mjs writes a clip's poster frame alongside that
+// category's stills, as `<name>-poster.jpg`. Resolving it here keeps the
+// gallery from needing to know anything about categories.
+const categoryDir = (d.category ?? "").toLowerCase().replace(/\s+/g, "-");
+const media = d.media.map((item) => {
+  if (item.type !== "video" || item.poster) return item;
+  const name = item.src.split("/").pop()!.replace(/\.[^.]+$/, "");
+  return {
+    ...item,
+    poster: categoryDir
+      ? `/images/builds/${categoryDir}/${name}-poster.jpg`
+      : undefined,
+  };
+});
+
+// The first still doubles as the share image. A video-only build has no
+// still to use, so it falls back to that clip's poster frame.
+const ogImage =
+  d.media.find((m) => m.type !== "video")?.src.concat("-1080.jpg") ??
+  media.find((m) => m.type === "video")?.poster;
+---
+
+<EntryLayout
+  title={d.title}
+  description={d.description}
+  date={d.date}
+  ogImage={ogImage}
+  tags={d.tags}
+  backHref="/projects"
+  backLabel="Projects"
+  variant="project"
+>
+  <p class="lede">{d.description}</p>
+  <Content />
+  <MediaGallery media={media} />
+</EntryLayout>
+
+<style>
+  .lede {
+    color: var(--ink-soft);
+    font-size: var(--text-lg);
+  }
+</style>

@@ -37,16 +37,16 @@ credits: |-
 
   recorded with a very cheap microphone in a few different rooms of our home
 ---
-First release from a batch of 90 songs I wrote the previous summer. I spent a couple years fuckin' round in the woodshed, wrote a bunch of music that I ultimately didn't feel like releasing, learned a lot but primarily spent my time fixing our first house, learning about native plants, and spending valuable time with loved ones. So that's what the songs are about.
+First release from a batch of 90 songs I wrote the previous summer. I spent a couple years messin' round in the woodshed, and wrote a bunch of music that I ultimately didn't feel like releasing. I learned a lot but primarily spent my time fixing our first house, learning about native plants, and spending valuable time with loved ones. The bulk of the 90 are thematically centered around that.
 
-These songs in particular are relational to the album's title. Many of the tracks here are meant to act either as benedictions, as messages of parting, or both.
+For these 6, I selected a the ones that felt most related to the album's title (something that I've been holding onto for a looong time). Many of the tracks here are meant to act either as benedictions, messages of parting, or both.
 
 ## On Form
-I really like thinking about form and history in music, I've always been a little freak for that. The songs here lean into American song structure and form ranging from the mid-30's to the mid-70s.
+I really like thinking about form and history in music, The songs here lean into American song structure and form ranging from the mid-30's to the mid-70s.
 
 ## On Production
 Recorded using a hard 3 take limit per song. For ages I felt like I was chasing quality production, but with the advent of AI and improved FFT/modeling tech^1, "perfection" just isn't as interesting to me, so this is an attempt to reflect the more natural side of things, and it plays well with the songs themselves.
 
-I imagine folks will just bucket this as "lo-fi" and that's fair, but I think that glosses over the nature of why "lo-fi" is appealing. There's an inherent intimacy and immediacy to music recorded in that fashion. We're willing to forgive "imperfections" for transparency and uncurated emotion.
+My big fear was that folks would just bucket this as "lo-fi", which would be fair, but disappointing, I want to intentionally explore why "lo-fi" is something that's appealing. There's an inherent intimacy and immediacy to music recorded in that fashion. We're willing to forgive "imperfections" for transparency and uncurated emotion. I often feel like I'm percieving the work of someone more directly when it's recorded in a way that's kind of crummy (Even though even someone in a small studio apartment can make a real solid professional recording).
 
 ^1 I don't have the same immediate utter negative reaction to "AI" that many of my peers do, (the companies and apparatus that run them absolutely, but the technology itself not so much.) Their prescence offers up an opportunity to explore what it means to express yourself earnestly and in flawed fashion though, and I'm very interested in what makes something feel human and real.

@@ -26,7 +26,33 @@
       "Read(//Users/mikefox/Desktop/**)",
       "Bash(sips -g pixelWidth -g pixelHeight ~/Downloads/A4B42668-B0F3-4410-B343-A4274942D258.jpeg)",
       "Bash(perl -pi -e 's{\"\\\\.\\\\./}{\"../../}g' a.astro b.astro c.astro)",
-      "Bash(curl -sf -o /dev/null http://localhost:4321/)"
+      "Bash(curl -sf -o /dev/null http://localhost:4321/)",
+      "Bash(OLD=\"/Users/mikefox/Documents/Digital Projects/alittlewhileaftertheendcame\"; echo \"=== OLD SRC ===\"; ls \"$OLD/src\"; echo; echo \"=== OLD SRC DEEPER ===\"; find \"$OLD/src\" -maxdepth 2 -type d | head -40; echo; echo \"=== DESIGN ===\"; ls \"$OLD/design\" | head -20; echo; echo \"=== FILM PHOTO SEARCH ===\"; find /Users/mikefox/Documents /Users/mikefox/Pictures -maxdepth 3 -type d -iname \"*film*\" 2>/dev/null | head -20)",
+      "Read(//Users/mikefox/Documents/**)",
+      "Bash(find '/Users/mikefox/Documents/Digital Projects/alittlewhileaftertheendcame/src/content/builds' -name *.md)",
+      "Bash(ffmpeg -y -v error -ss 5 -i /private/tmp/claude-501/-Users-mikefox-personal-site/33c978ec-d453-4661-955b-0b32f69ada73/scratchpad/mediatest/sk1-crf30.mp4 -frames:v 1 -q:v 2 /private/tmp/claude-501/-Users-mikefox-personal-site/33c978ec-d453-4661-955b-0b32f69ada73/scratchpad/mediatest/frame-crf30.jpg)",
+      "Bash(ffmpeg -y -v error -ss 5 -i '/Users/mikefox/Documents/Digital Projects/alittlewhileaftertheendcame/src/assets/videos/builds/stage-kiss-1.mp4' -frames:v 1 -vf scale=1280:-2 -q:v 2 /private/tmp/claude-501/-Users-mikefox-personal-site/33c978ec-d453-4661-955b-0b32f69ada73/scratchpad/mediatest/frame-source.jpg)",
+      "Bash(node scripts/optimize-media.mjs pedals)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:4321/projects/)",
+      "Bash(pkill -f \"astro dev\")",
+      "Bash(node /private/tmp/claude-501/-Users-mikefox-personal-site/33c978ec-d453-4661-955b-0b32f69ada73/scratchpad/exif-dates.mjs)",
+      "Bash(sed -i '' 's/const flag = r.fallbacks ? ` ⚠︎${r.fallbacks} no-exif` : \"\";/const flag = r.undated ? ` ⚠︎${r.undated} undated` : \"\";/' exif-dates.mjs)",
+      "Bash(node exif-dates.mjs)",
+      "Bash(cd /Users/mikefox/personal-site; rm -rf .astro dist; sed -i '' 's/^draft: true$/draft: false/' src/content/projects/*.md; pnpm build 2>&1 | grep -E \"projects/|ERROR|error|Complete\" | head -25)",
+      "Bash(read u *)",
+      "Bash([ -f \"dist$u\" ])",
+      "Bash(cd /Users/mikefox/personal-site; pkill -f \"astro preview\" 2>/dev/null; sed -i '' 's/^draft: false$/draft: true/' src/content/projects/*.md; grep -L \"^draft:\" src/content/projects/*.md | sed 's/^/no draft field: /'; echo \"--- draft states ---\"; grep -h \"^draft:\" src/content/projects/*.md | sort | uniq -c)",
+      "Bash(mv estey-t15.md estey-t22.md)",
+      "Bash(sed -i '' 's/^title: \"Estey T-15\"$/title: \"Estey T-22\"/' estey-t22.md)",
+      "Bash(sed -i '' 's/^draft: false$/draft: true/' src/content/projects/*.md)",
+      "Bash(node build-sheet.mjs)",
+      "Bash(sed -i '' 's/in the order it was taken — not the order the/in the order it was taken \\\\&mdash; not the order the/; s/Build archive · unpublished/Build archive \\\\&middot; unpublished/' build-sheet.mjs)",
+      "Bash(sed -i '' 's/`${fmtClock\\(s.start\\)} – ${fmtClock\\(s.end\\)}`/`${fmtClock\\(s.start\\)} \\\\&ndash; ${fmtClock\\(s.end\\)}`/' build-sheet.mjs)",
+      "mcp__plugin_playwright_playwright__browser_run_code_unsafe",
+      "Bash(pkill -f \"http.server 8811\")"
+    ],
+    "additionalDirectories": [
+      "/Users/mikefox/personal-site/src/content/projects"
     ]
   }
 }

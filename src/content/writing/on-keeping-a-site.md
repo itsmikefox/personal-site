@@ -10,7 +10,7 @@ tags: ["essays"]
 # A Welcome Statement
 It's easy to be pessimistic about tech these days. Often me and my close friends might casually pine for a "90's" lifestyle, but truth be told, I don't think many of us would enjoy going back to that world.
 
-What I suspect we really want is less bullshit. [No predatory data collection, no manipulative app practices, no "uncancellable" fees etc.](https://deceptive.design/) An internet that benefits all people; Not just multibillionaire assholes looking to profit off of our time and interests. 
+What I suspect we really want is less bullshit. [No predatory data collection, no manipulative app practices, no "uncancellable" fees etc.](https://deceptive.design/) An internet that benefits all people (Not just multibillionaire dicks looking to profit off of our time and interests). 
 
 For 12 years now, I've worked in digital strategy, and for 27 years, I've been online. The more time passes, the more I believe that we're misusing an incredible technology. This site is intended as a deliberate statement against centralized "social media", and a call to revisit the intent and promise of the web itself as a platform.
 

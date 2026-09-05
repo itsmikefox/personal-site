@@ -28,8 +28,8 @@ reviews:
     favTrack: "Wishboats"
 ---
 
-Like if The Beatles got really into 90's REM, and very gentle 80's ambient music. This is my fav. Jon writes some of my favorite music and it was always very inspiring to hear him play while we lived together.
+Jon is one of my favorite dudes, and he writes some of my favorite music! We were living together at the time and this was a nice excuse to hang out and shoot the shit! It was a very casual and extremely fun project to execute! It feels very unique to us and really expresses what it was like to be living where we were at the time.
 
-I love the general themes and angle of the thing.
+Something I love about Jon's work is his sense of harmony and how it relates to keys of individual songs over the course of an album, so this was a great excuse for me to get more comfortable with "non-doom" substitutions and get back to my roots in 60's/tin pan alley derived harmony.
 
-There's a ton of detail in these mixes and I think it's a pretty unique and fun "sound". Happy to have people come back to me a year or so after the fact and say "I was listening to this again and thought it was so good."
+There's a ton of detail in these mixes and they draw on a particularly weird stretch of 20th century pop-rock. Lots of "90's recalling the 60's" influence, lots of little ambient moments. I really wish more people would check this one out! It's hard to sell "indie rock" to the masses in the 2020s, but I'm still so psyched that we made this.

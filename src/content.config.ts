@@ -88,20 +88,52 @@ const poetry = defineCollection({
   }),
 });
 
-// Portfolio entries. One file per project; the body is unused (keep private
-// notes there if you like) — the card pulls everything from frontmatter.
+// Build photos and demo clips shown on a project page, in the order given.
+// Everything here is written by `scripts/optimize-media.mjs`, which is where
+// the naming convention comes from:
+//
+//   image → `src` is the *stem* of the generated widths, without extension
+//           ("/images/builds/pedals/eleanor-1" → …-480.jpg, -1080, -1600),
+//           so the gallery can build a srcset from one line of frontmatter.
+//   video → `src` is a real file, and the poster frame is its sibling
+//           `<name>-poster.jpg` unless `poster` overrides it.
+//
+// `alt` is required on both: these carry the actual content of a build entry,
+// so a description isn't optional the way it would be for decoration.
+const mediaList = z.preprocess(
+  blank,
+  z
+    .array(
+      z.object({
+        src: z.string(),
+        type: z.enum(["image", "video"]).default("image"),
+        alt: z.string(),
+        poster: optionalString,
+      })
+    )
+    .default([])
+);
+
+// Portfolio entries. Two kinds share this collection: things that live
+// elsewhere (set `href` and the index links straight out to them) and things
+// documented here, which get their own page at /projects/<slug> built from
+// `media` plus whatever notes the markdown body carries.
 const projects = defineCollection({
   loader: glob({ base: "./src/content/projects", pattern: "**/*.{md,mdx}" }),
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    // Omit href for things without a public link — the card won't be clickable.
+    // Omit href for anything documented on this site — the index will link to
+    // the entry's own page instead.
     href: optionalString,
+    // Groups builds on the index ("Pedals", "Amplifiers", "Instruments"…).
+    category: optionalString,
     tags: tagList,
     // Precise ship date — used for sorting. The year chip derives from it,
     // so only set `year` to override the displayed year (e.g. "2023–2024").
     date: optionalDate,
     year: yearField,
+    media: mediaList,
     draft: draftFlag,
   }),
 });

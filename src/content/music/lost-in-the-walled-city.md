@@ -36,7 +36,7 @@ reviews:
 
 Originally planned as a one-off fun thing after dragging Matt (and subsequently Luke) through an complicated rehash of the already overcomplicated Opposite Committee.
 
-We were all clinically addicted to Twitter at the time, so that bled in around the edges
+We were all clinically addicted to Twitter at the time, so that bled in around the edges. Big ups to Luke specifically for encouraging us to chase down a "gang of four" vibe. This was great material to play and I can still remember how happy the crowd seemed to be.
 
 ## Fox Family Energy
 
@@ -48,4 +48,4 @@ Almost got James Chance (RIP) to record saxophone for this, but we couldn't make
 
 ## Vocals
 
-I was jacked up on caffeine when we went to record the vocals. Really happy with the performance in retrospect though. I think Matt was a bit put off by the vocal takes, but Luke was really encouraging about them.
+I was jacked up on caffeine when we went to record the vocals. Really happy with the performance in retrospect though. Luke was really encouraging about them even though they sounded (compared against everything else Matt and I had worked on up until then) absolutely ludicrous haha.

@@ -1,0 +1,158 @@
+---
+// The photo/video grid on a build entry's page.
+//
+// Both kinds of tile share one grid so a build's stills and demo clips stay in
+// the order the entry lists them. Tiles are a fixed aspect so the grid reads as
+// a grid; since the source shots are a mix of portrait and landscape, an image
+// is cropped to fit and links out to its full-size copy for anyone who wants
+// the detail back.
+//
+// Nothing here needs JavaScript, and nothing heavy loads up front: stills are
+// lazy, and a clip downloads only when someone presses play (`preload="none"`
+// against the poster frame the optimize script generated).
+import { existsSync } from "node:fs";
+import path from "node:path";
+
+interface MediaItem {
+  src: string;
+  type: "image" | "video";
+  alt: string;
+  poster?: string;
+}
+
+interface Props {
+  media: MediaItem[];
+}
+
+const { media } = Astro.props;
+
+// Widths written by scripts/optimize-media.mjs. The stem in frontmatter plus
+// these gives us a srcset without storing three paths per photo.
+const WIDTHS = [480, 1080, 1600];
+
+// A tile is at most ~360px wide, and half the viewport on a narrow screen.
+const SIZES = "(max-width: 34rem) 50vw, 360px";
+
+// The script never upscales, so a source narrower than 1600px simply has no
+// -1600 copy (the Pro Reverb photo is 1170px, one Goose shot is 1440px).
+// Checking the filesystem at build time keeps a missing width out of the
+// srcset and off the "view full size" link, rather than emitting a 404.
+//
+// process.cwd() is the project root under both `astro dev` and `astro build`.
+// (`import.meta.url` is not: the component is bundled, so it resolves into a
+// temp directory and every lookup silently misses — which quietly strips every
+// srcset on the site. Hence the assertion rather than a graceful fallback.)
+const PUBLIC = path.join(process.cwd(), "public");
+if (!existsSync(path.join(PUBLIC, "images"))) {
+  throw new Error(
+    `MediaGallery: expected public/images at ${PUBLIC}. Without it every ` +
+      `image silently loses its srcset, so failing loudly instead.`
+  );
+}
+const widthsFor = (stem: string) =>
+  WIDTHS.filter((w) => existsSync(path.join(PUBLIC, `${stem}-${w}.jpg`)));
+
+// Everything the template needs per image, resolved once.
+const images = new Map(
+  media
+    .filter((m) => m.type !== "video")
+    .map((m) => {
+      const widths = widthsFor(m.src);
+      return [
+        m.src,
+        {
+          widths,
+          // Largest available for the full-size link…
+          full: `${m.src}-${widths.at(-1) ?? WIDTHS[0]}.jpg`,
+          // …and a mid-size default for browsers ignoring srcset.
+          fallback: `${m.src}-${widths.includes(1080) ? 1080 : (widths.at(-1) ?? 480)}.jpg`,
+        },
+      ];
+    })
+);
+---
+
+{
+  media.length > 0 && (
+    <ul class="media-grid" role="list">
+      {media.map((item) =>
+        item.type === "video" ? (
+          <li class="media-grid__item">
+            <video
+              class="media-grid__media"
+              controls
+              preload="none"
+              playsinline
+              poster={item.poster}
+              aria-label={item.alt}
+            >
+              <source src={item.src} type="video/mp4" />
+              {/* Fallback for a browser that won't play it at all. */}
+              <a href={item.src}>Download this clip</a>
+            </video>
+          </li>
+        ) : (
+          <li class="media-grid__item">
+            <a class="media-grid__link" href={images.get(item.src)!.full}>
+              <img
+                class="media-grid__media"
+                src={images.get(item.src)!.fallback}
+                srcset={images
+                  .get(item.src)!
+                  .widths.map((w) => `${item.src}-${w}.jpg ${w}w`)
+                  .join(", ")}
+                sizes={SIZES}
+                alt={item.alt}
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </li>
+        )
+      )}
+    </ul>
+  )
+}
+
+<style>
+  .media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(220px, 100%), 1fr));
+    gap: var(--space-sm);
+    margin: var(--space-lg) 0 0;
+    padding: 0;
+    /* The prose styles put markers on lists; this one is a grid of pictures. */
+    list-style: none;
+  }
+
+  .media-grid__item {
+    margin: 0;
+    /* Portrait phone shots dominate, so a tall tile crops least. */
+    aspect-ratio: 4 / 5;
+  }
+
+  .media-grid__link {
+    display: block;
+    height: 100%;
+  }
+
+  .media-grid__media {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    background: var(--border);
+  }
+
+  /* A video keeps its own frame rather than being cropped — the controls need
+     to stay reachable, and letterboxing a clip is less bad than hiding them. */
+  video.media-grid__media {
+    object-fit: contain;
+    background: #000;
+  }
+
+  .media-grid__link:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+</style>

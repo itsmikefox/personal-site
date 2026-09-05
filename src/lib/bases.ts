@@ -39,6 +39,7 @@ export interface BaseItem {
   author?: string;
   publisher?: string;
   format?: string;
+  category?: string;
   year?: number | null;
   date?: string;
   genre?: string[];
@@ -311,11 +312,12 @@ export function buildWriting(entries: CollectionEntry<"writing">[]): BaseConfig 
 }
 
 // ── Projects ─────────────────────────────────────────────────────────────────
-// Metadata records: a sortable Table by default, plus a card grid. Each item
-// links to its `href` or, lacking one, renders as a static card. Off-site links
-// open in a new tab and get an arrow; a project that lives on this site (the
-// library) is an ordinary internal link.
-// Filterable by tag and year. Newest first (precise date beats a bare year).
+// Metadata records: a sortable Table by default, plus a card grid. Two kinds of
+// entry share the collection — something hosted elsewhere links out via `href`
+// (off-site links open in a new tab and get an arrow), while a build documented
+// here links to its own /projects/<slug> page.
+// Filterable by category, tag and year. Newest first (precise date beats a
+// bare year).
 export function buildProjects(entries: CollectionEntry<"projects">[]): BaseConfig {
   const when = (e: CollectionEntry<"projects">) =>
     e.data.date?.valueOf() ??
@@ -333,20 +335,35 @@ export function buildProjects(entries: CollectionEntry<"projects">[]): BaseConfi
         ? d.date.getUTCFullYear()
         : null;
     const tags = d.tags ?? [];
+    const category = d.category ?? "";
+
+    // The table shows a thumbnail when an item has one. A build's first still
+    // serves; a video-only build has none, so it goes without rather than
+    // reaching for a poster frame at thumbnail size.
+    const firstImage = d.media.find((m) => m.type !== "video");
+
     return {
-      url: d.href,
+      // No href means the build is documented here and has a page of its own.
+      url: d.href ?? `/projects/${e.id}`,
       external: !!d.href && /^[a-z]+:/i.test(d.href),
       title: d.title,
       desc: d.description,
+      cover: firstImage ? `${firstImage.src}-480.jpg` : undefined,
+      category,
       year,
       tags,
-      attrs: { tags: tags.join("|"), year: year != null ? String(year) : "" },
-      search: [d.title, d.description, tags.join(" "), year ?? ""]
+      attrs: {
+        category,
+        tags: tags.join("|"),
+        year: year != null ? String(year) : "",
+      },
+      search: [d.title, d.description, category, tags.join(" "), year ?? ""]
         .filter(Boolean)
         .join(" ")
         .toLowerCase(),
       sort: {
         title: d.title.toLowerCase(),
+        category: category.toLowerCase(),
         year: year ?? NO_YEAR,
         tags: tags.join(", ").toLowerCase(),
       },
@@ -356,9 +373,14 @@ export function buildProjects(entries: CollectionEntry<"projects">[]): BaseConfi
   return {
     kind: "projects",
     items,
-    facets: [buildFacet(items, "tags", "Tag"), buildFacet(items, "year", "Year", "num")],
+    facets: [
+      buildFacet(items, "category", "Category"),
+      buildFacet(items, "tags", "Tag"),
+      buildFacet(items, "year", "Year", "num"),
+    ],
     columns: [
       { key: "title", label: "Title", type: "title" },
+      { key: "category", label: "Category" },
       { key: "year", label: "Year", type: "num" },
       { key: "tags", label: "Tags", type: "tags" },
     ],

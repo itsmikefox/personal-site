@@ -57,4 +57,6 @@ reviews:
 
 Occasionally, you make a record that outlines for you where you need to improve in order to properly finish it. This was one of those. I practiced for weeks to improve my singing because my vocals were rough in the scratch takes.
 
-Big, secretly ambitious (in the way that many collaborations with Matt are). We started this thinking we'd just knock out a follow-up to Lost in the Walled City, and naturally, it descended into perfectionism. It is a GOOD record. There are knots naturally and the end implies more of a "petering out" than a collapse, but Ripped & Dumb, along with Eschaton, are two of the best songs Arthhur ever released into space.
+Big, secretly ambitious (in the way that many collaborations with Matt are). We started this thinking we'd just knock out a follow-up to Lost in the Walled City, and naturally, I descended into perfectionism. It is a very good record! I definitely wish I had the vocabulary I have now when we were making it though, but that's part of learning!
+
+ There are knots naturally and the end implies more of a "petering out" than a collapse, but Ripped & Dumb, along with Eschaton, are two of the best songs Arthhur ever released into space. Never Enough was so much fun to work on (big ups to Josh Jessen), Audrey's violin throughout is so great (particularly on Doom Journalism), and I got to bring in Noah who whipped out some insane sax sounds for no results!

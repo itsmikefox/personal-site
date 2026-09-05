@@ -52,7 +52,9 @@ reviews:
 
 - Sometimes feels like the first thing I made well. Quite proud of this, the planning that went into it, the use of themes/leitmotifs, the arrangements, the more creative aspects of the production. etc. etc.
 
-- A lot of this was mapped out in advance in demos, and then given to the rest of the band. We had rehearsal sessions (often unplugged in Matt's old Sheffield apt.). Some wonderful memories of working on this (and other flesh records) in that apartment. Furnace would be on, we'd have watched a horror movie, had a glass of wine or a cocktail. Just shooting the shit, talking about music we liked, what we could do that would be fun and different. Something fond to reflect on, especially given the general chaos involved with the rest of my life at that time.
+- A lot of this was mapped out in advance in demos, and then given to the rest of the band. Obviously the best riffs came out of everyone pitching in to make something that we only could've done together. 
+
+- Some wonderful memories of working on this (and other flesh records) in that apartment We had rehearsal sessions (often unplugged in Matt's old Sheffield apt.). Furnace would be on, we'd have watched a horror movie, had a glass of wine or a cocktail. Shooting the shit, talking about music we liked, what we could do that would be fun and different. Something fond to reflect on!
 
 ## Gear Used
 

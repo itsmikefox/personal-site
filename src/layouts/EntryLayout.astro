@@ -2,7 +2,7 @@
 import BaseLayout from "./BaseLayout.astro";
 import { SITE_TITLE } from "../consts";
 
-// Shared layout for a single piece of writing or a single poem.
+// Shared layout for a single piece of writing, a single poem, or a project.
 interface Props {
   title: string;
   description?: string;
@@ -16,7 +16,7 @@ interface Props {
   backLabel: string;
   tags?: string[];
   /** Poems read best a touch narrower and centered; writing uses full measure. */
-  variant?: "writing" | "poetry";
+  variant?: "writing" | "poetry" | "project";
 }
 
 const {
@@ -38,7 +38,9 @@ const dateStr = date
   ? date.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" })
   : undefined;
 
-// JSON-LD structured data: BlogPosting for writing, CreativeWork for poems.
+// JSON-LD structured data: BlogPosting for writing, CreativeWork for poems,
+// and for a project the more specific CreativeWork subtype — a build is a
+// thing that was made, not a thing that was published.
 const iso = (d: Date) => d.toISOString().split("T")[0];
 const pageUrl = new URL(Astro.url.pathname, Astro.site).href;
 const author = { "@type": "Person", name: SITE_TITLE, url: Astro.site?.href };
@@ -54,6 +56,18 @@ const schema =
         ...(date && { datePublished: iso(date) }),
         ...(written && { dateCreated: written }),
         author,
+        mainEntityOfPage: pageUrl,
+      }
+    : variant === "project"
+    ? {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        name: title,
+        ...(description && { description }),
+        ...(date && { dateCreated: iso(date) }),
+        ...(tags.length > 0 && { keywords: tags.join(", ") }),
+        ...(ogImage && { image: new URL(ogImage, Astro.site).href }),
+        creator: author,
         mainEntityOfPage: pageUrl,
       }
     : {
